@@ -1,0 +1,126 @@
+\documentclass[12pt]{article}
+\usepackage{iftex}
+\usepackage[pdftex]{graphicx}
+\usepackage{hyperref}
+\usepackage{natbib}
+\usepackage{color}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage[export]{adjustbox}
+\usepackage{verbatim}
+\usepackage{mathpazo}
+\usepackage{setspace}
+\usepackage{multirow}
+\usepackage{fullpage}
+\usepackage{lscape}
+\usepackage{fancyhdr}
+\usepackage[normalem]{ulem}
+\usepackage{rotating}
+\usepackage{chngcntr}
+\usepackage[parfill]{parskip}
+\usepackage[tiny,compact]{titlesec}
+\usepackage{longtable}
+\usepackage{textcomp}
+\usepackage{xr}
+\externaldocument{supplementary_methods}
+
+\newcommand{\flagged}[1] {
+  \textcolor{blue}{#1}
+}
+
+\hypersetup{colorlinks=true, linkcolor=black, citecolor=black}
+\RequirePackage{lineno}
+
+\def\title{Insert title}
+
+\def\author{Jenna B. Melanson$^{1*}$, Tyler T. Kelly$^{2}$, Claire Kremen$^{1,2**}$}
+
+\def\keywords{keyword1, keyword2, keyword3}
+
+\def\extras{
+\begin{itemize}
+  \item Type of article: 
+  \item Abstract word count: 
+  \item Word count:
+  \item Number of figures and tables: 
+  \item Number of references: 
+  \item Author contributions: 
+\end{itemize}
+
+}
+\clearpage
+\def\affiliation{
+  \begin{enumerate}
+  \item Biodiversity Research Center\\
+  Department of Zoology \\
+  University of British Columbia \\
+  2212 Main Mall \\
+  Vancouver, BC, Canada, V6T 1Z4
+  \item Institute for Resources, Environment, and Sustainability \\
+  University of British Columbia \\
+  2202 Main Mall \\
+  Vancouver, BC, Canada, V6T 1Z4
+  \end{enumerate}
+}
+
+\def\runninghead{}
+
+\def\corr{\noindent
+  $\star$ Corresponding author: jenna.melanson@ubc.ca \\
+  $\star\star$ Senior author: Claire Kremen}
+
+\newcommand{\mstitlepage}{
+  \paragraph{Running head:} \textsc{\runninghead}
+  \parindent=0pt
+  \begin{center}
+    {\LARGE \title \par}
+    \vskip 3em
+    {\large
+      \lineskip .75em
+      \begin{tabular}[t]{c}
+        \author
+      \end{tabular}\par}
+    \vskip 1.5em
+  \end{center}\par
+  \affiliation
+  \corr
+  \extras
+}
+
+\begin{document}
+\mstitlepage
+\doublespacing
+\linenumbers
+\clearpage
+\begin{abstract} 
+abstract text
+\end{abstract} 
+
+\textbf{Keywords:} \keywords
+\clearpage
+\section{Introduction}
+\section{Methods}
+\section{Results}
+\section{Discussion}
+
+\bibliographystyle{wileyNJD-Harvard.bst}
+  \bibliography{}
+  \setlength{\parskip}{1em}
+\clearpage
+
+
+%\section*{Acknowledgements}
+%The authors thank Hazel Barthel and Hannah Lewack for their assistance in the field and lab, WoRCS and Ponisio Lab members... ?
+
+%\section*{Conflict of Interest}
+%You may be asked to provide a conflict of interest statement during the submission process. Please check the journal's author guidelines for details on what to include in this section. Please ensure you liaise with all co-authors to confirm agreement with the final statement.
+
+\section*{Supporting Information}
+
+\setcounter{figure}{0}
+\setcounter{table}{0}
+
+
+%\input{supplement}
+
+\end{document}
