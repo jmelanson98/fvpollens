@@ -40,6 +40,6 @@ jobs:
           git checkout main
           git add ${{ env.DIR }}/${{ env.FILE }}.pdf
           git commit -m "Auto-commit compiled PDF" || exit 0  # Prevents failure if no changes
-          git push origin main
+          git push https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git main
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
