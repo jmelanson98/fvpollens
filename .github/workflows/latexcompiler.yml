@@ -1,2 +1,2 @@
-- name: Github Action for LaTeX
+  name: Github Action for LaTeX
   uses: xu-cheng/latex-action@3.2.0
