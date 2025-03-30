@@ -8,7 +8,7 @@ jobs:
   paper:
     runs-on: ubuntu-latest
     env:
-      DIR: docs
+      DIR: 8_docs
       FILE: pollenMS
     steps:
       - name: Checkout main branch
