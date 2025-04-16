@@ -1,5 +1,5 @@
 
-setwd("~/projects/def-ckremen/melanson")
+setwd("~/projects/def-ckremen/melanson/fvpollens")
 
 library(dada2)
 library(phyloseq)
@@ -12,22 +12,23 @@ library(Biostrings)
 library(seqinr)
 
 
-####File Path Setup####
-#this is so dada2 can quickly iterate through all the R1 and R2 files in your read set
-path <- "JeMe001" # CHANGE ME to the directory containing the fastq files
+####For Parallel Runs####
+task_id <- as.integer(Sys.getenv("SLURM_ARRAY_TASK_ID"))
 
-#change the pattern to match all your R1 files
+####File Path Setup####
+path <- sprintf("3_data/JeMe%03d", task_id)  # the directory containing the fastq files
+
+# list file names for forward and reverse reads
 fnFs <- sort(list.files(path, pattern="_R1_001.fastq", full.names = TRUE)) 
 fnRs <- sort(list.files(path, pattern="_R2_001.fastq", full.names = TRUE))
 
-#change the delimiter in quotes and the number at the end of this command to 
-#decide how to split up the file name, and which element to extract for a unique sample name
+# split filenames to get unique sample name
 sample.names <- sapply(strsplit(basename(fnFs), "_S"), `[`, 1)
 
 
 ####Primer Removal####
-FWD <- "ATGCGATACTTGGTGTGAAT"  ## CHANGE ME to your forward primer sequence
-REV <- "TCCTCCGCTTATTGATATGC"  ## CHANGE ME to your reverse primer sequence
+FWD <- "ATGCGATACTTGGTGTGAAT"  ## ITS2 forward primer sequence
+REV <- "TCCTCCGCTTATTGATATGC"  ## ITS2 reverse primer sequence
 
 allOrients <- function(primer) {
   # Create all orientations of the input sequence
@@ -40,13 +41,13 @@ allOrients <- function(primer) {
 FWD.orients <- allOrients(FWD)
 REV.orients <- allOrients(REV)
 
-fnFs.filtN <- file.path("JeMe001_filtN", basename(fnFs)) # Put N-filterd files in filtN/ subdirectory
-fnRs.filtN <- file.path("JeMe001_filtN", basename(fnRs))
+fnFs.filtN <- file.path(paste(sprintf("data/JeMe%03d", task_id), "_filtN"), basename(fnFs)) # Put N-filterd files in filtN/ subdirectory
+fnRs.filtN <- file.path(paste(sprintf("data/JeMe%03d", task_id), "_filtN"), basename(fnRs))
 
 #filter and trim reads
 filterAndTrim(fnFs, fnFs.filtN, fnRs, fnRs.filtN, trimLeft = c(0,0), trimRight = c(0,0), truncLen=c(250, 200), maxN = 0, multithread = 32, compress = TRUE, matchIDs=TRUE)
 
-#create function for  
+#create function for detecting primers  
 primerHits <- function(primer, fn) {
   # Counts number of reads in which the primer is found
   nhits <- vcountPattern(primer, sread(readFastq(fn)), fixed = FALSE)
