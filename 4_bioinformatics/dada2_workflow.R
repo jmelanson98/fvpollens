@@ -269,11 +269,11 @@ cat("", file=ASV_report, sep="\n", append=TRUE)
 seqtab.nosingletons.nochim <- removeBimeraDenovo(seqtab.nosingletons, method="pooled", multithread=36,
  verbose=TRUE) 
 
-# append resuls to ASV table
+# Append resuls to ASV table
 cat("Dimensions of ASV table after chimera removal", dim(seqtab.nosingletons.nochim),file= ASV_report, sep="\t", append=TRUE)
 cat("", file= ASV_report, sep="\n", append=TRUE)
 
-# calculate proportion of nonchimeras 
+# Calculate proportion of nonchimeras 
 # should be relatively high after filtering out your singletons/low-count ASVs
 # e.g., even if you lose a lot of ASVs, the number of reads lost should be quite low
 sum(seqtab.nosingletons.nochim)/sum(seqtab.nosingletons)
@@ -284,18 +284,41 @@ cat("Proportion of non-chimeric to chimeric reads (0-1):", sum(seqtab.nosingleto
 #### Track read retention through steps ####
 #first remove samples in the "out" R object that aren't in samples_to_keep
 row.names(out) <- as.character(t(as.data.frame(strsplit(row.names(out), "_S")))[,1])
-#make sure that the output you're assigning to the row.names of "out" matches your sample names before proceeding.
-#select the correct delimiter (_ in exampe) and element (1 in example) to extract a unique name for each sample that corresponds to any metadata you will work with in downstream analyses
+
 getN <- function(x) sum(getUniques(x))
-track <- cbind(out[which(row.names(out) %in% names(samples_to_keep)[which(samples_to_keep == TRUE)]),]
-, sapply(dadaFs[samples_to_keep], getN), sapply(dadaRs[samples_to_keep], getN), sapply(mergers, getN),
- rowSums(seqtab.nosingletons), rowSums(seqtab.nosingletons.nochim))
-# If processing only a single sample, remove the sapply calls: e.g. replace sapply(dadaFs, getN) withgetN(dadaFs)
-track <- cbind(track, 100-track[,6]/track[,5]*100, 100-track[,7]/track[,6]*100, track[,7]/track[,1]*100)
-colnames(track) <- c("input", "filtered", "denoisedF", "denoisedR", "merged", "nosingletons", "nochimeras", "percent_singletons", "percent_chimeras", "percent_retained_of_total")
+
+track <- cbind(out[which(row.names(out) %in% names(samples_to_keep)[which(samples_to_keep == TRUE)]),], 
+               sapply(dadaFs[samples_to_keep], getN), 
+               sapply(dadaRs[samples_to_keep], getN),
+               sapply(mergers, getN),
+               rowSums(seqtab.nosingletons),
+               rowSums(seqtab.nosingletons.nochim))
+
+track <- cbind(track, 
+               100-track[,6]/track[,5]*100, 
+               100-track[,7]/track[,6]*100, 
+               track[,7]/track[,1]*100)
+colnames(track) <- c("input", 
+                     "filtered", 
+                     "denoisedF", 
+                     "denoisedR", 
+                     "merged", 
+                     "nosingletons", 
+                     "nochimeras", 
+                     "percent_singletons", 
+                     "percent_chimeras", 
+                     "percent_retained_of_total")
 
 
-####save output from sequnce table construction steps####
-write.table(data.frame("row_names"=rownames(track),track),"read_retention.16S_merged.txt", row.names=FALSE, quote=F, sep="\t")
-write.table(data.frame("row_names"=rownames(seqtab.nosingletons.nochim),seqtab.nosingletons.nochim),"sequence_table.ITS2.merged.txt", row.names=FALSE, quote=F, sep="\t")
+#### Save output from sequence table construction steps ####
+write.table(data.frame("row_names"=rownames(track),track),
+            paste(sprintf("4_bioinformatics/dada2_output_files/JeMe%03d", task_id), "/read.retention.merged.txt", sep = ""),
+            row.names=FALSE, 
+            quote=F, 
+            sep="\t")
+write.table(data.frame("row_names"=rownames(seqtab.nosingletons.nochim), seqtab.nosingletons.nochim),
+            paste(sprintf("3_data/JeMe%03d", task_id), "_sequencetable.txt", sep = ""),
+            row.names=FALSE, 
+            quote=F, 
+            sep="\t")
 
