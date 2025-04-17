@@ -129,7 +129,7 @@ out <- filterAndTrim(cutFs, filtFs, cutRs, filtRs, truncLen=c(0,0), minLen = c(1
 retained <- as.data.frame(out)
 retained$percentage_retained <- retained$reads.out/retained$reads.in*100
 write.table(retained, 
-            paste(sprintf("4_bioinformatics/dada2_output_files/JeMe%03d", task_id), "retained.reads.filterandtrim.txt"), 
+            paste(sprintf("4_bioinformatics/dada2_output_files/JeMe%03d", task_id), "retained.reads.filterandtrim.txt", sep = ""), 
             sep = "\t", row.names=TRUE, col.names=TRUE, quote=FALSE)
 
 
@@ -152,14 +152,15 @@ dev.off()
 
 #sometimes, samples with low sequence count don't produce any filtered output, 
 #so we have to do something extra here to get rid of their entries in filtFs and filtRs
-filtFs <- sort(list.files("JeMe001_cutadapt/filtered", pattern = "_R1_001.fastq.gz", full.names = TRUE)) #remember to change the pattern so it matches ALL your file names!
-filtRs <- sort(list.files("JeMe001_cutadapt/filtered", pattern = "_R2_001.fastq.gz", full.names = TRUE)) #remember to change the pattern so it matches ALL your file names!
+filtFs <- sort(list.files(paste(path.cut, "/filtered", sep = ""), pattern = "_R1_001.fastq.gz", full.names = TRUE))
+filtRs <- sort(list.files(paste(path.cut, "/filtered", sep = ""), pattern = "_R2_001.fastq.gz", full.names = TRUE))
 
 #now run dereplication
 derepFs <- derepFastq(filtFs, verbose=TRUE)
 derepRs <- derepFastq(filtRs, verbose=TRUE)
 
-# rewrite names of derepFs derepRs so that they match what's in sample.names (just take the sampleID from the first element, split on _S)
+# rewrite names of derepFs derepRs so that they match what's in sample.names 
+# (just take the sampleID from the first element, split on _S)
 names(derepFs) <- sapply(strsplit(names(derepFs), "_S"), `[`, 1)
 names(derepRs) <- sapply(strsplit(names(derepRs), "_S"), `[`, 1)
 
@@ -170,75 +171,117 @@ dadaRs <- dada(derepRs, err=errR, multithread=32)
 #samples to keep
 samples_to_keep <- as.numeric(out[,"reads.out"]) > 100
 samples_to_remove <- names(samples_to_keep)[which(samples_to_keep == FALSE)] #record names of samples you have the option of removing
-write.table(names(which(samples_to_keep == TRUE)), "samples_retained.txt", row.names=FALSE, quote=F, sep="\n")
-write.table(setdiff(sample.names, names(which(samples_to_keep == TRUE))), "samples_removed.txt", row.names=FALSE, quote=F, sep="\n")
+write.table(names(which(samples_to_keep == TRUE)), 
+            paste(sprintf("4_bioinformatics/dada2_output_files/JeMe%03d", task_id), "samples.retained.txt", sep = ""), 
+            row.names=FALSE, quote=F, sep="\n")
+write.table(setdiff(sample.names, names(which(samples_to_keep == TRUE))),
+            paste(sprintf("4_bioinformatics/dada2_output_files/JeMe%03d", task_id), "samples.removed.txt", sep = ""), 
+            row.names=FALSE, quote=F, sep="\n")
 
 
 #merge paired reads
-mergers <- mergePairs(dadaFs[samples_to_keep], derepFs[samples_to_keep], dadaRs[samples_to_keep], derepRs[samples_to_keep], verbose=TRUE)
+mergers <- mergePairs(dadaFs[samples_to_keep], 
+                      derepFs[samples_to_keep], 
+                      dadaRs[samples_to_keep], 
+                      derepRs[samples_to_keep], 
+                      verbose=TRUE)
 
 #make sequence table
 seqtab <- makeSequenceTable(mergers)
 
-####View Sequence Length Distribution Post-Merging####
-#most useful with merged data. this plot will not show you much for forward reads only, which should have a nearly uniform length distribution.
-length.histogram <- as.data.frame(table(nchar(getSequences(seqtab)))) #tabulate sequence length distribution
-pdf("length_histogram.merged_reads.pdf", width = 10, height = 8) # define plot width and height. completely up to user.
+
+#### View Sequence Length Distribution Post-Merging ####
+# most useful with merged data. this plot will not show you much for forward reads only, 
+# which should have a nearly uniform length distribution
+
+#tabulate sequence length distribution
+length.histogram <- as.data.frame(table(nchar(getSequences(seqtab))))
+
+pdf(paste(sprintf("4_bioinformatics/dada2_output_files/JeMe%03d", task_id), "merged.read.lengths.pdf", sep = ""), 
+    width = 10, height = 8)
 plot(x=length.histogram[,1], y=length.histogram[,2],
      xlab = "length (bp)",
      ylab = "frequency (# observed ASVs)",
-     main = "ASV Length Histogram") #view length distribution plot
+     main = "ASV Length Histogram")
 dev.off()
 
-####remove low-count singleton ASVs####
+
+#### Remove low-count singleton ASVs ####
 otus <- otu_table(t(seqtab), taxa_are_rows = TRUE)
 
-#generate counts of sample per ASV
+# generate counts of sample per ASV
 otu_pres_abs <- otus
 otu_pres_abs[otu_pres_abs >= 1] <- 1 #creating a presence/absence table
 otu_pres_abs_rowsums <- rowSums(otu_pres_abs) #counts of sample per ASV
 
-otus_rel_ab <- transform_sample_counts(otus, function(x) x/sum(x)) #create relative abundance table
-df <- as.data.frame(unclass(otus_rel_ab)) #convert to plain data frame
-df[is.na(df)] <- 0 #if there are samples with no merged reads in them, and they passed the merge step
-#(a possiblity, converting to a relative abundance table produes all NaNs for that sample. these need
-#to be set to zero so we can do the calculations in the next steps.)
-otus_rel_ab.rowsums <- rowSums(df) #compute row sums (sum of relative abundances per ASV. for those
-#only present in one sample, this is a value we can use to filter them for relative abundance on a per-sample basis)
-a <- which(as.data.frame(otu_pres_abs_rowsums) == 1) #which ASVs are only present in one sample
-b <- which(otus_rel_ab.rowsums <= 0.001) #here is where you set your relative abundance threshold #which ASVs pass our filter for relative abundance
-removed <- length(intersect(a,b)) #how many of our singleton ASVs fail on this filter
-rows_to_remove <- intersect(a,b) #A also in B (we remove singleton ASVs that have a lower relative abundance value than our threshold)
+# create relative abundance table
+otus_rel_ab <- transform_sample_counts(otus, function(x) x/sum(x))
+
+# convert to plain data frame
+df <- as.data.frame(unclass(otus_rel_ab))
+
+# set samples with no merged reads to 0!
+df[is.na(df)] <- 0
+
+# compute row sums (sum of relative abundance per ASV)
+# for those present in only one sample, we can use this value to filter them for relative abundance on a per-sample basis
+otus_rel_ab.rowsums <- rowSums(df)
+
+# which ASVs are present in only one sample
+a <- which(as.data.frame(otu_pres_abs_rowsums) == 1)
+
+# which OTUs are present below a relative abundance threshold?
+b <- which(otus_rel_ab.rowsums <= 0.001)
+
+# how many singleton ASVs fail on this relative abundance filter?
+removed <- length(intersect(a,b))
+
+# remove singletons with lower relative abundance than threshold
+rows_to_remove <- intersect(a,b)
+
+# filter these out of OTU table from earlier
 if (removed > 0) {
-otus_filt <- otus[-rows_to_remove,] #filter OTU table we created earlier
+otus_filt <- otus[-rows_to_remove,]
 } else {
 otus_filt <- otus #nothing to filter
 }
-dim(otus_filt) #how many ASVs did you retain?
-seqtab.nosingletons <- t(as.matrix(unclass(otus_filt))) #convert filtered OTU table back to a sequence table matrix to continue with dada2 pipeline
+
+#check how many ASVs you retained
+dim(otus_filt)
+
+# convert filtered OTU table back to sequence table
+seqtab.nosingletons <- t(as.matrix(unclass(otus_filt)))
 
 
 #Start ASV report
-cat("dimensions of unfiltered ASV table:", dim(otus),file="ASV_report.txt",sep="\t",append=TRUE)
-cat("", file="ASV_report.txt", sep="\n", append=TRUE)
-cat("# singleton ASVs Removed:", length(intersect(a,b)),file="ASV_report.txt",sep="\t",append=TRUE)
-cat("", file="ASV_report.txt", sep="\n", append=TRUE)
-cat("dimensions of ASV table after singleton removal:", dim(otus_filt),file="ASV_report.txt",sep="\t",
-    append=TRUE)
-cat("", file="ASV_report.txt", sep="\n", append=TRUE)
+ASV_report = paste(sprintf("4_bioinformatics/dada2_output_files/JeMe%03d", task_id), "ASVreport.txt", sep = "")
 
-####remove chimeras####
-#here we remove "bimeras" or chimeras with two sources. look at "method" to decide which type of pooling you'd like to use when judging each sequence as chimeric or non-chimeric
+cat("Dimensions of unfiltered ASV table:", dim(otus), file = ASV_report, sep="\t", append=TRUE)
+cat("", file="ASV_report.txt", sep="\n", append=TRUE)
+cat("# singleton ASVs Removed:", length(intersect(a,b)), file= ASV_report, sep="\t", append=TRUE)
+cat("", file="ASV_report.txt", sep="\n", append=TRUE)
+cat("Dimensions of ASV table after singleton removal:", dim(otus_filt),file=ASV_report,sep="\t", append=TRUE)
+cat("", file=ASV_report, sep="\n", append=TRUE)
+
+#### Remove chimeras ####
+#here we remove "bimeras" or chimeras with two sources. 
+#look at "method" to decide which type of pooling you'd like to use when judging each sequence as chimeric or non-chimeric
 seqtab.nosingletons.nochim <- removeBimeraDenovo(seqtab.nosingletons, method="pooled", multithread=36,
- verbose=TRUE) #this step can take a few minutes to a few hours, depending on the size of your dataset
-cat("dimensions of ASV table after chimera removal", dim(seqtab.nosingletons.nochim),file="ASV_report.
-txt",sep="\t",append=TRUE)
-cat("", file="ASV_report.txt", sep="\n", append=TRUE)
-sum(seqtab.nosingletons.nochim)/sum(seqtab.nosingletons) #proportion of nonchimeras #it should be relatively high after filtering out your
-#singletons/low-count ASVs, even if you lose a lot of ASVs, the number of reads lost should be quite low
-cat("proportion of non-chimeric to chimeric reads (0-1):", sum(seqtab.nosingletons.nochim)/sum(seqtab.nosingletons),file="ASV_report.txt",sep="\t",append=TRUE)
+ verbose=TRUE) 
 
-####track read retention through steps####
+# append resuls to ASV table
+cat("Dimensions of ASV table after chimera removal", dim(seqtab.nosingletons.nochim),file= ASV_report, sep="\t", append=TRUE)
+cat("", file= ASV_report, sep="\n", append=TRUE)
+
+# calculate proportion of nonchimeras 
+# should be relatively high after filtering out your singletons/low-count ASVs
+# e.g., even if you lose a lot of ASVs, the number of reads lost should be quite low
+sum(seqtab.nosingletons.nochim)/sum(seqtab.nosingletons)
+
+# append to ASV table
+cat("Proportion of non-chimeric to chimeric reads (0-1):", sum(seqtab.nosingletons.nochim)/sum(seqtab.nosingletons), file= ASV_report, sep="\t", append=TRUE)
+
+#### Track read retention through steps ####
 #first remove samples in the "out" R object that aren't in samples_to_keep
 row.names(out) <- as.character(t(as.data.frame(strsplit(row.names(out), "_S")))[,1])
 #make sure that the output you're assigning to the row.names of "out" matches your sample names before proceeding.
