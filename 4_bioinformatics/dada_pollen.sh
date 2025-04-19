@@ -11,8 +11,8 @@
 export R_LIBS_USER="/home/melanson/R/x86_64-pc-linux-gnu-library/4.3:/cvmfs/soft.computecanada.ca/easybuild/software/2023/x86-64-v3/Compiler/gcccore/r/4.3.1/lib64/R/library"
 
 # Load necessary modules (if needed, e.g., R version)
-module load StdEnv/2023 r/4.3.1 python/3.11.4
+module load StdEnv/2023 r/4.3.1 python
 
 # Run the R script
-Rscript ~/projects/def-ckremen/melanson/dada2_workflow.R
+Rscript ~/projects/def-ckremen/melanson/fvpollens/4_bioinformatics/dada2_workflow.R
 
