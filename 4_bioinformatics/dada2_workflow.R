@@ -33,6 +33,8 @@ fnFs.filtN <- file.path(paste(sprintf("3_data/JeMe%03d", task_id), "_filtN", sep
 fnRs.filtN <- file.path(paste(sprintf("3_data/JeMe%03d", task_id), "_filtN", sep = ""), basename(fnRs))
 
 #filter and trim
+print(getwd())
+print(fnFs.filtN[1])
 filterAndTrim(fnFs, fnFs.filtN, fnRs, fnRs.filtN, 
               trimLeft = c(0,0), 
               trimRight = c(0,0), 

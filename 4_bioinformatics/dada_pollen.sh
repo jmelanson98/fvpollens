@@ -1,6 +1,7 @@
 #!/bin/bash
-#SBATCH --job-name=dada2_dereplication
-#SBATCH --output=logs/dereplication_output.log
+#SBATCH --job-name=dada2_workflow
+#SBATCH --output=logs/dada2_%A_%a.out
+#SBATCH --error=logs/dada2_%A_%a.err
 #SBATCH --array=1-3                           
 #SBATCH --ntasks=1                         
 #SBATCH --cpus-per-task=4                  
