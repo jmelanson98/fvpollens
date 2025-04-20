@@ -172,9 +172,10 @@ dadaFs <- dada(derepFs, err=errF, multithread=32)
 dadaRs <- dada(derepRs, err=errR, multithread=32)
 
 #samples to keep
-#samples_to_keep <- as.numeric(out[,"reads.out"]) > 100
-print(paste("out rownames:", rownames(out)))
-samples_to_keep = as.numeric(out$reads.out) > 100
+print(paste("out colnames:", colnames(out)))
+samples_to_keep <- as.numeric(out[,"reads.out"]) > 100
+print(samples_to_keep)
+saveRDS(out, file = paste(sprintf("4_bioinformatics/dada2_output_files/JeMe%03d", task_id), "/out.RDS", sep = ""))
 
 samples_to_remove <- names(samples_to_keep)[which(samples_to_keep == FALSE)] #record names of samples you have the option of removing
 write.table(names(which(samples_to_keep == TRUE)), 
