@@ -145,11 +145,11 @@ errR <- learnErrors(filtRs, multithread=32)
 
 #assess this graph. it shows the error rates observed in your dataset. 
 # strange or unexpected shapes in the plot should be considered before moving on.
-pdf(paste(sprintf("4_bioinformatics/dada2_output_files/JeMe%03d", task_id), "/error.rates.R1s.pdf"), width = 10, height = 10)
+pdf(paste(sprintf("4_bioinformatics/dada2_output_files/JeMe%03d", task_id), "/error.rates.R1s.pdf", sep = ""), width = 10, height = 10)
 plotErrors(errF, nominalQ=TRUE) 
 dev.off()
 
-pdf(paste(sprintf("4_bioinformatics/dada2_output_files/JeMe%03d", task_id), "/error.rates.R2s.pdf"), width = 10, height = 10)
+pdf(paste(sprintf("4_bioinformatics/dada2_output_files/JeMe%03d", task_id), "/error.rates.R2s.pdf", sep = ""), width = 10, height = 10)
 plotErrors(errR, nominalQ=TRUE) 
 dev.off()
 
