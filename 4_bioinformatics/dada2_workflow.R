@@ -21,8 +21,8 @@ project_path <- sprintf("3_data/JeMe%03d", task_id)  # the directory containing 
 scratch_path <- sprintf("/scratch/melanson/fvpollen_intermediates/JeMe%03d", task_id)
 
 # list file names for forward and reverse reads
-fnFs <- sort(list.files(path, pattern="_R1_001.fastq", full.names = TRUE)) 
-fnRs <- sort(list.files(path, pattern="_R2_001.fastq", full.names = TRUE))
+fnFs <- sort(list.files(project_path, pattern="_R1_001.fastq", full.names = TRUE)) 
+fnRs <- sort(list.files(project_path, pattern="_R2_001.fastq", full.names = TRUE))
 
 # split filenames to get unique sample name
 sample.names <- sapply(strsplit(basename(fnFs), "_S"), `[`, 1)
