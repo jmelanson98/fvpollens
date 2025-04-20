@@ -17,7 +17,8 @@ task_id <- as.integer(Sys.getenv("SLURM_ARRAY_TASK_ID"))
 
 
 ####File Path Setup####
-path <- sprintf("3_data/JeMe%03d", task_id)  # the directory containing the fastq files
+project_path <- sprintf("3_data/JeMe%03d", task_id)  # the directory containing the fastq files
+scratch_path <- sprintf("/scratch/melanson/fvpollen_intermediates/JeMe%03d", task_id)
 
 # list file names for forward and reverse reads
 fnFs <- sort(list.files(path, pattern="_R1_001.fastq", full.names = TRUE)) 
@@ -29,8 +30,8 @@ sample.names <- sapply(strsplit(basename(fnFs), "_S"), `[`, 1)
 
 #### Filter and Trim Reads ####
 # set output file paths
-fnFs.filtN <- file.path(paste(sprintf("3_data/JeMe%03d", task_id), "_filtN", sep = ""), basename(fnFs)) # Put N-filterd files in filtN/ subdirectory
-fnRs.filtN <- file.path(paste(sprintf("3_data/JeMe%03d", task_id), "_filtN", sep = ""), basename(fnRs))
+fnFs.filtN <- file.path(paste(scratch_path, "_filtN", sep = ""), basename(fnFs)) # Put N-filterd files in filtN/ subdirectory
+fnRs.filtN <- file.path(paste(scratch_path, "_filtN", sep = ""), basename(fnRs))
 
 #filter and trim
 print(getwd())
@@ -81,7 +82,7 @@ primerHits <- function(primer, fn) {
 cutadapt <- "4_bioinformatics/cutadapt-venv/bin/cutadapt" # cutadapt path on your machine
 system2(cutadapt, args = "--version")
 
-path.cut <- file.path(paste(sprintf("3_data/JeMe%03d", task_id), "_cutadapt", sep = ""))
+path.cut <- file.path(paste(scratch_path, "_cutadapt", sep = ""))
 if(!dir.exists(path.cut)) dir.create(path.cut)
 fnFs.cut <- file.path(path.cut, basename(fnFs.filtN))
 fnRs.cut <- file.path(path.cut, basename(fnRs.filtN))
