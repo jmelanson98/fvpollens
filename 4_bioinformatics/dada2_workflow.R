@@ -132,7 +132,7 @@ out <- filterAndTrim(cutFs, filtFs, cutRs, filtRs, truncLen=c(0,0), minLen = c(1
 retained <- as.data.frame(out)
 retained$percentage_retained <- retained$reads.out/retained$reads.in*100
 write.table(retained, 
-            paste(sprintf("4_bioinformatics/dada2_output_files/JeMe%03d", task_id), "retained.reads.filterandtrim.txt", sep = ""), 
+            paste(sprintf("4_bioinformatics/dada2_output_files/JeMe%03d", task_id), "/retained.reads.filterandtrim.txt", sep = ""), 
             sep = "\t", row.names=TRUE, col.names=TRUE, quote=FALSE)
 
 
@@ -145,11 +145,11 @@ errR <- learnErrors(filtRs, multithread=32)
 
 #assess this graph. it shows the error rates observed in your dataset. 
 # strange or unexpected shapes in the plot should be considered before moving on.
-pdf(paste(sprintf("4_bioinformatics/dada2_output_files/JeMe%03d", task_id), "error.rates.R1s.pdf"), width = 10, height = 10)
+pdf(paste(sprintf("4_bioinformatics/dada2_output_files/JeMe%03d", task_id), "/error.rates.R1s.pdf"), width = 10, height = 10)
 plotErrors(errF, nominalQ=TRUE) 
 dev.off()
 
-pdf(paste(sprintf("4_bioinformatics/dada2_output_files/JeMe%03d", task_id), "error.rates.R2s.pdf"), width = 10, height = 10)
+pdf(paste(sprintf("4_bioinformatics/dada2_output_files/JeMe%03d", task_id), "/error.rates.R2s.pdf"), width = 10, height = 10)
 plotErrors(errR, nominalQ=TRUE) 
 dev.off()
 
@@ -175,10 +175,10 @@ dadaRs <- dada(derepRs, err=errR, multithread=32)
 samples_to_keep <- as.numeric(out[,"reads.out"]) > 100
 samples_to_remove <- names(samples_to_keep)[which(samples_to_keep == FALSE)] #record names of samples you have the option of removing
 write.table(names(which(samples_to_keep == TRUE)), 
-            paste(sprintf("4_bioinformatics/dada2_output_files/JeMe%03d", task_id), "samples.retained.txt", sep = ""), 
+            paste(sprintf("4_bioinformatics/dada2_output_files/JeMe%03d", task_id), "/samples.retained.txt", sep = ""), 
             row.names=FALSE, quote=F, sep="\n")
 write.table(setdiff(sample.names, names(which(samples_to_keep == TRUE))),
-            paste(sprintf("4_bioinformatics/dada2_output_files/JeMe%03d", task_id), "samples.removed.txt", sep = ""), 
+            paste(sprintf("4_bioinformatics/dada2_output_files/JeMe%03d", task_id), "/samples.removed.txt", sep = ""), 
             row.names=FALSE, quote=F, sep="\n")
 
 
@@ -200,7 +200,7 @@ seqtab <- makeSequenceTable(mergers)
 #tabulate sequence length distribution
 length.histogram <- as.data.frame(table(nchar(getSequences(seqtab))))
 
-pdf(paste(sprintf("4_bioinformatics/dada2_output_files/JeMe%03d", task_id), "merged.read.lengths.pdf", sep = ""), 
+pdf(paste(sprintf("4_bioinformatics/dada2_output_files/JeMe%03d", task_id), "/merged.read.lengths.pdf", sep = ""), 
     width = 10, height = 8)
 plot(x=length.histogram[,1], y=length.histogram[,2],
      xlab = "length (bp)",
@@ -257,7 +257,7 @@ seqtab.nosingletons <- t(as.matrix(unclass(otus_filt)))
 
 
 #Start ASV report
-ASV_report = paste(sprintf("4_bioinformatics/dada2_output_files/JeMe%03d", task_id), "ASVreport.txt", sep = "")
+ASV_report = paste(sprintf("4_bioinformatics/dada2_output_files/JeMe%03d", task_id), "/ASVreport.txt", sep = "")
 
 cat("Dimensions of unfiltered ASV table:", dim(otus), file = ASV_report, sep="\t", append=TRUE)
 cat("", file="ASV_report.txt", sep="\n", append=TRUE)
@@ -289,6 +289,14 @@ cat("Proportion of non-chimeric to chimeric reads (0-1):", sum(seqtab.nosingleto
 row.names(out) <- as.character(t(as.data.frame(strsplit(row.names(out), "_S")))[,1])
 
 getN <- function(x) sum(getUniques(x))
+
+cat("out subset:", nrow(out[which(row.names(out) %in% names(samples_to_keep)[which(samples_to_keep == TRUE)]),]), "\n")
+cat("dadaFs:", length(sapply(dadaFs[samples_to_keep], getN)), "\n")
+cat("dadaRs:", length(sapply(dadaRs[samples_to_keep], getN)), "\n")
+cat("mergers:", length(sapply(mergers, getN)), "\n")
+cat("seqtab.nosingletons:", nrow(seqtab.nosingletons), "\n")
+cat("seqtab.nosingletons.nochim:", nrow(seqtab.nosingletons.nochim), "\n")
+
 
 track <- cbind(out[which(row.names(out) %in% names(samples_to_keep)[which(samples_to_keep == TRUE)]),], 
                sapply(dadaFs[samples_to_keep], getN), 
