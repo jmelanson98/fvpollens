@@ -79,7 +79,7 @@ primerHits <- function(primer, fn) {
 
 
 #### Remove Primers ####
-cutadapt <- "4_bioinformatics/cutadapt-venv/bin/cutadapt" # cutadapt path on your machine
+cutadapt <- "/home/melanson/projects/def-ckremen/melanson/fvpollens/4_bioinformatics/cutadapt-venv/bin/cutadapt" # cutadapt path on your machine
 system2(cutadapt, args = "--version")
 
 path.cut <- file.path(paste(scratch_path, "_cutadapt", sep = ""))
