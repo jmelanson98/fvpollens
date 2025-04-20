@@ -1,5 +1,5 @@
 
-setwd("~/projects/def-ckremen/melanson/fvpollens")
+setwd("/home/melanson/projects/def-ckremen/melanson/fvpollens")
 
 library(dada2)
 library(phyloseq)
