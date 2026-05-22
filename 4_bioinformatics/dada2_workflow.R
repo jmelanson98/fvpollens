@@ -39,7 +39,6 @@ print(fnFs.filtN[1])
 filterAndTrim(fnFs, fnFs.filtN, fnRs, fnRs.filtN, 
               trimLeft = c(0,0), 
               trimRight = c(0,0), 
-              truncLen=c(250, 200), 
               maxN = 0, 
               multithread = 32, 
               compress = TRUE, 
@@ -126,8 +125,12 @@ cutRs <- sort(list.files(path.cut, pattern = "_R2_001", full.names = TRUE))
 filtFs <- file.path(path.cut, "filtered", basename(cutFs))
 filtRs <- file.path(path.cut, "filtered", basename(cutRs))
 
-out <- filterAndTrim(cutFs, filtFs, cutRs, filtRs, truncLen=c(0,0), minLen = c(150,120),
-                     maxN=c(0,0), maxEE=c(6,8), truncQ=c(2,2), rm.phix=TRUE, matchIDs=TRUE,
+out <- filterAndTrim(cutFs, filtFs, cutRs, filtRs,
+                     minLen = 50,
+                     maxN=c(0,0), 
+                     maxEE=c(2,2), 
+                     truncQ=c(2,2), 
+                     rm.phix=TRUE, matchIDs=TRUE,
                      compress=TRUE, multithread=36)
 retained <- as.data.frame(out)
 retained$percentage_retained <- retained$reads.out/retained$reads.in*100
@@ -337,3 +340,10 @@ write.table(data.frame("row_names"=rownames(seqtab.nosingletons.nochim), seqtab.
             quote=F, 
             sep="\t")
 
+
+#### Do quick fungal assignments?
+# unite.ref <- "~/tax/sh_general_release_dynamic_s_all_29.11.2022.fasta"  # CHANGE ME to location on your machine
+# taxa <- assignTaxonomy(seqtab.nochim, unite.ref, multithread = TRUE, tryRC = TRUE)
+# taxa.print <- taxa  # Removing sequence rownames for display only
+# rownames(taxa.print) <- NULL
+# head(taxa.print)

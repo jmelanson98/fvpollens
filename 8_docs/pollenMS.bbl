@@ -1,0 +1,819 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.3 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{apa/apasortcite//global/global/global}
+    \entry{callahanDADA2HighresolutionSample2016}{article}{}{}
+      \name{author}{6}{}{%
+        {{un=0,uniquepart=base,hash=8e5104fc426b19a5181dec3fa20245ce}{%
+           family={Callahan},
+           familyi={C\bibinitperiod},
+           given={Benjamin\bibnamedelima J.},
+           giveni={B\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=736396a6c4ada4bf04c9bdcf22dfb025}{%
+           family={McMurdie},
+           familyi={M\bibinitperiod},
+           given={Paul\bibnamedelima J.},
+           giveni={P\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=6d7c6cd5239bf9b464e2ec3eb451ef54}{%
+           family={Rosen},
+           familyi={R\bibinitperiod},
+           given={Michael\bibnamedelima J.},
+           giveni={M\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=153ffc58ffe5dc7b82517f9c404650e0}{%
+           family={Han},
+           familyi={H\bibinitperiod},
+           given={Andrew\bibnamedelima W.},
+           giveni={A\bibinitperiod\bibinitdelim W\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=20e86a8a066de5218caf6db4e5daaa0d}{%
+           family={Johnson},
+           familyi={J\bibinitperiod},
+           given={Amy\bibnamedelimb Jo\bibnamedelima A.},
+           giveni={A\bibinitperiod\bibinitdelim J\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=da3864c4f95767b26af424b093535a72}{%
+           family={Holmes},
+           familyi={H\bibinitperiod},
+           given={Susan\bibnamedelima P.},
+           giveni={S\bibinitperiod\bibinitdelim P\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Nature Publishing Group}%
+      }
+      \strng{namehash}{d0e4d7f84927914066356cee5afca922}
+      \strng{fullhash}{cab6982aa9ce3435047648e9c69ecba8}
+      \strng{fullhashraw}{cab6982aa9ce3435047648e9c69ecba8}
+      \strng{bibnamehash}{cab6982aa9ce3435047648e9c69ecba8}
+      \strng{authorbibnamehash}{cab6982aa9ce3435047648e9c69ecba8}
+      \strng{authornamehash}{d0e4d7f84927914066356cee5afca922}
+      \strng{authorfullhash}{cab6982aa9ce3435047648e9c69ecba8}
+      \strng{authorfullhashraw}{cab6982aa9ce3435047648e9c69ecba8}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{DADA2 is an open-source software package that denoises and removes sequencing errors from Illumina amplicon sequence data to distinguish microbial sample sequences differing by as little as a single nucleotide.}
+      \field{issn}{1548-7105}
+      \field{journaltitle}{Nature Methods}
+      \field{langid}{english}
+      \field{month}{7}
+      \field{number}{7}
+      \field{shortjournal}{Nat Methods}
+      \field{shorttitle}{{{DADA2}}}
+      \field{title}{{{DADA2}}: {{High-resolution}} Sample Inference from {{Illumina}} Amplicon Data}
+      \field{urlday}{22}
+      \field{urlmonth}{5}
+      \field{urlyear}{2026}
+      \field{volume}{13}
+      \field{year}{2016}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{581\bibrangedash 583}
+      \range{pages}{3}
+      \verb{doi}
+      \verb 10.1038/nmeth.3869
+      \endverb
+      \verb{urlraw}
+      \verb https://www.nature.com/articles/nmeth.3869
+      \endverb
+      \verb{url}
+      \verb https://www.nature.com/articles/nmeth.3869
+      \endverb
+      \keyw{Metagenomics,Software,Statistical methods}
+    \endentry
+    \entry{martinCutadaptRemovesAdapter2011}{article}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=0449a5e93850e9dad7d069f67084aeb4}{%
+           family={Martin},
+           familyi={M\bibinitperiod},
+           given={Marcel},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{0449a5e93850e9dad7d069f67084aeb4}
+      \strng{fullhash}{0449a5e93850e9dad7d069f67084aeb4}
+      \strng{fullhashraw}{0449a5e93850e9dad7d069f67084aeb4}
+      \strng{bibnamehash}{0449a5e93850e9dad7d069f67084aeb4}
+      \strng{authorbibnamehash}{0449a5e93850e9dad7d069f67084aeb4}
+      \strng{authornamehash}{0449a5e93850e9dad7d069f67084aeb4}
+      \strng{authorfullhash}{0449a5e93850e9dad7d069f67084aeb4}
+      \strng{authorfullhashraw}{0449a5e93850e9dad7d069f67084aeb4}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{When small RNA is sequenced on current sequencing machines, the resulting reads are usually longer than the RNA and therefore contain parts of the 3' adapter. That adapter must be found and removed error-tolerantly from each read before read mapping. Previous solutions are either hard to use or do not offer required features, in particular support for color space data. As an easy to use alternative, we developed the command-line tool cutadapt, which supports 454, Illumina and SOLiD (color space) data, offers two adapter trimming algorithms, and has other useful features. Cutadapt, including its MIT-licensed source code, is available for download at http://code.google.com/p/cutadapt/}
+      \field{day}{2}
+      \field{issn}{2226-6089}
+      \field{journaltitle}{EMBnet.journal}
+      \field{langid}{english}
+      \field{month}{5}
+      \field{number}{1}
+      \field{title}{Cutadapt Removes Adapter Sequences from High-Throughput Sequencing Reads}
+      \field{urlday}{22}
+      \field{urlmonth}{5}
+      \field{urlyear}{2026}
+      \field{volume}{17}
+      \field{year}{2011}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{10\bibrangedash 12}
+      \range{pages}{3}
+      \verb{doi}
+      \verb 10.14806/ej.17.1.200
+      \endverb
+      \verb{file}
+      \verb /Users/jenna1/Zotero/storage/37X8LC52/Martin - 2011 - Cutadapt removes adapter sequences from high-throughput sequencing reads.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://journal.embnet.org/index.php/embnetjournal/article/view/200
+      \endverb
+      \verb{url}
+      \verb https://journal.embnet.org/index.php/embnetjournal/article/view/200
+      \endverb
+      \keyw{adapter removal,microRNA,next generation sequencing,small RNA}
+    \endentry
+    \entry{morganShortReadBioconductorPackage2009}{article}{}{}
+      \name{author}{6}{}{%
+        {{un=0,uniquepart=base,hash=aa19dfb803b07ffa13770d3889b3d558}{%
+           family={Morgan},
+           familyi={M\bibinitperiod},
+           given={Martin},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=62831e4feef4a1127074be90f88b62f4}{%
+           family={Anders},
+           familyi={A\bibinitperiod},
+           given={Simon},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=99e2f07422e1f63a90126f60b3cd5abc}{%
+           family={Lawrence},
+           familyi={L\bibinitperiod},
+           given={Michael},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ca313960811b9ea954deda44cacc882d}{%
+           family={Aboyoun},
+           familyi={A\bibinitperiod},
+           given={Patrick},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=fbab07750665d39de85def9828ff000b}{%
+           family={Pagès},
+           familyi={P\bibinitperiod},
+           given={Hervé},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=8a97fae1ed0550968a6f77cd783776f5}{%
+           family={Gentleman},
+           familyi={G\bibinitperiod},
+           given={Robert},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {Oxford, England}%
+      }
+      \strng{namehash}{2995cd9c43084cd5958411a42245335a}
+      \strng{fullhash}{7bf9ce714c9b7276165e1adfa8fda8f0}
+      \strng{fullhashraw}{7bf9ce714c9b7276165e1adfa8fda8f0}
+      \strng{bibnamehash}{7bf9ce714c9b7276165e1adfa8fda8f0}
+      \strng{authorbibnamehash}{7bf9ce714c9b7276165e1adfa8fda8f0}
+      \strng{authornamehash}{2995cd9c43084cd5958411a42245335a}
+      \strng{authorfullhash}{7bf9ce714c9b7276165e1adfa8fda8f0}
+      \strng{authorfullhashraw}{7bf9ce714c9b7276165e1adfa8fda8f0}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{ShortRead is a package for input, quality assessment, manipulation and output of high-throughput sequencing data. ShortRead is provided in the R and Bioconductor environments, allowing ready access to additional facilities for advanced statistical analysis, data transformation, visualization and integration with diverse genomic resources. AVAILABILITY AND IMPLEMENTATION: This package is implemented in R and available at the Bioconductor web site; the package contains a 'vignette' outlining typical work flows.}
+      \field{day}{1}
+      \field{eprinttype}{pubmed}
+      \field{issn}{1367-4811}
+      \field{journaltitle}{Bioinformatics}
+      \field{langid}{english}
+      \field{month}{10}
+      \field{number}{19}
+      \field{shortjournal}{Bioinformatics}
+      \field{shorttitle}{{{ShortRead}}}
+      \field{title}{{{ShortRead}}: A Bioconductor Package for Input, Quality Assessment and Exploration of High-Throughput Sequence Data}
+      \field{volume}{25}
+      \field{year}{2009}
+      \field{dateera}{ce}
+      \field{pages}{2607\bibrangedash 2608}
+      \range{pages}{2}
+      \verb{doi}
+      \verb 10.1093/bioinformatics/btp450
+      \endverb
+      \verb{eprint}
+      \verb 19654119
+      \endverb
+      \keyw{Computational Biology,Databases Genetic,Gene Expression Profiling,Sequence Analysis DNA,Software}
+    \endentry
+    \entry{pagesBiostringsEfficientString2026}{manual}{}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=fbab07750665d39de85def9828ff000b}{%
+           family={Pagès},
+           familyi={P\bibinitperiod},
+           given={Hervé},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ca313960811b9ea954deda44cacc882d}{%
+           family={Aboyoun},
+           familyi={A\bibinitperiod},
+           given={Patrick},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=8a97fae1ed0550968a6f77cd783776f5}{%
+           family={Gentleman},
+           familyi={G\bibinitperiod},
+           given={Robert},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=e09396659ac5b140b2d8ca7e0037ddaa}{%
+           family={DebRoy},
+           familyi={D\bibinitperiod},
+           given={Saikat},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{fc2f32d2da27af64f06902afccdaed01}
+      \strng{fullhash}{8ae91502baae7531a1b508214f4092d3}
+      \strng{fullhashraw}{8ae91502baae7531a1b508214f4092d3}
+      \strng{bibnamehash}{8ae91502baae7531a1b508214f4092d3}
+      \strng{authorbibnamehash}{8ae91502baae7531a1b508214f4092d3}
+      \strng{authornamehash}{fc2f32d2da27af64f06902afccdaed01}
+      \strng{authorfullhash}{8ae91502baae7531a1b508214f4092d3}
+      \strng{authorfullhashraw}{8ae91502baae7531a1b508214f4092d3}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Biostrings: {{Efficient}} String Handling and Sequence Analysis for {{Bioconductor}}}
+      \field{type}{manual}
+      \field{year}{2026}
+      \field{dateera}{ce}
+      \verb{urlraw}
+      \verb https://bioconductor.org
+      \endverb
+      \verb{url}
+      \verb https://bioconductor.org
+      \endverb
+    \endentry
+    \entry{rcoreteamLanguageEnvironmentStatistical2021a}{book}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=dcdebb6b35bff7c0568bf8c50ef8626d}{%
+           family={{R Core Team}},
+           familyi={R\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Vienna, Austria}%
+      }
+      \list{publisher}{1}{%
+        {R Foundation for Statistical Computing}%
+      }
+      \strng{namehash}{dcdebb6b35bff7c0568bf8c50ef8626d}
+      \strng{fullhash}{dcdebb6b35bff7c0568bf8c50ef8626d}
+      \strng{fullhashraw}{dcdebb6b35bff7c0568bf8c50ef8626d}
+      \strng{bibnamehash}{dcdebb6b35bff7c0568bf8c50ef8626d}
+      \strng{authorbibnamehash}{dcdebb6b35bff7c0568bf8c50ef8626d}
+      \strng{authornamehash}{dcdebb6b35bff7c0568bf8c50ef8626d}
+      \strng{authorfullhash}{dcdebb6b35bff7c0568bf8c50ef8626d}
+      \strng{authorfullhashraw}{dcdebb6b35bff7c0568bf8c50ef8626d}
+      \field{sortinit}{R}
+      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{R: {{A Language}} and {{Environment}} for {{Statistical Computing}}}
+      \field{type}{Manual}
+      \field{year}{2021}
+      \field{dateera}{ce}
+    \endentry
+    \entry{yeFloralResourcePartitioning2024a}{article}{}{}
+      \name{author}{9}{}{%
+        {{un=0,uniquepart=base,hash=87b6ed7ea721c571e19278213e78f1f2}{%
+           family={Ye},
+           familyi={Y\bibinitperiod},
+           given={Zhong-Ming},
+           giveni={Z\bibinithyphendelim M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=4f2286d1447eff357c9309b2549f1ee9}{%
+           family={He},
+           familyi={H\bibinitperiod},
+           given={Yong-Deng},
+           giveni={Y\bibinithyphendelim D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=d0297a611809e649f957f7aa8f4eef61}{%
+           family={Bergamo},
+           familyi={B\bibinitperiod},
+           given={Pedro\bibnamedelima J.},
+           giveni={P\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f5baaa883d80c2cd805acea3d54a95ce}{%
+           family={Orr},
+           familyi={O\bibinitperiod},
+           given={Michael\bibnamedelima C.},
+           giveni={M\bibinitperiod\bibinitdelim C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=e52bd36b901ec7fa10049d5d7e9876cf}{%
+           family={Huang},
+           familyi={H\bibinitperiod},
+           given={Wen},
+           giveni={W\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=95fbcceddcde8fcf0f0c1bf554760478}{%
+           family={Jin},
+           familyi={J\bibinitperiod},
+           given={Xiao-Fang},
+           giveni={X\bibinithyphendelim F\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=47b1c60a16120307cd4319bc36317f5a}{%
+           family={Lun},
+           familyi={L\bibinitperiod},
+           given={Han-Ning},
+           giveni={H\bibinithyphendelim N\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=1c507e47a34084141a1ee4e1cc8703f4}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Qing-Feng},
+           giveni={Q\bibinithyphendelim F\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=7a88d5810617cbe815fb828b20bbe29d}{%
+           family={Yang},
+           familyi={Y\bibinitperiod},
+           given={Chun-Feng},
+           giveni={C\bibinithyphendelim F\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{6229516fa71aa0e9d54fb54dd87a0c6e}
+      \strng{fullhash}{98a681d1775f281238259bdddf866212}
+      \strng{fullhashraw}{98a681d1775f281238259bdddf866212}
+      \strng{bibnamehash}{98a681d1775f281238259bdddf866212}
+      \strng{authorbibnamehash}{98a681d1775f281238259bdddf866212}
+      \strng{authornamehash}{6229516fa71aa0e9d54fb54dd87a0c6e}
+      \strng{authorfullhash}{98a681d1775f281238259bdddf866212}
+      \strng{authorfullhashraw}{98a681d1775f281238259bdddf866212}
+      \field{sortinit}{Y}
+      \field{sortinithash}{fd67ad5a9ef0f7456bdd9aab10fe1495}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{Resource partitioning is considered a key factor in alleviating competitive interactions, enabling coexistence among consumer species. However, most studies have focused on resource partitioning between species, ignoring the potentially critical role of intraspecific variation in resource use. We investigated floral resource partitioning across species, colonies, and individuals in a species-rich bumblebee community in the diversification center of bumblebees. We used a total of 10,598 bumblebees belonging to 13 species across 5 years in the Hengduan Mountains of southwest China. First, we evaluated the influence of a comprehensive set of floral traits, including both those related to attractiveness (flower color and shape) and rewards (pollen, sugar ratio, nectar volume, sugar concentration, and amino acid content) on resource partitioning at the species level in bumblebee–plant networks. Then, we explored intraspecific resource partitioning on the colony and individual levels. Our results suggest that bumblebee species differ substantially in their use of the available floral resources, and that this mainly depends on flower attractiveness (floral color and shape). Interestingly, we also detected floral resource partitioning at the colony level within all commonest bumblebee species evaluated. In general, floral resource partitioning between bumblebee individuals decreased with species- and individual-level variation in body size (intertegular span). These results suggest that bumblebee species may coexist via the flexibility in their preferences for specific floral traits, which filters up to support the co-occurrence of high numbers of species and individuals in this global hotspot of species richness.}
+      \field{issn}{1939-9170}
+      \field{journaltitle}{Ecology}
+      \field{number}{5}
+      \field{shorttitle}{Floral {{Resource Partitioning}} of {{Coexisting Bumble Bees}}}
+      \field{title}{Floral {{Resource Partitioning}} of {{Coexisting Bumble Bees}}: {{Distinguishing Species-}}, {{Colony-}}, and {{Individual-Level Effects}}}
+      \field{volume}{105}
+      \field{year}{2024}
+      \field{dateera}{ce}
+      \field{pages}{e4284}
+      \range{pages}{-1}
+      \verb{doi}
+      \verb 10.1002/ecy.4284
+      \endverb
+      \keyw{bumblebees,coexistence,colony,individual,interspecific competition,intraspecific competition,resource partitioning}
+    \endentry
+  \enddatalist
+  \datalist[entry]{apa/global//global/global/global}
+    \entry{callahanDADA2HighresolutionSample2016}{article}{}{}
+      \name{author}{6}{}{%
+        {{un=0,uniquepart=base,hash=8e5104fc426b19a5181dec3fa20245ce}{%
+           family={Callahan},
+           familyi={C\bibinitperiod},
+           given={Benjamin\bibnamedelima J.},
+           giveni={B\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=736396a6c4ada4bf04c9bdcf22dfb025}{%
+           family={McMurdie},
+           familyi={M\bibinitperiod},
+           given={Paul\bibnamedelima J.},
+           giveni={P\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=6d7c6cd5239bf9b464e2ec3eb451ef54}{%
+           family={Rosen},
+           familyi={R\bibinitperiod},
+           given={Michael\bibnamedelima J.},
+           giveni={M\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=153ffc58ffe5dc7b82517f9c404650e0}{%
+           family={Han},
+           familyi={H\bibinitperiod},
+           given={Andrew\bibnamedelima W.},
+           giveni={A\bibinitperiod\bibinitdelim W\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=20e86a8a066de5218caf6db4e5daaa0d}{%
+           family={Johnson},
+           familyi={J\bibinitperiod},
+           given={Amy\bibnamedelimb Jo\bibnamedelima A.},
+           giveni={A\bibinitperiod\bibinitdelim J\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=da3864c4f95767b26af424b093535a72}{%
+           family={Holmes},
+           familyi={H\bibinitperiod},
+           given={Susan\bibnamedelima P.},
+           giveni={S\bibinitperiod\bibinitdelim P\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Nature Publishing Group}%
+      }
+      \strng{namehash}{d0e4d7f84927914066356cee5afca922}
+      \strng{fullhash}{cab6982aa9ce3435047648e9c69ecba8}
+      \strng{fullhashraw}{cab6982aa9ce3435047648e9c69ecba8}
+      \strng{bibnamehash}{cab6982aa9ce3435047648e9c69ecba8}
+      \strng{authorbibnamehash}{cab6982aa9ce3435047648e9c69ecba8}
+      \strng{authornamehash}{d0e4d7f84927914066356cee5afca922}
+      \strng{authorfullhash}{cab6982aa9ce3435047648e9c69ecba8}
+      \strng{authorfullhashraw}{cab6982aa9ce3435047648e9c69ecba8}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{DADA2 is an open-source software package that denoises and removes sequencing errors from Illumina amplicon sequence data to distinguish microbial sample sequences differing by as little as a single nucleotide.}
+      \field{issn}{1548-7105}
+      \field{journaltitle}{Nature Methods}
+      \field{langid}{english}
+      \field{month}{7}
+      \field{number}{7}
+      \field{shortjournal}{Nat Methods}
+      \field{shorttitle}{{{DADA2}}}
+      \field{title}{{{DADA2}}: {{High-resolution}} Sample Inference from {{Illumina}} Amplicon Data}
+      \field{urlday}{22}
+      \field{urlmonth}{5}
+      \field{urlyear}{2026}
+      \field{volume}{13}
+      \field{year}{2016}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{581\bibrangedash 583}
+      \range{pages}{3}
+      \verb{doi}
+      \verb 10.1038/nmeth.3869
+      \endverb
+      \verb{urlraw}
+      \verb https://www.nature.com/articles/nmeth.3869
+      \endverb
+      \verb{url}
+      \verb https://www.nature.com/articles/nmeth.3869
+      \endverb
+      \keyw{Metagenomics,Software,Statistical methods}
+    \endentry
+    \entry{martinCutadaptRemovesAdapter2011}{article}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=0449a5e93850e9dad7d069f67084aeb4}{%
+           family={Martin},
+           familyi={M\bibinitperiod},
+           given={Marcel},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{0449a5e93850e9dad7d069f67084aeb4}
+      \strng{fullhash}{0449a5e93850e9dad7d069f67084aeb4}
+      \strng{fullhashraw}{0449a5e93850e9dad7d069f67084aeb4}
+      \strng{bibnamehash}{0449a5e93850e9dad7d069f67084aeb4}
+      \strng{authorbibnamehash}{0449a5e93850e9dad7d069f67084aeb4}
+      \strng{authornamehash}{0449a5e93850e9dad7d069f67084aeb4}
+      \strng{authorfullhash}{0449a5e93850e9dad7d069f67084aeb4}
+      \strng{authorfullhashraw}{0449a5e93850e9dad7d069f67084aeb4}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{When small RNA is sequenced on current sequencing machines, the resulting reads are usually longer than the RNA and therefore contain parts of the 3' adapter. That adapter must be found and removed error-tolerantly from each read before read mapping. Previous solutions are either hard to use or do not offer required features, in particular support for color space data. As an easy to use alternative, we developed the command-line tool cutadapt, which supports 454, Illumina and SOLiD (color space) data, offers two adapter trimming algorithms, and has other useful features. Cutadapt, including its MIT-licensed source code, is available for download at http://code.google.com/p/cutadapt/}
+      \field{day}{2}
+      \field{issn}{2226-6089}
+      \field{journaltitle}{EMBnet.journal}
+      \field{langid}{english}
+      \field{month}{5}
+      \field{number}{1}
+      \field{title}{Cutadapt Removes Adapter Sequences from High-Throughput Sequencing Reads}
+      \field{urlday}{22}
+      \field{urlmonth}{5}
+      \field{urlyear}{2026}
+      \field{volume}{17}
+      \field{year}{2011}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{10\bibrangedash 12}
+      \range{pages}{3}
+      \verb{doi}
+      \verb 10.14806/ej.17.1.200
+      \endverb
+      \verb{file}
+      \verb /Users/jenna1/Zotero/storage/37X8LC52/Martin - 2011 - Cutadapt removes adapter sequences from high-throughput sequencing reads.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://journal.embnet.org/index.php/embnetjournal/article/view/200
+      \endverb
+      \verb{url}
+      \verb https://journal.embnet.org/index.php/embnetjournal/article/view/200
+      \endverb
+      \keyw{adapter removal,microRNA,next generation sequencing,small RNA}
+    \endentry
+    \entry{morganShortReadBioconductorPackage2009}{article}{}{}
+      \name{author}{6}{}{%
+        {{un=0,uniquepart=base,hash=aa19dfb803b07ffa13770d3889b3d558}{%
+           family={Morgan},
+           familyi={M\bibinitperiod},
+           given={Martin},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=62831e4feef4a1127074be90f88b62f4}{%
+           family={Anders},
+           familyi={A\bibinitperiod},
+           given={Simon},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=99e2f07422e1f63a90126f60b3cd5abc}{%
+           family={Lawrence},
+           familyi={L\bibinitperiod},
+           given={Michael},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ca313960811b9ea954deda44cacc882d}{%
+           family={Aboyoun},
+           familyi={A\bibinitperiod},
+           given={Patrick},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=fbab07750665d39de85def9828ff000b}{%
+           family={Pagès},
+           familyi={P\bibinitperiod},
+           given={Hervé},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=8a97fae1ed0550968a6f77cd783776f5}{%
+           family={Gentleman},
+           familyi={G\bibinitperiod},
+           given={Robert},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {Oxford, England}%
+      }
+      \strng{namehash}{2995cd9c43084cd5958411a42245335a}
+      \strng{fullhash}{7bf9ce714c9b7276165e1adfa8fda8f0}
+      \strng{fullhashraw}{7bf9ce714c9b7276165e1adfa8fda8f0}
+      \strng{bibnamehash}{7bf9ce714c9b7276165e1adfa8fda8f0}
+      \strng{authorbibnamehash}{7bf9ce714c9b7276165e1adfa8fda8f0}
+      \strng{authornamehash}{2995cd9c43084cd5958411a42245335a}
+      \strng{authorfullhash}{7bf9ce714c9b7276165e1adfa8fda8f0}
+      \strng{authorfullhashraw}{7bf9ce714c9b7276165e1adfa8fda8f0}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{ShortRead is a package for input, quality assessment, manipulation and output of high-throughput sequencing data. ShortRead is provided in the R and Bioconductor environments, allowing ready access to additional facilities for advanced statistical analysis, data transformation, visualization and integration with diverse genomic resources. AVAILABILITY AND IMPLEMENTATION: This package is implemented in R and available at the Bioconductor web site; the package contains a 'vignette' outlining typical work flows.}
+      \field{day}{1}
+      \field{eprinttype}{pubmed}
+      \field{issn}{1367-4811}
+      \field{journaltitle}{Bioinformatics}
+      \field{langid}{english}
+      \field{month}{10}
+      \field{number}{19}
+      \field{shortjournal}{Bioinformatics}
+      \field{shorttitle}{{{ShortRead}}}
+      \field{title}{{{ShortRead}}: A Bioconductor Package for Input, Quality Assessment and Exploration of High-Throughput Sequence Data}
+      \field{volume}{25}
+      \field{year}{2009}
+      \field{dateera}{ce}
+      \field{pages}{2607\bibrangedash 2608}
+      \range{pages}{2}
+      \verb{doi}
+      \verb 10.1093/bioinformatics/btp450
+      \endverb
+      \verb{eprint}
+      \verb 19654119
+      \endverb
+      \keyw{Computational Biology,Databases Genetic,Gene Expression Profiling,Sequence Analysis DNA,Software}
+    \endentry
+    \entry{pagesBiostringsEfficientString2026}{manual}{}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=fbab07750665d39de85def9828ff000b}{%
+           family={Pagès},
+           familyi={P\bibinitperiod},
+           given={Hervé},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ca313960811b9ea954deda44cacc882d}{%
+           family={Aboyoun},
+           familyi={A\bibinitperiod},
+           given={Patrick},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=8a97fae1ed0550968a6f77cd783776f5}{%
+           family={Gentleman},
+           familyi={G\bibinitperiod},
+           given={Robert},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=e09396659ac5b140b2d8ca7e0037ddaa}{%
+           family={DebRoy},
+           familyi={D\bibinitperiod},
+           given={Saikat},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{fc2f32d2da27af64f06902afccdaed01}
+      \strng{fullhash}{8ae91502baae7531a1b508214f4092d3}
+      \strng{fullhashraw}{8ae91502baae7531a1b508214f4092d3}
+      \strng{bibnamehash}{8ae91502baae7531a1b508214f4092d3}
+      \strng{authorbibnamehash}{8ae91502baae7531a1b508214f4092d3}
+      \strng{authornamehash}{fc2f32d2da27af64f06902afccdaed01}
+      \strng{authorfullhash}{8ae91502baae7531a1b508214f4092d3}
+      \strng{authorfullhashraw}{8ae91502baae7531a1b508214f4092d3}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Biostrings: {{Efficient}} String Handling and Sequence Analysis for {{Bioconductor}}}
+      \field{type}{manual}
+      \field{year}{2026}
+      \field{dateera}{ce}
+      \verb{urlraw}
+      \verb https://bioconductor.org
+      \endverb
+      \verb{url}
+      \verb https://bioconductor.org
+      \endverb
+    \endentry
+    \entry{rcoreteamLanguageEnvironmentStatistical2021a}{book}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=dcdebb6b35bff7c0568bf8c50ef8626d}{%
+           family={{R Core Team}},
+           familyi={R\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Vienna, Austria}%
+      }
+      \list{publisher}{1}{%
+        {R Foundation for Statistical Computing}%
+      }
+      \strng{namehash}{dcdebb6b35bff7c0568bf8c50ef8626d}
+      \strng{fullhash}{dcdebb6b35bff7c0568bf8c50ef8626d}
+      \strng{fullhashraw}{dcdebb6b35bff7c0568bf8c50ef8626d}
+      \strng{bibnamehash}{dcdebb6b35bff7c0568bf8c50ef8626d}
+      \strng{authorbibnamehash}{dcdebb6b35bff7c0568bf8c50ef8626d}
+      \strng{authornamehash}{dcdebb6b35bff7c0568bf8c50ef8626d}
+      \strng{authorfullhash}{dcdebb6b35bff7c0568bf8c50ef8626d}
+      \strng{authorfullhashraw}{dcdebb6b35bff7c0568bf8c50ef8626d}
+      \field{sortinit}{R}
+      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{R: {{A Language}} and {{Environment}} for {{Statistical Computing}}}
+      \field{type}{Manual}
+      \field{year}{2021}
+      \field{dateera}{ce}
+    \endentry
+    \entry{yeFloralResourcePartitioning2024a}{article}{}{}
+      \name{author}{9}{}{%
+        {{un=0,uniquepart=base,hash=87b6ed7ea721c571e19278213e78f1f2}{%
+           family={Ye},
+           familyi={Y\bibinitperiod},
+           given={Zhong-Ming},
+           giveni={Z\bibinithyphendelim M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=4f2286d1447eff357c9309b2549f1ee9}{%
+           family={He},
+           familyi={H\bibinitperiod},
+           given={Yong-Deng},
+           giveni={Y\bibinithyphendelim D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=d0297a611809e649f957f7aa8f4eef61}{%
+           family={Bergamo},
+           familyi={B\bibinitperiod},
+           given={Pedro\bibnamedelima J.},
+           giveni={P\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f5baaa883d80c2cd805acea3d54a95ce}{%
+           family={Orr},
+           familyi={O\bibinitperiod},
+           given={Michael\bibnamedelima C.},
+           giveni={M\bibinitperiod\bibinitdelim C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=e52bd36b901ec7fa10049d5d7e9876cf}{%
+           family={Huang},
+           familyi={H\bibinitperiod},
+           given={Wen},
+           giveni={W\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=95fbcceddcde8fcf0f0c1bf554760478}{%
+           family={Jin},
+           familyi={J\bibinitperiod},
+           given={Xiao-Fang},
+           giveni={X\bibinithyphendelim F\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=47b1c60a16120307cd4319bc36317f5a}{%
+           family={Lun},
+           familyi={L\bibinitperiod},
+           given={Han-Ning},
+           giveni={H\bibinithyphendelim N\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=1c507e47a34084141a1ee4e1cc8703f4}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Qing-Feng},
+           giveni={Q\bibinithyphendelim F\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=7a88d5810617cbe815fb828b20bbe29d}{%
+           family={Yang},
+           familyi={Y\bibinitperiod},
+           given={Chun-Feng},
+           giveni={C\bibinithyphendelim F\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{6229516fa71aa0e9d54fb54dd87a0c6e}
+      \strng{fullhash}{98a681d1775f281238259bdddf866212}
+      \strng{fullhashraw}{98a681d1775f281238259bdddf866212}
+      \strng{bibnamehash}{98a681d1775f281238259bdddf866212}
+      \strng{authorbibnamehash}{98a681d1775f281238259bdddf866212}
+      \strng{authornamehash}{6229516fa71aa0e9d54fb54dd87a0c6e}
+      \strng{authorfullhash}{98a681d1775f281238259bdddf866212}
+      \strng{authorfullhashraw}{98a681d1775f281238259bdddf866212}
+      \field{sortinit}{Y}
+      \field{sortinithash}{fd67ad5a9ef0f7456bdd9aab10fe1495}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{Resource partitioning is considered a key factor in alleviating competitive interactions, enabling coexistence among consumer species. However, most studies have focused on resource partitioning between species, ignoring the potentially critical role of intraspecific variation in resource use. We investigated floral resource partitioning across species, colonies, and individuals in a species-rich bumblebee community in the diversification center of bumblebees. We used a total of 10,598 bumblebees belonging to 13 species across 5 years in the Hengduan Mountains of southwest China. First, we evaluated the influence of a comprehensive set of floral traits, including both those related to attractiveness (flower color and shape) and rewards (pollen, sugar ratio, nectar volume, sugar concentration, and amino acid content) on resource partitioning at the species level in bumblebee–plant networks. Then, we explored intraspecific resource partitioning on the colony and individual levels. Our results suggest that bumblebee species differ substantially in their use of the available floral resources, and that this mainly depends on flower attractiveness (floral color and shape). Interestingly, we also detected floral resource partitioning at the colony level within all commonest bumblebee species evaluated. In general, floral resource partitioning between bumblebee individuals decreased with species- and individual-level variation in body size (intertegular span). These results suggest that bumblebee species may coexist via the flexibility in their preferences for specific floral traits, which filters up to support the co-occurrence of high numbers of species and individuals in this global hotspot of species richness.}
+      \field{issn}{1939-9170}
+      \field{journaltitle}{Ecology}
+      \field{number}{5}
+      \field{shorttitle}{Floral {{Resource Partitioning}} of {{Coexisting Bumble Bees}}}
+      \field{title}{Floral {{Resource Partitioning}} of {{Coexisting Bumble Bees}}: {{Distinguishing Species-}}, {{Colony-}}, and {{Individual-Level Effects}}}
+      \field{volume}{105}
+      \field{year}{2024}
+      \field{dateera}{ce}
+      \field{pages}{e4284}
+      \range{pages}{-1}
+      \verb{doi}
+      \verb 10.1002/ecy.4284
+      \endverb
+      \keyw{bumblebees,coexistence,colony,individual,interspecific competition,intraspecific competition,resource partitioning}
+    \endentry
+  \enddatalist
+  \missing{BOYLEN}
+  \missing{calla}
+\endrefsection
+\endinput
+
