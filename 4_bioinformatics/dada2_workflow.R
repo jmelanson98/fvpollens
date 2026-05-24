@@ -134,8 +134,12 @@ out <- filterAndTrim(cutFs, filtFs, cutRs, filtRs,
                      compress=TRUE, multithread=36)
 retained <- as.data.frame(out)
 retained$percentage_retained <- retained$reads.out/retained$reads.in*100
+
+
+out_dir <- sprintf("4_bioinformatics/dada2_output_files/JeMe%03d", task_id)
+dir.create(out_dir, recursive = TRUE, showWarnings = FALSE)
 write.table(retained, 
-            paste(sprintf("4_bioinformatics/dada2_output_files/JeMe%03d", task_id), "/retained.reads.filterandtrim.txt", sep = ""), 
+            file.path(out_dir, "retained.reads.filterandtrim.txt"),
             sep = "\t", row.names=TRUE, col.names=TRUE, quote=FALSE)
 
 
