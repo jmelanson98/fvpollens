@@ -82,7 +82,7 @@ cutadapt <- "/home/melanson/projects/def-ckremen/melanson/fvpollens/4_bioinforma
 system2(cutadapt, args = "--version")
 
 path.cut <- file.path(paste(scratch_path, "_cutadapt", sep = ""))
-if(!dir.exists(path.cut)) dir.create(path.cut)
+if(!dir.exists(path.cut)) dir.create(path.cut, recursive = TRUE)
 fnFs.cut <- file.path(path.cut, basename(fnFs.filtN))
 fnRs.cut <- file.path(path.cut, basename(fnRs.filtN))
 
