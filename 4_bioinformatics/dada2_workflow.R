@@ -344,15 +344,15 @@ write.table(data.frame("row_names"=rownames(seqtab.nosingletons.nochim), seqtab.
 
 
 #### Output some files for QIIME2
-seqtab = read.delim(paste(sprintf("3_data/JeMe%03d", task_id), "_sequencetable.txt", sep = ""))
-seqtab = t(seqtab)
+seqtab_raw = read.delim(paste(sprintf("3_data/JeMe%03d", task_id), "_sequencetable.txt", sep = ""))
 
-# Extract sequences and assign ASV IDs BEFORE modifying seqtab
-asv_seqs = DNAStringSet(rownames(seqtab))
+# Sequences are column names of the raw table (before transpose)
+asv_seqs = DNAStringSet(colnames(seqtab_raw))
 asv_ids = paste0("ASV", seq_along(asv_seqs))
 names(asv_seqs) = asv_ids
 
-# Replace sequence row names with ASV IDs in the table
+# Now transpose and rename rows
+seqtab = t(seqtab_raw)
 rownames(seqtab) = asv_ids
 
 seqtab = cbind('#OTUID' = rownames(seqtab), seqtab)
