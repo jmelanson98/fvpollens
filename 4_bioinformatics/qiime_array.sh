@@ -17,7 +17,7 @@ module load StdEnv/2023 r/4.3.1 python
 task_id=$(printf "%03d" $SLURM_ARRAY_TASK_ID)
 
 # Command line code for Qiime2!
-PROJECT_DIR=$HOME/projects/def-ckremen/melanson/fvpollens
+PROJECT_DIR=/project/6100170/melanson/def-ckremen/melanson/fvpollens
 
 #make biom object
 biom convert \
