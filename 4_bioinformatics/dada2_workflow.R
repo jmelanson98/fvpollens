@@ -344,21 +344,30 @@ write.table(data.frame("row_names"=rownames(seqtab.nosingletons.nochim), seqtab.
 
 
 #### Output some files for QIIME2
+# Read in the sequence table output from DADA2
 seqtab_raw = read.delim(paste(sprintf("3_data/JeMe%03d", task_id), "_sequencetable.txt", sep = ""), row.names = 1)
 
-# Sequences are column names of the raw table (before transpose)
+# Extract ASV sequences from column names BEFORE transposing
 asv_seqs = DNAStringSet(colnames(seqtab_raw))
 asv_ids = paste0("ASV", seq_along(asv_seqs))
 names(asv_seqs) = asv_ids
 
-# Now transpose and rename rows
+# Transpose so ASVs are rows and samples are columns (required by QIIME2)
 seqtab = t(seqtab_raw)
+
+# Replace sequence row names with ASV IDs so they match the FASTA
 rownames(seqtab) = asv_ids
 
-seqtab = cbind('#OTUID' = rownames(seqtab), seqtab)
-write.table(seqtab, paste(sprintf("3_data/JeMe%03d", task_id), "_qiimeseqtab.txt", sep = ""), sep='\t', row.names=FALSE, quote=FALSE)
+# Write BIOM file directly from R
+biom_table = make_biom(data = seqtab)
+write_biom(biom_table, paste0(sprintf("3_data/JeMe%03d", task_id), "_qiimeseqtab.biom"))
 
+# Write FASTA file of representative sequences
 writeXStringSet(asv_seqs, paste0(sprintf("3_data/JeMe%03d", task_id), "_ASVs.fasta"))
+
+
+
+
 
 
 #### Do quick fungal assignments?

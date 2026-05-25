@@ -19,13 +19,7 @@ task_id=$(printf "%03d" $SLURM_ARRAY_TASK_ID)
 # Command line code for Qiime2!
 PROJECT_DIR=/project/6100170/melanson/def-ckremen/melanson/fvpollens
 
-#make biom object
-biom convert \
-  -i ${PROJECT_DIR}/3_data/JeMe${task_id}_qiimeseqtab.txt \
-  -o ${PROJECT_DIR}/3_data/JeMe${task_id}_qiimeseqtab.biom \
-  --table-type "OTU table" \
-  --to-hdf5
-
+# make QIIME format
 module load qiime2
 qiime tools import \
 --input-path ${PROJECT_DIR}/3_data/JeMe${task_id}_qiimeseqtab.biom \
