@@ -116,11 +116,7 @@ cutRs <- sort(list.files(path.cut, pattern = "_R2_001", full.names = TRUE))
 
 
 #### Filter and trim reads ... again! ####
-#dada2 can canonically handle lots of errors, I am typically permissive in the maxEE parameter set here, 
-#in order to retain the maximum number of reads possible. error correction steps built into the dada2 pipeline have no trouble 
-#handling data with this many expected errors. it is best, after primer removal, to not truncate with 18s data, or with data from 
-#any region in which the length is broadly variable. you may exclude organisms that have a shorter insert than the truncation length 
-#(definitely possible, good example is giardia). defining a minimum sequence length is best
+# following default params as per Callahan et al
 
 filtFs <- file.path(path.cut, "filtered", basename(cutFs))
 filtRs <- file.path(path.cut, "filtered", basename(cutRs))
@@ -181,6 +177,7 @@ dadaRs <- dada(derepRs, err=errR, multithread=32)
 #samples to keep
 print(paste("out colnames:", colnames(out)))
 samples_to_keep <- as.numeric(out[,"reads.out"]) > 100
+names(samples_to_keep) <- sapply(strsplit(row.names(out), "_S"), `[`, 1)
 print(samples_to_keep)
 saveRDS(out, file = paste(sprintf("4_bioinformatics/dada2_output_files/JeMe%03d", task_id), "/out.RDS", sep = ""))
 
