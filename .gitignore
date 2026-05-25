@@ -5,6 +5,4 @@
 
 
 #data to hide from github (for now)
-JeMe001*
-JeMe002*
-JeMe003*
+*.fastq.gz

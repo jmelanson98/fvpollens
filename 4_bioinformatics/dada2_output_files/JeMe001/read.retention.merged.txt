@@ -1,0 +1,1 @@
+input	filtered	denoisedF	denoisedR	merged	nosingletons	nochimeras	percent_singletons	percent_chimeras	percent_retained_of_total
