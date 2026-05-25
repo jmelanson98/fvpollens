@@ -10,6 +10,7 @@ library(data.table)
 library(ShortRead)
 library(Biostrings)
 library(seqinr)
+library(biomformat)
 
 
 ####For Parallel Runs####
@@ -340,6 +341,24 @@ write.table(data.frame("row_names"=rownames(seqtab.nosingletons.nochim), seqtab.
             row.names=FALSE, 
             quote=F, 
             sep="\t")
+
+
+#### Output some files for QIIME2
+seqtab = read.delim(paste(sprintf("3_data/JeMe%03d", task_id), "_sequencetable.txt", sep = ""))
+seqtab = t(seqtab)
+
+# Extract sequences and assign ASV IDs BEFORE modifying seqtab
+asv_seqs = DNAStringSet(rownames(seqtab))
+asv_ids = paste0("ASV", seq_along(asv_seqs))
+names(asv_seqs) = asv_ids
+
+# Replace sequence row names with ASV IDs in the table
+rownames(seqtab) = asv_ids
+
+seqtab = cbind('#OTUID' = rownames(seqtab), seqtab)
+write.table(seqtab, paste(sprintf("3_data/JeMe%03d", task_id), "_qiimeseqtab.txt", sep = ""), sep='\t', row.names=FALSE, quote=FALSE)
+
+writeXStringSet(asv_seqs, paste0(sprintf("3_data/JeMe%03d", task_id), "_ASVs.fasta"))
 
 
 #### Do quick fungal assignments?
