@@ -4,7 +4,7 @@
 #SBATCH --error=logs/dada2_%A_%a.err
 #SBATCH --array=1-3                           
 #SBATCH --ntasks=1                         
-#SBATCH --cpus-per-task=4                  
+#SBATCH --cpus-per-task=8                  
 #SBATCH --mem=640G                           
 #SBATCH --time=06:00:00                  
 
