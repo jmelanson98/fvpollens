@@ -12,8 +12,15 @@ export R_LIBS_USER="/home/melanson/R/x86_64-pc-linux-gnu-library/4.3:/cvmfs/soft
 
 # Load necessary modules (if needed, e.g., R version)
 module load StdEnv/2023 r/4.3.1 python
+PPROJECT_DIR=/project/6100170/melanson/fvpollens
+SCRATCH_DIR=$SCRATCH/qiime_tmp
+mkdir -p $SCRATCH_DIR
+
+# Tell QIIME2 to use scratch for temp files
+export TMPDIR=$SCRATCH_DIR
+export MPLCONFIGDIR=$SCRATCH_DIR
+
 module load qiime2
-PROJECT_DIR=/project/6100170/melanson/fvpollens
 
 
 # Merge the 3 feature tables
@@ -33,23 +40,19 @@ qiime feature-table merge-seqs \
 #get classifier from github
 #wget https://github.com/apallavicini/PLANiTS/raw/master/qiime_classifiers/ITS2_classifier.qza
 
+# also copy the classifier to scratch so it extracts there
+cp ${PROJECT_DIR}/3_data/ITS2_classifier.qza $SCRATCH_DIR/
 
-# Classify merged sequences (only done once, consistent across runs)
 qiime feature-classifier classify-sklearn \
-  --i-classifier ${PROJECT_DIR}/3_data/ITS2_classifier.qza \
+  --i-classifier ${SCRATCH_DIR}/ITS2_classifier.qza \
   --i-reads ${PROJECT_DIR}/3_data/merged_ASVs.qza \
   --o-classification ${PROJECT_DIR}/3_data/merged_taxonomy.qza \
-  --p-n-jobs 8    # match your --cpus-per-task
+  --p-n-jobs 8
 
 # Export feature table to TSV
 qiime tools export \
   --input-path ${PROJECT_DIR}/3_data/merged_qiimeseqtab.qza \
   --output-path ${PROJECT_DIR}/3_data/merged_exported
-
-biom convert \
-  -i ${PROJECT_DIR}/3_data/merged_exported/feature-table.biom \
-  -o ${PROJECT_DIR}/3_data/merged_asv_table.tsv \
-  --to-tsv
 
 # Export taxonomy
 qiime tools export \
