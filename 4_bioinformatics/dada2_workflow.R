@@ -344,7 +344,7 @@ write.table(data.frame("row_names"=rownames(seqtab.nosingletons.nochim), seqtab.
 
 
 #### Output some files for QIIME2
-seqtab_raw = read.delim(paste(sprintf("3_data/JeMe%03d", task_id), "_sequencetable.txt", sep = ""))
+seqtab_raw = read.delim(paste(sprintf("3_data/JeMe%03d", task_id), "_sequencetable.txt", sep = ""), row.names = 1)
 
 # Sequences are column names of the raw table (before transpose)
 asv_seqs = DNAStringSet(colnames(seqtab_raw))
