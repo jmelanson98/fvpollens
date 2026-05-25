@@ -17,14 +17,14 @@ module load StdEnv/2023 r/4.3.1 python
 task_id=$(printf "%03d" $SLURM_ARRAY_TASK_ID)
 
 # Command line code for Qiime2!
-PROJECT_DIR=/project/6100170/melanson/def-ckremen/melanson/fvpollens
+PROJECT_DIR=/project/6100170/melanson/fvpollens
 
 # make QIIME format
 module load qiime2
 qiime tools import \
 --input-path ${PROJECT_DIR}/3_data/JeMe${task_id}_qiimeseqtab.biom \
 --type 'FeatureTable[Frequency]' \
---input-format BIOMV210Format \
+--input-format BIOMV100Format \
 --output-path ${PROJECT_DIR}/3_data/JeMe${task_id}_qiimeseqtab.qza
 
 qiime tools import \

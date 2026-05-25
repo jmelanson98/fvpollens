@@ -1,5 +1,4 @@
 #!/bin/bash
-#SBATCH --array=1-3
 #SBATCH --job-name=qiime_classify
 #SBATCH --output=logs/qiimeclassify_%A_%a.out
 #SBATCH --error=logs/qiimeclassify_%A_%a.err                         
@@ -14,7 +13,7 @@ export R_LIBS_USER="/home/melanson/R/x86_64-pc-linux-gnu-library/4.3:/cvmfs/soft
 # Load necessary modules (if needed, e.g., R version)
 module load StdEnv/2023 r/4.3.1 python
 module load qiime2
-PROJECT_DIR=$HOME/projects/def-ckremen/melanson/fvpollens
+PROJECT_DIR=/project/6100170/melanson/fvpollens
 
 
 # Merge the 3 feature tables
@@ -32,13 +31,14 @@ qiime feature-table merge-seqs \
   --o-merged-data ${PROJECT_DIR}/3_data/merged_ASVs.qza
 
 #get classifier from github
-#wget https://github.com/apallavicini/PLANiTS/blob/master/qiime_classifiers/ITS2_classifier.qza
+#wget https://github.com/apallavicini/PLANiTS/raw/master/qiime_classifiers/ITS2_classifier.qza
+
 
 # Classify merged sequences (only done once, consistent across runs)
 qiime feature-classifier classify-sklearn \
   --i-classifier ${PROJECT_DIR}/3_data/ITS2_classifier.qza \
   --i-reads ${PROJECT_DIR}/3_data/merged_ASVs.qza \
-  --o-classification ${PROJECT_DIR}/3_data/merged_taxonomy.qza
+  --o-classification ${PROJECT_DIR}/3_data/merged_taxonomy.qza \
   --p-n-jobs 8    # match your --cpus-per-task
 
 # Export feature table to TSV
