@@ -2,6 +2,7 @@
 #SBATCH --job-name=qiime2_array
 #SBATCH --output=logs/qiimearray_%A_%a.out
 #SBATCH --error=logs/qiimearray_%A_%a.err
+#SBATCH --array=1-3 
 #SBATCH --mem=8G
 #SBATCH --cpus-per-task=1
 #SBATCH --time=00:30:00                
