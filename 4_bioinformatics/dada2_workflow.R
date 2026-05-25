@@ -343,8 +343,12 @@ write.table(data.frame("row_names"=rownames(seqtab.nosingletons.nochim), seqtab.
 
 
 #### Do quick fungal assignments?
-# unite.ref <- "~/tax/sh_general_release_dynamic_s_all_29.11.2022.fasta"  # CHANGE ME to location on your machine
-# taxa <- assignTaxonomy(seqtab.nochim, unite.ref, multithread = TRUE, tryRC = TRUE)
-# taxa.print <- taxa  # Removing sequence rownames for display only
-# rownames(taxa.print) <- NULL
-# head(taxa.print)
+seqtab = read.table(paste(sprintf("3_data/JeMe%03d", task_id), "_sequencetable.txt", sep = ""), 
+                     header = TRUE, row.names = 1)
+seqtab = as.matrix(seqtab)
+unite.ref = "3_data/sh_general_release_19.02.2025/sh_general_release_dynamic_19.02.2025.fasta"  
+taxa = assignTaxonomy(seqtab, unite.ref, multithread = TRUE, tryRC = TRUE)
+taxa.print = taxa
+rownames(taxa.print) = NULL
+head(taxa.print)
+saveRDS(taxa, paste(sprintf("3_data/JeMe%03d", task_id), "_fungaltaxa.txt", sep = ""))
