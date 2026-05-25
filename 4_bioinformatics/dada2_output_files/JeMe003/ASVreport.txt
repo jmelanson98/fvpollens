@@ -1,3 +1,5 @@
 Dimensions of unfiltered ASV table:	10577	375# singleton ASVs Removed:	5202Dimensions of ASV table after singleton removal:	5375	375
 Dimensions of ASV table after chimera removal	375	1809
+Proportion of non-chimeric to chimeric reads (0-1):	0.9058571Dimensions of unfiltered ASV table:	10577	375# singleton ASVs Removed:	5202Dimensions of ASV table after singleton removal:	5375	375
+Dimensions of ASV table after chimera removal	375	1809
 Proportion of non-chimeric to chimeric reads (0-1):	0.9058571
