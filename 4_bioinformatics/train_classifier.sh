@@ -1,14 +1,19 @@
 #!/bin/bash
 #SBATCH --job-name=train_classifier
+#SBATCH --output=logs/trainclassifier_%A_%a.out
+#SBATCH --error=logs/trainclassifier_%A_%a.err 
+#SBATCH --job-name=train_classifier
 #SBATCH --mem=32G
 #SBATCH --cpus-per-task=4
-#SBATCH --time=06:00:00
+#SBATCH --time=02:00:00
 
 
 cd $SCRATCH
+#wget https://github.com/apallavicini/PLANiTS/raw/master/PLANiTS_29-03-2020.zip
+#unzip PLANiTS_29-03-2020.zip
 
-wget https://github.com/apallavicini/PLANiTS/raw/master/PLANiTS_29-03-2020.zip
-unzip PLANiTS_29-03-2020.zip
+export TMPDIR=$SCRATCH/tmp
+mkdir -p $SCRATCH/tmp
 
 module load qiime2
 

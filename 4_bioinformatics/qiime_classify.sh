@@ -3,7 +3,7 @@
 #SBATCH --output=logs/qiimeclassify_%A_%a.out
 #SBATCH --error=logs/qiimeclassify_%A_%a.err                         
 #SBATCH --ntasks=1                         
-#SBATCH --mem=32G
+#SBATCH --mem=128G
 #SBATCH --cpus-per-task=8
 #SBATCH --time=04:00:00               
 
@@ -12,8 +12,8 @@ export R_LIBS_USER="/home/melanson/R/x86_64-pc-linux-gnu-library/4.3:/cvmfs/soft
 
 # Load necessary modules (if needed, e.g., R version)
 module load StdEnv/2023 r/4.3.1 python
-PPROJECT_DIR=/project/6100170/melanson/fvpollens
-SCRATCH_DIR=$SCRATCH/qiime_tmp
+PROJECT_DIR=/project/6100170/melanson/fvpollens
+SCRATCH_DIR=$SCRATCH
 mkdir -p $SCRATCH_DIR
 
 # Tell QIIME2 to use scratch for temp files
@@ -28,6 +28,7 @@ qiime feature-table merge \
   --i-tables ${PROJECT_DIR}/3_data/JeMe001_qiimeseqtab.qza \
   --i-tables ${PROJECT_DIR}/3_data/JeMe002_qiimeseqtab.qza \
   --i-tables ${PROJECT_DIR}/3_data/JeMe003_qiimeseqtab.qza \
+  --p-overlap-method sum \
   --o-merged-table ${PROJECT_DIR}/3_data/merged_qiimeseqtab.qza
 
 # Merge the ASV sequences
@@ -37,14 +38,9 @@ qiime feature-table merge-seqs \
   --i-data ${PROJECT_DIR}/3_data/JeMe003_ASVs.qza \
   --o-merged-data ${PROJECT_DIR}/3_data/merged_ASVs.qza
 
-#get classifier from github
-#wget https://github.com/apallavicini/PLANiTS/raw/master/qiime_classifiers/ITS2_classifier.qza
-
-# also copy the classifier to scratch so it extracts there
-cp ${PROJECT_DIR}/3_data/ITS2_classifier.qza $SCRATCH_DIR/
-
+# Classify the sequences
 qiime feature-classifier classify-sklearn \
-  --i-classifier ${SCRATCH_DIR}/ITS2_classifier.qza \
+  --i-classifier ${SCRATCH_DIR}/PLANiTS_classifier_2024.qza \
   --i-reads ${PROJECT_DIR}/3_data/merged_ASVs.qza \
   --o-classification ${PROJECT_DIR}/3_data/merged_taxonomy.qza \
   --p-n-jobs 8

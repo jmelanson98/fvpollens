@@ -1,0 +1,1810 @@
+Feature ID	Taxon	Confidence
+ASV1	Streptophyta;NA;Rosales;Rosaceae;Rubus	0.9882398583443883
+ASV10	Streptophyta;NA;Rosales;Rosaceae;Rosa	0.9690179968840085
+ASV100	Streptophyta;NA;Ericales;Ericaceae;Rhododendron;Rhododendron ponticum	0.7162861086682083
+ASV1000	Streptophyta;NA;Ericales;Balsaminaceae;Impatiens;Impatiens glandulifera	0.9957516664795145
+ASV1001	Streptophyta;NA;Brassicales;Brassicaceae	0.9974829693675109
+ASV1002	Streptophyta;NA;Rosales;Urticaceae;Urtica;Urtica gracilis	0.7772184100149169
+ASV1003	Streptophyta;NA;Myrtales;Onagraceae;Chamaenerion;NA	0.8996126668128553
+ASV1004	Streptophyta;NA;Fabales;Fabaceae;Melilotus;Melilotus altissimus	0.823290809583306
+ASV1005	Streptophyta;NA;Caryophyllales;Polygonaceae;Polygonum;Polygonum scabrum	0.9488401658192338
+ASV1006	Streptophyta;NA;Brassicales;Brassicaceae;Rorippa	0.9912190498557047
+ASV1007	Streptophyta;NA;Apiales;Apiaceae	0.9999980775304067
+ASV1008	Streptophyta;NA;Myrtales;Onagraceae;Chamaenerion;NA	0.9992641385926505
+ASV1009	Streptophyta	0.9999999999994329
+ASV101	Streptophyta;NA;Asterales;Asteraceae;Tripleurospermum	0.9991685204783991
+ASV1010	Streptophyta;NA;Malpighiales;Salicaceae;Salix	0.9867982785597227
+ASV1011	Streptophyta;NA;Solanales;Solanaceae;Solanum;Solanum tuberosum	0.9999820777635136
+ASV1012	Streptophyta;NA;Solanales;Solanaceae;Solanum	0.9237183070445707
+ASV1013	Streptophyta;NA;Brassicales;Brassicaceae;Capsella;NA	0.9999999877392726
+ASV1014	Streptophyta;NA;Asterales;Asteraceae;Scorzoneroides;Scorzoneroides autumnalis	0.9999024273438395
+ASV1015	Streptophyta;NA;Apiales;Apiaceae	0.9999961778757178
+ASV1016	Streptophyta;NA;Fabales;Fabaceae;Lotus	0.9996299915120787
+ASV1017	Streptophyta;NA;Asterales;Asteraceae;Scorzoneroides;Scorzoneroides autumnalis	0.9999032180117041
+ASV1018	Streptophyta;NA;Rosales;Rosaceae;Rubus	0.99723016121632
+ASV1019	Streptophyta;NA;Rosales;Rosaceae;Rubus	0.95457302442889
+ASV102	Streptophyta;NA;Myrtales;Onagraceae;Chamaenerion;NA	0.8999763615622147
+ASV1020	Streptophyta;Liliopsida;Poales;Poaceae;Lolium;NA	0.7805134750929907
+ASV1021	Streptophyta;NA;Boraginales;Boraginaceae;Symphytum;Symphytum officinale	0.9849779487279997
+ASV1022	Streptophyta;NA;Ericales;Styracaceae;Styrax;Styrax shiraianus	0.7847668399018416
+ASV1023	Streptophyta;NA;Boraginales;Boraginaceae;Borago;Borago officinalis	0.9999999999600392
+ASV1024	Streptophyta;NA;Ericales;Ericaceae	0.9847372697922812
+ASV1025	Streptophyta;NA;Myrtales;Onagraceae;Chamaenerion;NA	0.7844446142749005
+ASV1026	Streptophyta;Magnoliopsida;Rosales;Rosaceae;Spiraea;Spiraea douglasii	0.9829123529301595
+ASV1027	Streptophyta;NA;Ericales;Ericaceae	0.9953634146757664
+ASV1028	Streptophyta;NA;Rosales;Rosaceae;Rosa	0.961123657457961
+ASV1029	Streptophyta;NA;Brassicales;Brassicaceae;Brassica;Brassica nigra	0.9382359693555359
+ASV103	Streptophyta;NA;Boraginales;Boraginaceae;Symphytum;Symphytum grandiflorum	0.7817178919031034
+ASV1030	Streptophyta;NA;Rosales;Rosaceae;Rubus	0.978852605048075
+ASV1031	Streptophyta;NA;Ericales;Balsaminaceae;Impatiens;Impatiens glandulifera	0.9956133447468984
+ASV1032	Streptophyta;NA;Solanales;Solanaceae	0.7711612142024293
+ASV1033	Streptophyta	0.999999981834142
+ASV1034	Streptophyta;NA;Asterales;Asteraceae;Arctium	0.866017402447169
+ASV1035	Streptophyta;NA;Brassicales;Brassicaceae;Raphanus;NA	0.9998627786776735
+ASV1036	Streptophyta;Liliopsida;Poales;Poaceae;Agrostis;Agrostis capillaris	0.9639527220611778
+ASV1037	Streptophyta;NA;Ericales;Styracaceae;Styrax;Styrax wilsonii	0.8551112114370465
+ASV1038	Streptophyta;NA;Apiales;Apiaceae	0.9999974162685453
+ASV1039	Streptophyta;NA;Fabales;Fabaceae;Lotus	0.986541441691028
+ASV104	Streptophyta;NA;Ericales;Ericaceae;Gaultheria;Gaultheria shallon	0.972472690429848
+ASV1040	Streptophyta;NA;Fabales;Fabaceae;Trifolium	0.9999206103002469
+ASV1041	Streptophyta	0.9999999999999957
+ASV1042	Streptophyta;NA;Ericales;Balsaminaceae;Impatiens;Impatiens glandulifera	0.995570966088121
+ASV1043	Streptophyta;Liliopsida;Poales;Juncaceae;Juncus;Juncus oxymeris	0.8745606334335627
+ASV1044	Streptophyta;NA;Rosales;Rosaceae;Fragaria;Fragaria virginiana	0.9991801583184784
+ASV1045	Streptophyta;NA;Asterales;Asteraceae;Cirsium	0.9946943237060434
+ASV1046	Streptophyta;NA	0.7466576053940522
+ASV1047	Streptophyta;NA;Caryophyllales;Polygonaceae;Bistorta;Bistorta amplexicaulis	0.9686651505435105
+ASV1048	Streptophyta;NA;Caryophyllales;Polygonaceae;Bistorta;Bistorta amplexicaulis	0.9767073948959918
+ASV1049	Streptophyta;NA;Brassicales;Brassicaceae;Raphanus;NA	0.9998349364850816
+ASV105	Streptophyta;NA;Sapindales;Sapindaceae;Acer;Acer pseudoplatanus	0.9999919727131783
+ASV1050	Streptophyta;NA;Boraginales;Boraginaceae;Symphytum	0.9999970503002281
+ASV1051	Streptophyta;NA;Brassicales;Brassicaceae;Raphanus;NA	0.9994514362135941
+ASV1052	Streptophyta;NA;Ericales;Ericaceae;Vaccinium;Vaccinium tenellum	0.8551804721735516
+ASV1053	Streptophyta;NA;Lamiales;Oleaceae;Ligustrum;Ligustrum vulgare	0.8278336433524659
+ASV1054	Streptophyta;NA;Rosales;Rosaceae;Rubus	0.9543191004239233
+ASV1055	Streptophyta;NA;Ericales;Balsaminaceae;Impatiens;Impatiens glandulifera	0.99561333651
+ASV1056	Streptophyta;NA;Rosales;Rosaceae;Rubus	0.994518391569171
+ASV1057	Streptophyta;NA;Ericales;Ericaceae;Gaultheria	0.9053172790098866
+ASV1058	Streptophyta;NA;Ericales;Balsaminaceae;Impatiens;Impatiens glandulifera	0.9631006075344806
+ASV1059	Streptophyta;NA;Brassicales;Brassicaceae;Capsella;NA	0.999999690635084
+ASV106	Streptophyta	0.999999999999997
+ASV1060	Streptophyta;NA;Rosales;Rosaceae;Rosa	0.9293401228099519
+ASV1061	Streptophyta;NA;Ericales;Ericaceae;Vaccinium;Vaccinium tenellum	0.9735470506147573
+ASV1062	Streptophyta;NA;Fabales;Fabaceae;Vicia;Vicia cracca	0.7942484569450693
+ASV1063	Streptophyta;NA;Ericales;Ericaceae;Vaccinium;Vaccinium tenellum	0.9723891317031641
+ASV1064	Streptophyta;NA;Boraginales;Boraginaceae;Symphytum;Symphytum grandiflorum	0.7958697326288204
+ASV1065	Streptophyta;NA;Ericales;Balsaminaceae;Impatiens;Impatiens glandulifera	0.9692154151277146
+ASV1066	Streptophyta;NA;Brassicales;Brassicaceae;Sisymbrium;Sisymbrium officinale	0.9700441081612385
+ASV1067	Streptophyta;NA;Solanales;Solanaceae;Solanum;Solanum dulcamara	0.8300099619529187
+ASV1068	Streptophyta;NA;Brassicales;Brassicaceae;Brassica;Brassica carinata	0.8262979927711225
+ASV1069	Streptophyta;NA;Fabales;Fabaceae;Trifolium	0.9999918391008795
+ASV107	Streptophyta;NA;Rosales;Rosaceae;Rubus	0.9923654048511403
+ASV1070	Streptophyta;Magnoliopsida;Fabales;Fabaceae;Trifolium;NA	0.9999999870982493
+ASV1071	Streptophyta;NA;Ericales;Styracaceae;Styrax;Styrax wilsonii	0.8545224355380128
+ASV1072	Streptophyta;NA;Ericales;Styracaceae;Styrax;Styrax wilsonii	0.8220241559837437
+ASV1073	Streptophyta	0.9999999999999785
+ASV1074	Streptophyta;NA;Asterales;Asteraceae;Anthemis	0.9982937606792437
+ASV1075	Streptophyta;NA;Asterales;Asteraceae;Helianthus	0.9710328188099507
+ASV1076	Streptophyta;NA;Apiales;Apiaceae	0.9999982982189544
+ASV1077	Streptophyta;NA;Caryophyllales;Caryophyllaceae;Cerastium;Cerastium fischerianum	0.909726042333434
+ASV1078	Streptophyta;NA;Fabales;Fabaceae;Vicia	0.7162883201255675
+ASV1079	Streptophyta;NA;Ericales;Balsaminaceae;Impatiens;Impatiens glandulifera	0.9956420751983097
+ASV108	Streptophyta;NA;Ericales;Balsaminaceae;Impatiens;Impatiens glandulifera	0.9955421977500134
+ASV1080	Streptophyta;NA;Ericales;Theaceae;Stewartia;Stewartia monadelpha	0.9959912908642301
+ASV1081	Streptophyta;NA;Asterales;Asteraceae;Sonchus;Sonchus arvensis	0.9999943840792251
+ASV1082	Streptophyta;NA;Asterales;Asteraceae;Bidens	0.9998491492480264
+ASV1083	Streptophyta;NA;Asterales;Asteraceae;Hypochaeris;Hypochaeris radicata	0.8145543346040597
+ASV1084	Streptophyta;NA;Brassicales;Brassicaceae;Capsella;NA	0.9999999635589354
+ASV1085	Streptophyta;NA;Brassicales;Brassicaceae;Raphanus;NA	0.9984714386364657
+ASV1086	Streptophyta;NA;Asterales;Asteraceae;Scorzoneroides;Scorzoneroides autumnalis	0.9997839009307226
+ASV1087	Streptophyta;NA;Cornales;Hydrangeaceae;Hydrangea;Hydrangea paniculata	0.9999996412921708
+ASV1088	Streptophyta;NA;Rosales;Rosaceae;Rosa	0.9663750029192009
+ASV1089	Streptophyta;NA;Lamiales;Plantaginaceae;Plantago	0.812556753863325
+ASV109	Streptophyta;NA;Rosales;Rosaceae;Rubus	0.9497618996900972
+ASV1090	Streptophyta;NA;Myrtales;Onagraceae;Chamaenerion;NA	0.8939437377594567
+ASV1091	Streptophyta;NA;Rosales;Rosaceae;Rosa;Rosa woodsii	0.8943041512097687
+ASV1092	Streptophyta;NA;Boraginales;Hydrophyllaceae;Phacelia	0.9989051699371464
+ASV1093	Streptophyta;NA;Rosales;Rosaceae;Rubus	0.9975629273930232
+ASV1094	Streptophyta;Liliopsida;Poales;Poaceae;Secale;NA	0.9987071891983751
+ASV1095	Streptophyta;NA;Saxifragales;Crassulaceae;Sedum	0.9999997763285833
+ASV1096	Streptophyta;NA;Fabales;Fabaceae;Lotus;Lotus uliginosus	0.999986720821402
+ASV1097	Streptophyta;NA;Rosales;Rosaceae;Rosa	0.9952170747381129
+ASV1098	Streptophyta;NA;Ericales;Styracaceae;Styrax;Styrax wilsonii	0.8516105682247602
+ASV1099	Streptophyta;NA;Cornales;Hydrangeaceae;Hydrangea;Hydrangea paniculata	0.9999992274422169
+ASV11	Streptophyta;NA;Fabales;Fabaceae;Trifolium	0.9999554924565933
+ASV110	Streptophyta;NA;Rosales;Rosaceae;Rosa	0.9694929433500095
+ASV1100	Streptophyta;NA;Fabales;Fabaceae;Lupinus;Lupinus lepidus	0.9092885810877674
+ASV1101	Streptophyta;Liliopsida;Dioscoreales;Dioscoreaceae;Dioscorea;Dioscorea collettii	0.8367663770787274
+ASV1102	Streptophyta;NA;Boraginales;Boraginaceae;Symphytum;Symphytum grandiflorum	0.7774658977854292
+ASV1103	Streptophyta;NA;Rosales;Rosaceae;Rosa	0.9794395066940293
+ASV1104	Streptophyta	0.9999999999911522
+ASV1105	Streptophyta;NA	0.8433380267654318
+ASV1106	Streptophyta	0.9999997884485318
+ASV1107	Streptophyta;NA;Ericales;Ericaceae	0.9970201621886468
+ASV1108	Streptophyta;NA;Brassicales;Brassicaceae;Barbarea;NA	0.9996444210320627
+ASV1109	Streptophyta;NA;Rosales;Rosaceae;Rosa;Rosa woodsii	0.7548284512745685
+ASV111	Streptophyta;NA;Rosales;Rosaceae;Rubus;Rubus hawaiensis	0.8727929896472082
+ASV1110	Streptophyta;NA;Fabales;Fabaceae;Lotus;Lotus burttii	0.8945016340931528
+ASV1111	Streptophyta;NA;Myrtales;Onagraceae;Chamaenerion;NA	0.9984592385885745
+ASV1112	Streptophyta	0.9999999999994171
+ASV1113	Streptophyta;NA;Rosales;Rhamnaceae;Frangula	0.7235799796817277
+ASV1114	Streptophyta	0.9999920193884263
+ASV1115	Streptophyta;NA;Ericales;Ericaceae	0.981605385146672
+ASV1116	Streptophyta;NA;Ericales;Balsaminaceae;Impatiens;Impatiens glandulifera	0.9833642399080208
+ASV1117	Streptophyta;NA;Fabales;Fabaceae;Lupinus;Lupinus lepidus	0.9272573523071581
+ASV1118	Streptophyta;NA;Brassicales;Brassicaceae;Raphanus;NA	0.999759766085951
+ASV1119	Streptophyta;NA;Rosales;Rosaceae;Rosa	0.9925824097771903
+ASV112	Streptophyta;NA;Rosales;Rosaceae;Rubus	0.9927363330775317
+ASV1120	Streptophyta;NA;Solanales;Convolvulaceae;Calystegia;Calystegia pulchra	0.7428309208522617
+ASV1121	Chlorophyta;Trebouxiophyceae;Trebouxiales;Trebouxiaceae;Trebouxia	0.9999995628524211
+ASV1122	Streptophyta;NA;Caryophyllales;Chenopodiaceae;Chenopodium;Chenopodium suecicum	0.9024174443368185
+ASV1123	Streptophyta;NA;Fabales;Fabaceae;Trifolium	0.9999013850642462
+ASV1124	Streptophyta;NA;Asterales;Asteraceae;Cirsium	0.9926511967037469
+ASV1125	Streptophyta;NA;Fabales;Fabaceae;Trifolium	0.9947315763665061
+ASV1126	Streptophyta;NA;Lamiales;Plantaginaceae;Plantago	0.9511736630262083
+ASV1127	Streptophyta;NA;Asterales;Asteraceae;Tripleurospermum	0.9952257494583683
+ASV1128	Streptophyta;NA;Rosales;Rosaceae;Rosa	0.8082911109752352
+ASV1129	Streptophyta;NA;Brassicales;Brassicaceae;Sisymbrium;Sisymbrium officinale	0.9409414782120501
+ASV113	Streptophyta;NA;Malpighiales;Hypericaceae;Hypericum;Hypericum ellipticum	0.9999945520519629
+ASV1130	Streptophyta;NA;Ericales;Balsaminaceae;Impatiens;Impatiens glandulifera	0.9836808945909253
+ASV1131	Streptophyta;NA;Lamiales;Scrophulariaceae;Sutera	0.999999865841848
+ASV1132	Streptophyta;NA;Ericales;Balsaminaceae;Impatiens;Impatiens glandulifera	0.9956112172715648
+ASV1133	Streptophyta;NA;Fabales;Fabaceae;Trifolium	0.9997644794559
+ASV1134	Streptophyta;NA;Fabales;Fabaceae;Lotus;Lotus uliginosus	0.9999784897413766
+ASV1135	Streptophyta;NA;Cucurbitales;Cucurbitaceae;Cucurbita;NA	0.9999997883093326
+ASV1136	Streptophyta;NA;Sapindales;Sapindaceae;Acer;Acer pseudoplatanus	0.9999917397078766
+ASV1137	Streptophyta;NA;Cucurbitales;Cucurbitaceae;Cucumis;Cucumis sativus	0.9856444269492229
+ASV1138	Streptophyta;NA;Fabales;Fabaceae;Lotus	0.99962999579913
+ASV1139	Streptophyta;NA;Asterales;Asteraceae;Taraxacum;Taraxacum erythrospermum	0.9401470864734112
+ASV114	Streptophyta;NA;Rosales;Rhamnaceae;Ceanothus	0.9999995894304826
+ASV1140	Streptophyta;NA;Brassicales;Brassicaceae;Barbarea;NA	0.9942899544129081
+ASV1141	Streptophyta;NA;Brassicales;Brassicaceae;Barbarea;NA	0.9991500673681388
+ASV1142	Streptophyta;NA;Brassicales;Brassicaceae;Sisymbrium;Sisymbrium officinale	0.9964813785903898
+ASV1143	Streptophyta;NA;Dipsacales;Caprifoliaceae	0.9832843413880583
+ASV1144	Streptophyta;NA;Brassicales;Brassicaceae;Rorippa;Rorippa sylvestris	0.9369182521505982
+ASV1145	Streptophyta;NA;Fabales;Fabaceae;Trifolium;Trifolium uniflorum	0.7815299783452156
+ASV1146	Streptophyta;NA;Asterales;Asteraceae;Erigeron	0.9925789954428023
+ASV1147	Streptophyta;NA;Asterales;Asteraceae;Hypochaeris	0.9726492235654933
+ASV1148	Streptophyta	0.999999999998027
+ASV1149	Streptophyta;Liliopsida;Poales;Poaceae;Echinochloa	0.9999999924827423
+ASV115	Streptophyta;NA;Rosales;Rosaceae;Rubus;Rubus hawaiensis	0.9470285386601204
+ASV1150	Streptophyta;NA;Lamiales;Plantaginaceae;Plantago	0.8130158449763756
+ASV1151	Streptophyta	0.9999999999999988
+ASV1152	Streptophyta;Magnoliopsida;Rosales;Rosaceae;Malus;Malus baccata	0.9823633072122147
+ASV1153	Streptophyta;NA;Rosales;Urticaceae;Urtica	0.9999999321304999
+ASV1154	Streptophyta;NA;Ericales;Ericaceae;Gaultheria;Gaultheria shallon	0.9809303237893857
+ASV1155	Streptophyta;NA;Fabales;Fabaceae;Trifolium	0.9978277328978893
+ASV1156	Streptophyta;NA;Rosales;Rosaceae;Rosa;Rosa woodsii	0.8762693014794154
+ASV1157	Streptophyta;NA;Asterales;Asteraceae;Hypochaeris;NA	0.7820111265799738
+ASV1158	Streptophyta;NA;Asterales;Asteraceae;Crepis;Crepis capillaris	0.9999954011559301
+ASV1159	Streptophyta;NA;Rosales;Rosaceae;Rosa;Rosa acicularis	0.8134817640869167
+ASV116	Streptophyta	0.9999999999999981
+ASV1160	Streptophyta;NA;Saxifragales;Crassulaceae;Phedimus;Phedimus spurius	0.9999999993707719
+ASV1161	Streptophyta;NA;Boraginales;Boraginaceae;Symphytum;Symphytum officinale	0.9974308071298863
+ASV1162	Streptophyta;NA;Ericales;Ericaceae;Rhododendron;Rhododendron ponticum	0.9989587195430577
+ASV1163	Streptophyta;NA;Boraginales;Boraginaceae;Borago;Borago officinalis	0.9999999999787123
+ASV1164	Streptophyta;NA;Fabales;Fabaceae;Trifolium;Trifolium nigrescens	0.7152723117238292
+ASV1165	Streptophyta;NA;Asterales;Asteraceae;Cirsium	0.9982829789003261
+ASV1166	Streptophyta;NA;Solanales;Solanaceae;Solanum;Solanum tuberosum	0.9999945869585779
+ASV1167	Streptophyta;NA;Rosales;Rosaceae;Rubus	0.9622286208840579
+ASV1168	Streptophyta;NA;Rosales;Rosaceae;Rubus	0.991797322355475
+ASV1169	Streptophyta;Liliopsida;Asparagales;Amaryllidaceae;Allium	0.8615769611816861
+ASV117	Streptophyta;NA;Rosales;Rosaceae;Rubus;Rubus hawaiensis	0.988471683663614
+ASV1170	Streptophyta;NA;Brassicales;Brassicaceae;Raphanus;NA	0.9998676731245106
+ASV1171	Streptophyta;NA;Brassicales;Brassicaceae;Raphanus;NA	0.9997351787303964
+ASV1172	Streptophyta;NA;Rosales;Rosaceae;Rosa;Rosa acicularis	0.7795922266800481
+ASV1173	Streptophyta;NA	0.8408435387957329
+ASV1174	Streptophyta;NA;Fabales;Fabaceae;Lotus	0.9951375740318197
+ASV1175	Streptophyta;NA;Myrtales;Onagraceae;Chamaenerion;NA	0.9991003227929232
+ASV1176	Streptophyta	0.9999999999999978
+ASV1177	Streptophyta;NA;Aquifoliales;Aquifoliaceae;Ilex	0.9133878270042352
+ASV1178	Streptophyta;NA;Dipsacales;Caprifoliaceae;Lonicera	0.9268245176212981
+ASV1179	Streptophyta;NA;Caryophyllales;Chenopodiaceae;Chenopodium	0.9992382091755032
+ASV118	Streptophyta;NA;Caryophyllales;Polygonaceae;Persicaria;Persicaria tinctoria	0.8530149330193798
+ASV1180	Streptophyta;NA;Brassicales;Brassicaceae;Raphanus;NA	0.9998599382730958
+ASV1181	Streptophyta;NA;Boraginales;Boraginaceae;Symphytum;Symphytum grandiflorum	0.7770563355072032
+ASV1182	Streptophyta;NA;Brassicales;Brassicaceae;Brassica;Brassica villosa	0.8119151943868705
+ASV1183	Streptophyta;NA;Apiales;Apiaceae	0.9999976689740631
+ASV1184	Streptophyta;NA;Asterales;Asteraceae;Achillea	0.9343174935131454
+ASV1185	Streptophyta;Magnoliopsida;Fabales;Fabaceae;Trifolium;NA	0.9999999874590345
+ASV1186	Streptophyta;NA;Brassicales;Brassicaceae;Raphanus;NA	0.9998589708970527
+ASV1187	Streptophyta;NA;Rosales;Rosaceae;Crataegus;Crataegus songarica	0.9991002032639831
+ASV1188	Streptophyta;NA;Fabales;Fabaceae;Trifolium	0.9999668170303432
+ASV1189	Streptophyta;NA;Brassicales;Brassicaceae;Raphanus;NA	0.9998890669649224
+ASV119	Streptophyta;NA;Rosales;Rosaceae;Rubus	0.8726499572842824
+ASV1190	Streptophyta;Liliopsida	0.7376833487118123
+ASV1191	Streptophyta;Magnoliopsida;Fabales;Fabaceae;Trifolium;NA	0.9999999319241534
+ASV1192	Streptophyta;NA;Ranunculales;Ranunculaceae;Ranunculus;Ranunculus repens	0.9875405617774119
+ASV1193	Streptophyta;NA;Solanales;Solanaceae;Solanum;Solanum dulcamara	0.827717426542531
+ASV1194	Streptophyta;NA;Brassicales;Brassicaceae;Capsella;NA	0.9999999738795116
+ASV1195	Streptophyta;NA;Dipsacales;Caprifoliaceae	0.9931561259137276
+ASV1196	Streptophyta;NA;Sapindales;Sapindaceae;Acer;Acer pseudoplatanus	0.9999826064507807
+ASV1197	Streptophyta	0.9999972196985502
+ASV1198	Streptophyta;NA;Brassicales;Brassicaceae	0.8297406324216822
+ASV1199	Streptophyta;NA;Fabales;Fabaceae;Trifolium;Trifolium uniflorum	0.7091267190587186
+ASV12	Streptophyta;NA;Ericales;Balsaminaceae;Impatiens;Impatiens glandulifera	0.9956133323923007
+ASV120	Streptophyta;NA;Asterales;Asteraceae;Cirsium;Cirsium palustre	0.8813871355735377
+ASV1200	Streptophyta;NA;Brassicales;Brassicaceae;Barbarea;NA	0.9969223092268503
+ASV1201	Streptophyta;NA;Saxifragales;Paeoniaceae;Paeonia;Paeonia officinalis	0.723435269784154
+ASV1202	Streptophyta;NA;Apiales;Araliaceae;Hedera;NA	0.7131034386470864
+ASV1203	Streptophyta;NA;Fabales;Fabaceae;Lupinus;Lupinus lepidus	0.8054155073920253
+ASV1204	Streptophyta;NA;Fabales;Fabaceae;Trifolium	0.9998593300849121
+ASV1205	Streptophyta;Magnoliopsida;Lamiales;Plantaginaceae;Plantago;Plantago argentea	0.7576809831609406
+ASV1206	Streptophyta;NA;Ericales;Ericaceae;Rhododendron;Rhododendron ponticum	0.9984120855257345
+ASV1207	Streptophyta;Liliopsida	0.8107216090201174
+ASV1208	Streptophyta;NA;Ericales;Ericaceae;Vaccinium;Vaccinium microcarpum	0.999704343337115
+ASV1209	Streptophyta;NA;Brassicales;Brassicaceae;Raphanus;NA	0.999900206167407
+ASV121	Streptophyta;NA;Asterales;Asteraceae;Tanacetum	0.9460219818683998
+ASV1210	Streptophyta;NA;Fabales;Fabaceae;Trifolium	0.9970903703066823
+ASV1211	Streptophyta;NA;Brassicales;Brassicaceae;Barbarea;NA	0.9701006100724762
+ASV1212	Streptophyta;Magnoliopsida;Cornales;Cornaceae;Cornus	0.9937216594399254
+ASV1213	Streptophyta;NA;Asterales;Asteraceae;Scorzoneroides;Scorzoneroides autumnalis	0.9995484047125296
+ASV1214	Streptophyta;NA;Caryophyllales;Chenopodiaceae;Chenopodium;unknown Chenopodium	0.9432446042944513
+ASV1215	Streptophyta;NA;Ericales;Balsaminaceae;Impatiens;Impatiens glandulifera	0.995640504046505
+ASV1216	Streptophyta;Liliopsida;Poales;Poaceae;Agrostis;Agrostis capillaris	0.8430957657291609
+ASV1217	Streptophyta;NA;Boraginales;Boraginaceae;Symphytum;Symphytum grandiflorum	0.7325066104516673
+ASV1218	Streptophyta;NA;Ericales;Balsaminaceae;Impatiens;Impatiens glandulifera	0.9956133219343964
+ASV1219	Streptophyta;NA;Fabales;Fabaceae;Trifolium	0.998199456100935
+ASV122	Streptophyta;NA;Asterales;Asteraceae;Cirsium	0.9999262048391987
+ASV1220	Streptophyta;NA;Asterales;Asteraceae;Cirsium	0.8875530684042467
+ASV1221	Streptophyta;NA;Ericales;Ericaceae	0.996075589475292
+ASV1222	Streptophyta;NA;Fabales;Fabaceae;Trifolium;Trifolium uniflorum	0.8354765760667496
+ASV1223	Streptophyta;NA;Caryophyllales;Caryophyllaceae;Cerastium	0.9854340762483034
+ASV1224	Streptophyta;Magnoliopsida;Cornales;Cornaceae;Cornus;NA	0.830304566665525
+ASV1225	Streptophyta;NA;Asterales;Asteraceae;Taraxacum	0.9998317796021471
+ASV1226	Streptophyta;NA;Brassicales;Brassicaceae;Raphanus;NA	0.9996244167435082
+ASV1227	Streptophyta;NA;Asterales;Asteraceae;Sonchus;Sonchus asper	0.9026767892810141
+ASV1228	Streptophyta;NA;Brassicales;Brassicaceae;Rorippa;Rorippa sylvestris	0.7330177676816736
+ASV1229	Streptophyta;NA;Fabales;Fabaceae;Trifolium;Trifolium uniflorum	0.7700135191764922
+ASV123	Streptophyta;NA;Lamiales;Plantaginaceae;Plantago	0.781785255246785
+ASV1230	Streptophyta;NA;Asterales;Asteraceae;Taraxacum;Taraxacum tenuifolium	0.7711602536889173
+ASV1231	Streptophyta;NA;Ericales;Balsaminaceae;Impatiens;Impatiens glandulifera	0.9955421935307746
+ASV1232	Streptophyta;NA;Asterales;Asteraceae;Matricaria;NA	0.9035872611540732
+ASV1233	Streptophyta	0.9999999996474147
+ASV1234	Streptophyta;Liliopsida;Poales;Juncaceae;Juncus;Juncus oxymeris	0.9300392132373732
+ASV1235	Streptophyta;NA;Rosales;Rosaceae;Fragaria	0.999999973395292
+ASV1236	Streptophyta;NA;Ericales;Ericaceae;Gaultheria;Gaultheria shallon	0.9749595692320853
+ASV1237	Streptophyta;NA;Brassicales;Brassicaceae;Sisymbrium;Sisymbrium officinale	0.9705226040023323
+ASV1238	Streptophyta	0.9999999999994403
+ASV1239	Streptophyta;NA;Caryophyllales;Polygonaceae;Polygonum;Polygonum scabrum	0.7964266094128105
+ASV124	Streptophyta;NA;Caryophyllales;Polygonaceae;Polygonum;Polygonum scabrum	0.9996679798533941
+ASV1240	Streptophyta;NA;Rosales;Rosaceae;Rosa;Rosa kokanica	0.7590163432792558
+ASV1241	Streptophyta;NA;Rosales;Rosaceae;Rubus	0.9969834671419977
+ASV1242	Streptophyta;NA;Apiales;Apiaceae	0.9999985796822917
+ASV1243	Streptophyta;NA;Rosales;Rosaceae;Rosa;Rosa kokanica	0.7675915663177808
+ASV1244	Streptophyta;NA;Fabales;Fabaceae;Trifolium;Trifolium fragiferum	0.8612596801341984
+ASV1245	Streptophyta;NA;Brassicales;Brassicaceae;Cardamine;Cardamine hirsuta	0.8667915131726271
+ASV1246	Streptophyta;NA;Brassicales;Brassicaceae	0.9475015829799404
+ASV1247	Streptophyta	0.9998519537484181
+ASV1248	Streptophyta;NA;Solanales;Solanaceae;Solanum;Solanum lignicaule	0.7492328178474451
+ASV1249	Streptophyta;NA;Asterales;Asteraceae;Leontodon;Leontodon maroccanus	0.7560204615242359
+ASV125	Streptophyta;NA;Boraginales;Hydrophyllaceae;Phacelia;Phacelia tanacetifolia	0.93491521578521
+ASV1250	Streptophyta;NA;Brassicales;Brassicaceae;Barbarea;NA	0.9927614806699313
+ASV1251	Streptophyta;NA;Rosales;Rosaceae;Rosa;Rosa kokanica	0.812653430063225
+ASV1252	Streptophyta;Liliopsida;Poales;Juncaceae;Juncus;Juncus oxymeris	0.9078092455132221
+ASV1253	Streptophyta;NA;Rosales;Rosaceae;Malus	0.8699801191364213
+ASV1254	Streptophyta;NA;Sapindales;Sapindaceae;Aesculus;NA	0.9797364045672423
+ASV1255	Streptophyta;NA;Brassicales;Brassicaceae	0.9058128886868078
+ASV1256	Streptophyta;NA;Asterales;Asteraceae;Helianthus	0.9637409500722115
+ASV1257	Streptophyta;Liliopsida;Poales;Poaceae;Aegilops	0.8015449765629791
+ASV1258	Streptophyta;NA;Saxifragales;Paeoniaceae;Paeonia	0.9999999997531965
+ASV1259	Streptophyta;NA;Boraginales;Boraginaceae;Symphytum;Symphytum officinale	0.9999617063377833
+ASV126	Streptophyta;NA;Lamiales;Plantaginaceae;Plantago;Plantago lanceolata	0.9206001586298259
+ASV1260	Streptophyta;NA;Brassicales;Brassicaceae;Sisymbrium;Sisymbrium officinale	0.962492439875654
+ASV1261	Streptophyta;NA;Dipsacales;Caprifoliaceae	0.9626231051556318
+ASV1262	Streptophyta;NA;Ericales;Balsaminaceae;Impatiens;Impatiens glandulifera	0.970504613634801
+ASV1263	Streptophyta;NA;Asterales;Asteraceae;Scorzoneroides;Scorzoneroides autumnalis	0.999897845244431
+ASV1264	Streptophyta;NA;Boraginales;Boraginaceae;Symphytum;Symphytum grandiflorum	0.8035695328271545
+ASV1265	Streptophyta;NA;Sapindales;Sapindaceae;Acer;Acer pseudoplatanus	0.9999927401528967
+ASV1266	Streptophyta;NA;Rosales;Rosaceae;Rosa;Rosa kokanica	0.7470955892445226
+ASV1267	Streptophyta	0.9999999999999817
+ASV1268	Streptophyta	0.9999999999999197
+ASV1269	Streptophyta;NA;Saxifragales;Crassulaceae;Sedum	0.9999999210634753
+ASV127	Streptophyta;NA;Fabales;Fabaceae;Lupinus;Lupinus lepidus	0.9864268598729165
+ASV1270	Streptophyta;NA;Brassicales;Brassicaceae;Barbarea;NA	0.9946713780577607
+ASV1271	Streptophyta;Magnoliopsida;Cornales;Cornaceae;Cornus;Cornus hemsleyi	0.788014684595821
+ASV1272	Streptophyta;NA;Dipsacales;Caprifoliaceae	0.9699150032211198
+ASV1273	Streptophyta;NA;Apiales;Araliaceae;Hedera;NA	0.755442729050739
+ASV1274	Streptophyta;NA;Ericales;Styracaceae;Styrax;Styrax wilsonii	0.7752322415855596
+ASV1275	Chlorophyta;Trebouxiophyceae;Trebouxiales;Trebouxiaceae;Trebouxia;Trebouxia potteri	0.8800654720049909
+ASV1276	Streptophyta;NA;Caryophyllales;Polygonaceae;Polygonum;Polygonum scabrum	0.9689362371748327
+ASV1277	Streptophyta;NA;Fabales;Fabaceae;Trifolium	0.9999757146213448
+ASV1278	Streptophyta;NA;Asterales;Asteraceae;Crepis;Crepis alpestris	0.7597726801475799
+ASV1279	Streptophyta;NA;Asterales;Asteraceae;Centaurea;Centaurea cyanus	0.9999991329797873
+ASV128	Streptophyta;NA;Ericales;Ericaceae;Gaultheria;Gaultheria shallon	0.9818225928189702
+ASV1280	Streptophyta;NA;Rosales;Rosaceae;Rubus;Rubus hawaiensis	0.9671631909465396
+ASV1281	Streptophyta;NA;Asterales;Asteraceae;Cirsium	0.9975311869105812
+ASV1282	Streptophyta;NA;Ericales;Ericaceae;Gaultheria;Gaultheria shallon	0.9299607127192904
+ASV1283	Streptophyta;Magnoliopsida;Fabales;Fabaceae;Trifolium;NA	0.999999985969879
+ASV1284	Streptophyta;Magnoliopsida;Fabales;Fabaceae;Trifolium;NA	0.9999998635417264
+ASV1285	Streptophyta;NA;Fabales;Fabaceae	0.9600682055226122
+ASV1286	Streptophyta;Magnoliopsida;Dipsacales;Adoxaceae;Sambucus	0.7079459018133841
+ASV1287	Streptophyta;NA;Fagales;Juglandaceae;Carya;NA	0.8079966402978322
+ASV1288	Streptophyta;NA;Lamiales;Scrophulariaceae;Sutera	0.9999998990039183
+ASV1289	Streptophyta;NA;Rosales;Rosaceae;Rosa	0.9634386555202288
+ASV129	Streptophyta;NA;Boraginales;Boraginaceae;Symphytum;Symphytum grandiflorum	0.7883640602705179
+ASV1290	Streptophyta;NA;Myrtales;Onagraceae;Chamaenerion;NA	0.9990978791770966
+ASV1291	Streptophyta;NA;Caryophyllales;Polygonaceae;Polygonum;Polygonum scabrum	0.9516592866483249
+ASV1292	Streptophyta;NA;Ericales;Ericaceae;Rhododendron;Rhododendron ponticum	0.9568384265966944
+ASV1293	Streptophyta;NA;Myrtales;Onagraceae;Chamaenerion;NA	0.8999763507364711
+ASV1294	Streptophyta;NA	0.7159799699993377
+ASV1295	Streptophyta;NA;Ericales;Balsaminaceae;Impatiens;Impatiens glandulifera	0.9956133034059808
+ASV1296	Streptophyta;NA;Boraginales;Hydrophyllaceae;Phacelia;Phacelia tanacetifolia	0.8991007154368748
+ASV1297	Streptophyta;NA;Asterales;Asteraceae;Anthemis	0.9802747560185219
+ASV1298	Streptophyta;NA;Asterales;Asteraceae;Cirsium	0.9995881395413907
+ASV1299	Streptophyta;NA;Asterales;Asteraceae;Leucanthemum;NA	0.8138370064460515
+ASV13	Streptophyta	0.9999999999999998
+ASV130	Streptophyta;NA;Rosales;Rosaceae;Rubus	0.999113268169894
+ASV1300	Streptophyta;NA;Brassicales;Brassicaceae;Barbarea;NA	0.9878813347204451
+ASV1301	Streptophyta;NA;Brassicales;Brassicaceae;Barbarea;NA	0.9995037651425916
+ASV1302	Streptophyta;NA;Brassicales;Brassicaceae;Barbarea	0.9995871801209214
+ASV1303	Streptophyta;NA;Fabales;Fabaceae;Trifolium;Trifolium strictum	0.9999999488434255
+ASV1304	Streptophyta;NA;Asterales;Asteraceae;Hypochaeris	0.9114046580694011
+ASV1305	Streptophyta;NA;Ericales;Balsaminaceae;Impatiens;Impatiens glandulifera	0.995613341627575
+ASV1306	Streptophyta;NA;Asterales;Asteraceae;Cirsium	0.9637671558797798
+ASV1307	Streptophyta;NA;Fabales;Fabaceae;Trifolium	0.9999635743068558
+ASV1308	Streptophyta;NA;Ericales;Balsaminaceae;Impatiens;Impatiens glandulifera	0.9957479868959394
+ASV1309	Streptophyta;NA;Brassicales;Brassicaceae;Sisymbrium;Sisymbrium officinale	0.9694399972507668
+ASV131	Streptophyta;NA;Rosales;Rosaceae;Rosa	0.9664642959799359
+ASV1310	Streptophyta;NA;Fabales;Fabaceae;Melilotus;Melilotus altissimus	0.7991172030212479
+ASV1311	Streptophyta;NA;Fabales;Fabaceae;Lotus	0.9729103369649287
+ASV1312	Streptophyta;NA;Caryophyllales;Chenopodiaceae;Salsola;Salsola paulsenii	0.9893021017339556
+ASV1313	Streptophyta;NA;Rosales;Rosaceae;Rubus	0.9979171160610312
+ASV1314	Streptophyta;Liliopsida	0.7586950524852755
+ASV1315	Streptophyta	0.999999999999035
+ASV1316	Streptophyta;NA;Asterales;Asteraceae;Cirsium	0.9940484082978231
+ASV1317	Streptophyta;NA;Asterales;Asteraceae;Cosmos;Cosmos bipinnatus	0.9998569180047423
+ASV1318	Streptophyta;NA;Rosales;Rosaceae;Rosa;Rosa woodsii	0.7651327012141563
+ASV1319	Streptophyta;NA;Fabales;Fabaceae;Trifolium;Trifolium repens	0.7724009091217905
+ASV132	Streptophyta;NA;Fabales;Fabaceae;Trifolium;Trifolium uniflorum	0.7303134889662707
+ASV1320	Streptophyta;NA;Brassicales;Brassicaceae;Barbarea;NA	0.9916323828156963
+ASV1321	Streptophyta;Liliopsida;Asparagales;Amaryllidaceae;Allium	0.9980358896726971
+ASV1322	Streptophyta;NA;Rosales;Rosaceae;Rosa;Rosa acicularis	0.7132922623537243
+ASV1323	Streptophyta;NA;Brassicales;Brassicaceae;Sisymbrium;Sisymbrium officinale	0.9926889496404447
+ASV1324	Streptophyta;NA;Caryophyllales;Polygonaceae;Polygonum;Polygonum scabrum	0.907364601767219
+ASV1325	Streptophyta;NA;Fabales;Fabaceae;Trifolium	0.9999301135122445
+ASV1326	Streptophyta;NA;Fabales;Fabaceae;Lotus;Lotus uliginosus	0.9996864353938405
+ASV1327	Streptophyta;NA;Brassicales;Brassicaceae	0.9888791846470124
+ASV1328	Streptophyta	0.9999999999204204
+ASV1329	Streptophyta;Liliopsida;Poales;Juncaceae;Juncus;Juncus oxymeris	0.8896579485356448
+ASV133	Streptophyta;Liliopsida;Asparagales;Amaryllidaceae;Allium	0.9999999913834938
+ASV1330	Streptophyta;NA;Asterales;Asteraceae;Cirsium;Cirsium rydbergii	0.702789635004363
+ASV1331	Streptophyta;NA;Brassicales;Brassicaceae;Raphanus;NA	0.9999425708816454
+ASV1332	Streptophyta;NA;Boraginales;Boraginaceae;Symphytum;Symphytum officinale	0.9999807069862146
+ASV1333	Streptophyta;NA;Asterales;Asteraceae;Lapsana;Lapsana communis	0.9999700009333964
+ASV1334	Streptophyta	0.999999999998083
+ASV1335	Streptophyta;NA;Asterales;Asteraceae;Achillea	0.7077880778810196
+ASV1336	Streptophyta;Liliopsida	0.774718310257619
+ASV1337	Streptophyta;NA;Brassicales;Brassicaceae;Brassica;Brassica carinata	0.889016040942135
+ASV1338	Streptophyta;NA;Asterales;Asteraceae;Cirsium	0.9981577924386901
+ASV1339	Streptophyta;NA;Brassicales;Brassicaceae;Raphanus;NA	0.998991983221502
+ASV134	Streptophyta;NA;Rosales;Rosaceae;Rubus	0.9219567570479718
+ASV1340	Streptophyta;NA;Asterales;Asteraceae;Cicerbita;Cicerbita muralis	0.9999997953728933
+ASV1341	Streptophyta;NA;Ericales;Ericaceae;Vaccinium;Vaccinium tenellum	0.7727398607359998
+ASV1342	Streptophyta;NA;Solanales;Solanaceae;Solanum;Solanum dulcamara	0.9434298467598579
+ASV1343	Streptophyta;NA;Fabales;Fabaceae;Cytisus	0.9328347934050477
+ASV1344	Streptophyta;NA;Rosales;Urticaceae;Urtica;Urtica gracilis	0.7762742722855952
+ASV1345	Streptophyta;NA;Brassicales;Brassicaceae;Sisymbrium;Sisymbrium officinale	0.9069190094277582
+ASV1346	Streptophyta;NA;Fabales;Fabaceae;Trifolium	0.9999545580596426
+ASV1347	Streptophyta;NA;Caryophyllales;Caryophyllaceae;Cerastium;Cerastium fischerianum	0.8552822867406666
+ASV1348	Streptophyta;NA;Ericales;Balsaminaceae;Impatiens;Impatiens glandulifera	0.9630865128426811
+ASV1349	Streptophyta;NA;Asterales;Asteraceae;Tanacetum	0.9539899260287695
+ASV135	Streptophyta;NA;Rosales;Rosaceae;Rosa	0.7371149102964303
+ASV1350	Streptophyta;NA;Fabales;Fabaceae;Lotus;Lotus uliginosus	0.999938377468004
+ASV1351	Streptophyta;NA;Boraginales;Hydrophyllaceae;Phacelia	0.9717578259268006
+ASV1352	Streptophyta;NA;Rosales;Rosaceae;Malus;Malus fusca	0.9991667454343346
+ASV1353	Streptophyta;NA;Asterales;Asteraceae;Matricaria	0.9991865643673861
+ASV1354	Streptophyta;NA;Asterales;Asteraceae;Cirsium;Cirsium arvense	0.8925924885968344
+ASV1355	Streptophyta;NA;Ericales;Ericaceae;Vaccinium;Vaccinium microcarpum	0.9683215606970109
+ASV1356	Streptophyta	0.9999999999975988
+ASV1357	Streptophyta;Liliopsida	0.7010856189956729
+ASV1358	Streptophyta;NA;Fabales;Fabaceae;Trifolium;Trifolium strictum	0.9999999488389064
+ASV1359	Streptophyta;NA;Ericales;Ericaceae;Vaccinium;Vaccinium tenellum	0.9479689438794384
+ASV136	Streptophyta;NA;Lamiales;Plantaginaceae;Plantago	0.9506390935690512
+ASV1360	Streptophyta;NA;Fabales;Fabaceae;Trigonella	0.702724404867671
+ASV1361	Streptophyta;NA;Fabales;Fabaceae;Trifolium;Trifolium strictum	0.9999999620208663
+ASV1362	Streptophyta;NA;Fabales;Fabaceae;Trifolium	0.9998822117917436
+ASV1363	Streptophyta;NA;Boraginales;Boraginaceae;Symphytum;Symphytum officinale	0.9912695761198347
+ASV1364	Streptophyta;Liliopsida	0.7236607449535898
+ASV1365	Streptophyta;NA;Ericales;Balsaminaceae;Impatiens;Impatiens glandulifera	0.9956133468920116
+ASV1366	Streptophyta;NA;Ericales;Ericaceae;Vaccinium;Vaccinium tenellum	0.9691383368221894
+ASV1367	Streptophyta;NA;Brassicales;Brassicaceae	0.7935545675568507
+ASV1368	Streptophyta;NA;Sapindales;Sapindaceae	0.7829063997072812
+ASV1369	Streptophyta	0.9999999998887965
+ASV137	Streptophyta;NA;Fabales;Fabaceae;Trifolium	0.9979910997419037
+ASV1370	Streptophyta;NA;Fabales;Fabaceae	0.9779893521743956
+ASV1371	Streptophyta;NA;Fabales;Fabaceae;Lotus;Lotus uliginosus	0.9999695157948031
+ASV1372	Streptophyta;NA;Brassicales;Brassicaceae;Sisymbrium;Sisymbrium officinale	0.9763232450072633
+ASV1373	Streptophyta;NA;Ericales;Ericaceae;Vaccinium;Vaccinium microcarpum	0.9979347782378257
+ASV1374	Streptophyta;NA;Brassicales;Brassicaceae;Diplotaxis;Diplotaxis acris	0.7811233044493815
+ASV1375	Streptophyta;NA;Rosales;Rosaceae;Rosa	0.9503690857011915
+ASV1376	Streptophyta;NA;Boraginales;Boraginaceae;Borago;Borago officinalis	0.9999999999871534
+ASV1377	Streptophyta;NA;Brassicales;Brassicaceae	0.8592698414440529
+ASV1378	Streptophyta;NA;Brassicales;Brassicaceae;Barbarea;NA	0.9946423394980318
+ASV1379	Streptophyta;NA;Aquifoliales;Aquifoliaceae;Ilex	0.8660381940804814
+ASV138	Streptophyta;Liliopsida;Poales;Juncaceae;Juncus;Juncus oxymeris	0.9073154232022307
+ASV1380	Streptophyta;NA;Rosales;Rosaceae;Rosa	0.9696800481791608
+ASV1381	Streptophyta;NA;Boraginales;Boraginaceae;Symphytum;Symphytum grandiflorum	0.7989474227431654
+ASV1382	Streptophyta;NA;Solanales;Solanaceae;Solanum	0.9629805454668445
+ASV1383	Streptophyta;NA;Brassicales;Brassicaceae;Sisymbrium;Sisymbrium officinale	0.8207384670677846
+ASV1384	Streptophyta;NA;Asterales;Asteraceae;Tripleurospermum;Tripleurospermum fissurale	0.876925125083742
+ASV1385	Streptophyta	1.0000000000000075
+ASV1386	Streptophyta;NA;Fabales;Fabaceae;Trifolium	0.9999903479675671
+ASV1387	Streptophyta;NA;Ericales;Ericaceae;Rhododendron;Rhododendron ponticum	0.9459868355142633
+ASV1388	Streptophyta;NA;Asterales;Asteraceae;Scorzoneroides;Scorzoneroides autumnalis	0.9999528710781606
+ASV1389	Streptophyta	0.9999999974998255
+ASV139	Streptophyta;NA;Ericales;Ericaceae;Rhododendron;Rhododendron ponticum	0.9992476587280046
+ASV1390	Streptophyta;NA;Rosales;Rosaceae;Rosa	0.974623508528306
+ASV1391	Streptophyta;NA;Lamiales;Plantaginaceae;Veronicastrum;Veronicastrum virginicum	0.7670692541480159
+ASV1392	Streptophyta;NA;Brassicales;Brassicaceae	0.8471158666110715
+ASV1393	Streptophyta;NA;Fabales;Fabaceae;Trifolium	0.9999876952097603
+ASV1394	Streptophyta;NA;Asterales;Asteraceae;Cirsium	0.9357660104903661
+ASV1395	Streptophyta;NA;Rosales;Rosaceae;Rosa	0.7537901400725244
+ASV1396	Streptophyta;NA;Ericales;Ericaceae;Gaultheria	0.9977861176790173
+ASV1397	Streptophyta;NA;Brassicales;Brassicaceae;Barbarea;NA	0.996710788227975
+ASV1398	Streptophyta;NA;Fabales;Fabaceae	0.9995370395087927
+ASV1399	Streptophyta;NA;Solanales;Solanaceae;Solanum	0.7274308301561877
+ASV14	Streptophyta;NA;Fabales;Fabaceae;Trifolium	0.999841150022984
+ASV140	Streptophyta;Magnoliopsida;Rosales;Rosaceae;Spiraea;Spiraea douglasii	0.9796502121028958
+ASV1400	Streptophyta	0.9999999999975168
+ASV1401	Streptophyta;NA;Rosales;Rosaceae;Rosa	0.7606456588165575
+ASV1402	Streptophyta;Liliopsida;Poales;Poaceae;Poa	0.999930304287887
+ASV1403	Streptophyta;NA;Rosales;Rosaceae;Rubus;Rubus sanctus	0.7498152084402897
+ASV1404	Streptophyta	0.999999999471995
+ASV1405	Streptophyta;NA;Fabales;Fabaceae;Trifolium	0.9995699716842902
+ASV1406	Streptophyta;NA;Fabales;Fabaceae;Trifolium;Trifolium strictum	0.9779809220117909
+ASV1407	Streptophyta;Liliopsida	0.8803666686604313
+ASV1408	Streptophyta	0.9999999985478797
+ASV1409	Streptophyta	0.9999998508867419
+ASV141	Streptophyta;Liliopsida;Poales;Poaceae;Lolium	0.999208917973835
+ASV1410	Streptophyta	0.9999999992968713
+ASV1411	Streptophyta;NA;Brassicales;Brassicaceae	0.9998723559531535
+ASV1412	Streptophyta;NA;Asterales;Asteraceae;Cirsium	0.9988247403410591
+ASV1413	Streptophyta	0.999999999995382
+ASV1414	Streptophyta;NA;Brassicales;Brassicaceae;Barbarea;NA	0.9203021411080868
+ASV1415	Streptophyta;NA;Rosales;Urticaceae;Urtica	0.9999959875624229
+ASV1416	Streptophyta;NA;Brassicales;Brassicaceae;Sisymbrium;Sisymbrium officinale	0.9768479018500622
+ASV1417	Streptophyta;NA;Rosales;Rosaceae;Potentilla;Potentilla gordonii	0.8525172103952428
+ASV1418	Unassigned	0.6791481810621435
+ASV1419	Streptophyta;NA;Ericales;Ericaceae;Rhododendron;Rhododendron ponticum	0.950307831464415
+ASV142	Streptophyta;NA;Ericales;Balsaminaceae;Impatiens;Impatiens glandulifera	0.9956110102651672
+ASV1420	Streptophyta;NA;Rosales;Rosaceae;Rosa;Rosa kokanica	0.7062107164584867
+ASV1421	Streptophyta;NA;Fabales;Fabaceae;Vicia	0.7729001061478724
+ASV1422	Streptophyta;NA;Rosales;Rosaceae;Rosa	0.8436631633089612
+ASV1423	Streptophyta;NA;Fabales;Fabaceae;Trifolium	0.9999451510679918
+ASV1424	Streptophyta;NA;Rosales;Rosaceae;Rosa	0.9700817974014784
+ASV1425	Streptophyta;NA;Rosales;Rosaceae;Fragaria;Fragaria virginiana	0.9628802025193225
+ASV1426	Streptophyta;NA;Ericales;Ericaceae	0.9972408011269206
+ASV1427	Streptophyta;NA	0.773949942346507
+ASV1428	Streptophyta;NA;Fabales;Fabaceae;Trifolium	0.9998622818713352
+ASV1429	Streptophyta	0.9999999999996994
+ASV143	Streptophyta;NA;Solanales;Solanaceae	0.7248596902651832
+ASV1430	Streptophyta;NA;Rosales;Rosaceae;Rubus	0.9973411263422248
+ASV1431	Streptophyta;NA;Fabales;Fabaceae;Cytisus	0.9375044984014942
+ASV1432	Streptophyta;Magnoliopsida;Cornales;Cornaceae;Cornus;Cornus hemsleyi	0.9984850138111798
+ASV1433	Streptophyta;NA;Ericales;Ericaceae;Rhododendron;Rhododendron ponticum	0.9981846581939267
+ASV1434	Streptophyta	0.999999999999996
+ASV1435	Streptophyta;NA;Brassicales;Brassicaceae;Sisymbrium;Sisymbrium officinale	0.9632070439532557
+ASV1436	Streptophyta;NA;Brassicales;Brassicaceae;Sisymbrium;Sisymbrium officinale	0.972378568430457
+ASV1437	Streptophyta;NA;Brassicales;Brassicaceae;Sisymbrium;Sisymbrium officinale	0.9622401085983201
+ASV1438	Streptophyta;NA;Brassicales;Brassicaceae;Sisymbrium;Sisymbrium officinale	0.9763433799433847
+ASV1439	Streptophyta;NA;Caryophyllales;Polygonaceae;Polygonum;Polygonum scabrum	0.8015455254954278
+ASV144	Streptophyta;NA;Caryophyllales;Polygonaceae;Polygonum;Polygonum scabrum	0.9412072782724349
+ASV1440	Streptophyta;NA;Asterales;Asteraceae;Solidago;Solidago canadensis	0.7950354294623443
+ASV1441	Streptophyta;NA;Asterales;Asteraceae;Scorzoneroides;Scorzoneroides autumnalis	0.9999055035762475
+ASV1442	Streptophyta;Liliopsida	0.8126861069538653
+ASV1443	Streptophyta;NA;Fabales;Fabaceae	0.9796695874739918
+ASV1444	Streptophyta;NA;Rosales;Rosaceae;Rosa;Rosa kokanica	0.7003597931693377
+ASV1445	Streptophyta;NA;Dipsacales;Caprifoliaceae;Lonicera	0.8570262617899133
+ASV1446	Streptophyta;Liliopsida;Poales;Juncaceae;Juncus;Juncus oxymeris	0.9034026323176008
+ASV1447	Streptophyta;NA;Brassicales;Brassicaceae;Diplotaxis;Diplotaxis acris	0.8080845338601479
+ASV1448	Streptophyta;NA;Cucurbitales;Cucurbitaceae;Cucumis;Cucumis sativus	0.9879237962848275
+ASV1449	Streptophyta;NA;Lamiales;Plantaginaceae;Plantago	0.8331148548638315
+ASV145	Streptophyta;NA;Asterales;Asteraceae;Taraxacum;Taraxacum tenuifolium	0.7635082930245327
+ASV1450	Streptophyta;NA;Fabales;Fabaceae;Trifolium	0.9989857510535503
+ASV1451	Streptophyta;NA;Rosales;Rosaceae;Rubus	0.9972830552956325
+ASV1452	Streptophyta	0.9999999999986251
+ASV1453	Streptophyta;Magnoliopsida;Cornales;Cornaceae;Cornus;NA	0.9093774675797074
+ASV1454	Streptophyta;NA;Rosales;Rosaceae;Rosa	0.9583663521220107
+ASV1455	Streptophyta;NA;Brassicales;Brassicaceae;Raphanus;NA	0.9993576202437783
+ASV1456	Streptophyta;NA;Malvales;Malvaceae;Tilia	0.8729239128231677
+ASV1457	Streptophyta;NA;Ericales;Ericaceae;Rhododendron;Rhododendron ponticum	0.9992160391067313
+ASV1458	Streptophyta;NA;Rosales;Rosaceae;Rosa	0.9711845219922816
+ASV1459	Streptophyta;NA;Solanales;Solanaceae;Solanum;Solanum dulcamara	0.9990535010249444
+ASV146	Streptophyta;Magnoliopsida;Ericales;Ericaceae;Vaccinium;Vaccinium corymbosum	0.8846333694465334
+ASV1460	Streptophyta;NA;Fabales;Fabaceae;Trifolium	0.9980849255223698
+ASV1461	Streptophyta;NA;Brassicales;Brassicaceae;Brassica;Brassica carinata	0.7545163543887362
+ASV1462	Streptophyta;NA;Dipsacales;Caprifoliaceae;Lonicera	0.8389233680682566
+ASV1463	Streptophyta	0.9999998529551081
+ASV1464	Streptophyta;NA;Dipsacales;Caprifoliaceae;Lonicera	0.8194221386201088
+ASV1465	Streptophyta;NA;Brassicales;Brassicaceae;Barbarea;NA	0.9976243170756807
+ASV1466	Streptophyta	0.999999999999993
+ASV1467	Streptophyta;NA;Ericales;Ericaceae;Rhododendron;Rhododendron ponticum	0.784806173880556
+ASV1468	Streptophyta;Liliopsida	0.7140580051208446
+ASV1469	Streptophyta	0.9999999999988708
+ASV147	Streptophyta;Magnoliopsida;Ericales;Ericaceae;Vaccinium;Vaccinium corymbosum	0.960372041505352
+ASV1470	Streptophyta;NA;Cucurbitales;Cucurbitaceae;Cucurbita;Cucurbita lundelliana	0.9352351824671333
+ASV1471	Streptophyta;NA;Brassicales;Brassicaceae;Raphanus;NA	0.9997931183371186
+ASV1472	Streptophyta	0.9999999999999879
+ASV1473	Streptophyta;Liliopsida;Alismatales;Potamogetonaceae;Potamogeton;Potamogeton crispus	0.9999992774645587
+ASV1474	Streptophyta;NA;Ericales;Ericaceae;Rhododendron	0.9955897930030152
+ASV1475	Streptophyta;NA;Fabales;Fabaceae	0.9012216037495283
+ASV1476	Streptophyta;NA;Boraginales;Hydrophyllaceae;Phacelia	0.9996587859364567
+ASV1477	Streptophyta;NA;Boraginales;Hydrophyllaceae;Phacelia	0.9995881827589876
+ASV1478	Streptophyta;NA;Solanales;Solanaceae;Solanum;Solanum dulcamara	0.9999984845361896
+ASV1479	Streptophyta;Liliopsida	0.7555440002881512
+ASV148	Streptophyta;Magnoliopsida;Ericales;Ericaceae;Vaccinium;Vaccinium corymbosum	0.9131276120026116
+ASV1480	Streptophyta;NA;Myrtales;Lythraceae;Lythrum;Lythrum salicaria	0.9660768555577008
+ASV1481	Streptophyta;NA;Lamiales;Plantaginaceae;Plantago;Plantago lagopus	0.9648930049230384
+ASV1482	Streptophyta;NA;Asterales;Asteraceae;Anaphalis;Anaphalis margaritacea	0.9773369939157964
+ASV1483	Streptophyta;NA;Ericales;Ericaceae;Rhododendron;Rhododendron ponticum	0.9297135728646654
+ASV1484	Streptophyta;NA;Brassicales;Brassicaceae;Rorippa;Rorippa curvipes	0.9992753850916605
+ASV1485	Streptophyta;NA;Brassicales;Brassicaceae;Diplotaxis;Diplotaxis acris	0.8441853418733448
+ASV1486	Streptophyta;Liliopsida;Poales;Juncaceae;Juncus;Juncus oxymeris	0.8996891481809951
+ASV1487	Streptophyta;NA;Ericales;Ericaceae;Rhododendron	0.9930743477070921
+ASV1488	Streptophyta;NA;Solanales;Solanaceae;Solanum	0.809660541748098
+ASV1489	Streptophyta;NA;Fabales;Fabaceae;Trifolium;Trifolium uniflorum	0.727116042038522
+ASV149	Streptophyta;NA;Ranunculales;Ranunculaceae;Ranunculus;Ranunculus repens	0.9847814279836176
+ASV1490	Streptophyta;NA;Caryophyllales;Chenopodiaceae;Chenopodium;unknown Chenopodium	0.9214330244060178
+ASV1491	Streptophyta;NA;Boraginales;Hydrophyllaceae;Phacelia;Phacelia tanacetifolia	0.9784643282703407
+ASV1492	Streptophyta;Liliopsida	0.7995008998855055
+ASV1493	Streptophyta;NA;Solanales;Solanaceae;Solanum;Solanum tuberosum	0.9999987877426934
+ASV1494	Streptophyta;NA;Boraginales;Boraginaceae;Symphytum;Symphytum officinale	0.9946302522540541
+ASV1495	Streptophyta	0.9991520721365813
+ASV1496	Streptophyta;NA;Boraginales;Boraginaceae;Symphytum	0.9997496377598488
+ASV1497	Streptophyta;NA;Caryophyllales;Polygonaceae;Polygonum;Polygonum scabrum	0.800016588422418
+ASV1498	Streptophyta;NA;Caryophyllales;Polygonaceae	0.9279109504264363
+ASV1499	Streptophyta;NA;Boraginales;Hydrophyllaceae;Phacelia;Phacelia tanacetifolia	0.992409388590261
+ASV15	Streptophyta	0.9999999999999876
+ASV150	Streptophyta;NA;Lamiales;Oleaceae;Ligustrum;Ligustrum vulgare	0.8315514559766639
+ASV1500	Streptophyta;NA;Asterales;Asteraceae;Solidago	0.806946925105855
+ASV1501	Streptophyta;NA;Asterales;Asteraceae;Tanacetum	0.7887262437735142
+ASV1502	Streptophyta;NA;Ericales;Primulaceae;Primula	0.9883514496723116
+ASV1503	Streptophyta;NA;Rosales;Rosaceae;Rosa	0.9959047786258021
+ASV1504	Streptophyta;NA;Brassicales;Brassicaceae	0.7053672055852579
+ASV1505	Streptophyta	0.9999999999997985
+ASV1506	Streptophyta;NA;Fabales;Fabaceae;Trifolium	0.9389256722099113
+ASV1507	Streptophyta;NA;Solanales;Solanaceae;Solanum;Solanum tuberosum	0.9999647216997124
+ASV1508	Streptophyta;NA;Solanales;Solanaceae;Solanum;Solanum dulcamara	0.999986972174976
+ASV1509	Streptophyta;NA;Fabales;Fabaceae;Trifolium	0.9988827517603779
+ASV151	Streptophyta;NA;Solanales;Solanaceae;Solanum	0.9448579744127578
+ASV1510	Streptophyta	0.9990825742768582
+ASV1511	Streptophyta;Liliopsida;Alismatales;Alismataceae;Alisma;NA	0.9998553697311177
+ASV1512	Streptophyta;NA;Sapindales;Sapindaceae	0.8597783705109758
+ASV1513	Streptophyta;NA;Apiales;Apiaceae;Oenanthe;Oenanthe sarmentosa	0.9999312492357783
+ASV1514	Streptophyta;NA;Rosales;Rosaceae;Rubus	0.9871303444615585
+ASV1515	Streptophyta	0.9999999351643002
+ASV1516	Streptophyta	0.9994694364521198
+ASV1517	Streptophyta;NA;Solanales;Solanaceae;Solanum	0.8036996780866055
+ASV1518	Streptophyta;NA;Caryophyllales;Polygonaceae	0.9815053298818294
+ASV1519	Streptophyta;NA;Boraginales;Hydrophyllaceae;Phacelia;Phacelia cryptantha	0.8099435711191899
+ASV152	Streptophyta;NA;Fabales;Fabaceae;Trifolium;Trifolium repens	0.9663237106258342
+ASV1520	Streptophyta	0.9999999999999977
+ASV1521	Streptophyta;NA;Rosales;Urticaceae;Urtica	0.9999997276786915
+ASV1522	Streptophyta;NA;Rosales;Rosaceae;Rosa	0.7186924251316718
+ASV1523	Streptophyta;NA;Caryophyllales;Polygonaceae	0.9471830308499036
+ASV1524	Streptophyta;NA;Solanales;Solanaceae;Solanum;Solanum dulcamara	0.9999824136893934
+ASV1525	Streptophyta;NA;Boraginales;Hydrophyllaceae;Phacelia	0.9997009963090537
+ASV1526	Streptophyta	0.9999998319221709
+ASV1527	Streptophyta;Liliopsida;Poales;Poaceae	0.9999808159916597
+ASV1528	Streptophyta	0.999999999999984
+ASV1529	Streptophyta;NA;Rosales;Rosaceae;Rubus	0.9887893888342407
+ASV153	Streptophyta;NA;Lamiales;Plantaginaceae;Plantago	0.7815651232373875
+ASV1530	Streptophyta;NA;Solanales;Solanaceae	0.7476772830266813
+ASV1531	Streptophyta	0.9991310401515958
+ASV1532	Streptophyta;NA;Brassicales;Brassicaceae;Brassica;Brassica carinata	0.9998684409893109
+ASV1533	Streptophyta;NA;Ranunculales;Menispermaceae;Tinospora;Tinospora malabarica	0.7248284902554473
+ASV1534	Streptophyta;Liliopsida;Alismatales;Alismataceae;Alisma;Alisma lanceolatum	0.940706261652924
+ASV1535	Streptophyta;NA;Brassicales;Brassicaceae;Rorippa	0.9951049134118123
+ASV1536	Streptophyta;NA;Brassicales;Brassicaceae	0.7704323647727145
+ASV1537	Streptophyta;NA;Ranunculales;Ranunculaceae;Ranunculus;Ranunculus repens	0.9969702016938861
+ASV1538	Streptophyta;NA;Asterales;Asteraceae;Sonchus;Sonchus asper	0.9809194451409812
+ASV1539	Streptophyta;NA;Ericales;Ericaceae;Rhododendron;Rhododendron ponticum	0.9929942653376074
+ASV154	Streptophyta;NA;Ericales;Balsaminaceae;Impatiens;Impatiens glandulifera	0.995681886634399
+ASV1540	Streptophyta;Liliopsida;Asparagales;Asparagaceae;Asparagus;Asparagus oligoclonos	0.9203480379842698
+ASV1541	Streptophyta;NA;Ericales;Ericaceae;Rhododendron	0.9953389828959857
+ASV1542	Streptophyta;NA;Caryophyllales;Polygonaceae;Polygonum;Polygonum scabrum	0.9562769743861461
+ASV1543	Streptophyta;NA;Fabales;Fabaceae;Lotus;Lotus uliginosus	0.9999725813476272
+ASV1544	Streptophyta;Liliopsida;Poales;Cyperaceae;Carex;Carex radiata	0.7474393731868249
+ASV1545	Streptophyta;NA;Solanales;Solanaceae;Solanum	0.8298328309401442
+ASV1546	Streptophyta;NA;Rosales;Rosaceae;Rubus	0.9842868459286958
+ASV1547	Streptophyta;Liliopsida;Alismatales;Alismataceae;Alisma;Alisma lanceolatum	0.9363182020771296
+ASV1548	Streptophyta;NA;Boraginales;Boraginaceae;Borago;Borago officinalis	0.999884907965028
+ASV1549	Streptophyta;NA;Asterales;Asteraceae;Cosmos;Cosmos bipinnatus	0.9998153753953538
+ASV155	Streptophyta;NA;Dipsacales;Caprifoliaceae	0.9066842084552338
+ASV1550	Streptophyta;NA;Fabales;Fabaceae;Melilotus;Melilotus altissimus	0.8722486468727373
+ASV1551	Streptophyta;NA;Rosales;Rosaceae;Rubus	0.9909018356423213
+ASV1552	Streptophyta;NA;Rosales;Rosaceae;Fragaria	0.9999999646159135
+ASV1553	Streptophyta;NA;Caryophyllales;Polygonaceae;Persicaria;Persicaria tinctoria	0.8083725171669511
+ASV1554	Streptophyta;NA;Caryophyllales;Polygonaceae;Polygonum;Polygonum scabrum	0.9637992160801514
+ASV1555	Streptophyta;Liliopsida	0.8153629806488493
+ASV1556	Streptophyta;NA	0.8365735364346674
+ASV1557	Streptophyta;NA;Caryophyllales;Chenopodiaceae;Chenopodium	0.9969204053204903
+ASV1558	Streptophyta;NA;Boraginales;Hydrophyllaceae;Phacelia	0.8261249952288121
+ASV1559	Streptophyta;NA;Boraginales;Boraginaceae;Borago;Borago officinalis	0.9999997877082704
+ASV156	Streptophyta;NA;Asterales;Asteraceae;Cirsium;Cirsium palustre	0.736388112861755
+ASV1560	Streptophyta	0.9999999938739719
+ASV1561	Chlorophyta;Trebouxiophyceae;Trebouxiales;Trebouxiaceae;Trebouxia	0.9999999984255895
+ASV1562	Streptophyta;NA;Asterales;Asteraceae;Leucanthemum;NA	0.8453712656909204
+ASV1563	Streptophyta;Liliopsida	0.8481645396928961
+ASV1564	Streptophyta;NA;Rosales;Rosaceae;Rosa;Rosa kokanica	0.7431747071694831
+ASV1565	Streptophyta;Liliopsida;Alismatales;Alismataceae;Alisma;Alisma lanceolatum	0.9768230093745308
+ASV1566	Streptophyta;Liliopsida;Alismatales;Alismataceae;Alisma;Alisma lanceolatum	0.9420225418074668
+ASV1567	Streptophyta;NA;Caryophyllales;Polygonaceae;Persicaria;Persicaria hydropiperoides	0.7075536980343208
+ASV1568	Streptophyta;NA;Rosales;Rosaceae;Rubus	0.9802327499959625
+ASV1569	Streptophyta;NA;Myrtales;Lythraceae;Lythrum;Lythrum salicaria	0.9934615493212202
+ASV157	Streptophyta;NA;Ericales;Ericaceae;Vaccinium;Vaccinium chamaebuxus	0.7432174660646087
+ASV1570	Streptophyta;NA	0.7517848125341388
+ASV1571	Streptophyta;NA;Rosales;Rosaceae;Rosa	0.9895044053298957
+ASV1572	Streptophyta;NA;Asterales;Asteraceae;Hypochaeris	0.9486064248530517
+ASV1573	Streptophyta;NA;Boraginales;Boraginaceae;Symphytum;NA	0.7008825412512026
+ASV1574	Streptophyta;NA;Caryophyllales;Polygonaceae	0.9761954816098954
+ASV1575	Streptophyta;NA;Cornales;Hydrangeaceae;Hydrangea;Hydrangea paniculata	0.9999989307597194
+ASV1576	Streptophyta;NA;Sapindales;Sapindaceae;Aesculus;NA	0.9856030657528292
+ASV1577	Streptophyta;NA;Asterales;Asteraceae;Sonchus;Sonchus arvensis	0.9999899396483594
+ASV1578	Streptophyta;Magnoliopsida;Cornales;Cornaceae;Cornus	0.818411069882495
+ASV1579	Streptophyta;NA;Ericales;Balsaminaceae;Impatiens;Impatiens glandulifera	0.9955689673069117
+ASV158	Streptophyta;NA;Asterales;Asteraceae;Tanacetum	0.945745305997297
+ASV1580	Streptophyta;NA;Asterales;Asteraceae;Cirsium;Cirsium palustre	0.8725485498796103
+ASV1581	Streptophyta;NA;Rosales;Rosaceae;Rubus	0.998162140608471
+ASV1582	Streptophyta;NA;Boraginales;Hydrophyllaceae;Phacelia	0.9990839782389865
+ASV1583	Streptophyta;NA	0.9129336971479385
+ASV1584	Streptophyta;NA;Fabales;Fabaceae;Vicia;Vicia cracca	0.8674548888550532
+ASV1585	Streptophyta;NA;Asterales;Asteraceae;Xerochrysum;Xerochrysum bracteatum	0.8625309489316022
+ASV1586	Streptophyta;NA;Boraginales;Boraginaceae;Symphytum;Symphytum grandiflorum	0.8051748200985721
+ASV1587	Streptophyta;Liliopsida;Alismatales;Alismataceae;Alisma;NA	0.9872129078288878
+ASV1588	Streptophyta;NA;Solanales;Solanaceae;Solanum;Solanum tuberosum	0.9327796748898713
+ASV1589	Streptophyta	0.9999998283613569
+ASV159	Streptophyta;NA;Lamiales;Plantaginaceae;Plantago;Plantago lagopus	0.8200203774891428
+ASV1590	Streptophyta;NA;Asterales;Asteraceae;Solidago	0.7173223479298569
+ASV1591	Streptophyta;NA;Cucurbitales;Cucurbitaceae;Cucumis;Cucumis picrocarpus	0.7005500459021727
+ASV1592	Streptophyta;NA;Caryophyllales;Chenopodiaceae;Chenopodium	0.9993911650496101
+ASV1593	Streptophyta;NA;Saxifragales;Saxifragaceae;Heuchera;Heuchera longiflora	0.8298489070312385
+ASV1594	Streptophyta;NA;Fabales;Fabaceae	0.9999999818948464
+ASV1595	Streptophyta;Liliopsida;Poales;Poaceae;Anthoxanthum	0.9997801141897151
+ASV1596	Streptophyta	0.9999999999999876
+ASV1597	Streptophyta	0.9999999672664884
+ASV1598	Streptophyta;NA;Rosales;Rosaceae;Rosa;Rosa kokanica	0.7876934275714617
+ASV1599	Streptophyta;NA;Brassicales;Brassicaceae;Raphanus;NA	0.9992634700975177
+ASV16	Streptophyta;NA;Boraginales;Boraginaceae;Symphytum;Symphytum grandiflorum	0.7720592154093066
+ASV160	Streptophyta;NA;Cucurbitales;Cucurbitaceae;Cucurbita;Cucurbita lundelliana	0.9271666957337334
+ASV1600	Streptophyta;NA;Malpighiales;Hypericaceae;Hypericum	0.998927558848169
+ASV1601	Streptophyta;NA;Rosales;Rosaceae;Rubus	0.9871303444615585
+ASV1602	Streptophyta;NA;Pinales;Pinaceae;Pinus	0.9999999757692178
+ASV1603	Streptophyta;NA;Brassicales;Brassicaceae;Raphanus;NA	0.9999468781660046
+ASV1604	Streptophyta	0.9999999999999976
+ASV1605	Streptophyta;NA;Malpighiales;Hypericaceae;Hypericum	0.9997700038579362
+ASV1606	Streptophyta;Liliopsida	0.7303421184632938
+ASV1607	Streptophyta;NA;Cucurbitales;Cucurbitaceae;Cucumis	0.8307181235422683
+ASV1608	Streptophyta;NA;Rosales;Rosaceae;Rubus	0.9803516063031205
+ASV1609	Streptophyta;NA;Brassicales;Brassicaceae	0.9996021433469862
+ASV161	Streptophyta;NA;Asterales;Asteraceae;Achillea	0.9404364039365043
+ASV1610	Streptophyta	0.9999999999902176
+ASV1611	Chlorophyta;Trebouxiophyceae;Trebouxiales;Trebouxiaceae;Trebouxia	0.9999999999053588
+ASV1612	Streptophyta;NA;Brassicales;Brassicaceae;Brassica;Brassica carinata	0.8950974505727253
+ASV1613	Streptophyta;NA;Rosales;Rosaceae;Rubus	0.9906540994296447
+ASV1614	Streptophyta;NA;Asterales;Asteraceae;Solidago;Solidago missouriensis	0.7208607374102762
+ASV1615	Streptophyta;NA;Fabales;Fabaceae;Lotus;Lotus uliginosus	0.9999753784547614
+ASV1616	Streptophyta;NA;Fabales;Fabaceae;Trifolium	0.997261241304963
+ASV1617	Streptophyta;NA;Caryophyllales;Chenopodiaceae;Chenopodium;Chenopodium frutescens	0.8751412747305104
+ASV1618	Streptophyta;NA;Lamiales;Plantaginaceae;Linaria	0.9999999497271883
+ASV1619	Streptophyta;NA;Rosales;Rosaceae;Potentilla;Potentilla anserina	0.999980884766334
+ASV162	Streptophyta;NA;Rosales;Rosaceae;Crataegus;Crataegus songarica	0.9979625261531588
+ASV1620	Streptophyta;NA;Asterales;Asteraceae;Helianthus	0.9831872876667376
+ASV1621	Streptophyta;NA;Brassicales;Brassicaceae;Raphanus;NA	0.8148202186319797
+ASV1622	Streptophyta;Magnoliopsida;Caryophyllales;Polygonaceae;Fagopyrum;Fagopyrum esculentum	0.9879997731108309
+ASV1623	Streptophyta;NA;Brassicales;Brassicaceae;Raphanus;NA	0.9998051518984393
+ASV1624	Streptophyta;NA;Rosales;Rosaceae;Malus	0.9852904273793637
+ASV1625	Streptophyta;NA;Saxifragales;Saxifragaceae;Heuchera;Heuchera longiflora	0.826124351505822
+ASV1626	Streptophyta;NA;Brassicales;Brassicaceae	0.8843961245530174
+ASV1627	Streptophyta	0.9999999562071372
+ASV1628	Streptophyta;NA;Rosales;Rosaceae;Rosa	0.974623508528306
+ASV1629	Streptophyta;NA;Brassicales;Brassicaceae;Raphanus;NA	0.99214186375561
+ASV163	Streptophyta;Magnoliopsida;Ericales;Ericaceae;Vaccinium;Vaccinium uliginosum	0.9712464936991728
+ASV1630	Streptophyta;NA;Malpighiales;Hypericaceae;Hypericum	0.9998045382827715
+ASV1631	Streptophyta;Liliopsida;Asparagales;Amaryllidaceae;Allium	0.8615769611816861
+ASV1632	Streptophyta;NA;Fabales;Fabaceae;Lupinus;Lupinus lepidus	0.713545691770188
+ASV1633	Streptophyta;NA;Apiales;Apiaceae	0.9975323778068477
+ASV1634	Streptophyta;NA;Caryophyllales;Amaranthaceae;Amaranthus;Amaranthus hybridus	0.792280448693745
+ASV1635	Streptophyta;Liliopsida	0.7731074113239857
+ASV1636	Streptophyta;NA;Ericales;Ericaceae;Gaultheria;Gaultheria shallon	0.7780282197863685
+ASV1637	Streptophyta;NA;Asterales;Asteraceae;Senecio	0.9408926222711967
+ASV1638	Streptophyta	0.9997904736769768
+ASV1639	Streptophyta;NA;Fabales;Fabaceae;Lotus;Lotus frondosus	0.8344381795170367
+ASV164	Streptophyta;NA;Boraginales;Hydrophyllaceae;Phacelia;Phacelia tanacetifolia	0.9743643804614353
+ASV1640	Streptophyta;NA;Brassicales;Brassicaceae;Diplotaxis;Diplotaxis acris	0.7811233044493815
+ASV1641	Streptophyta;NA;Dipsacales;Caprifoliaceae	0.9694029309103425
+ASV1642	Streptophyta;NA;Lamiales;Lamiaceae;Origanum	0.9824644435201804
+ASV1643	Chlorophyta;Trebouxiophyceae;Trebouxiales;Trebouxiaceae;Trebouxia;Trebouxia aff. solaris AB-2015	0.7891795221432333
+ASV1644	Streptophyta;Magnoliopsida;Caryophyllales;Polygonaceae;Fagopyrum;Fagopyrum esculentum	0.9943693853040422
+ASV1645	Streptophyta;NA;Brassicales;Brassicaceae;Capsella;NA	0.9999999738795116
+ASV1646	Streptophyta;NA;Brassicales;Brassicaceae;Raphanus;NA	0.9997644170252628
+ASV1647	Streptophyta	0.9999999999997672
+ASV1648	Streptophyta;NA;Cucurbitales;Cucurbitaceae;Cucumis;Cucumis picrocarpus	0.8572097901624233
+ASV1649	Streptophyta	0.999999999998697
+ASV165	Streptophyta;NA;Boraginales;Hydrophyllaceae;Phacelia;Phacelia tanacetifolia	0.9858709060802909
+ASV1650	Streptophyta;NA;Ericales;Styracaceae;Styrax;Styrax wilsonii	0.874713282670093
+ASV1651	Streptophyta;NA;Brassicales;Brassicaceae;Diplotaxis;Diplotaxis acris	0.8368227264797176
+ASV1652	Streptophyta;NA;Fabales;Fabaceae;Trifolium	0.9992236282521696
+ASV1653	Streptophyta;NA;Dipsacales;Caprifoliaceae	0.9883700913329991
+ASV1654	Streptophyta	0.9999999999999265
+ASV1655	Streptophyta;NA;Cucurbitales;Cucurbitaceae;Cucumis;Cucumis picrocarpus	0.9860987475669104
+ASV1656	Streptophyta;Liliopsida;Poales;Cyperaceae;Carex;Carex radiata	0.895747902436354
+ASV1657	Streptophyta;NA	0.7594540529011868
+ASV1658	Streptophyta;Liliopsida;Poales;Juncaceae;Juncus;Juncus oxymeris	0.9309855252697342
+ASV1659	Streptophyta;NA;Brassicales;Brassicaceae	0.9946539532939562
+ASV166	Streptophyta;NA;Ericales;Balsaminaceae;Impatiens;Impatiens glandulifera	0.99568361492331
+ASV1660	Streptophyta;NA;Ericales;Ericaceae;Vaccinium	0.8403877735794751
+ASV1661	Streptophyta;Magnoliopsida;Cornales;Cornaceae;Cornus	0.818411069882495
+ASV1662	Chlorophyta;Chlorophyceae;Chlamydomonadales;NA;Tetracystis;NA	0.982936277048997
+ASV1663	Streptophyta;Liliopsida;Poales;Cyperaceae;Carex;Carex radiata	0.7480749863868568
+ASV1664	Streptophyta	0.9999999999985941
+ASV1665	Streptophyta;NA;Fagales;Fagaceae;Quercus;Quercus hartwissiana	0.9406980004924638
+ASV1666	Streptophyta;NA;Saxifragales;Saxifragaceae;Tolmiea;Tolmiea menziesii	0.9999973780932674
+ASV1667	Streptophyta;NA;Dipsacales;Caprifoliaceae	0.933103326000206
+ASV1668	Streptophyta;NA;Asterales;Asteraceae;Coreopsis;Coreopsis grandiflora	0.9704088530326939
+ASV1669	Streptophyta;NA;Asterales;Asteraceae;Coreopsis	0.9983948462708319
+ASV167	Streptophyta;NA;Rosales;Rosaceae;Rosa	0.9642859217245836
+ASV1670	Chlorophyta;Trebouxiophyceae;Trebouxiales;Trebouxiaceae;Trebouxia	0.9999394388578855
+ASV1671	Streptophyta;NA;Solanales;Convolvulaceae;Convolvulus;Convolvulus chinensis	0.9999965129345275
+ASV1672	Streptophyta;NA;Fabales;Fabaceae;Trifolium;Trifolium uniflorum	0.7455670993019907
+ASV1673	Streptophyta	0.9999999999999902
+ASV1674	Streptophyta;NA;Solanales;Solanaceae;Solanum;Solanum dulcamara	0.9999452460506635
+ASV1675	Streptophyta	0.9999999982536178
+ASV1676	Streptophyta;NA;Lamiales;Plantaginaceae;Veronica	0.9999995419887072
+ASV1677	Streptophyta;NA;Asterales;Asteraceae;Dahlia;Dahlia brevis	0.8849578885535377
+ASV1678	Streptophyta;NA;Asterales;Asteraceae;Anthemis	0.9139811509292832
+ASV1679	Streptophyta;NA;Ericales;Ericaceae;Rhododendron;Rhododendron schlippenbachii	0.7925807051555682
+ASV168	Streptophyta;NA;Fabales;Fabaceae;Lotus;Lotus uliginosus	0.9995936120264944
+ASV1680	Streptophyta;NA;Geraniales;Geraniaceae;Geranium;Geranium dissectum	0.9999996220016816
+ASV1681	Streptophyta	0.9998519537484181
+ASV1682	Streptophyta;NA;Brassicales;Brassicaceae	0.7992444377646291
+ASV1683	Streptophyta;NA;Rosales;Rosaceae;Rosa;Rosa kokanica	0.8819001580980314
+ASV1684	Streptophyta;NA;Boraginales;Hydrophyllaceae;Phacelia;Phacelia tanacetifolia	0.9258721731447518
+ASV1685	Streptophyta;NA;Brassicales;Brassicaceae;Draba;Draba lanceolata	0.7676668217470594
+ASV1686	Streptophyta;NA;Caryophyllales;Amaranthaceae;Amaranthus;Amaranthus hybridus	0.9553627805188997
+ASV1687	Streptophyta;Magnoliopsida;Fagales;Betulaceae;Betula;NA	0.8920869062229149
+ASV1688	Streptophyta;Liliopsida	0.7856329149516659
+ASV1689	Streptophyta;NA;Boraginales;Boraginaceae;Symphytum	0.9999975783794602
+ASV169	Streptophyta;NA;Asterales;Asteraceae;Taraxacum;Taraxacum tenuifolium	0.768587401944081
+ASV1690	Streptophyta;NA;Rosales;Rosaceae;Rosa;Rosa woodsii	0.7570329554282315
+ASV1691	Streptophyta	0.9999999995905359
+ASV1692	Streptophyta;Liliopsida	0.7137308213767658
+ASV1693	Streptophyta	0.9999999755855253
+ASV1694	Streptophyta	1.0000000000000084
+ASV1695	Streptophyta;NA;Myrtales;Lythraceae;Lythrum;Lythrum salicaria	0.993373035333696
+ASV1696	Streptophyta;Liliopsida;Poales;Poaceae;Alopecurus	0.9976428997029018
+ASV1697	Streptophyta;NA;Ranunculales;Menispermaceae;Tinospora;Tinospora malabarica	0.9445338761690087
+ASV1698	Streptophyta;NA;Ericales;Ericaceae;Rhododendron	0.9953761021014508
+ASV1699	Streptophyta;NA;Lamiales;Lamiaceae;Melissa;Melissa officinalis	0.7868304042513208
+ASV17	Streptophyta;NA;Boraginales;Boraginaceae;Symphytum;Symphytum officinale	0.9877592744047686
+ASV170	Streptophyta;NA;Ericales;Ericaceae;Gaultheria;Gaultheria shallon	0.7347111704488086
+ASV1700	Streptophyta	0.9995787311396905
+ASV1701	Streptophyta;Liliopsida	0.9342285410407641
+ASV1702	Streptophyta	0.9991995321144659
+ASV1703	Streptophyta;NA;Asterales;Asteraceae;Coreopsis;Coreopsis tinctoria	0.9999986181204462
+ASV1704	Streptophyta;NA;Ranunculales;Ranunculaceae;Ranunculus	0.9917359369309884
+ASV1705	Streptophyta;NA;Boraginales;Boraginaceae;Symphytum;Symphytum grandiflorum	0.8054183598902376
+ASV1706	Streptophyta;NA;Solanales;Convolvulaceae;Convolvulus;Convolvulus chinensis	0.9999717543113503
+ASV1707	Streptophyta;NA;Myrtales;Lythraceae;Lythrum;Lythrum salicaria	0.9780582488454866
+ASV1708	Streptophyta;NA;Fabales;Fabaceae;Lotus	0.9996299915120787
+ASV1709	Streptophyta;NA;Boraginales;Boraginaceae;Symphytum	0.9999970010957475
+ASV171	Streptophyta;NA;Asterales;Asteraceae;Cirsium;Cirsium arvense	0.8504208586697136
+ASV1710	Streptophyta;NA	0.7877888338172503
+ASV1711	Streptophyta	0.999069607598524
+ASV1712	Streptophyta;NA;Fabales;Fabaceae;Trifolium	0.9974075761658195
+ASV1713	Streptophyta;NA;Fabales;Fabaceae;Trifolium	0.9978277328978893
+ASV1714	Streptophyta;NA;Asterales;Asteraceae;Anthemis	0.9982937606792437
+ASV1715	Streptophyta	0.9999999999999584
+ASV1716	Streptophyta;NA;Fabales;Fabaceae;Lupinus	0.8572938426563567
+ASV1717	Streptophyta;NA;Asterales;Asteraceae;Achillea	0.7589704408541815
+ASV1718	Streptophyta;NA;Myrtales;Lythraceae;Lythrum;Lythrum salicaria	0.9919220176772964
+ASV1719	Streptophyta;NA;Rosales;Rosaceae;Rubus	0.9856513857617036
+ASV172	Streptophyta;NA;Rosales;Rosaceae;Rosa;Rosa kokanica	0.7704708986531533
+ASV1720	Streptophyta;NA;Boraginales;Hydrophyllaceae;Phacelia;Phacelia tanacetifolia	0.8507859921112688
+ASV1721	Streptophyta;NA;Asterales;Asteraceae;Achillea;Achillea alpina	0.7895066823780081
+ASV1722	Streptophyta;NA;Fabales;Fabaceae;Trifolium;Trifolium repens	0.7724009091217905
+ASV1723	Streptophyta;NA;Boraginales;Boraginaceae;Symphytum	0.9999961435249244
+ASV1724	Streptophyta;NA;Ranunculales;Ranunculaceae;Ranunculus	0.9992254988704931
+ASV1725	Streptophyta;NA;Boraginales;Boraginaceae;Symphytum	0.999974904970119
+ASV1726	Streptophyta;NA;Rosales;Rosaceae;Rubus	0.9734024430476838
+ASV1727	Streptophyta;NA;Ericales;Balsaminaceae;Impatiens	0.9999999959042395
+ASV1728	Streptophyta;NA;Myrtales;Lythraceae;Lythrum;Lythrum salicaria	0.9916832560906113
+ASV1729	Streptophyta	0.999103577447629
+ASV173	Streptophyta;NA;Asterales;Asteraceae;Cirsium;Cirsium arvense	0.9231276870984632
+ASV1730	Streptophyta;NA;Asterales;Asteraceae;Cirsium	0.9992011312723987
+ASV1731	Streptophyta;NA;Solanales;Solanaceae;Solanum;Solanum tuberosum	0.9998397772054177
+ASV1732	Streptophyta;Liliopsida;Poales;Poaceae;Phalaris	0.9993277139066786
+ASV1733	Streptophyta;NA;Boraginales;Boraginaceae;Symphytum	0.9997496377598488
+ASV1734	Streptophyta	0.9999999999999862
+ASV1735	Streptophyta	0.9999999999997505
+ASV1736	Chlorophyta;Trebouxiophyceae;Trebouxiales;Trebouxiaceae;Trebouxia;Trebouxia aff. solaris AB-2015	0.8150667115815965
+ASV1737	Streptophyta;Liliopsida;Dioscoreales;Dioscoreaceae;Dioscorea;Dioscorea collettii	0.7980870559444733
+ASV1738	Streptophyta;NA;Rosales;Rosaceae;Rubus	0.9973131301816708
+ASV1739	Streptophyta;NA;Asterales;Asteraceae;Tripleurospermum;Tripleurospermum fissurale	0.7352623176545677
+ASV174	Streptophyta;NA;Brassicales;Brassicaceae;Raphanus;NA	0.9996220735438085
+ASV1740	Streptophyta;NA;Ericales;Ericaceae	0.9739080357541943
+ASV1741	Streptophyta;NA;Fabales;Fabaceae;Trifolium	0.9999490998573863
+ASV1742	Streptophyta;NA;Ericales;Balsaminaceae;Impatiens;Impatiens glandulifera	0.9952012812236598
+ASV1743	Streptophyta;NA;Boraginales;Boraginaceae;Symphytum;Symphytum officinale	0.9947060268617758
+ASV1744	Streptophyta;NA;Solanales;Solanaceae;Solanum;Solanum tuberosum	0.9999286966512919
+ASV1745	Streptophyta;NA;Solanales;Solanaceae;Solanum;Solanum tuberosum	0.9999748447884614
+ASV1746	Streptophyta;NA;Rosales;Rosaceae;Rubus	0.998162140608471
+ASV1747	Streptophyta;NA;Brassicales;Brassicaceae;Rorippa;Rorippa curvisiliqua	0.9505237140006425
+ASV1748	Streptophyta;NA;Asterales;Asteraceae;Crepis;Crepis capillaris	0.9999975859201563
+ASV1749	Streptophyta;NA;Lamiales;Plantaginaceae	0.8553707719738715
+ASV175	Streptophyta;NA;Boraginales;Boraginaceae;Borago;Borago officinalis	0.9999999999767512
+ASV1750	Streptophyta;NA;Fabales;Fabaceae;Trifolium	0.9861122578752681
+ASV1751	Streptophyta;NA;Boraginales;Boraginaceae;Symphytum	0.9999973873415614
+ASV1752	Streptophyta	0.9999999992968713
+ASV1753	Streptophyta;Liliopsida;Poales;Juncaceae;Juncus;Juncus oxymeris	0.9660444207049086
+ASV1754	Streptophyta;NA;Cucurbitales;Cucurbitaceae;Cucurbita	0.96508044087447
+ASV1755	Streptophyta;NA;Fabales;Fabaceae;Trifolium	0.9999336691166836
+ASV1756	Streptophyta;NA;Asterales;Asteraceae;Cirsium	0.9996495134534318
+ASV1757	Streptophyta;NA;Fabales;Fabaceae;Trifolium;Trifolium repens	0.7724009091217905
+ASV1758	Streptophyta;NA;Asterales;Asteraceae;Hypochaeris;NA	0.7808883376915497
+ASV1759	Streptophyta;NA;Lamiales;Plantaginaceae;Plantago	0.7988942048136355
+ASV176	Streptophyta;NA;Rosales;Rosaceae;Rosa;Rosa woodsii	0.7762596232483442
+ASV1760	Streptophyta	0.9999999998642416
+ASV1761	Streptophyta;NA;Solanales;Solanaceae;Solanum	0.9067925218198036
+ASV1762	Streptophyta;NA;Caryophyllales;Chenopodiaceae;Chenopodium	0.8713562171144567
+ASV1763	Streptophyta;NA;Asterales;Asteraceae;Taraxacum;Taraxacum tenuifolium	0.8709751407876578
+ASV1764	Streptophyta;NA;Ranunculales;Ranunculaceae;Ranunculus	0.9946525205386598
+ASV1765	Streptophyta;NA;Asterales;Asteraceae;Cirsium	0.9602506585498584
+ASV1766	Streptophyta;Liliopsida;Dioscoreales;Dioscoreaceae;Dioscorea;Dioscorea collettii	0.7498098652210103
+ASV1767	Streptophyta;NA;Brassicales;Brassicaceae;Brassica;Brassica nigra	0.9382359693555359
+ASV1768	Streptophyta;NA;Asterales;Asteraceae;Cirsium	0.856059460517628
+ASV1769	Streptophyta;NA;Rosales;Rosaceae;Rubus	0.9923984962667152
+ASV177	Streptophyta;NA;Boraginales;Boraginaceae;Borago;Borago officinalis	0.9999999999734825
+ASV1770	Streptophyta;NA;Boraginales;Boraginaceae;Symphytum;Symphytum grandiflorum	0.7869383277395307
+ASV1771	Streptophyta	0.9997668948214361
+ASV1772	Streptophyta;NA;Cucurbitales;Cucurbitaceae;Cucurbita;NA	0.9999391936354196
+ASV1773	Streptophyta;NA;Asterales;Asteraceae;Taraxacum;Taraxacum tenuifolium	0.7705695245031087
+ASV1774	Streptophyta;Liliopsida;Poales;Poaceae;Anthoxanthum;Anthoxanthum odoratum	0.953769001708504
+ASV1775	Streptophyta;NA;Rosales;Rosaceae;Rubus	0.9876502735664165
+ASV1776	Streptophyta;NA;Brassicales;Brassicaceae;Brassica;Brassica carinata	0.8193228456107042
+ASV1777	Streptophyta;NA;Saxifragales;Saxifragaceae;Heuchera;Heuchera longiflora	0.897048955567176
+ASV1778	Streptophyta	0.9999999948764264
+ASV1779	Streptophyta;NA;Asterales;Asteraceae	0.9961012029004249
+ASV178	Streptophyta;NA;Asterales;Asteraceae;Hypochaeris	0.9171652022016097
+ASV1780	Streptophyta;NA;Malpighiales;Salicaceae;Salix	0.957610283158041
+ASV1781	Streptophyta;NA;Fabales;Fabaceae;Lathyrus	0.7897429552339121
+ASV1782	Streptophyta	0.999999999908981
+ASV1783	Streptophyta	0.9996015273060431
+ASV1784	Streptophyta;NA;Ericales;Balsaminaceae;Impatiens;Impatiens glandulifera	0.7779556855860149
+ASV1785	Streptophyta;NA;Asterales;Asteraceae;Tanacetum	0.8341688689405975
+ASV1786	Streptophyta;NA;Rosales;Rosaceae;Rubus	0.9839809994432858
+ASV1787	Streptophyta;NA;Solanales;Convolvulaceae	0.7291519755676277
+ASV1788	Streptophyta;NA;Boraginales;Boraginaceae;Borago;Borago officinalis	0.9999999998015312
+ASV1789	Streptophyta;Liliopsida	0.7849140942584614
+ASV179	Streptophyta;NA;Boraginales;Boraginaceae;Borago;Borago officinalis	0.9999999999301964
+ASV1790	Streptophyta;NA;Boraginales;Boraginaceae;Symphytum;Symphytum officinale	0.9999600540238665
+ASV1791	Streptophyta;NA	0.957931327743204
+ASV1792	Streptophyta;NA;Myrtales;Lythraceae;Lythrum;Lythrum salicaria	0.9916832560906113
+ASV1793	Streptophyta;NA;Ericales;Balsaminaceae;Impatiens;Impatiens glandulifera	0.9937021310224565
+ASV1794	Streptophyta;NA;Fabales;Fabaceae;Trifolium;Trifolium aintabense	0.7466698957576742
+ASV1795	Streptophyta;NA;Fabales;Fabaceae;Trifolium	0.9986899959739417
+ASV1796	Streptophyta;Liliopsida	0.8172502183984722
+ASV1797	Streptophyta;NA;Cornales;Hydrangeaceae;Hydrangea;Hydrangea serrata	0.9868337777138529
+ASV1798	Streptophyta;NA;Myrtales;Lythraceae;Lythrum;Lythrum salicaria	0.9920607369298121
+ASV1799	Streptophyta;NA;Myrtales;Lythraceae;Lythrum;Lythrum salicaria	0.9920635779097629
+ASV18	Streptophyta;NA;Ranunculales;Menispermaceae;Tinospora;Tinospora malabarica	0.993311943680186
+ASV180	Streptophyta;NA;Fabales;Fabaceae;Trifolium	0.9997077315360592
+ASV1800	Chlorophyta;Chlorophyceae;Sphaeropleales;Bracteacoccaceae;Bracteacoccus;Bracteacoccus aggregatus	0.9970251883589907
+ASV1801	Streptophyta;NA;Rosales;Rosaceae;Rubus	0.9839266090742587
+ASV1802	Streptophyta;Liliopsida	0.8762644333042829
+ASV1803	Streptophyta;NA	0.8538694492071781
+ASV1804	Streptophyta	0.9999999999999852
+ASV1805	Streptophyta	0.9999999485489307
+ASV1806	Streptophyta;NA;Myrtales;Lythraceae;Lythrum;Lythrum salicaria	0.8130892614546703
+ASV1807	Streptophyta;NA;Asterales;Asteraceae;Tanacetum	0.9283160098234079
+ASV1808	Streptophyta;NA;Myrtales;Lythraceae;Lythrum;Lythrum salicaria	0.9953012989152703
+ASV1809	Streptophyta;NA;Myrtales;Lythraceae;Lythrum;Lythrum salicaria	0.9920597941116359
+ASV181	Streptophyta;NA;Boraginales;Boraginaceae;Borago;Borago officinalis	0.9999999999262172
+ASV182	Streptophyta;NA;Brassicales;Brassicaceae;Rorippa	0.9916067394229233
+ASV183	Streptophyta;NA;Rosales;Rosaceae;Rosa	0.9354404836773325
+ASV184	Streptophyta;NA;Ranunculales;Ranunculaceae;Ranunculus;Ranunculus repens	0.9776749995981822
+ASV185	Streptophyta;NA;Asterales;Asteraceae;Taraxacum;Taraxacum tenuifolium	0.7682071201874678
+ASV186	Streptophyta;NA;Fabales;Fabaceae;Trifolium;Trifolium dasyphyllum	0.7782664319826211
+ASV187	Streptophyta;NA;Caryophyllales;Polygonaceae;Bistorta;Bistorta amplexicaulis	0.9700604009059565
+ASV188	Streptophyta;NA;Caryophyllales;Polygonaceae;Bistorta;Bistorta amplexicaulis	0.9928403196400977
+ASV189	Streptophyta;NA;Solanales;Solanaceae;Solanum;Solanum dulcamara	0.9999800079980714
+ASV19	Streptophyta;NA;Rosales;Rosaceae;Rubus	0.9968271423386429
+ASV190	Streptophyta;NA;Ericales;Styracaceae;Styrax;Styrax wilsonii	0.8526761461310008
+ASV191	Streptophyta;NA;Fabales;Fabaceae;Trifolium	0.9997064659479985
+ASV192	Streptophyta;NA;Ericales;Ericaceae;Vaccinium;Vaccinium microcarpum	0.9999336168398071
+ASV193	Streptophyta;NA;Boraginales;Boraginaceae;Symphytum	0.9999940645980875
+ASV194	Streptophyta;NA;Fabales;Fabaceae;Cytisus	0.9400089450945467
+ASV195	Streptophyta;NA;Solanales;Solanaceae	0.820383265878491
+ASV196	Streptophyta	0.9999999999999974
+ASV197	Streptophyta;NA;Ericales;Styracaceae;Styrax;Styrax wilsonii	0.8538349194336708
+ASV198	Streptophyta;NA;Asterales;Asteraceae;Taraxacum;Taraxacum tenuifolium	0.7917708277138782
+ASV199	Streptophyta;NA;Sapindales;Sapindaceae;Acer;Acer pseudoplatanus	0.9999818602120119
+ASV2	Streptophyta;NA;Rosales;Rosaceae;Rubus	0.9978404820017036
+ASV20	Streptophyta;NA;Asterales;Asteraceae;Hypochaeris	0.9735283360025565
+ASV200	Streptophyta;NA;Ranunculales;Menispermaceae;Tinospora;Tinospora malabarica	0.8403343429191611
+ASV201	Streptophyta;NA;Malpighiales;Hypericaceae;Hypericum	0.9997465872373941
+ASV202	Streptophyta;NA;Brassicales;Brassicaceae;Raphanus;NA	0.9999457505887123
+ASV203	Streptophyta	0.9999999999999786
+ASV204	Streptophyta;NA;Sapindales;Sapindaceae;Aesculus;NA	0.9970325796717664
+ASV205	Streptophyta;NA;Fabales;Fabaceae;Lotus;Lotus uliginosus	0.9999840713453686
+ASV206	Streptophyta;NA;Rosales;Rosaceae;Rubus	0.9887936354805998
+ASV207	Streptophyta;NA;Sapindales;Sapindaceae;Acer;Acer pseudoplatanus	0.9999916822424133
+ASV208	Streptophyta;NA;Rosales;Rosaceae;Rubus;Rubus hawaiensis	0.9003988582631285
+ASV209	Streptophyta;NA	0.9090152746486965
+ASV21	Streptophyta	0.9999999999999978
+ASV210	Streptophyta;NA;Asterales;Asteraceae;Taraxacum;Taraxacum tenuifolium	0.8088337339899834
+ASV211	Streptophyta;NA;Fabales;Fabaceae;Trifolium;Trifolium dasyphyllum	0.7782594397966076
+ASV212	Streptophyta;NA;Boraginales;Boraginaceae;Symphytum;Symphytum officinale	0.9974741559992414
+ASV213	Streptophyta;NA;Brassicales;Brassicaceae;Raphanus;NA	0.9998269719555998
+ASV214	Streptophyta;NA;Brassicales;Brassicaceae;Raphanus;NA	0.9999512939327805
+ASV215	Streptophyta;Magnoliopsida;Ericales;Ericaceae;Vaccinium;Vaccinium uliginosum	0.9987574330988255
+ASV216	Streptophyta;NA;Fabales;Fabaceae	0.8546504607791033
+ASV217	Streptophyta;Liliopsida;Alismatales;Alismataceae;Alisma;NA	0.9998553697311177
+ASV218	Streptophyta;NA;Fabales;Fabaceae;Melilotus;Melilotus altissimus	0.7724026490372746
+ASV219	Streptophyta;NA;Ericales;Primulaceae;Primula;Primula meadia	0.9632734551475552
+ASV22	Streptophyta;NA;Boraginales;Boraginaceae;Borago;Borago officinalis	0.9999999999869829
+ASV220	Streptophyta;NA;Brassicales;Brassicaceae;Sisymbrium;Sisymbrium officinale	0.8257483837639376
+ASV221	Streptophyta;Magnoliopsida;Lamiales;Plantaginaceae;Veronicastrum;Veronicastrum sibiricum	0.9977782643634026
+ASV222	Streptophyta;NA;Sapindales;Sapindaceae;Acer;Acer tataricum	0.9992142445083642
+ASV223	Streptophyta;NA;Fabales;Fabaceae;Lotus;Lotus uliginosus	0.9998134705755329
+ASV224	Streptophyta;NA;Boraginales;Boraginaceae;Symphytum;Symphytum grandiflorum	0.7800400691995055
+ASV225	Streptophyta;Liliopsida;Poales;Poaceae;Lolium;NA	0.7725063868925173
+ASV226	Streptophyta;NA;Brassicales;Brassicaceae;Raphanus;NA	0.9998452181128843
+ASV227	Streptophyta;NA;Caryophyllales;Polygonaceae;Polygonum;Polygonum scabrum	0.9080468042541182
+ASV228	Streptophyta;NA;Rosales;Rosaceae;Rubus;Rubus hawaiensis	0.8836954009440638
+ASV229	Streptophyta;NA	0.9378898363546612
+ASV23	Streptophyta;NA;Ericales;Ericaceae;Gaultheria;Gaultheria shallon	0.9814645848403757
+ASV230	Streptophyta;NA;Brassicales;Brassicaceae;Raphanus;NA	0.999789479261074
+ASV231	Streptophyta;NA;Boraginales;Boraginaceae;Symphytum;Symphytum officinale	0.9877592746008922
+ASV232	Streptophyta;NA;Ericales;Ericaceae	0.9670908696138718
+ASV233	Streptophyta;NA;Dipsacales;Caprifoliaceae	0.9681249955130485
+ASV234	Streptophyta;NA;Boraginales;Boraginaceae;Symphytum	0.9999930893466233
+ASV235	Streptophyta;Magnoliopsida;Rosales;Rosaceae;Spiraea;Spiraea douglasii	0.8582439510482791
+ASV236	Streptophyta;NA;Asterales;Asteraceae;Scorzoneroides;Scorzoneroides autumnalis	0.9992309080381718
+ASV237	Streptophyta;NA;Boraginales;Hydrophyllaceae;Phacelia;Phacelia tanacetifolia	0.9875242255058456
+ASV238	Streptophyta;NA;Asterales;Asteraceae;Leontodon;Leontodon maroccanus	0.7803397062981288
+ASV239	Streptophyta;NA;Asterales;Asteraceae;Tanacetum	0.8604534579698763
+ASV24	Streptophyta;NA;Ericales;Ericaceae;Vaccinium	0.7013707260227564
+ASV240	Streptophyta;NA;Boraginales;Boraginaceae;Symphytum;Symphytum grandiflorum	0.7720196932755227
+ASV241	Streptophyta;NA;Rosales;Rosaceae;Rosa	0.9719583609411039
+ASV242	Streptophyta;NA;Rosales;Rosaceae;Rosa	0.9641869894240542
+ASV243	Streptophyta;NA;Rosales;Rosaceae;Rubus	0.9878735020048447
+ASV244	Streptophyta;NA;Myrtales;Onagraceae;Chamaenerion;NA	0.9343035162271935
+ASV245	Streptophyta;NA;Asterales;Asteraceae;Lapsana;Lapsana communis	0.9999999966467216
+ASV246	Streptophyta;NA	0.8748383497742795
+ASV247	Streptophyta;NA;Fabales;Fabaceae;Lupinus;Lupinus lepidus	0.7912464508558276
+ASV248	Streptophyta;NA;Asterales;Asteraceae;Taraxacum;Taraxacum tenuifolium	0.7778306003592965
+ASV249	Streptophyta;NA;Asterales;Asteraceae;Cirsium;Cirsium arvense	0.9158574296177816
+ASV25	Streptophyta;Magnoliopsida;Fabales;Fabaceae;Trifolium;NA	0.999999987023955
+ASV250	Streptophyta;NA;Ericales;Ericaceae	0.9138052108745751
+ASV251	Streptophyta;NA;Lamiales;Plantaginaceae;Plantago	0.9565889596445211
+ASV252	Streptophyta;NA;Dipsacales;Caprifoliaceae;Lonicera	0.7260367617792585
+ASV253	Streptophyta;NA;Caryophyllales;Polygonaceae;Bistorta;Bistorta amplexicaulis	0.918427232981515
+ASV254	Streptophyta;NA;Asterales;Asteraceae;Tripleurospermum	0.9985279547804653
+ASV255	Streptophyta;NA;Rosales;Rosaceae;Rubus	0.9995084222618451
+ASV256	Streptophyta;NA;Ericales;Balsaminaceae;Impatiens;Impatiens glandulifera	0.9956110600471167
+ASV257	Streptophyta;NA;Ericales;Balsaminaceae;Impatiens;Impatiens glandulifera	0.995639618484378
+ASV258	Streptophyta;NA;Rosales;Rosaceae;Crataegus;Crataegus songarica	0.9993985879732512
+ASV259	Streptophyta;NA	0.8899182817095328
+ASV26	Streptophyta;NA;Fabales;Fabaceae;Melilotus;Melilotus altissimus	0.7357964613705502
+ASV260	Streptophyta;NA;Fabales;Fabaceae;Lupinus	0.8650299900566799
+ASV261	Streptophyta;NA	0.9167875923982294
+ASV262	Streptophyta;NA;Caryophyllales;Polygonaceae;Polygonum;Polygonum scabrum	0.9357495532372161
+ASV263	Streptophyta;NA;Dipsacales;Caprifoliaceae;Lonicera	0.8520938583528208
+ASV264	Streptophyta;NA;Rosales;Rosaceae;Rubus	0.9925329864646076
+ASV265	Streptophyta;NA;Rosales;Rosaceae;Rosa	0.9844733206076917
+ASV266	Streptophyta;NA;Fabales;Fabaceae;Trifolium	0.999809136316971
+ASV267	Streptophyta;NA;Boraginales;Hydrophyllaceae;Phacelia;Phacelia tanacetifolia	0.87876494465099
+ASV268	Streptophyta;NA;Brassicales;Brassicaceae;Raphanus;NA	0.9997892745481234
+ASV269	Streptophyta	0.9999999999999847
+ASV27	Streptophyta;NA;Brassicales;Brassicaceae;Capsella;NA	0.999999994119179
+ASV270	Streptophyta;NA;Boraginales;Hydrophyllaceae;Phacelia;Phacelia tanacetifolia	0.8338781836816856
+ASV271	Streptophyta;NA;Boraginales;Boraginaceae;Symphytum;Symphytum officinale	0.9917591237052319
+ASV272	Streptophyta;NA	0.9387379186003559
+ASV273	Streptophyta;NA	0.851933998405045
+ASV274	Streptophyta;NA;Dipsacales;Caprifoliaceae	0.942003928229858
+ASV275	Streptophyta;NA;Sapindales;Sapindaceae;Acer;Acer pseudoplatanus	0.9999917622824572
+ASV276	Streptophyta;NA;Boraginales;Hydrophyllaceae;Phacelia;Phacelia tanacetifolia	0.9928019745460139
+ASV277	Streptophyta;Liliopsida	0.7824823356244622
+ASV278	Streptophyta;NA;Ericales;Ericaceae;Gaylussacia;Gaylussacia brachycera	0.9469509618174644
+ASV279	Streptophyta;NA;Sapindales;Sapindaceae;Acer;Acer pseudoplatanus	0.9999869850838915
+ASV28	Streptophyta;NA;Brassicales;Brassicaceae;Raphanus;NA	0.9989968368274161
+ASV280	Streptophyta;NA;Brassicales;Brassicaceae;Draba;Draba lanceolata	0.8385221169895529
+ASV281	Streptophyta;NA;Fabales;Fabaceae;Lupinus;Lupinus lepidus	0.8071210955029074
+ASV282	Streptophyta;NA;Rosales;Rosaceae;Rosa	0.9546823345891349
+ASV283	Streptophyta;NA;Boraginales;Boraginaceae;Myosotis	0.999971079152241
+ASV284	Streptophyta;NA;Aquifoliales;Aquifoliaceae;Ilex;Ilex delavayi	0.7570337541310704
+ASV285	Streptophyta;NA;Fabales;Fabaceae;Cytisus	0.9756409169945247
+ASV286	Streptophyta;NA;Fabales;Fabaceae;Lupinus;Lupinus lepidus	0.8057687040900806
+ASV287	Streptophyta;Liliopsida;Asparagales;Asparagaceae;Asparagus;Asparagus oligoclonos	0.9952598497767609
+ASV288	Streptophyta;NA;Fabales;Fabaceae;Cytisus	0.9667610389868804
+ASV289	Streptophyta;NA;Ericales;Ericaceae;Gaultheria;Gaultheria shallon	0.9805119245092361
+ASV29	Streptophyta;NA;Brassicales;Brassicaceae;Raphanus;NA	0.9999513507820152
+ASV290	Streptophyta;NA	0.8483405920531026
+ASV291	Streptophyta;NA;Asterales;Asteraceae;Sonchus;Sonchus asper	0.9903987814303885
+ASV292	Streptophyta;NA;Boraginales;Boraginaceae;Borago;Borago officinalis	0.9999999999895408
+ASV293	Streptophyta;NA;Rosales;Rosaceae;Rubus	0.9894688993378018
+ASV294	Streptophyta;Magnoliopsida;Lamiales;Plantaginaceae;Veronicastrum;Veronicastrum sibiricum	0.9986296399360773
+ASV295	Streptophyta;NA;Caryophyllales;Polygonaceae;Bistorta;Bistorta amplexicaulis	0.9805581750865772
+ASV296	Streptophyta;NA;Caryophyllales;Polygonaceae;Bistorta;Bistorta amplexicaulis	0.9813327915461727
+ASV297	Streptophyta;NA;Dipsacales;Caprifoliaceae;Symphoricarpos	0.9342499671222984
+ASV298	Streptophyta;NA;Asterales;Asteraceae;Jacobaea	0.9999734704540049
+ASV299	Streptophyta;NA;Rosales;Rosaceae;Rubus;Rubus hawaiensis	0.878511696850039
+ASV3	Streptophyta;NA;Rosales;Rosaceae;Rubus	0.9785865901631096
+ASV30	Streptophyta;NA;Brassicales;Brassicaceae;Sisymbrium;Sisymbrium officinale	0.9708285030119338
+ASV300	Streptophyta;Magnoliopsida;Lamiales;Plantaginaceae;Veronicastrum;Veronicastrum sibiricum	0.9426600716343807
+ASV301	Streptophyta;NA;Asterales;Asteraceae;Achillea	0.9295482630443276
+ASV302	Streptophyta;NA;Rosales;Rosaceae;Rosa;Rosa kokanica	0.8064086129968551
+ASV303	Streptophyta;NA;Asterales;Asteraceae;Achillea	0.7589704454481931
+ASV304	Streptophyta	0.9999999999999934
+ASV305	Streptophyta;NA;Rosales;Rosaceae;Rubus	0.9886289577112556
+ASV306	Streptophyta;NA;Solanales;Solanaceae;Solanum;Solanum dulcamara	0.9999926046030838
+ASV307	Streptophyta;NA;Rosales;Rosaceae;Rosa;Rosa acicularis	0.7278264347522233
+ASV308	Streptophyta;Liliopsida;Poales;Poaceae;Lolium;NA	0.7592101382327129
+ASV309	Streptophyta;NA;Caryophyllales;Polygonaceae;Bistorta;Bistorta amplexicaulis	0.9784674068817985
+ASV31	Streptophyta;NA;Rosales;Rosaceae;Rosa;Rosa acicularis	0.7795852975919689
+ASV310	Streptophyta;NA;Brassicales;Brassicaceae;Sisymbrium;Sisymbrium officinale	0.9340633642995834
+ASV311	Streptophyta;NA;Caryophyllales;Polygonaceae;Bistorta;Bistorta amplexicaulis	0.9082236641926846
+ASV312	Streptophyta;NA;Malvales;Malvaceae;Sidalcea	0.9999422961231257
+ASV313	Streptophyta;NA;Boraginales;Boraginaceae;Symphytum;Symphytum grandiflorum	0.8212627915551239
+ASV314	Streptophyta;NA;Solanales;Solanaceae;Solanum;Solanum dulcamara	0.999994400120547
+ASV315	Streptophyta;Magnoliopsida;Fabales;Fabaceae;Trifolium;NA	0.9999999596647351
+ASV316	Streptophyta;NA;Fabales;Fabaceae;Lotus;Lotus uliginosus	0.9987106506953717
+ASV317	Streptophyta;NA;Ericales;Ericaceae;Vaccinium;Vaccinium tenellum	0.9444339270061145
+ASV318	Streptophyta;NA;Ericales;Balsaminaceae;Impatiens;Impatiens glandulifera	0.9956113585906747
+ASV319	Streptophyta;NA;Fabales;Fabaceae;Melilotus;Melilotus altissimus	0.7515471571465893
+ASV32	Streptophyta;NA;Asterales;Asteraceae;Cirsium;Cirsium arvense	0.9496275883976497
+ASV320	Streptophyta;Liliopsida;Poales;Poaceae;Festuca	0.9997138035358528
+ASV321	Streptophyta;NA;Asterales;Asteraceae;Tripleurospermum;Tripleurospermum fissurale	0.9101248259979107
+ASV322	Streptophyta;NA;Asterales;Asteraceae;Achillea	0.9970566197285485
+ASV323	Streptophyta;Magnoliopsida;Rosales;Rosaceae;Spiraea;Spiraea douglasii	0.8369802816631148
+ASV324	Streptophyta;NA;Rosales;Rosaceae;Rosa	0.9661736266992917
+ASV325	Streptophyta;NA;Fabales;Fabaceae;Phaseolus;Phaseolus vulgaris	0.9385467391357132
+ASV326	Streptophyta;Magnoliopsida;Rosales;Rosaceae;Spiraea;Spiraea douglasii	0.9618636563883038
+ASV327	Streptophyta;Liliopsida;Poales;Cyperaceae;Carex;Carex radiata	0.8959073974467122
+ASV328	Streptophyta;NA;Boraginales;Boraginaceae;Myosotis	0.9999683099942813
+ASV329	Streptophyta;NA;Fabales;Fabaceae;Trifolium	0.9999493944410355
+ASV33	Streptophyta;NA;Fabales;Fabaceae;Vicia;Vicia cracca	0.8692354553218862
+ASV330	Streptophyta;NA;Rosales;Rhamnaceae;Ceanothus	0.9999965369841244
+ASV331	Streptophyta;NA;Lamiales;Plantaginaceae;Linaria;Linaria purpurea	0.9993761773541582
+ASV332	Streptophyta;NA;Ericales;Ericaceae;Vaccinium;Vaccinium microcarpum	0.995375715692455
+ASV333	Streptophyta;NA;Ericales;Ericaceae;Gaultheria;Gaultheria shallon	0.9724456856889584
+ASV334	Streptophyta;NA;Asterales;Asteraceae;Bidens;Bidens frondosa	0.8064223602439802
+ASV335	Streptophyta;NA;Dipsacales;Caprifoliaceae;Symphoricarpos	0.8408486160664987
+ASV336	Streptophyta;NA;Rosales;Rosaceae;Rosa;Rosa acicularis	0.7775348703737663
+ASV337	Streptophyta;NA;Ericales;Ericaceae;Gaultheria;Gaultheria shallon	0.9806667993999815
+ASV338	Streptophyta;NA;Brassicales;Brassicaceae;Barbarea;NA	0.9987556042921638
+ASV339	Streptophyta;NA;Brassicales;Brassicaceae;Capsella;NA	0.9999999877675522
+ASV34	Streptophyta;NA;Lamiales;Plantaginaceae;Plantago	0.798893127299235
+ASV340	Streptophyta;NA;Ericales;Ericaceae;Andromeda;Andromeda polifolia	0.9998411734574179
+ASV341	Streptophyta;NA;Lamiales;Plantaginaceae;Plantago	0.735646032294122
+ASV342	Streptophyta	0.9999999999999923
+ASV343	Streptophyta;NA;Dipsacales;Caprifoliaceae;Symphoricarpos	0.8328267299033232
+ASV344	Streptophyta;NA;Brassicales;Brassicaceae;Rorippa;Rorippa sylvestris	0.9903341319936692
+ASV345	Streptophyta;NA;Asterales;Asteraceae;Bidens	0.9998540610390956
+ASV346	Streptophyta;NA;Caryophyllales;Caryophyllaceae;Spergularia;Spergularia rubra	0.9999999822317422
+ASV347	Streptophyta;NA;Rosales;Rosaceae;Rubus	0.996218284924311
+ASV348	Streptophyta;NA;Fabales;Fabaceae;Lotus;Lotus uliginosus	0.9999800822277571
+ASV349	Streptophyta;NA;Asterales;Asteraceae;Tripleurospermum	0.9951473461100679
+ASV35	Streptophyta;NA;Rosales;Rosaceae;Rubus;Rubus hawaiensis	0.8981453036113718
+ASV350	Streptophyta;NA;Boraginales;Boraginaceae;Symphytum;Symphytum grandiflorum	0.7932715178390919
+ASV351	Streptophyta;NA;Asterales;Asteraceae;Leontodon;Leontodon maroccanus	0.7812319534054942
+ASV352	Streptophyta;NA;Asterales;Asteraceae;Crepis;Crepis capillaris	0.9999950768761717
+ASV353	Streptophyta;NA;Caryophyllales;Chenopodiaceae;Chenopodium;unknown Chenopodium	0.9027386628335915
+ASV354	Streptophyta;NA;Asterales;Asteraceae;Hypochaeris	0.9649227964808531
+ASV355	Streptophyta;NA;Rosales;Rosaceae;Rosa	0.9668073915898089
+ASV356	Streptophyta;NA;Rosales;Rosaceae;Rubus;Rubus hawaiensis	0.9140138996776012
+ASV357	Streptophyta;NA;Fabales;Fabaceae;Vicia;Vicia cracca	0.9519032988855931
+ASV358	Streptophyta;NA;Boraginales;Hydrophyllaceae;Phacelia;Phacelia tanacetifolia	0.9400383756754302
+ASV359	Streptophyta;NA;Boraginales;Boraginaceae;Symphytum;Symphytum officinale	0.9917892172696886
+ASV36	Streptophyta;NA;Ericales;Balsaminaceae;Impatiens;Impatiens glandulifera	0.9956415847390232
+ASV360	Streptophyta;NA;Asterales;Asteraceae;Sonchus;Sonchus arvensis	0.9999948281449509
+ASV361	Streptophyta;NA;Rosales;Rosaceae;Rubus	0.9956708789680576
+ASV362	Streptophyta;NA;Asterales;Asteraceae;Achillea	0.714749255818003
+ASV363	Streptophyta;NA;Asterales;Asteraceae;Sonchus;Sonchus asper	0.9924880337144251
+ASV364	Streptophyta;NA;Ericales;Ericaceae;Gaultheria;Gaultheria shallon	0.98091258821228
+ASV365	Streptophyta;NA;Lamiales;Scrophulariaceae;Sutera	0.9999999915517657
+ASV366	Streptophyta;NA;Ericales;Ericaceae	0.946877858848082
+ASV367	Streptophyta;NA;Fabales;Fabaceae;Lupinus;Lupinus lepidus	0.796490650719093
+ASV368	Streptophyta;NA;Ericales;Balsaminaceae;Impatiens;Impatiens glandulifera	0.9955400802901319
+ASV369	Streptophyta;NA;Cornales;Hydrangeaceae;Hydrangea;Hydrangea serrata	0.9870878269083415
+ASV37	Streptophyta;NA;Rosales;Rosaceae;Rubus	0.9974462063944787
+ASV370	Streptophyta;NA;Ericales;Ericaceae;Gaultheria;Gaultheria shallon	0.7838017963394474
+ASV371	Streptophyta;NA;Fabales;Fabaceae;Lotus;Lotus uliginosus	0.9999926779997893
+ASV372	Streptophyta;NA;Rosales;Rosaceae;Geum;Geum aleppicum	0.7662074409144818
+ASV373	Streptophyta;NA;Myrtales;Onagraceae;Chamaenerion;NA	0.9990393779031594
+ASV374	Streptophyta;NA;Boraginales;Boraginaceae;Symphytum;Symphytum officinale	0.996239990711942
+ASV375	Streptophyta;NA;Asterales;Asteraceae;Achillea	0.7141050381582221
+ASV376	Streptophyta;NA;Myrtales;Onagraceae;Chamaenerion;NA	0.9762199602140957
+ASV377	Streptophyta;NA;Asterales;Asteraceae;Crepis;Crepis capillaris	0.9999980906550586
+ASV378	Streptophyta;NA;Asterales;Asteraceae;Scorzoneroides;Scorzoneroides autumnalis	0.9973334837113681
+ASV379	Streptophyta;NA;Fabales;Fabaceae;Melilotus;Melilotus altissimus	0.7524075772428513
+ASV38	Streptophyta;NA;Rosales;Rosaceae;Rubus	0.9963671963004126
+ASV380	Streptophyta;NA;Boraginales	0.7601635618731085
+ASV381	Streptophyta;NA;Caryophyllales;Amaranthaceae;Amaranthus;Amaranthus hybridus	0.7966525147405044
+ASV382	Streptophyta;NA;Rosales;Rosaceae;Rosa	0.9962484124567206
+ASV383	Streptophyta;NA;Ericales;Ericaceae;Vaccinium;Vaccinium tenellum	0.9099719247091942
+ASV384	Streptophyta;NA;Caryophyllales;Polygonaceae;Bistorta;Bistorta amplexicaulis	0.8697903977610915
+ASV385	Streptophyta;NA;Lamiales;Plantaginaceae;Plantago	0.7538516981064748
+ASV386	Streptophyta;NA;Solanales;Solanaceae;Solanum;Solanum dulcamara	0.9999931459575592
+ASV387	Streptophyta;NA;Sapindales;Sapindaceae;Acer;Acer pseudoplatanus	0.9999875975081547
+ASV388	Streptophyta;NA;Asterales;Asteraceae;Echinops	0.8225938940481193
+ASV389	Streptophyta;NA;Asterales;Asteraceae;Anthemis;Anthemis cotula	0.7132725552418793
+ASV39	Streptophyta;Magnoliopsida;Lamiales;Plantaginaceae;Veronicastrum;Veronicastrum sibiricum	0.9506895951732197
+ASV390	Streptophyta;NA;Ericales;Ericaceae	0.9712715633731112
+ASV391	Streptophyta;Magnoliopsida;Rosales;Rosaceae;Spiraea	0.72364213080814
+ASV392	Streptophyta;NA;Rosales;Rosaceae;Rosa	0.9495862592862407
+ASV393	Streptophyta;NA	0.8157844509716605
+ASV394	Streptophyta;NA;Asterales;Asteraceae;Tripleurospermum;Tripleurospermum fissurale	0.8095004705256984
+ASV395	Streptophyta;Magnoliopsida;Lamiales;Plantaginaceae;Veronicastrum;Veronicastrum sibiricum	0.9421210078790785
+ASV396	Streptophyta;NA;Ericales;Ericaceae;Gaultheria;Gaultheria shallon	0.9817270062266036
+ASV397	Streptophyta;NA;Fabales;Fabaceae;Lupinus	0.9552416246980789
+ASV398	Streptophyta;NA;Boraginales;Hydrophyllaceae;Phacelia	0.999943927708062
+ASV399	Streptophyta;NA;Asterales;Asteraceae;Echinops	0.8123979448676799
+ASV4	Streptophyta;NA;Fabales;Fabaceae;Trifolium	0.9998493983361161
+ASV40	Streptophyta;NA;Fabales;Fabaceae;Cytisus	0.9352372628096142
+ASV400	Streptophyta;NA;Dipsacales;Caprifoliaceae	0.9344725713156364
+ASV401	Streptophyta;NA;Ericales;Balsaminaceae;Impatiens;Impatiens glandulifera	0.9951365042193755
+ASV402	Streptophyta;NA;Rosales;Rosaceae;Rosa;Rosa stellata	0.9555437932581065
+ASV403	Streptophyta;NA;Asterales;Asteraceae;Tripleurospermum	0.9994311208249369
+ASV404	Streptophyta;NA;Lamiales;Plantaginaceae;Digitalis;Digitalis purpurea	0.9999964674010624
+ASV405	Streptophyta;NA;Asterales;Asteraceae;Echinops;Echinops bannaticus	0.8256889229392017
+ASV406	Streptophyta;NA;Boraginales;Boraginaceae;Symphytum;Symphytum grandiflorum	0.7911163832132526
+ASV407	Streptophyta;NA;Ericales;Balsaminaceae;Impatiens;Impatiens glandulifera	0.9522396930986194
+ASV408	Streptophyta;NA;Fabales;Fabaceae;Trifolium;Trifolium uniflorum	0.7007950448218632
+ASV409	Streptophyta;NA;Brassicales;Brassicaceae;Rorippa;Rorippa austriaca	0.9034186724770445
+ASV41	Streptophyta;NA;Fabales;Fabaceae;Cytisus	0.936272493086629
+ASV410	Streptophyta;NA;Ericales;Ericaceae;Vaccinium;Vaccinium chamaebuxus	0.7545804452651561
+ASV411	Streptophyta;NA;Ericales;Ericaceae;Vaccinium	0.8662933298944379
+ASV412	Streptophyta;NA;Asterales;Asteraceae;Scorzoneroides;Scorzoneroides autumnalis	0.9998735193279991
+ASV413	Streptophyta;NA;Sapindales;Sapindaceae;Aesculus;NA	0.9978930805214219
+ASV414	Streptophyta;NA;Dipsacales;Caprifoliaceae	0.9696761269536855
+ASV415	Streptophyta;NA;Rosales;Rosaceae;Rosa;Rosa phoenicia	0.8902698534942586
+ASV416	Streptophyta;NA;Asterales;Asteraceae;Achillea	0.832310076438053
+ASV417	Streptophyta;NA;Fabales;Fabaceae;Trifolium;Trifolium nigrescens	0.7003316926899841
+ASV418	Streptophyta	1.0000000000000013
+ASV419	Streptophyta;NA;Asterales;Asteraceae;Scorzoneroides;Scorzoneroides autumnalis	0.9998650921872259
+ASV42	Streptophyta;NA;Sapindales;Sapindaceae;Acer;Acer pseudoplatanus	0.9999927386509908
+ASV420	Streptophyta;NA;Ericales;Styracaceae;Styrax;Styrax wilsonii	0.854627511149111
+ASV421	Streptophyta;NA;Dipsacales;Adoxaceae;Sambucus	0.8975948375030431
+ASV422	Streptophyta;NA;Malpighiales;Hypericaceae;Hypericum;unknown Hypericum	0.9355485256891614
+ASV423	Streptophyta;NA;Ranunculales;Ranunculaceae;Ranunculus;Ranunculus weyleri	0.94348502298117
+ASV424	Streptophyta	1.0000000000000093
+ASV425	Streptophyta;NA;Lamiales;Plantaginaceae;Veronicastrum;Veronicastrum virginicum	0.9834855317334975
+ASV426	Streptophyta;NA;Rosales;Rosaceae;Rosa;Rosa acicularis	0.7294071900290202
+ASV427	Streptophyta;NA;Ericales;Styracaceae;Styrax;Styrax wilsonii	0.8528459092672995
+ASV428	Streptophyta;NA;Asterales;Asteraceae;Taraxacum	0.999999999994649
+ASV429	Streptophyta;NA;Solanales;Solanaceae;Solanum;Solanum dulcamara	0.9999980751722484
+ASV43	Streptophyta;NA;Asterales;Asteraceae;Scorzoneroides;Scorzoneroides autumnalis	0.9999036985542448
+ASV430	Streptophyta;NA;Asterales;Asteraceae;Leontodon;Leontodon maroccanus	0.7797903306426694
+ASV431	Streptophyta;NA;Lamiales;Scrophulariaceae;Sutera	0.999999927013822
+ASV432	Streptophyta;NA;Boraginales;Hydrophyllaceae;Phacelia;Phacelia cryptantha	0.7223156060357842
+ASV433	Streptophyta;NA;Ericales;Balsaminaceae;Impatiens;Impatiens glandulifera	0.9956133353019996
+ASV434	Streptophyta	0.9999999999998554
+ASV435	Streptophyta;NA;Fabales;Fabaceae;Trifolium	0.9982568899083712
+ASV436	Streptophyta;NA;Boraginales;Boraginaceae;Symphytum;Symphytum officinale	0.9999505762678196
+ASV437	Streptophyta;NA;Fabales;Fabaceae;Medicago;Medicago lupulina	0.9072295454767597
+ASV438	Streptophyta;NA;Ericales;Balsaminaceae;Impatiens;Impatiens glandulifera	0.9602422057016626
+ASV439	Streptophyta;NA;Boraginales;Hydrophyllaceae;Phacelia	0.8697363774961898
+ASV44	Streptophyta;NA;Brassicales;Brassicaceae;Barbarea;NA	0.9994392567184904
+ASV440	Streptophyta;NA;Boraginales;Hydrophyllaceae;Phacelia;Phacelia tanacetifolia	0.9522811652746117
+ASV441	Streptophyta;NA;Boraginales;Boraginaceae;Symphytum;Symphytum officinale	0.9892975252139065
+ASV442	Streptophyta;NA;Lamiales;Plantaginaceae;Plantago	0.782943026862641
+ASV443	Streptophyta;NA;Ranunculales;Ranunculaceae;Ranunculus;Ranunculus repens	0.9851012446448716
+ASV444	Streptophyta;NA;Rosales;Rosaceae;Rubus	0.9978216913242685
+ASV445	Streptophyta	0.9999999999999828
+ASV446	Streptophyta;NA;Asterales;Asteraceae;Leucanthemum;NA	0.8459364948024254
+ASV447	Streptophyta;Liliopsida;Asparagales;Amaryllidaceae;Allium;Allium schoenoprasum	0.9999997220042293
+ASV448	Streptophyta;NA;Rosales;Rosaceae;Rubus;Rubus macraei	0.9970699998954718
+ASV449	Streptophyta;NA;Rosales;Rosaceae;Rubus	0.9938056411233301
+ASV45	Streptophyta;NA;Rosales;Rhamnaceae;Ceanothus	0.9999905158784136
+ASV450	Streptophyta;NA;Ericales;Balsaminaceae;Impatiens	0.9999999998547193
+ASV451	Streptophyta	0.9999631230079232
+ASV452	Streptophyta;NA;Rosales;Rosaceae;Rubus	0.9978775708172177
+ASV453	Streptophyta;NA;Boraginales;Boraginaceae;Symphytum;Symphytum officinale	0.9877592744103272
+ASV454	Streptophyta;Liliopsida;Poales;Poaceae;Agrostis;Agrostis capillaris	0.8163151312078457
+ASV455	Streptophyta;NA;Boraginales;Boraginaceae;Symphytum;Symphytum grandiflorum	0.7946409561286593
+ASV456	Streptophyta;NA;Asterales;Asteraceae;Tanacetum	0.9433495585856844
+ASV457	Streptophyta;NA;Caryophyllales;Polygonaceae;Bistorta;Bistorta amplexicaulis	0.7938135521740038
+ASV458	Streptophyta;NA;Fabales;Fabaceae;Robinia;NA	0.9902410197276201
+ASV459	Streptophyta;NA;Brassicales;Brassicaceae;Brassica;Brassica villosa	0.8347944391710403
+ASV46	Streptophyta;NA;Fabales;Fabaceae;Trifolium	0.9995635206551028
+ASV460	Streptophyta	0.9999999980720731
+ASV461	Streptophyta;NA;Dipsacales;Caprifoliaceae	0.9810988841530222
+ASV462	Streptophyta;NA;Cucurbitales;Cucurbitaceae;Cucurbita;Cucurbita lundelliana	0.9939120192820668
+ASV463	Streptophyta;NA;Dipsacales;Adoxaceae;Sambucus	0.8486688721573221
+ASV464	Streptophyta;Magnoliopsida	0.7049937112126993
+ASV465	Streptophyta;Liliopsida;Poales;Poaceae;Lolium	0.9990782876915446
+ASV466	Streptophyta;NA;Boraginales;Hydrophyllaceae;Phacelia;Phacelia tanacetifolia	0.9876252023202537
+ASV467	Streptophyta;NA;Ericales;Ericaceae;Rhododendron	0.9983436786121761
+ASV468	Streptophyta;NA;Boraginales;Boraginaceae;Symphytum;Symphytum officinale	0.9999581157542156
+ASV469	Streptophyta;NA;Fabales;Fabaceae;Lupinus;Lupinus lepidus	0.7593646020900461
+ASV47	Streptophyta;NA;Fabales;Fabaceae;Trifolium;Trifolium nigrescens	0.8241005084975901
+ASV470	Streptophyta;NA;Lamiales;Plantaginaceae;Digitalis;Digitalis purpurea	0.9999934275904231
+ASV471	Streptophyta;Liliopsida;Poales;Poaceae;Poa;Poa annua	0.9999295977531616
+ASV472	Streptophyta;NA;Saxifragales;Saxifragaceae;Tolmiea;Tolmiea menziesii	0.9999973780932674
+ASV473	Streptophyta;NA;Ericales;Primulaceae;Primula;Primula meadia	0.7373495808014022
+ASV474	Streptophyta;NA;Asterales;Asteraceae;Hypochaeris;Hypochaeris radicata	0.8988717644838321
+ASV475	Streptophyta;NA;Asterales;Asteraceae;Cirsium;Cirsium arvense	0.9072309921486029
+ASV476	Streptophyta;NA;Dipsacales;Caprifoliaceae	0.9492227364399501
+ASV477	Streptophyta;NA;Ericales;Balsaminaceae;Impatiens;Impatiens glandulifera	0.9955415011954453
+ASV478	Streptophyta;NA;Fabales;Fabaceae;Trifolium	0.9987833720707804
+ASV479	Streptophyta;Liliopsida;Poales;Poaceae;Holcus;Holcus lanatus	0.9999168593443079
+ASV48	Streptophyta;NA;Ericales;Balsaminaceae;Impatiens;Impatiens glandulifera	0.9631005948126484
+ASV480	Streptophyta;NA;Lamiales;Plantaginaceae;Plantago;Plantago lanceolata	0.718881205364064
+ASV481	Streptophyta;NA;Brassicales;Brassicaceae;Brassica;Brassica carinata	0.8518683003256177
+ASV482	Streptophyta;NA;Ericales;Balsaminaceae;Impatiens;Impatiens glandulifera	0.9955712307025405
+ASV483	Streptophyta;NA;Brassicales;Brassicaceae;Capsella;NA	0.999999990406849
+ASV484	Streptophyta;NA;Rosales;Rosaceae;Rosa	0.9691966065164483
+ASV485	Streptophyta;Magnoliopsida;Rosales;Rosaceae;Spiraea;Spiraea douglasii	0.7481634916286777
+ASV486	Streptophyta;NA;Ericales;Primulaceae;Primula;Primula pauciflora	0.9507819730736535
+ASV487	Streptophyta;NA;Fabales;Fabaceae;Trifolium	0.9999504896363649
+ASV488	Streptophyta;NA;Solanales;Solanaceae;Solanum;Solanum dulcamara	0.9999765411011619
+ASV489	Streptophyta;NA;Asterales;Asteraceae;Hypochaeris	0.9090846263113365
+ASV49	Streptophyta;NA;Solanales;Solanaceae;Solanum;Solanum dulcamara	0.9999985947102841
+ASV490	Streptophyta;Liliopsida;Poales;Juncaceae;Juncus;Juncus oxymeris	0.9338599199643122
+ASV491	Streptophyta;NA;Rosales;Rosaceae;Rubus	0.9880907722413801
+ASV492	Streptophyta;NA;Caryophyllales;Polygonaceae;Bistorta;Bistorta amplexicaulis	0.9002943200781369
+ASV493	Streptophyta;NA;Solanales;Solanaceae;Petunia;Petunia axillaris	0.9454342028613313
+ASV494	Streptophyta;NA;Asterales;Asteraceae;Achillea	0.7581726507947011
+ASV495	Streptophyta;NA;Lamiales;Plantaginaceae;Plantago	0.7977537460499925
+ASV496	Streptophyta;Magnoliopsida;Ericales;Ericaceae;Vaccinium;Vaccinium corymbosum	0.8829386229214545
+ASV497	Streptophyta;NA;Ericales;Ericaceae	0.9871323849820205
+ASV498	Streptophyta;NA;Fabales;Fabaceae;Trifolium	0.99993163676198
+ASV499	Streptophyta;NA;Cucurbitales;Cucurbitaceae;Cucurbita;Cucurbita ficifolia	0.8881270212286155
+ASV5	Streptophyta;NA;Rosales;Rosaceae;Rubus	0.9880647737644305
+ASV50	Streptophyta;NA;Boraginales;Boraginaceae;Symphytum;Symphytum officinale	0.9999556493381057
+ASV500	Streptophyta;NA;Boraginales;Boraginaceae;Borago;Borago officinalis	0.9999999999869829
+ASV501	Streptophyta;Liliopsida;Poales;Juncaceae;Juncus;Juncus oxymeris	0.927389346603023
+ASV502	Streptophyta;NA;Cucurbitales;Cucurbitaceae;Cucumis;Cucumis melo	0.8123393320060883
+ASV503	Streptophyta;NA;Solanales;Solanaceae;Solanum;Solanum dulcamara	0.9998424105391724
+ASV504	Streptophyta;NA;Asterales;Asteraceae;Tripleurospermum;Tripleurospermum maritimum	0.9883892110326045
+ASV505	Streptophyta;NA;Boraginales;Boraginaceae;Borago;Borago officinalis	0.9999999999787975
+ASV506	Streptophyta;NA;Fabales;Fabaceae;Trifolium;Trifolium fragiferum	0.9414820440708346
+ASV507	Streptophyta;NA;Malpighiales;Hypericaceae;Hypericum	0.9998191187879506
+ASV508	Streptophyta;Magnoliopsida;Fabales;Fabaceae;Trifolium;NA	0.9999999176126017
+ASV509	Streptophyta;NA;Ericales;Ericaceae;Vaccinium	0.8052163763352604
+ASV51	Streptophyta;NA;Ranunculales;Ranunculaceae;Ranunculus;Ranunculus repens	0.988041683354512
+ASV510	Streptophyta;NA;Rosales;Rosaceae;Rubus	0.9923800092904702
+ASV511	Streptophyta;Liliopsida;Poales;Juncaceae;Juncus;Juncus oxymeris	0.9125693350915777
+ASV512	Streptophyta;NA;Rosales;Rosaceae;Rosa	0.9518666309570658
+ASV513	Streptophyta	0.99999999999779
+ASV514	Streptophyta;NA;Rosales;Rosaceae;Rubus	0.9880831341156343
+ASV515	Streptophyta;NA;Caryophyllales;Polygonaceae	0.990920047714104
+ASV516	Streptophyta;NA;Asterales;Asteraceae;Achillea	0.852572146060258
+ASV517	Streptophyta;NA;Cucurbitales;Cucurbitaceae;Cucurbita;Cucurbita ficifolia	0.985678004346402
+ASV518	Streptophyta;NA	0.895461672710374
+ASV519	Streptophyta;Liliopsida;Poales;Poaceae;Molinia;Molinia caerulea	0.9587834626081456
+ASV52	Streptophyta;NA;Rosales;Rosaceae;Rosa;Rosa woodsii	0.8004735689510042
+ASV520	Streptophyta	1.000000000000013
+ASV521	Streptophyta;NA;Rosales;Rosaceae;Rosa	0.9704795530382988
+ASV522	Streptophyta;NA;Ericales;Primulaceae;Primula	0.999999987897936
+ASV523	Streptophyta;NA;Ericales;Balsaminaceae;Impatiens;Impatiens glandulifera	0.7869872680531527
+ASV524	Streptophyta;NA;Dipsacales;Caprifoliaceae;Lonicera	0.9317336872742112
+ASV525	Streptophyta;NA;Brassicales;Brassicaceae	0.7935592768045141
+ASV526	Streptophyta;NA;Brassicales;Brassicaceae	0.7621928749464317
+ASV527	Streptophyta;NA;Solanales;Solanaceae;Petunia;unknown Petunia	0.7881979957698204
+ASV528	Streptophyta;NA;Boraginales;Boraginaceae;Symphytum;Symphytum grandiflorum	0.7923024021064082
+ASV529	Streptophyta;NA;Fabales;Fabaceae;Trifolium	0.999807137790757
+ASV53	Streptophyta;NA;Dipsacales;Caprifoliaceae	0.9094513711219909
+ASV530	Streptophyta;NA;Caryophyllales;Polygonaceae;Bistorta;Bistorta amplexicaulis	0.9613601758574548
+ASV531	Streptophyta;NA;Rosales;Rosaceae;Rosa	0.9663742812288078
+ASV532	Streptophyta;NA;Asterales;Asteraceae;Helianthus	0.985699431546036
+ASV533	Streptophyta;NA;Lamiales;Plantaginaceae;Linaria	0.9999999996822864
+ASV534	Streptophyta	0.9999999999999684
+ASV535	Streptophyta;NA;Lamiales;Plantaginaceae;Linaria;Linaria purpurea	0.9996051622768256
+ASV536	Streptophyta;NA;Proteales;Platanaceae;Platanus;Platanus orientalis	0.9106363781318413
+ASV537	Streptophyta	0.9999999999999696
+ASV538	Streptophyta;NA;Asterales;Asteraceae;Tripleurospermum;Tripleurospermum fissurale	0.7197832230355804
+ASV539	Streptophyta	0.9995229490741387
+ASV54	Streptophyta;NA;Rosales;Rosaceae;Rosa;Rosa roxburghii	0.8339733476759476
+ASV540	Streptophyta;NA;Cucurbitales;Cucurbitaceae;Cucumis;Cucumis sativus	0.9762881822652194
+ASV541	Streptophyta;NA;Myrtales;Onagraceae;Chamaenerion;NA	0.999115434330003
+ASV542	Streptophyta;NA;Caryophyllales;Polygonaceae;Bistorta;Bistorta amplexicaulis	0.9087370884405849
+ASV543	Streptophyta;NA;Ericales;Balsaminaceae;Impatiens;Impatiens glandulifera	0.762924046531598
+ASV544	Streptophyta	1.0000000000000082
+ASV545	Streptophyta;NA;Ericales;Styracaceae;Styrax;Styrax wilsonii	0.776216662481444
+ASV546	Streptophyta;NA;Boraginales;Boraginaceae;Symphytum;Symphytum officinale	0.9956170616050264
+ASV547	Streptophyta;NA;Rosales;Rosaceae;Rubus	0.9745248995491724
+ASV548	Streptophyta;NA;Rosales;Rosaceae;Rubus	0.9924745762883544
+ASV549	Streptophyta;NA;Brassicales;Brassicaceae	0.7490794700604378
+ASV55	Streptophyta;NA;Lamiales;Plantaginaceae;Digitalis;Digitalis purpurea	0.9999985000309147
+ASV550	Streptophyta;NA;Caryophyllales;Polygonaceae;Bistorta;Bistorta amplexicaulis	0.9521141730913357
+ASV551	Streptophyta;NA;Brassicales;Brassicaceae;Capsella;NA	0.9999999897138424
+ASV552	Streptophyta;Liliopsida;Alismatales;Juncaginaceae;Triglochin;Triglochin concinna	0.9999047123221957
+ASV553	Streptophyta;NA;Rosales;Rosaceae;Geum;Geum aleppicum	0.9107106589917844
+ASV554	Streptophyta;NA;Asterales;Asteraceae;Solidago;Solidago canadensis	0.7744836168754423
+ASV555	Streptophyta;NA;Rosales;Rosaceae;Rubus;Rubus hawaiensis	0.8754289279635193
+ASV556	Streptophyta	0.9999999999999384
+ASV557	Streptophyta;NA;Asterales;Asteraceae;Sonchus;Sonchus asper	0.9935345590083733
+ASV558	Streptophyta;NA;Asterales;Asteraceae;Lactuca	0.9986815820126664
+ASV559	Streptophyta;NA;Solanales;Solanaceae;Solanum;Solanum tuberosum	0.9999649433635153
+ASV56	Streptophyta;NA;Lamiales;Plantaginaceae;Veronicastrum;Veronicastrum virginicum	0.988094674548906
+ASV560	Streptophyta;NA;Ericales;Ericaceae;Orthaea;Orthaea madidiensis	0.7220185178032948
+ASV561	Streptophyta;NA;Ericales;Ericaceae;Rhododendron;Rhododendron ponticum	0.9949591448416992
+ASV562	Streptophyta;Liliopsida;Poales;Poaceae;Alopecurus	0.9981993515576537
+ASV563	Streptophyta;NA;Ericales;Balsaminaceae;Impatiens;Impatiens glandulifera	0.9955692406798151
+ASV564	Streptophyta;NA;Ericales;Ericaceae	0.9997382150270044
+ASV565	Streptophyta;NA;Fabales;Fabaceae;Lotus;Lotus frondosus	0.8344381795170367
+ASV566	Streptophyta;NA;Rosales;Rosaceae;Rosa	0.991606959902467
+ASV567	Streptophyta	0.9999999999999803
+ASV568	Streptophyta;Liliopsida;Poales;Juncaceae;Juncus;Juncus oxymeris	0.9553426147027105
+ASV569	Streptophyta;Liliopsida	0.7618805865329735
+ASV57	Streptophyta;NA;Rosales;Rosaceae;Rosa;Rosa woodsii	0.7670562413560116
+ASV570	Streptophyta;NA;Boraginales;Hydrophyllaceae;Phacelia;Phacelia tanacetifolia	0.9987379684708686
+ASV571	Streptophyta;NA;Asterales;Asteraceae;Cirsium	0.999878098581956
+ASV572	Streptophyta;NA;Asterales;Asteraceae;Leontodon;Leontodon maroccanus	0.7169220267138011
+ASV573	Streptophyta;NA;Dipsacales;Caprifoliaceae	0.9272186899514698
+ASV574	Streptophyta	0.999999999999978
+ASV575	Streptophyta	0.9999999999997046
+ASV576	Streptophyta	0.9999999999999538
+ASV577	Streptophyta;NA;Solanales;Solanaceae;Solanum;Solanum dulcamara	0.9939048725034575
+ASV578	Streptophyta;NA;Asterales;Asteraceae;Tripleurospermum;Tripleurospermum maritimum	0.9529121953693275
+ASV579	Streptophyta;NA;Fabales;Fabaceae;Trifolium;Trifolium uniflorum	0.7286334249019774
+ASV58	Streptophyta;NA;Rosales;Urticaceae;Urtica;Urtica gracilis	0.7778571801755367
+ASV580	Streptophyta;NA;Lamiales;Oleaceae;Fraxinus;Fraxinus ornus	0.9917030428472424
+ASV581	Streptophyta;NA;Fabales;Fabaceae;Trifolium;Trifolium uniflorum	0.756694934177123
+ASV582	Streptophyta;NA;Rosales;Rosaceae;Rosa;Rosa acicularis	0.713242402951155
+ASV583	Streptophyta	0.9999999999999629
+ASV584	Streptophyta	1.000000000000011
+ASV585	Streptophyta;NA;Boraginales;Boraginaceae;Symphytum;Symphytum officinale	0.990226610248834
+ASV586	Streptophyta;NA;Caryophyllales;Polygonaceae;Persicaria;Persicaria tinctoria	0.819890126213355
+ASV587	Streptophyta;NA;Solanales;Solanaceae;Solanum;Solanum dulcamara	0.9999875070410754
+ASV588	Streptophyta;NA;Aquifoliales;Aquifoliaceae;Ilex	0.8566901242197417
+ASV589	Streptophyta;NA;Myrtales;Onagraceae;Chamaenerion;NA	0.8994801875593459
+ASV59	Streptophyta;NA;Ranunculales;Ranunculaceae;Ranunculus;Ranunculus repens	0.9969280475556119
+ASV590	Streptophyta;NA;Solanales;Solanaceae;Solanum;Solanum dulcamara	0.9654956636283283
+ASV591	Streptophyta;NA;Rosales;Urticaceae;Urtica	0.9999997403685363
+ASV592	Streptophyta;NA;Lamiales;Lamiaceae;Origanum	0.9880158074473258
+ASV593	Streptophyta;Liliopsida;Asparagales;Amaryllidaceae;Allium;Allium altaicum	0.8021435014440368
+ASV594	Streptophyta;Liliopsida	0.820688190001269
+ASV595	Streptophyta;NA;Fabales;Fabaceae	0.9671870158842346
+ASV596	Streptophyta;Liliopsida;Poales;Juncaceae;Juncus;Juncus oxymeris	0.9237606924623196
+ASV597	Streptophyta	0.9999999999999869
+ASV598	Streptophyta;NA;Rosales;Rosaceae;Rubus	0.9944672712325443
+ASV599	Streptophyta;NA;Brassicales;Brassicaceae	0.9992850778775232
+ASV6	Streptophyta	0.9999999999999973
+ASV60	Streptophyta;NA;Apiales;Apiaceae	0.99999839891378
+ASV600	Streptophyta;NA;Solanales;Solanaceae;Solanum;Solanum dulcamara	0.9981483564961716
+ASV601	Streptophyta;NA;Sapindales;Sapindaceae	0.8774960589275587
+ASV602	Streptophyta;NA;Asterales;Asteraceae;Cosmos;Cosmos bipinnatus	0.9998201164220296
+ASV603	Streptophyta;NA;Asterales;Asteraceae;Anthemis	0.9139811509292832
+ASV604	Streptophyta;NA;Geraniales;Geraniaceae;Geranium;Geranium tuberosum	0.9764807941303157
+ASV605	Streptophyta;NA;Boraginales;Boraginaceae;Symphytum;Symphytum grandiflorum	0.7888109077221616
+ASV606	Streptophyta;Liliopsida	0.8162703161192999
+ASV607	Streptophyta;NA;Fabales;Fabaceae;Lotus;Lotus uliginosus	0.999923833727472
+ASV608	Streptophyta;NA;Rosales;Rosaceae;Rosa;Rosa acicularis	0.9219516181618974
+ASV609	Streptophyta;NA;Boraginales;Hydrophyllaceae;Phacelia;Phacelia tanacetifolia	0.9995688002509684
+ASV61	Streptophyta;NA;Fabales;Fabaceae;Trifolium	0.9998643005870989
+ASV610	Streptophyta	0.9999999999999749
+ASV611	Streptophyta;NA;Boraginales;Boraginaceae;Symphytum;Symphytum officinale	0.9873538517485319
+ASV612	Streptophyta;Liliopsida;Poales;Juncaceae;Juncus;Juncus oxymeris	0.7470235888116058
+ASV613	Streptophyta;NA;Rosales;Rosaceae;Rubus;Rubus hawaiensis	0.8838841883874943
+ASV614	Streptophyta;NA;Saxifragales;Saxifragaceae;Tolmiea;Tolmiea menziesii	0.9792436044325638
+ASV615	Streptophyta;NA;Ericales;Balsaminaceae;Impatiens;Impatiens glandulifera	0.8023271029242794
+ASV616	Streptophyta;NA;Ericales;Balsaminaceae;Impatiens;Impatiens glandulifera	0.7496496763758814
+ASV617	Streptophyta	0.9999999999999817
+ASV618	Streptophyta;Liliopsida;Poales;Poaceae;Agrostis;Agrostis capillaris	0.8164662604291336
+ASV619	Streptophyta	0.9999999999999926
+ASV62	Streptophyta;NA;Dipsacales;Caprifoliaceae	0.9291311553028855
+ASV620	Streptophyta;NA;Asterales;Asteraceae;Leontodon;Leontodon maroccanus	0.7179572581367537
+ASV621	Streptophyta;NA;Solanales;Solanaceae;Solanum;Solanum dulcamara	0.9919526919148898
+ASV622	Streptophyta;NA;Boraginales;Hydrophyllaceae;Phacelia;Phacelia cryptantha	0.7212598148955341
+ASV623	Streptophyta;NA;Fabales;Fabaceae;Hesperolaburnum;Hesperolaburnum platycarpum	0.7806804285694291
+ASV624	Streptophyta;NA;Brassicales;Brassicaceae;Brassica;Brassica nigra	0.9640998412983788
+ASV625	Streptophyta;NA;Rosales;Rosaceae;Rubus	0.9966625335483327
+ASV626	Streptophyta;NA	0.7594540529011868
+ASV627	Streptophyta	0.9999999999999898
+ASV628	Streptophyta;NA;Rosales;Rosaceae;Fragaria;Fragaria virginiana	0.9990660213251249
+ASV629	Streptophyta;NA;Ericales;Primulaceae;Primula;Primula meadia	0.9892630052630956
+ASV63	Streptophyta	0.9999999999999885
+ASV630	Streptophyta;Liliopsida;Poales;Juncaceae;Juncus;Juncus oxymeris	0.9309556016201567
+ASV631	Streptophyta	1.0000000000000029
+ASV632	Streptophyta;NA;Asterales;Asteraceae;Hypochaeris	0.9439490947884878
+ASV633	Streptophyta;NA;Fabales;Fabaceae;Lupinus;Lupinus lepidus	0.7557104249834337
+ASV634	Streptophyta;NA;Cucurbitales;Cucurbitaceae;Cucumis;Cucumis melo	0.766426867274494
+ASV635	Streptophyta;Liliopsida;Asparagales;Asparagaceae;Asparagus;Asparagus oligoclonos	0.997068715089464
+ASV636	Streptophyta;NA;Asterales;Asteraceae;Achyrophorus;Achyrophorus leontodontoides	0.8196998965532027
+ASV637	Streptophyta;NA;Ericales;Ericaceae;Gaultheria;Gaultheria shallon	0.9801471899807642
+ASV638	Streptophyta;NA;Solanales;Solanaceae;Solanum;Solanum dulcamara	0.9407217608214253
+ASV639	Streptophyta;NA;Rosales;Rosaceae;Rosa;Rosa woodsii	0.7723325302186477
+ASV64	Streptophyta;NA	0.8365858171494579
+ASV640	Streptophyta;NA;Solanales;Solanaceae;Solanum;Solanum dulcamara	0.9994756521747198
+ASV641	Streptophyta;Liliopsida;Alismatales;Juncaginaceae;Triglochin;Triglochin concinna	0.9998804941403271
+ASV642	Streptophyta;NA;Asterales;Asteraceae	0.9978696776402567
+ASV643	Streptophyta;NA;Lamiales;Plantaginaceae;Digitalis;Digitalis purpurea	0.9999983572303244
+ASV644	Streptophyta;NA;Asterales;Asteraceae;Achillea	0.9967044049101565
+ASV645	Streptophyta;NA;Rosales;Rosaceae;Rubus	0.9978557606953522
+ASV646	Streptophyta;Liliopsida;Poales;Poaceae;Alopecurus	0.9981730951217989
+ASV647	Streptophyta;NA;Ericales;Balsaminaceae;Impatiens;Impatiens glandulifera	0.9936470738157795
+ASV648	Streptophyta;NA;Ericales;Ericaceae;Rhododendron	0.9995695946901805
+ASV649	Streptophyta;NA;Fabales;Fabaceae;Trifolium;Trifolium uniflorum	0.8019877808482414
+ASV65	Streptophyta;NA;Rosales;Rosaceae;Rosa;Rosa acicularis	0.8150246764985168
+ASV650	Streptophyta;NA;Ranunculales;Ranunculaceae;Ranunculus	0.7465698443233998
+ASV651	Streptophyta;NA;Asterales;Asteraceae;Achillea	0.7310283244846404
+ASV652	Streptophyta;NA;Rosales;Rosaceae;Rosa;Rosa kokanica	0.9228662298835777
+ASV653	Streptophyta;NA;Fabales;Fabaceae;Trifolium	0.9998053145914972
+ASV654	Streptophyta;NA;Asterales;Asteraceae;Erigeron	0.9827117679913714
+ASV655	Streptophyta;NA;Asterales;Asteraceae;Tripleurospermum	0.9980656085601555
+ASV656	Streptophyta	0.9999999999998271
+ASV657	Streptophyta;Magnoliopsida;Cornales;Cornaceae;Cornus;Cornus macrophylla	0.9999972098902092
+ASV658	Streptophyta	0.9999999999999488
+ASV659	Streptophyta;NA;Ericales;Theaceae;Stewartia;Stewartia monadelpha	0.9883830443503783
+ASV66	Streptophyta;NA;Myrtales;Onagraceae;Chamaenerion;NA	0.9990529317430181
+ASV660	Streptophyta;NA;Ranunculales;Ranunculaceae;Ranunculus;Ranunculus repens	0.9902940460330831
+ASV661	Streptophyta;NA;Asterales;Asteraceae;Taraxacum;Taraxacum tenuifolium	0.730327017009609
+ASV662	Streptophyta;NA;Fabales;Fabaceae;Vicia;Vicia cracca	0.9282261040118314
+ASV663	Streptophyta;NA;Ericales;Styracaceae;Styrax;Styrax wilsonii	0.8662897100267094
+ASV664	Streptophyta;NA;Malpighiales;Hypericaceae;Hypericum;Hypericum ellipticum	0.9999869555049513
+ASV665	Streptophyta;NA;Fabales;Fabaceae;Pisum;NA	0.9882657280984273
+ASV666	Streptophyta;NA;Rosales;Rosaceae;Rosa;Rosa acicularis	0.7177461885575979
+ASV667	Streptophyta;NA;Fabales;Fabaceae;Lotus;Lotus uliginosus	0.9999753784547614
+ASV668	Streptophyta;NA;Boraginales;Hydrophyllaceae;Phacelia;Phacelia tanacetifolia	0.9076150928531018
+ASV669	Streptophyta;NA;Ericales;Ericaceae;Vaccinium;Vaccinium tenellum	0.9139133561353636
+ASV67	Streptophyta;NA;Fabales;Fabaceae;Lotus;Lotus uliginosus	0.9999495024100242
+ASV670	Streptophyta;Liliopsida;Poales;Poaceae;Lolium	0.9989454184774758
+ASV671	Streptophyta	0.9999999990460324
+ASV672	Streptophyta;NA;Dipsacales;Caprifoliaceae;Lonicera	0.8525275747510028
+ASV673	Streptophyta;Liliopsida;Poales;Poaceae;Phalaris	0.9999966546134259
+ASV674	Streptophyta;Magnoliopsida;Cornales;Cornaceae;Cornus;Cornus macrophylla	0.9999992478520299
+ASV675	Streptophyta;NA;Rosales;Rosaceae;Rosa;Rosa kokanica	0.9228657591042885
+ASV676	Streptophyta;NA;Asterales;Asteraceae;Leontodon;Leontodon saxatilis	0.7202762691269317
+ASV677	Streptophyta;NA;Solanales;Solanaceae;Solanum	0.8374403270507422
+ASV678	Streptophyta;NA;Dipsacales;Caprifoliaceae	0.9927337779467449
+ASV679	Streptophyta;NA;Rosales;Rosaceae;Rubus	0.9943744115176889
+ASV68	Streptophyta;NA;Asterales;Asteraceae;Tripleurospermum	0.9994342900027368
+ASV680	Streptophyta;NA;Cucurbitales;Cucurbitaceae;Cucurbita	0.9527938410490105
+ASV681	Streptophyta;NA;Fabales;Fabaceae;Trifolium;Trifolium parryi	0.7872081628592283
+ASV682	Streptophyta;NA;Rosales;Rosaceae;Rubus;Rubus hawaiensis	0.7846589352580032
+ASV683	Streptophyta;NA;Brassicales;Brassicaceae	0.9651024276134952
+ASV684	Streptophyta;NA;Ericales;Styracaceae;Styrax;Styrax wilsonii	0.8401342212237917
+ASV685	Streptophyta;NA;Asterales;Asteraceae;Achillea	0.9173106925315406
+ASV686	Streptophyta;Magnoliopsida;Ericales;Ericaceae;Vaccinium;Vaccinium uliginosum	0.9313345534712865
+ASV687	Streptophyta;NA;Asterales;Asteraceae;Hypochaeris;NA	0.9552055596896262
+ASV688	Streptophyta;NA;Brassicales;Brassicaceae;Capsella;NA	0.9999999679933756
+ASV689	Streptophyta;NA;Rosales;Rosaceae;Rosa;Rosa acicularis	0.7717138632615926
+ASV69	Streptophyta;NA;Dipsacales;Caprifoliaceae;Lonicera	0.7290333803027241
+ASV690	Streptophyta;NA;Boraginales;Boraginaceae;Symphytum;Symphytum officinale	0.9910373316905658
+ASV691	Streptophyta;Liliopsida;Poales;Juncaceae;Juncus;Juncus oxymeris	0.8687852203404284
+ASV692	Streptophyta;Magnoliopsida;Cornales;Cornaceae;Cornus	0.700418831713435
+ASV693	Streptophyta;NA;Fagales;Betulaceae;Carpinus;Carpinus betulus	0.9999082738123183
+ASV694	Streptophyta;NA;Rosales;Rosaceae;Geum;Geum aleppicum	0.7430487588034845
+ASV695	Streptophyta;NA;Asterales;Asteraceae;Tanacetum	0.8396046652756215
+ASV696	Streptophyta;NA;Brassicales;Brassicaceae	0.8875212723550001
+ASV697	Streptophyta;NA;Lamiales;Plantaginaceae;Digitalis;Digitalis purpurea	0.9999971569385536
+ASV698	Streptophyta;NA;Rosales;Rosaceae;Rosa	0.9350256198300971
+ASV699	Streptophyta;NA;Cucurbitales;Cucurbitaceae;Cucumis;Cucumis sativus	0.9861715564013259
+ASV7	Streptophyta;NA;Ericales;Ericaceae;Gaultheria;Gaultheria shallon	0.9815318116442524
+ASV70	Streptophyta;NA;Solanales;Solanaceae;Solanum;Solanum dulcamara	0.9999827220948643
+ASV700	Streptophyta;NA;Fabales;Fabaceae;Trifolium;Trifolium uniflorum	0.7244505656859203
+ASV701	Streptophyta;NA;Ericales;Ericaceae;Rhododendron;Rhododendron ponticum	0.9985695470132103
+ASV702	Streptophyta	0.9994184275012975
+ASV703	Streptophyta;NA;Ranunculales;Ranunculaceae;Ranunculus;Ranunculus repens	0.9879925264630798
+ASV704	Streptophyta;NA;Solanales;Solanaceae;Solanum;Solanum tuberosum	0.9999877259420297
+ASV705	Streptophyta;NA;Lamiales;Plantaginaceae;Plantago	0.8150240630396332
+ASV706	Streptophyta;NA;Asterales;Asteraceae;Achillea	0.8414916406636833
+ASV707	Streptophyta;NA;Rosales;Rosaceae;Fragaria;Fragaria virginiana	0.9760556179848741
+ASV708	Streptophyta;NA;Ericales;Ericaceae;Gaultheria	0.9645613960307711
+ASV709	Streptophyta;NA;Ericales;Ericaceae	0.8317296997476386
+ASV71	Streptophyta;NA;Brassicales;Brassicaceae;Draba;Draba lanceolata	0.7580440799988595
+ASV710	Streptophyta;NA;Ericales;Balsaminaceae;Impatiens;Impatiens glandulifera	0.9948396936067716
+ASV711	Streptophyta;NA;Ericales;Actinidiaceae;Actinidia;Actinidia callosa	0.9404098649427718
+ASV712	Streptophyta	0.999999999999985
+ASV713	Streptophyta;NA;Apiales;Apiaceae	0.9999983935874429
+ASV714	Streptophyta;NA;Solanales;Solanaceae;Solanum;Solanum dulcamara	0.999930450102217
+ASV715	Streptophyta;NA;Boraginales;Boraginaceae;Plagiobothrys;Plagiobothrys scouleri	0.8461202101356132
+ASV716	Streptophyta	0.9999999999999984
+ASV717	Streptophyta;NA;Fabales;Fabaceae;Trifolium	0.999923928260114
+ASV718	Streptophyta;NA;Fabales;Fabaceae;Trifolium	0.999935673460135
+ASV719	Streptophyta;NA;Asterales;Asteraceae;Matricaria;NA	0.9999603475753869
+ASV72	Streptophyta;NA;Asterales;Asteraceae;Cirsium;Cirsium arvense	0.9237598514958406
+ASV720	Streptophyta	0.9999999999999373
+ASV721	Streptophyta;NA;Ericales;Styracaceae;Styrax;Styrax wilsonii	0.8538209673968898
+ASV722	Streptophyta;NA;Asterales;Asteraceae;Gaillardia;Gaillardia pulchella	0.9828065337225883
+ASV723	Streptophyta;NA;Malpighiales;Hypericaceae;Hypericum	0.9999142890551099
+ASV724	Streptophyta;NA;Ericales;Ericaceae;Vaccinium;Vaccinium microcarpum	0.9996151662827348
+ASV725	Streptophyta;NA;Brassicales;Brassicaceae;Brassica	0.7000153211014475
+ASV726	Streptophyta	1.000000000000011
+ASV727	Streptophyta;NA;Ranunculales;Ranunculaceae;Ranunculus;Ranunculus repens	0.9878051438041727
+ASV728	Streptophyta;NA;Brassicales;Brassicaceae;Brassica;Brassica villosa	0.7648725017837593
+ASV729	Streptophyta;NA;Solanales;Convolvulaceae;Calystegia	0.9921517342960661
+ASV73	Streptophyta;Liliopsida;Asparagales;Asparagaceae;Asparagus;Asparagus oligoclonos	0.9973646763518049
+ASV730	Streptophyta;NA;Solanales;Solanaceae;Solanum;Solanum dulcamara	0.8489423718191619
+ASV731	Streptophyta;NA;Dipsacales;Caprifoliaceae	0.9908831236628979
+ASV732	Streptophyta;NA;Rosales;Rosaceae;Rosa;Rosa acicularis	0.8111514864850699
+ASV733	Streptophyta;NA;Ericales;Ericaceae;Vaccinium	0.8711472396041999
+ASV734	Streptophyta	0.9999999999646321
+ASV735	Streptophyta;NA;Myrtales;Onagraceae;Chamaenerion;NA	0.9974601942524918
+ASV736	Streptophyta;NA;Brassicales;Brassicaceae;Capsella;NA	0.9999998767113217
+ASV737	Streptophyta;NA;Asterales;Asteraceae;Senecio	0.9408926222711967
+ASV738	Streptophyta;NA;Brassicales;Brassicaceae	0.9722824570536985
+ASV739	Streptophyta	0.9999999999999993
+ASV74	Streptophyta;NA;Ericales;Ericaceae	0.8220566436046258
+ASV740	Streptophyta;NA;Myrtales;Onagraceae;Chamaenerion;NA	0.9295412585896667
+ASV741	Streptophyta;NA;Rosales;Rosaceae;Rosa	0.978192114687141
+ASV742	Streptophyta;NA;Sapindales;Sapindaceae;Aesculus;Aesculus pavia	0.9977050876820595
+ASV743	Streptophyta;NA;Rosales;Rosaceae;Rubus	0.9218584142623399
+ASV744	Streptophyta;NA;Caryophyllales;Polygonaceae;Persicaria;Persicaria japonica	0.8180322781039064
+ASV745	Streptophyta;NA;Brassicales;Brassicaceae	0.875814456136899
+ASV746	Streptophyta;Liliopsida;Poales;Juncaceae;Juncus;Juncus oxymeris	0.8688373533010768
+ASV747	Streptophyta;NA;Ericales;Ericaceae;Rhododendron	0.9136549212868491
+ASV748	Streptophyta;Magnoliopsida;Boraginales;Boraginaceae;Plagiobothrys	0.7115510364623776
+ASV749	Streptophyta;NA;Fabales;Fabaceae;Trifolium;Trifolium uniflorum	0.8273695273545748
+ASV75	Streptophyta;NA;Ericales;Ericaceae;Vaccinium	0.8198567782116186
+ASV750	Streptophyta	0.9994365044764033
+ASV751	Streptophyta;NA;Fabales;Fabaceae;Trifolium	0.997320143713485
+ASV752	Streptophyta;NA;Brassicales;Brassicaceae;Lepidium;Lepidium hirtum	0.9539620309525076
+ASV753	Streptophyta;NA;Saxifragales;Saxifragaceae;Heuchera;Heuchera longiflora	0.9048395657518501
+ASV754	Streptophyta;NA;Apiales;Apiaceae;Aegopodium;Aegopodium podagraria	0.9933891806967756
+ASV755	Streptophyta;NA;Lamiales;Oleaceae;Ligustrum	0.9980677021999718
+ASV756	Streptophyta;NA;Asterales;Asteraceae;Taraxacum	0.9999999999964697
+ASV757	Streptophyta;NA;Myrtales;Onagraceae;Chamaenerion;NA	0.8980411924162928
+ASV758	Streptophyta;NA;Solanales;Solanaceae;Solanum;Solanum dulcamara	0.9170815263764517
+ASV759	Streptophyta;NA;Solanales;Solanaceae;Solanum;Solanum dulcamara	0.9995485242677616
+ASV76	Streptophyta;NA;Ericales;Ericaceae;Rhododendron	0.9787906657923171
+ASV760	Streptophyta;Magnoliopsida;Cornales;Cornaceae;Cornus;Cornus macrophylla	0.9999994167975781
+ASV761	Streptophyta;NA;Fabales;Fabaceae;Phaseolus;Phaseolus vulgaris	0.7139859960342361
+ASV762	Streptophyta;NA;Fabales;Fabaceae;Trifolium	0.9950953419037452
+ASV763	Streptophyta;NA;Asterales;Asteraceae;Tripleurospermum;Tripleurospermum fissurale	0.8371858633809177
+ASV764	Streptophyta;NA;Asterales;Asteraceae;Hypochaeris;Hypochaeris radicata	0.7193271774762552
+ASV765	Streptophyta;Magnoliopsida;Fagales;Juglandaceae;Juglans;NA	0.985128633263146
+ASV766	Chlorophyta;Trebouxiophyceae;Trebouxiales;Trebouxiaceae;Trebouxia	0.999999999983845
+ASV767	Streptophyta;NA;Asterales;Asteraceae;Cirsium	0.9998870219681373
+ASV768	Streptophyta	0.9999999999707783
+ASV769	Streptophyta	0.9999999804172112
+ASV77	Streptophyta;NA;Fabales;Fabaceae	0.917815218790494
+ASV770	Streptophyta;NA;Brassicales;Brassicaceae;Raphanus;NA	0.9999513428001665
+ASV771	Streptophyta;NA;Ericales;Ericaceae;Rhododendron	0.9977324109792965
+ASV772	Streptophyta;Liliopsida;Poales;Poaceae;Agrostis	0.8452569616067986
+ASV773	Streptophyta;NA;Brassicales;Brassicaceae;Barbarea;NA	0.9953825992248484
+ASV774	Streptophyta;NA;Solanales;Solanaceae;Solanum;Solanum dulcamara	0.9830983571894324
+ASV775	Streptophyta;NA;Asterales;Asteraceae;Cirsium;Cirsium arvense	0.9312645253437016
+ASV776	Streptophyta;NA;Asterales;Asteraceae;Tripleurospermum;Tripleurospermum fissurale	0.8921884425346305
+ASV777	Streptophyta;NA;Asterales;Asteraceae;Leontodon;Leontodon maroccanus	0.717957258148548
+ASV778	Streptophyta;NA;Lamiales;Scrophulariaceae;Sutera	0.9999996486336878
+ASV779	Streptophyta;NA;Brassicales;Brassicaceae;Arabidopsis;NA	0.9946608564762636
+ASV78	Streptophyta;NA;Solanales;Solanaceae;Solanum	0.7265542182866844
+ASV780	Streptophyta;NA;Caryophyllales;Polygonaceae;Persicaria;Persicaria hydropiperoides	0.9557336244196754
+ASV781	Streptophyta;NA;Fabales;Fabaceae;Trifolium	0.9997272253857508
+ASV782	Streptophyta	0.9999999996705629
+ASV783	Streptophyta;Magnoliopsida;Ericales;Ericaceae;Vaccinium;Vaccinium uliginosum	0.9987218833679326
+ASV784	Streptophyta;NA;Boraginales;Boraginaceae;Plagiobothrys;Plagiobothrys scouleri	0.8711593357547813
+ASV785	Streptophyta;Magnoliopsida;Fabales;Fabaceae;Trifolium;NA	0.999999647663179
+ASV786	Streptophyta;Liliopsida	0.8141847374700504
+ASV787	Streptophyta;NA;Asterales;Asteraceae;Cichorium;NA	0.7928172340475192
+ASV788	Streptophyta;NA;Brassicales;Brassicaceae;Capsella;NA	0.9999999657873111
+ASV789	Streptophyta;NA;Ericales;Ericaceae;Vaccinium;Vaccinium tenellum	0.7519046259196539
+ASV79	Streptophyta;NA;Ranunculales;Menispermaceae;Tinospora;Tinospora malabarica	0.9981345514673925
+ASV790	Streptophyta;NA;Dipsacales;Caprifoliaceae	0.9295579787311274
+ASV791	Streptophyta;NA;Ericales;Balsaminaceae;Impatiens;Impatiens glandulifera	0.9707329529483054
+ASV792	Streptophyta;NA;Brassicales;Brassicaceae;Capsella;NA	0.9999999877861115
+ASV793	Streptophyta;NA;Myrtales;Lythraceae;Lythrum;Lythrum salicaria	0.958519397165753
+ASV794	Streptophyta;NA;Ericales;Ericaceae;Gaultheria	0.9961320277968994
+ASV795	Streptophyta;NA;Ericales;Ericaceae	0.7345311387241845
+ASV796	Streptophyta;NA;Fabales;Fabaceae;Phaseolus;Phaseolus vulgaris	0.963758499068057
+ASV797	Streptophyta;Liliopsida;Poales;Poaceae;Holcus;Holcus lanatus	0.9999173853955008
+ASV798	Streptophyta;NA;Boraginales;Boraginaceae;Myosotis;Myosotis laxa	0.7968321561300414
+ASV799	Streptophyta;Liliopsida;Poales;Poaceae;Festuca	0.9997221883536073
+ASV8	Streptophyta;NA;Fabales;Fabaceae;Trifolium	0.9982582289127112
+ASV80	Streptophyta;NA;Cucurbitales;Cucurbitaceae;Cucumis;Cucumis sativus	0.9845420866322951
+ASV800	Streptophyta;NA;Malpighiales;Hypericaceae;Hypericum	0.9996180824794767
+ASV801	Streptophyta;NA;Asterales;Asteraceae;Cosmos;Cosmos bipinnatus	0.999824333531044
+ASV802	Streptophyta;NA;Ericales;Ericaceae	0.9939726037258325
+ASV803	Streptophyta;NA;Brassicales;Brassicaceae;Rorippa	0.8301938331666111
+ASV804	Streptophyta;NA;Boraginales;Boraginaceae;Borago;Borago officinalis	0.9999999999382965
+ASV805	Streptophyta;NA;Asterales;Asteraceae;Cirsium;Cirsium palustre	0.8900178905316705
+ASV806	Streptophyta;NA;Rosales;Rosaceae;Rubus	0.9978405004300669
+ASV807	Streptophyta;Magnoliopsida;Lamiales;Plantaginaceae;Veronicastrum;Veronicastrum sibiricum	0.7676501285004876
+ASV808	Streptophyta;NA;Boraginales;Boraginaceae;Symphytum;Symphytum grandiflorum	0.7684485393395918
+ASV809	Streptophyta;Liliopsida;Asparagales;Amaryllidaceae;Allium	0.9999999768217589
+ASV81	Streptophyta	1.0000000000000078
+ASV810	Streptophyta;NA;Lamiales;Plantaginaceae;Plantago	0.8373313174490488
+ASV811	Streptophyta;NA;Asterales;Asteraceae;Hypochaeris;Hypochaeris radicata	0.8980276057485637
+ASV812	Streptophyta;NA;Boraginales;Hydrophyllaceae;Phacelia;Phacelia tanacetifolia	0.9605622541412655
+ASV813	Streptophyta;NA;Myrtales;Lythraceae;Lythrum;Lythrum salicaria	0.9777028923027146
+ASV814	Streptophyta;NA;Brassicales;Brassicaceae;Barbarea;NA	0.9995182702377853
+ASV815	Streptophyta;NA;Ericales;Theaceae;Stewartia;Stewartia monadelpha	0.9822556214209095
+ASV816	Streptophyta;NA;Lamiales;Oleaceae;Ligustrum	0.9992838106079092
+ASV817	Streptophyta;NA;Boraginales;Boraginaceae;Symphytum;Symphytum grandiflorum	0.7670782116200486
+ASV818	Streptophyta;Liliopsida;Asparagales;Amaryllidaceae;Allium;Allium ampeloprasum	0.9178461311194454
+ASV819	Streptophyta;NA;Brassicales;Brassicaceae;Raphanus;NA	0.9994362275658532
+ASV82	Streptophyta;NA;Ericales;Ericaceae;Vaccinium;Vaccinium microcarpum	0.999955950964688
+ASV820	Streptophyta;NA;Brassicales;Brassicaceae;Raphanus;NA	0.9999487308827508
+ASV821	Streptophyta;NA;Dipsacales;Caprifoliaceae;Symphoricarpos	0.7456767380055862
+ASV822	Streptophyta;NA;Asterales;Asteraceae;Anthemis;Anthemis cotula	0.7934484769985196
+ASV823	Streptophyta;NA;Dipsacales;Adoxaceae;Sambucus;Sambucus buergeriana	0.7580496862282873
+ASV824	Streptophyta	0.9999999999961797
+ASV825	Streptophyta;Liliopsida;Poales;Poaceae;Anthoxanthum;Anthoxanthum odoratum	0.953769001708504
+ASV826	Streptophyta;NA;Boraginales;Boraginaceae;Symphytum;Symphytum officinale	0.9932774493029796
+ASV827	Streptophyta;NA;Dipsacales;Caprifoliaceae	0.9247824807294658
+ASV828	Streptophyta;NA;Fabales;Fabaceae;Trifolium	0.9999948148237615
+ASV829	Streptophyta	0.9999999999999879
+ASV83	Streptophyta;NA;Fabales;Fabaceae;Lupinus;Lupinus lepidus	0.8091746187444314
+ASV830	Streptophyta;Magnoliopsida;Fabales;Fabaceae;Trifolium;NA	0.9999999625424331
+ASV831	Streptophyta;NA;Dipsacales;Caprifoliaceae	0.9828433206264752
+ASV832	Streptophyta;NA;Brassicales;Brassicaceae;Capsella;NA	0.9999999917307322
+ASV833	Streptophyta;Liliopsida;Poales;Poaceae;Festuca	0.999719375786106
+ASV834	Streptophyta;NA;Brassicales;Brassicaceae;Raphanus;NA	0.9911877419153039
+ASV835	Streptophyta;NA;Ericales;Ericaceae	0.7485895197056175
+ASV836	Streptophyta;NA;Fabales;Fabaceae;Lathyrus	0.8235700845575955
+ASV837	Streptophyta;NA;Caryophyllales;Polygonaceae;Bistorta;Bistorta amplexicaulis	0.7537104325696405
+ASV838	Streptophyta;Liliopsida;Poales;Poaceae	0.879911768979698
+ASV839	Streptophyta	0.9999999999999404
+ASV84	Streptophyta;NA;Rosales;Rosaceae;Rosa	0.9131174618617515
+ASV840	Streptophyta;NA;Asterales;Asteraceae;Achillea	0.8753422219298308
+ASV841	Streptophyta;NA;Lamiales;Plantaginaceae	0.8190877701891335
+ASV842	Streptophyta;NA;Fabales;Fabaceae;Trifolium	0.9999023572298535
+ASV843	Streptophyta;NA;Myrtales;Lythraceae;Lythrum;Lythrum salicaria	0.8239901990961357
+ASV844	Streptophyta;NA;Myrtales;Lythraceae;Lythrum;Lythrum salicaria	0.9584495951920283
+ASV845	Streptophyta;NA;Solanales;Solanaceae;Solanum;Solanum dulcamara	0.9730325454539599
+ASV846	Streptophyta	0.999999999999952
+ASV847	Streptophyta;NA;Lamiales;Plantaginaceae;Linaria;Linaria vulgaris	0.9513690031141736
+ASV848	Streptophyta;NA;Malpighiales;Hypericaceae;Hypericum	0.9997709641575374
+ASV849	Streptophyta;NA;Rosales;Rosaceae;Rubus;Rubus hawaiensis	0.8936905045877307
+ASV85	Streptophyta;NA;Caryophyllales;Chenopodiaceae;Chenopodium;Chenopodium album	0.8831968347222388
+ASV850	Streptophyta	0.9999999999997928
+ASV851	Streptophyta;Liliopsida;Poales;Cyperaceae;Carex	0.7222149760216108
+ASV852	Streptophyta;NA;Asterales;Asteraceae;Taraxacum	0.9999999998107927
+ASV853	Streptophyta;NA;Asterales;Asteraceae;Achillea	0.7418582148299886
+ASV854	Streptophyta;NA;Boraginales;Boraginaceae;Symphytum;Symphytum grandiflorum	0.7932200634513735
+ASV855	Streptophyta;NA;Solanales;Solanaceae;Solanum	0.8106169691868299
+ASV856	Streptophyta;NA;Asterales;Asteraceae;Scorzoneroides;Scorzoneroides autumnalis	0.9999218526874394
+ASV857	Streptophyta;NA;Ericales;Balsaminaceae;Impatiens;Impatiens glandulifera	0.9956133452483219
+ASV858	Streptophyta;Liliopsida;Poales;Juncaceae;Juncus;Juncus oxymeris	0.9426211788031331
+ASV859	Streptophyta;NA;Fabales;Fabaceae;Phaseolus;Phaseolus vulgaris	0.9461298057646151
+ASV86	Streptophyta;NA;Boraginales;Boraginaceae;Symphytum;Symphytum grandiflorum	0.8017222926760561
+ASV860	Streptophyta;NA;Ericales;Balsaminaceae;Impatiens;Impatiens glandulifera	0.9955682829385902
+ASV861	Streptophyta	0.9999999999999788
+ASV862	Streptophyta;NA;Solanales;Solanaceae;Solanum;Solanum americanum	0.8917344244226475
+ASV863	Streptophyta;NA;Myrtales;Lythraceae;Lythrum;Lythrum salicaria	0.9896929287376183
+ASV864	Streptophyta;NA;Lamiales;Plantaginaceae;Plantago	0.9253395774102561
+ASV865	Streptophyta;NA;Myrtales;Lythraceae;Lythrum;Lythrum salicaria	0.978545342785403
+ASV866	Streptophyta;NA;Saxifragales;Saxifragaceae;Heuchera;Heuchera missouriensis	0.777178556961504
+ASV867	Streptophyta;NA;Fabales;Fabaceae;Trifolium	0.999971421027843
+ASV868	Streptophyta;NA;Ericales;Balsaminaceae;Impatiens	0.9999999959042395
+ASV869	Streptophyta;NA;Ericales;Ericaceae;Gaylussacia;Gaylussacia brachycera	0.8311281852069224
+ASV87	Streptophyta;NA;Fabales;Fabaceae;Trifolium	0.9999490234163735
+ASV870	Streptophyta;NA;Asterales;Asteraceae;Cirsium	0.9611132112374469
+ASV871	Streptophyta;NA;Ericales;Ericaceae;Rhododendron	0.99964374396964
+ASV872	Streptophyta;NA;Ericales;Ericaceae;Menziesia;NA	0.9999526570263588
+ASV873	Streptophyta;NA;Brassicales;Brassicaceae;Raphanus;NA	0.9999530005033684
+ASV874	Streptophyta;NA;Rosales;Rosaceae;Rubus	0.9806025444254394
+ASV875	Streptophyta;NA;Brassicales;Brassicaceae	0.8491055331499746
+ASV876	Streptophyta;NA;Fabales;Fabaceae;Lotus;Lotus uliginosus	0.9999521325597732
+ASV877	Streptophyta;NA;Ericales;Balsaminaceae;Impatiens;Impatiens glandulifera	0.9552289369957071
+ASV878	Streptophyta;NA;Ericales;Styracaceae;Styrax;Styrax wilsonii	0.7002703477611654
+ASV879	Streptophyta;NA;Asterales;Asteraceae;Taraxacum;Taraxacum tenuifolium	0.7754345406882148
+ASV88	Streptophyta;NA	0.881489360276472
+ASV880	Streptophyta;Liliopsida;Poales;Poaceae;Digitaria;Digitaria sanguinalis	0.9869475187590415
+ASV881	Streptophyta;Liliopsida;Poales;Juncaceae;Juncus;Juncus oxymeris	0.8978994213510694
+ASV882	Streptophyta;Liliopsida	0.9584309554059038
+ASV883	Streptophyta	1.0000000000000053
+ASV884	Streptophyta	0.9999999999999882
+ASV885	Streptophyta;NA;Asterales;Asteraceae;Tripleurospermum	0.9995328250832405
+ASV886	Streptophyta;NA;Asterales;Asteraceae;Hypochaeris	0.9681045519533953
+ASV887	Streptophyta	0.9999999999996438
+ASV888	Streptophyta;NA;Rosales;Rosaceae;Rubus	0.9491806943765756
+ASV889	Streptophyta;NA;Fabales;Fabaceae;Lotus;Lotus uliginosus	0.9999905252049158
+ASV89	Streptophyta;NA;Solanales;Solanaceae;Solanum;Solanum dulcamara	0.9999865440777087
+ASV890	Streptophyta;NA;Brassicales;Brassicaceae;Barbarea;NA	0.8170773376279823
+ASV891	Streptophyta	1.0000000000000067
+ASV892	Streptophyta	0.9992149181272812
+ASV893	Streptophyta;NA;Asterales;Asteraceae;Achillea	0.7961642629690185
+ASV894	Streptophyta;NA;Lamiales;Plantaginaceae;Plantago	0.7343932237785016
+ASV895	Streptophyta;NA;Ranunculales;Ranunculaceae;Ranunculus;Ranunculus repens	0.9799819805459677
+ASV896	Streptophyta;NA;Ericales;Ericaceae;Vaccinium;Vaccinium chamaebuxus	0.7565178436917803
+ASV897	Streptophyta;NA;Fabales;Fabaceae;Trifolium	0.9978636899168203
+ASV898	Streptophyta;NA;Fabales;Fabaceae	0.8713348939423503
+ASV899	Streptophyta	0.9999999999999944
+ASV9	Streptophyta;NA;Fabales;Fabaceae;Lupinus;Lupinus lepidus	0.8094351745488378
+ASV90	Streptophyta	0.9999999999999881
+ASV900	Streptophyta;NA;Brassicales;Brassicaceae;Barbarea;NA	0.9952535007398936
+ASV901	Streptophyta;NA;Boraginales;Boraginaceae;Symphytum	0.9999874091897986
+ASV902	Streptophyta;Liliopsida;Asparagales;Amaryllidaceae;Allium	0.9999999962601411
+ASV903	Streptophyta;Liliopsida;Asparagales;Amaryllidaceae;Allium	0.8376123776363061
+ASV904	Streptophyta;NA;Asterales;Asteraceae;Hypochaeris	0.9560975835365768
+ASV905	Streptophyta;NA;Boraginales;Hydrophyllaceae;Phacelia	0.9998474461745933
+ASV906	Streptophyta;NA;Ericales;Ericaceae	0.9981582224041594
+ASV907	Streptophyta;NA;Dipsacales;Caprifoliaceae;Lonicera	0.8608427349785663
+ASV908	Streptophyta;NA;Apiales;Apiaceae;Aegopodium;Aegopodium podagraria	0.9146496256074362
+ASV909	Streptophyta;NA;Ranunculales;Ranunculaceae;Ranunculus;Ranunculus repens	0.9982651060110335
+ASV91	Streptophyta;NA;Boraginales;Hydrophyllaceae;Phacelia;Phacelia tanacetifolia	0.9866361443842853
+ASV910	Streptophyta;NA;Brassicales;Brassicaceae;Raphanus;NA	0.9999348031965953
+ASV911	Streptophyta;NA;Lamiales;Plantaginaceae;Plantago	0.7874125386156081
+ASV912	Streptophyta;NA;Boraginales;Boraginaceae;Symphytum;Symphytum grandiflorum	0.8064213118026696
+ASV913	Streptophyta;NA;Ericales;Ericaceae;Vaccinium;Vaccinium chamaebuxus	0.7372716089444836
+ASV914	Streptophyta;NA;Fabales;Fabaceae;Trifolium	0.997338480043703
+ASV915	Streptophyta;NA;Ericales;Ericaceae;Rhododendron;Rhododendron ponticum	0.9990899986078685
+ASV916	Streptophyta;NA;Ericales;Ericaceae;Gaultheria;Gaultheria shallon	0.991772162812248
+ASV917	Streptophyta;NA;Dipsacales;Caprifoliaceae;Lonicera	0.7857847529934379
+ASV918	Streptophyta;NA	0.8718510893275953
+ASV919	Streptophyta;NA;Brassicales;Brassicaceae;Raphanus;NA	0.9995684367414172
+ASV92	Streptophyta;NA;Fabales;Fabaceae;Trifolium	0.9997282680154622
+ASV920	Streptophyta;NA;Fabales;Fabaceae;Trifolium;Trifolium uniflorum	0.7817973119879614
+ASV921	Streptophyta;NA;Ericales;Balsaminaceae;Impatiens;Impatiens glandulifera	0.9956133667348819
+ASV922	Streptophyta;NA;Brassicales;Brassicaceae;Raphanus;NA	0.9999087753260637
+ASV923	Streptophyta;NA;Fabales;Fabaceae;Trifolium	0.9999410503795627
+ASV924	Streptophyta;NA;Fabales;Fabaceae;Trifolium	0.998261313481726
+ASV925	Streptophyta;NA;Fabales;Fabaceae;Trifolium	0.9974781659995922
+ASV926	Streptophyta;NA;Sapindales;Sapindaceae;Aesculus;NA	0.9976731878322099
+ASV927	Streptophyta;NA;Asterales;Asteraceae;Cirsium;Cirsium palustre	0.7323077134736785
+ASV928	Streptophyta;NA;Brassicales;Brassicaceae;Barbarea;NA	0.9971563634597209
+ASV929	Streptophyta;NA;Fabales;Fabaceae;Cytisus	0.9404702150452602
+ASV93	Streptophyta;NA;Solanales;Solanaceae	0.7274949683123595
+ASV930	Streptophyta;Magnoliopsida;Cornales;Cornaceae;Cornus;Cornus hemsleyi	0.9405266043231828
+ASV931	Streptophyta;NA;Ericales;Balsaminaceae;Impatiens;Impatiens glandulifera	0.9783303253921398
+ASV932	Streptophyta;NA;Fabales;Fabaceae;Lotus;Lotus burttii	0.9000677337538576
+ASV933	Streptophyta;NA;Fabales;Fabaceae;Trifolium	0.9976982943754769
+ASV934	Streptophyta;Liliopsida;Asparagales;Amaryllidaceae;Allium	0.7987574278588846
+ASV935	Streptophyta	0.9999998103926381
+ASV936	Streptophyta;NA;Ericales;Ericaceae;Vaccinium;Vaccinium tenellum	0.7520089581832724
+ASV937	Streptophyta;NA;Rosales;Rosaceae;Rubus	0.9994069883761318
+ASV938	Streptophyta;NA;Fabales;Fabaceae;Trifolium	0.9999366167580779
+ASV939	Streptophyta;NA;Myrtales;Onagraceae;Chamaenerion;NA	0.7454912986331108
+ASV94	Streptophyta;NA;Fabales;Fabaceae;Trifolium;Trifolium uniflorum	0.7654174972328001
+ASV940	Streptophyta;NA;Fabales;Fabaceae;Lotus;Lotus uliginosus	0.999983629801803
+ASV941	Streptophyta;NA;Ericales;Balsaminaceae;Impatiens;Impatiens glandulifera	0.8943508114859912
+ASV942	Streptophyta;Magnoliopsida;Cornales;Cornaceae;Cornus;Cornus hemsleyi	0.9827039629666842
+ASV943	Streptophyta;Magnoliopsida;Fabales;Fabaceae;Trifolium;NA	0.9999997429513361
+ASV944	Streptophyta;NA;Lamiales;Plantaginaceae;Plantago	0.7988941274535436
+ASV945	Streptophyta;NA;Asterales;Asteraceae;Achillea	0.8202641948156009
+ASV946	Streptophyta;NA;Asterales;Asteraceae;Scorzoneroides;Scorzoneroides autumnalis	0.9982243258070369
+ASV947	Streptophyta;NA;Saxifragales;Saxifragaceae;Heuchera;Heuchera longiflora	0.897048955567176
+ASV948	Streptophyta;NA;Fabales;Fabaceae;Trifolium	0.9999018470489992
+ASV949	Streptophyta;NA;Brassicales;Brassicaceae;Capsella;NA	0.9999999515435446
+ASV95	Streptophyta;NA;Ericales;Ericaceae;Gaultheria;Gaultheria shallon	0.92828920600495
+ASV950	Streptophyta;NA;Fabales;Fabaceae;Lotus;Lotus uliginosus	0.9994354179948967
+ASV951	Streptophyta;NA;Ranunculales;Ranunculaceae;Ranunculus;Ranunculus repens	0.985890236968247
+ASV952	Streptophyta;NA;Boraginales;Hydrophyllaceae;Phacelia	0.9996687058701939
+ASV953	Streptophyta;NA;Fabales;Fabaceae;Trifolium;Trifolium nigrescens	0.8591421054561895
+ASV954	Streptophyta;NA;Ericales;Balsaminaceae;Impatiens;Impatiens glandulifera	0.9627273175594357
+ASV955	Streptophyta;NA;Asterales;Asteraceae;Helianthus	0.9849884426403274
+ASV956	Streptophyta;NA;Fabales;Fabaceae;Trifolium	0.9999650340097126
+ASV957	Streptophyta;NA;Asterales;Asteraceae;Taraxacum	0.9999999999892059
+ASV958	Streptophyta;NA;Asterales;Asteraceae;Achillea	0.8485145132434639
+ASV959	Streptophyta;Liliopsida	0.8040060115954565
+ASV96	Streptophyta;NA;Asterales;Asteraceae;Crepis;Crepis capillaris	0.9999962124101779
+ASV960	Streptophyta;NA;Fabales;Fabaceae;Lotus	0.9994201263571932
+ASV961	Streptophyta;NA;Malvales;Malvaceae;Sidalcea	0.9983041978968563
+ASV962	Streptophyta;NA;Fabales;Fabaceae;Trifolium;Trifolium uniflorum	0.9207295192562943
+ASV963	Streptophyta;NA;Asterales;Asteraceae;Hypochaeris	0.9117983716092495
+ASV964	Streptophyta;NA;Ericales;Ericaceae;Gaylussacia;Gaylussacia brachycera	0.7295149796076585
+ASV965	Streptophyta	0.9999999999999885
+ASV966	Streptophyta;NA;Boraginales;Boraginaceae;Borago;Borago officinalis	0.9999999998285319
+ASV967	Streptophyta;NA;Asterales;Asteraceae;Cirsium;Cirsium arvense	0.9242860140982607
+ASV968	Streptophyta;NA;Caryophyllales;Chenopodiaceae;Chenopodium	0.9993911650496101
+ASV969	Streptophyta;NA;Fabales;Fabaceae;Trifolium	0.9999323593635988
+ASV97	Streptophyta	0.9999999999999943
+ASV970	Streptophyta;NA;Rosales;Rosaceae;Rosa;Rosa acicularis	0.7788632172494827
+ASV971	Streptophyta;NA;Ericales;Ericaceae;Vaccinium	0.8356904406371328
+ASV972	Streptophyta;Magnoliopsida;Cornales;Cornaceae;Cornus;Cornus macrophylla	0.9999999662436501
+ASV973	Streptophyta;Liliopsida;Poales;Poaceae;Poa;Poa trivialis	0.9999247362638422
+ASV974	Streptophyta;NA;Ranunculales;Ranunculaceae;Ranunculus;Ranunculus repens	0.9960486761037038
+ASV975	Streptophyta;NA;Ericales;Balsaminaceae;Impatiens	0.9999999999148161
+ASV976	Streptophyta;NA	0.8599671186018175
+ASV977	Streptophyta;NA;Solanales;Solanaceae;Solanum;Solanum dulcamara	0.7958377811941562
+ASV978	Streptophyta;NA;Ranunculales;Ranunculaceae;Ranunculus;Ranunculus bulbosus	0.8759192783808036
+ASV979	Streptophyta;NA;Fabales;Fabaceae;Trifolium;Trifolium uniflorum	0.7847808198451279
+ASV98	Streptophyta	0.999117954419529
+ASV980	Streptophyta;NA;Brassicales;Brassicaceae;Raphanus;NA	0.999946083631752
+ASV981	Streptophyta;Magnoliopsida;Lamiales;Lamiaceae;Galeopsis;Galeopsis bifida	0.9999857317151715
+ASV982	Streptophyta;NA;Fabales;Fabaceae;Trigonella	0.7210180727936778
+ASV983	Streptophyta;NA;Ericales;Styracaceae;Styrax;Styrax wilsonii	0.8153517558336807
+ASV984	Streptophyta;Liliopsida;Zingiberales;Musaceae;Musa;Musa rubra	0.9254371098708889
+ASV985	Streptophyta;NA;Fabales;Fabaceae	0.9236360474022902
+ASV986	Streptophyta;NA;Fabales;Fabaceae;Trifolium	0.9979165145888769
+ASV987	Streptophyta;NA;Ericales;Ericaceae	0.9982601602578862
+ASV988	Streptophyta;NA;Lamiales;Plantaginaceae;Plantago;Plantago lagopus	0.7769039047939004
+ASV989	Streptophyta;NA;Rosales;Rosaceae;Rubus	0.9891855439395348
+ASV99	Streptophyta;NA;Fabales;Fabaceae;Trifolium	0.9999177937723243
+ASV990	Streptophyta;NA;Asterales;Asteraceae;Scorzoneroides;Scorzoneroides autumnalis	0.9998708042754996
+ASV991	Streptophyta;Liliopsida;Poales;Poaceae;Agrostis;Agrostis capillaris	0.9430516817417771
+ASV992	Streptophyta;NA;Ericales;Balsaminaceae;Impatiens	0.9999999998772973
+ASV993	Streptophyta;NA;Solanales;Convolvulaceae;Calystegia;Calystegia pulchra	0.7397385395028092
+ASV994	Streptophyta;NA;Rosales;Rosaceae;Rosa;Rosa kokanica	0.9683388847532148
+ASV995	Streptophyta;NA;Cornales;Cornaceae;Cornus;Cornus sanguinea	0.8152259881296766
+ASV996	Streptophyta;NA;Ranunculales;Ranunculaceae;Ranunculus;Ranunculus repens	0.9468271553372534
+ASV997	Streptophyta;NA;Brassicales;Brassicaceae;Raphanus;NA	0.9998818565545052
+ASV998	Streptophyta;NA;Myrtales;Onagraceae;Chamaenerion	0.9998160067098796
+ASV999	Streptophyta;NA;Lamiales;Plantaginaceae;Plantago;Plantago lagopus	0.9343571347249222
