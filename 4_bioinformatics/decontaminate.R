@@ -70,10 +70,10 @@ negative_controls = samples %>% filter(barcode_id %in% c("PN01", "PN02", "PN03",
   filter(ReadCount > 0) %>%
   mutate(indicator = ifelse(Feature.ID == "ASV1", 1, 0))
 
-ggplot(negative_controls, aes(x = barcode_id, y = ReadCount, fill = Feature.ID)) +
+ggplot(negative_controls, aes(x = barcode_id, y = ReadCount, fill = genus)) +
   geom_col(width = 0.9, colour = "white", linewidth = 0.1) +
   #scale_fill_manual(values = shuffled_colors) +
-  scale_fill_viridis_c(option = "turbo") +
+  scale_fill_viridis_d(option = "turbo") +
   labs(x = "Sample", y = "Read count", fill = NULL) +
   theme_bw() +
   theme(legend.position = "bottom",
@@ -89,47 +89,119 @@ ggplot(negative_controls, aes(x = barcode_id, y = ReadCount, fill = Feature.ID))
 #################################################
 ### Remove contaminant ASVs from samples
 #################################################
+otut = as.data.frame(t(otu_highres))
+
+# remove reads with constitute < 0.5% of the sample (following https://besjournals.onlinelibrary.wiley.com/doi/10.1111/2041-210X.13780)
+rel_abund = otut / rowSums(otut)
+otu_sper = otut
+otu_sper[rel_abund < 0.005] = 0
+  
+# remove reads which are less than max contamination (following https://besjournals.onlinelibrary.wiley.com/doi/10.1111/2041-210X.13780)
+max_contam = negative_controls %>%
+  group_by(Feature.ID) %>%
+  summarize(maxReadCount = max(ReadCount))
+otu_decon = otu_sper
+
+for (ASV in max_contam$Feature.ID){
+  otu_decon[ASV][otu_decon[ASV] < max_contam$maxReadCount[max_contam$Feature.ID == ASV]] = 0
+}
+sum(otu_decon)
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# first remove samples with < 1000 high quality filtered reads
+otu_decon = otu_decon[rowSums(otu_decon) > 1000,]
 
 
 #################################################
 ### Visualize samples
 #################################################
 
-samples2022 = samples %>% filter(year == 2022) %>%
-  filter(final_id == "B. mixtus" | final_id == "B. impatiens") %>%
-  filter(ReadCount > 0) %>%
-  mutate(indicator = ifelse(genus == "Rubus", 1, 0))
+otu_decon$barcode_id = rownames(otu_decon)
+otu_long = pivot_longer(otu_decon, cols = -barcode_id, names_to = "Feature.ID", values_to = "ReadCount")
+otu_long = otu_long %>%
+  group_by(barcode_id) %>%
+  mutate(ReadProp = ReadCount/sum(ReadCount))
+otu_final = left_join(otu_long, classifications_highres, by = "Feature.ID")
+otu_final = otu_final %>%
+  separate(Taxon, 
+           into = c("phylum", "na_col", "order", "family", "genus", "species"),
+           sep = ";",
+           fill = "right") %>%
+  filter(ReadProp > 0)
+otu_final$scientificname = paste(otu_final$genus, otu_final$species, sep = " ")
+otu_final = left_join(otu_final, specs, by = "barcode_id")
 
-ggplot(samples2022, aes(x = barcode_id, y = ReadCount, fill = indicator)) +
+samples2022 = otu_final %>% filter(year == 2022) %>%
+  filter(final_id == "B. mixtus" | final_id == "B. impatiens") %>%
+  filter(ReadCount > 0)
+
+temp2022 = ggplot(samples2022, aes(x = barcode_id, y = ReadProp, fill = genus)) +
   geom_col(width = 0.9, colour = "white", linewidth = 0.1) +
   #scale_fill_manual(values = shuffled_colors) +
-  scale_fill_viridis_c(option = "turbo") +
-  #scale_y_continuous(labels = function(x) paste0(round(x * 100), "%")) +
+  scale_fill_viridis_d(option = "turbo") +
+  scale_y_continuous(labels = function(x) paste0(round(x * 100), "%")) +
   facet_grid(final_id ~ site, scales = "free", space = "free_x") +
   labs(x = "Sample", y = "Relative abundance", fill = NULL) +
   theme_bw() +
   theme(legend.position = "bottom",
-        legend.key.size = unit(0.1, "cm"),
+        legend.key.size = unit(0.3, "cm"),
         legend.text = element_text(size = 6),
         axis.text.x = element_text(angle = 90, vjust = 0.5, hjust = 1, size = 4),
         panel.grid = element_blank(),
         strip.background = element_rect(fill = "white"),
         strip.text = element_text(face = "bold")) +
-  guides(fill = guide_legend(ncol = 14))
-ggsave("plot.png", temp, width = 14, height = 8, dpi = 300)
+  guides(fill = guide_legend(ncol = 20))
+ggsave("6_figures/2022_pollen_consumption.png", temp2022, width = 14, height = 8, dpi = 300)
+
+
+
+barcode_order <- otu_final %>%
+  filter(!is.na(year)) %>%
+  filter(final_id == "B. mixtus") %>%
+  filter(ReadCount > 0) %>%
+  mutate(round = as.numeric(round)) %>%
+  distinct(barcode_id, round) %>%
+  arrange(round, barcode_id) %>%
+  pull(barcode_id)
+
+samplesmixtus = otu_final %>% 
+  filter(!is.na(year)) %>%
+  filter(final_id == "B. mixtus") %>%
+  filter(ReadCount > 0) %>%
+  mutate(indicator = ifelse(genus == "Vaccinium", 1, 0)) %>%
+  mutate(barcode_id = factor(barcode_id, levels = barcode_order))
+samplesmixtus$indicator[is.na(samplesmixtus$indicator)] = 0
+
+blueberrymixtus = ggplot(samplesmixtus, aes(x = barcode_id, y = ReadProp, fill = as.factor(indicator))) +
+  geom_col(width = 0.9, colour = "white", linewidth = 0.1) +
+  scale_fill_manual(values = c("beige", "blue")) +
+  scale_y_continuous(labels = function(x) paste0(round(x * 100), "%")) +
+  facet_grid(year ~ site, scales = "free", space = "free_x") +
+  labs(x = "Sample", y = "Relative abundance", fill = NULL) +
+  theme_bw() +
+  theme(legend.position = "bottom",
+        legend.key.size = unit(0.3, "cm"),
+        legend.text = element_text(size = 6),
+        axis.text.x = element_text(angle = 90, vjust = 0.5, hjust = 1, size = 2),
+        panel.grid = element_blank(),
+        strip.background = element_rect(fill = "white"),
+        strip.text = element_text(face = "bold")) +
+  guides(fill = guide_legend(ncol = 20))
+ggsave("6_figures/mixtus_blueberry_consumption.png", blueberrymixtus, width = 18, height = 8, dpi = 400)
+
+tempmixtus = ggplot(samplesmixtus, aes(x = barcode_id, y = ReadProp, fill = scientificname)) +
+  geom_col(width = 0.9, colour = "white", linewidth = 0.1) +
+  scale_fill_viridis_d(option = "turbo") +
+  scale_y_continuous(labels = function(x) paste0(round(x * 100), "%")) +
+  facet_grid(year ~ site, scales = "free", space = "free_x") +
+  labs(x = "Sample", y = "Relative abundance", fill = NULL) +
+  theme_bw() +
+  theme(legend.position = "bottom",
+        legend.key.size = unit(0.3, "cm"),
+        legend.text = element_text(size = 6),
+        axis.text.x = element_text(angle = 90, vjust = 0.5, hjust = 1, size = 2),
+        panel.grid = element_blank(),
+        strip.background = element_rect(fill = "white"),
+        strip.text = element_text(face = "bold")) +
+  guides(fill = guide_legend(ncol = 20))
+ggsave("6_figures/mixtus_temp_consumption.png", tempmixtus, width = 18, height = 8, dpi = 400)
