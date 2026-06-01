@@ -1,9 +1,13 @@
-
+##### Filter out contaminant reads post classification
+### May 26, 2026
+### J Melanson
 
 
 # Load in packages
 library(biomformat)
 library(qiime2R)
+library(dplyr)
+
 
 
 #################################################
@@ -111,7 +115,8 @@ sum(otu_decon)
 # first remove samples with < 1000 high quality filtered reads
 otu_decon = otu_decon[rowSums(otu_decon) > 1000,]
 
-
+write.csv(otu_decon, "3_data/cleandata/metabarcoding/cleaned_asvtable.csv")
+write.csv(classifications_highres, "3_data/cleandata/metabarcoding/qiime_classifications.csv")
 #################################################
 ### Visualize samples
 #################################################

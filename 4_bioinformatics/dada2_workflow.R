@@ -1,3 +1,6 @@
+##### Run raw reads through dada 2 workflow
+### May 20, 2026
+### J Melanson
 
 setwd("/home/melanson/projects/def-ckremen/melanson/fvpollens")
 
