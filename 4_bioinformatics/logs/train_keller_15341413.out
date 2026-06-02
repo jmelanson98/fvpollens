@@ -1,0 +1,6 @@
+Parsing /scratch/melanson/its2.global.2023-01-17.curated.tax.mc.add.fa ...
+Done. Parsed 307976 sequences.
+Imported /scratch/melanson/keller_ITS2.fasta as DNASequencesDirectoryFormat to /scratch/melanson/keller_ref_seqs.qza
+Imported /scratch/melanson/keller_ITS2_taxonomy.tsv as HeaderlessTSVTaxonomyFormat to /scratch/melanson/keller_ref_tax.qza
+Saved TaxonomicClassifier to: /scratch/melanson/keller_classifier.qza
+All done!

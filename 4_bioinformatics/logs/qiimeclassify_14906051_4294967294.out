@@ -1,5 +1,0 @@
-Saved FeatureTable[Frequency] to: /project/6100170/melanson/fvpollens/3_data/merged_qiimeseqtab.qza
-Saved FeatureData[Sequence] to: /project/6100170/melanson/fvpollens/3_data/merged_ASVs.qza
-Saved FeatureData[Taxonomy] to: /project/6100170/melanson/fvpollens/3_data/merged_taxonomy.qza
-Exported /project/6100170/melanson/fvpollens/3_data/merged_qiimeseqtab.qza as BIOMV210DirFmt to directory /project/6100170/melanson/fvpollens/3_data/merged_exported
-Exported /project/6100170/melanson/fvpollens/3_data/merged_taxonomy.qza as TSVTaxonomyDirectoryFormat to directory /project/6100170/melanson/fvpollens/3_data/merged_exported_taxonomy

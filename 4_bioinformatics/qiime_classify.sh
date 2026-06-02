@@ -40,7 +40,7 @@ qiime feature-table merge-seqs \
 
 # Classify the sequences
 qiime feature-classifier classify-sklearn \
-  --i-classifier ${SCRATCH_DIR}/PLANiTS_classifier_2024.qza \
+  --i-classifier ${SCRATCH_DIR}/keller_classifier.qza \
   --i-reads ${PROJECT_DIR}/3_data/merged_ASVs.qza \
   --o-classification ${PROJECT_DIR}/3_data/merged_taxonomy.qza \
   --p-n-jobs 8

@@ -8,3 +8,4 @@
 #data to hide from github (for now)
 *.fastq.gz
 3_data/cleandata/
+3_data/keller_classifier.qza

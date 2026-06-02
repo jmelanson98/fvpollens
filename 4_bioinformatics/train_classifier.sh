@@ -1,38 +1,82 @@
 #!/bin/bash
-#SBATCH --job-name=train_classifier
-#SBATCH --output=logs/trainclassifier_%A_%a.out
-#SBATCH --error=logs/trainclassifier_%A_%a.err 
-#SBATCH --job-name=train_classifier
-#SBATCH --mem=32G
+#SBATCH --job-name=train_keller_classifier
+#SBATCH --output=logs/train_keller_%j.out
+#SBATCH --error=logs/train_keller_%j.err
+#SBATCH --mem=64G
 #SBATCH --cpus-per-task=4
-#SBATCH --time=02:00:00
+#SBATCH --time=06:00:00
 
+set -euo pipefail
 
-cd $SCRATCH
-#wget https://github.com/apallavicini/PLANiTS/raw/master/PLANiTS_29-03-2020.zip
-#unzip PLANiTS_29-03-2020.zip
-
+mkdir -p logs
 export TMPDIR=$SCRATCH/tmp
 mkdir -p $SCRATCH/tmp
 
+export INPUT_FA=$SCRATCH/its2.global.2023-01-17.curated.tax.mc.add.fa
+export FASTA=$SCRATCH/keller_ITS2.fasta
+export TAX=$SCRATCH/keller_ITS2_taxonomy.tsv
+
+# --- Step 1: Parse combined FASTA into separate seqs + taxonomy files ---
+module load StdEnv/2023 r/4.3.1 python
+
+Rscript - <<'EOF'
+input_fa  <- Sys.getenv("INPUT_FA")
+out_fasta <- Sys.getenv("FASTA")
+out_tax   <- Sys.getenv("TAX")
+
+cat("Parsing", input_fa, "...\n")
+
+con_in  <- file(input_fa, "r")
+con_seq <- file(out_fasta, "w")
+con_tax <- file(out_tax, "w")
+
+n <- 0
+while (TRUE) {
+  line <- readLines(con_in, n = 1, warn = FALSE)
+  if (length(line) == 0) break
+
+  if (startsWith(line, ">")) {
+    header      <- sub("^>", "", line)
+    header      <- sub(";$", "", header)
+    parts       <- strsplit(header, ";tax=")[[1]]
+    seq_id      <- parts[1]
+    tax_raw     <- parts[2]
+    tax_levels  <- strsplit(tax_raw, ",")[[1]]
+    tax_string  <- paste(sub(":", "__", tax_levels), collapse = ";")
+    writeLines(paste0(">", seq_id), con_seq)
+    writeLines(paste0(seq_id, "\t", tax_string), con_tax)
+    n <- n + 1
+  } else {
+    writeLines(toupper(line), con_seq)
+  }
+}
+
+close(con_in)
+close(con_seq)
+close(con_tax)
+cat("Done. Parsed", n, "sequences.\n")
+EOF
+
+# --- Step 2: Train classifier ---
 module load qiime2
 
-# Retrain classifier with updated QIIME2 version
 qiime tools import \
   --type 'FeatureData[Sequence]' \
-  --input-path $SCRATCH/ITS2.fasta \
-  --output-path $SCRATCH/PLANiTS_ref_seqs.qza
+  --input-path $FASTA \
+  --output-path $SCRATCH/keller_ref_seqs.qza
 
 qiime tools import \
   --type 'FeatureData[Taxonomy]' \
-  --input-path $SCRATCH/ITS2_taxonomy \
+  --input-path $TAX \
   --input-format HeaderlessTSVTaxonomyFormat \
-  --output-path $SCRATCH/PLANiTS_ref_tax.qza
-  
-qiime feature-classifier fit-classifier-naive-bayes \
-  --i-reference-reads $SCRATCH/PLANiTS_ref_seqs.qza \
-  --i-reference-taxonomy $SCRATCH/PLANiTS_ref_tax.qza \
-  --o-classifier $SCRATCH/PLANiTS_classifier_2024.qza
+  --output-path $SCRATCH/keller_ref_tax.qza
 
-# Copy classifier to working repo
-cp $SCRATCH/PLANiTS_classifier_2024.qza /project/6100170/melanson/fvpollens/3_data/
+qiime feature-classifier fit-classifier-naive-bayes \
+  --i-reference-reads $SCRATCH/keller_ref_seqs.qza \
+  --i-reference-taxonomy $SCRATCH/keller_ref_tax.qza \
+  --o-classifier $SCRATCH/keller_classifier.qza
+
+# --- Step 3: Copy to project space ---
+cp $SCRATCH/keller_classifier.qza /project/6100170/melanson/fvpollens/3_data/
+
+echo "All done!"
