@@ -9,3 +9,4 @@
 *.fastq.gz
 3_data/cleandata/
 3_data/keller_classifier.qza
+*.rds
