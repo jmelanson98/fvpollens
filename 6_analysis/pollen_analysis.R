@@ -429,6 +429,127 @@ ggsave("7_figures/manuscript_figures/pollen_richness_mixtus_landscape.png", grid
 
 
 #################################################################################
+##### Create some rarefaction curves of pollen collection
+#################################################################################
+pollen_richness = left_join(asv_long, specs_withlandscape, by = "barcode_id") %>%
+  mutate(OccurrenceTaxa = ifelse(ReadCountTaxa>0, 1, 0)) %>%
+  filter(final_id == "B. mixtus")
+
+pollen_wide = pivot_wider(pollen_richness, id_cols = barcode_id, names_from = genus, values_from = OccurrenceTaxa) %>%
+  column_to_rownames("barcode_id")
+pollen_wide[is.na(pollen_wide)] = 0
+meta = pollen_richness %>% 
+  group_by(barcode_id, sample_pt, site) %>%
+  summarize(n=n()) %>%
+  filter(!is.na(site)) %>%
+  arrange(match(barcode_id, rownames(pollen_wide)))
+
+transects = unique(meta$sample_pt)
+sites <- unique(meta$site)
+
+# Site-level accumulation curves — cleaner
+accum_list <- lapply(sites, function(s){
+  idx <- which(meta$site == s)
+  site = meta$site[idx[1]]
+  sub_mat <- pollen_wide[idx, ]
+  sub_mat <- sub_mat[, colSums(sub_mat) > 0]
+  
+  sp <- specaccum(sub_mat, method = "rarefaction")
+  
+  data.frame(
+    sample_pt    = s,
+    site = site,
+    bees    = sp$sites,
+    richness = sp$richness,
+    sd      = sp$sd
+  )
+})
+
+landscapes = specs_withlandscape[c("sample_pt", "iji", "berry", "semi", "final_id")] %>%
+  filter(final_id == "B. mixtus") %>%
+  distinct()
+accum_df <- bind_rows(accum_list)
+accum_df = left_join(accum_df, landscapes, by = "sample_pt")
+ggplot(accum_df, aes(x = bees, y = richness, colour = site, fill = site, group = sample_pt)) +
+  geom_ribbon(aes(ymin = richness - sd, ymax = richness + sd), 
+              alpha = 0.2, colour = NA) +
+  geom_line(linewidth = 1) +
+  labs(x = "Number of bees sampled",
+       y = "Pollen taxa detected",
+       title = "Sample-based rarefaction by site") +
+  theme_bw() 
+theme(legend.position= "none")
+
+
+#################################################################################
+##### How is pollen GAMMA diversity related to landscape?
+#################################################################################
+
+pollen_points = pollen_richness %>%
+  filter(final_id == "B. mixtus") %>%
+  group_by(site, sample_pt, year) %>%
+  summarize(num_genera = length(unique(genus)),
+            num_bees = length(unique(barcode_id)),
+            num_rounds = length(unique(round))) %>%
+  left_join(landscapes)
+goodcovg = pollen_points %>% filter(num_bees >= 3)
+rarefactionbees = pollen_richness %>%
+  ungroup() %>%
+  filter(final_id == "B. mixtus") %>%
+  distinct(barcode_id, sample_pt, year) %>%
+  filter(paste0(sample_pt, year) %in% paste0(goodcovg$sample_pt, goodcovg$year))
+
+# Get rarefied pollen richness for sites with 3+ bees
+# (Rarify / extrapolate to 5 bees)
+
+library(iNEXT)
+
+transect_list <- rarefactionbees %>%
+  group_by(sample_pt, year) %>%
+  group_map(~ {
+    # .x has barcode_ids for this sample_pt/year combo
+    sub_mat <- pollen_wide[.x$barcode_id, , drop = FALSE]
+    
+    freqs <- colSums(sub_mat)
+    freqs <- freqs[freqs > 0]
+    
+    c(nrow(.x), freqs)
+  }, .keep = TRUE) %>%
+  setNames(
+    rarefactionbees %>%
+      group_by(sample_pt, year) %>%
+      group_keys() %>%
+      mutate(name = paste(sample_pt, year, sep = "_")) %>%
+      pull(name)
+  )
+
+# Sanity check
+lengths(transect_list)        # each element length = 1 + n taxa detected
+transect_list[["SD39_2023"]]  # first element should be n_bees, rest are frequencies
+
+# Fit iNEXT
+est_5 = estimateD(transect_list,
+                   datatype = "incidence_freq",
+                   base     = "size", 
+                  conf = 0.95,
+                   level    = 5)
+
+# Extract estimated richness at standardised coverage
+# This gives you a fair comparison across transects
+est_rich <- estimateD(transect_list,
+                      datatype = "incidence_freq",
+                      base     = "coverage",    # standardise by coverage not effort
+                      level    = 0.90)          # 90% completeness
+fit = brm(
+  num_genera  ~ berry + semi + iji + num_rounds + year + offset(log(num_bees)) + (1|site) + (1|sample_pt),
+  data = pollen_points,
+  family = negbinomial(),
+  chains = 4, cores = 4,
+  warmup = 2000, iter = 4000,
+  control = list(adapt_delta = 0.99))
+
+
+#################################################################################
 ##### What shapes pollen collection TURNOVER between individuals?
 #################################################################################
 comparison_composition = left_join(asv_long, specs_withlandscape) %>%
@@ -554,9 +675,6 @@ gelman.diag(mpost$Beta, multivariate = FALSE)$psrf
 gelman.diag(mpost$Lambda[[3]], multivariate = FALSE)$psrf  # [[3]] = bee level
 effectiveSize(mpost$Beta)
 
-# Trace plots for a few key parameters
-plot(mpost$Beta)
-
 # Posterior support for fixed effects
 postBeta <- getPostEstimate(m_fit, parName = "Beta")
 
@@ -568,9 +686,6 @@ plotBeta(
   split        = 0.4,
   spNamesNumbers = c(FALSE, TRUE)
 )
-
-# Get full Beta posterior estimate
-postBeta <- getPostEstimate(m_fit, parName = "Beta")
 
 species_support <- postBeta$support[2, ]      # P(effect > 0)
 species_support_neg <- postBeta$supportNeg[2, ] # P(effect < 0)
@@ -842,6 +957,5 @@ fit = brm(
   chains = 4, cores = 4,
   warmup = 2000, iter = 4000,
   control = list(adapt_delta = 0.99))
-
 
 
