@@ -15,6 +15,8 @@ library(marginaleffects)
 library(ordbetareg)
 library(tidyr)
 
+setwd("~/projects/def-ckremen/melanson/fvpollens")
+
 
 # Set color scheme for plots
 faded_pale = "#D2E4D4"
