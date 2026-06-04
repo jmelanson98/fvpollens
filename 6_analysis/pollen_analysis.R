@@ -431,8 +431,6 @@ ggsave("7_figures/manuscript_figures/pollen_richness_mixtus_landscape.png", grid
 #################################################################################
 ##### What shapes pollen collection TURNOVER between individuals?
 #################################################################################
-
-
 comparison_composition = left_join(asv_long, specs_withlandscape) %>%
   filter(round %in% c(6, 7, 8, 9))
 
@@ -479,86 +477,134 @@ fit = ordbetareg(
 saveRDS(mixtusfit, "5_models/brmsfits/bterry_comparison.rds")
 
 
-# read in metabarcoding data
-asvtable = read.csv("3_data/cleandata/metabarcoding/cleaned_asvtable.csv", row.names = 1)
-taxa = read.csv("3_data/cleandata/metabarcoding/qiime_classifications.csv", row.names = 1)
 
-# get long format table of ASVs with classification
-asvtable$barcode_id = rownames(asvtable)
-asv_long = pivot_longer(asvtable, cols = -barcode_id, 
-                        names_to = "Feature.ID", 
-                        values_to = "ReadCount") %>%
-  filter(ReadCount > 0) %>%
-  left_join(taxa, by = "Feature.ID") %>%
-  separate(Taxon, 
-           into = c("phylum", "na_col", "order", "family", "genus", "species"),
-           sep = ";",
-           fill = "right") %>%
-  mutate(across(where(is.character), ~na_if(trimws(.x), "NA"))) %>%
-  group_by(barcode_id, family, genus, species) %>%
-  summarize(ReadCountTaxa = sum(ReadCount))
+####################################################################
+##### How is pollen collection COMPOSITION different between spp?
+####################################################################
+
+# Get bees x plant species matrix
+y = as.matrix(comparison_matrix)
+y[y>0] = 1
+storage.mode(y) <- "integer"
+
+# Get bee metadata
+x_covars = specs_withlandscape %>%
+  filter(barcode_id %in% rownames(y)) %>%
+  select(barcode_id, final_id, round, iji, berry, semi, sample_pt, site)  %>%
+  arrange(match(barcode_id, rownames(y)))
+site_covars = x_covars[c("sample_pt", "site")]
+site_covars$barcode_id = rownames(site_covars)
+
+# HMSC needs the random effects as factors
+XData <- x_covars %>%
+  select(final_id, round) %>%
+  mutate(
+    final_id = as.factor(final_id),
+    round = as.factor(round))
+
+studyDesign <- data.frame(
+  site      = as.factor(x_covars$site),
+  sample_pt  = as.factor(x_covars$sample_pt),
+  barcode_id       = as.factor(x_covars$barcode_id))
+
+# Site-level random effect
+rL.site <- HmscRandomLevel(units = levels(studyDesign$site))
+
+# Transect-level random effect (nested within site)
+rL.transect <- HmscRandomLevel(units = levels(studyDesign$sample_pt))
+
+# Observation-level random effect
+rL.bee <- HmscRandomLevel(units = levels(studyDesign$barcode_id))
 
 
-# add sample metadata
-individual_pollens = left_join(asv_long, specs, by = "barcode_id")
+# Prep for model
+m <- Hmsc(
+  Y             = y,
+  XData         = XData,
+  XFormula      = ~ final_id + round,   # fixed effects
+  studyDesign   = studyDesign,
+  ranLevels     = list(
+    site      = rL.site,
+    sample_pt  = rL.transect,
+    barcode_id       = rL.bee
+  ),
+  distr = "probit"
+)
 
-# get richness per individual
-pollen_richness = individual_pollens %>%
-  group_by(barcode_id, final_id, site, round, sample_pt, year) %>%
-  summarize(pollrich = n())
+# Fit with MCMC
+# Start with short chains to check it runs, then scale up
+thin    <- 10      # thinning interval
+samples <- 1000     # posterior samples per chain
+transient <- 500    # burn-in (in thinned units, so 500*thin actual steps)
+nChains <- 4
 
-# for species comparisons, filter to phenological window!
-unique(pollen_richness$round[pollen_richness$final_id == "B. impatiens"])
-pollen_richness_comparison = pollen_richness %>% filter(round %in% c(6, 7, 8, 9))
-pollen_richness_comparison$final_id = as.factor(pollen_richness_comparison$final_id)
-pollen_richness_comparison$site = as.factor(pollen_richness_comparison$site)
+m_fit <- sampleMcmc(
+  m,
+  thin       = thin,
+  samples    = samples,
+  transient  = transient,
+  nChains    = nChains,
+  nParallel  = 4,     # set to number of cores available
+  verbose = TRUE)
 
-# which species has richer pollen?
-fit = brm(
-  pollrich ~ final_id + (1|site) + (1|sample_pt),
-  data = pollen_richness_comparison,
-  family = negbinomial(),
-  chains = 4, cores = 4,
-  warmup = 3000, iter = 6000,
-  control = list(adapt_delta = 0.99))
 
+# Convert to coda for standard MCMC diagnostics
+mpost <- convertToCodaObject(m_fit)
+gelman.diag(mpost$Beta, multivariate = FALSE)$psrf
+gelman.diag(mpost$Lambda[[3]], multivariate = FALSE)$psrf  # [[3]] = bee level
+effectiveSize(mpost$Beta)
+
+# Trace plots for a few key parameters
+plot(mpost$Beta)
+
+# Posterior support for fixed effects
+postBeta <- getPostEstimate(m_fit, parName = "Beta")
+
+plotBeta(
+  m_fit,
+  post        = postBeta,
+  param       = "Support",    # shows posterior support, not just mean
+  supportLevel = 0.95,
+  split        = 0.4,
+  spNamesNumbers = c(FALSE, TRUE)
+)
+
+# Get full Beta posterior estimate
+postBeta <- getPostEstimate(m_fit, parName = "Beta")
+
+species_support <- postBeta$support[2, ]      # P(effect > 0)
+species_support_neg <- postBeta$supportNeg[2, ] # P(effect < 0)
+
+positive <- species_support[species_support > 0.95]      # overrepresented in sp2
+negative <- species_support[species_support_neg > 0.95]  # overrepresented in sp1
+
+positive
+negative
+
+
+# Extract latent factor scores for each bee -- the bee coordinates in "pollen composition space"
+eta_samples <- lapply(m_fit$postList, function(chain) {
+  lapply(chain, function(sample) sample$Eta[[3]])
+})
+
+# Average across all samples and chains
+eta_mean <- Reduce("+", unlist(eta_samples, recursive = FALSE)) / 
+  (length(m_fit$postList) * length(m_fit$postList[[1]]))
+
+eta_df <- as.data.frame(eta_mean)
+colnames(eta_df) <- paste0("factor", 1:5)
+eta_df$bee_species <- XData$final_id
+
+# Ordination plot
+ggplot(eta_df, aes(x = factor1, y = factor2, colour = bee_species)) +
+  geom_point(alpha = 0.6) +
+  stat_ellipse(level = 0.95) +
+  labs(x = "Latent factor 1", y = "Latent factor 2") +
+  theme_bw()
 
 
 ####################################################################
-##### How is pollen collection DIVERSITY different between spp?
-####################################################################
-
-pollens_wide = individual_pollens %>%
-  ungroup() %>%
-  filter(round %in% c(6, 7, 8, 9)) %>%
-  mutate(taxa = paste(family, genus, species)) %>%
-  pivot_wider(id_cols = barcode_id,
-              names_from = taxa,
-              values_from = ReadCountTaxa) %>%
-  mutate(across(where(is.numeric), ~replace_na(.x, 0)))
-  
-pollen_mat = pollens_wide %>%
-  column_to_rownames("barcode_id") %>%  
-  as.matrix()                          
-
-pollens_wide$shannon_div = diversity(pollen_mat, index = "shannon")
-
-pollens_wide = left_join(pollens_wide, specs, by = "barcode_id")
-pollens_wide$site = as.factor(pollens_wide$site)
-pollens_wide$final_id = as.factor(pollens_wide$final_id)
-pollens_wide$round = as.factor(pollens_wide$round)
-pollens_wide$shannon_div_zo = pollens_wide$shannon_div/max(pollens_wide$shannon_div)
-
-# which species has more diverse pollen?
-# which species has richer pollen?
-fitdiv = brm(
-  shannon_div_zo ~ final_id + round + (1|site) + (1|sample_pt),
-  data = pollens_wide,
-  family = zero_one_inflated_beta(),
-  chains = 4, cores = 4)
-
-####################################################################
-##### How about plot an NMDS for composition?
+##### PERMANOVA
 ####################################################################
 
 # this time group only to genus
@@ -594,50 +640,60 @@ pollen_mat = pollens_wide %>%
 
 meta = specs %>%
   filter(barcode_id %in% rownames(pollen_mat)) %>%
-  select(c(barcode_id, final_id, site, round)) %>%
+  select(c(barcode_id, sample_pt, final_id, site, round)) %>%
   arrange(match(barcode_id, rownames(pollen_mat)))
 
 
 dist_mat = vegdist(pollen_mat, method = "jaccard", binary = TRUE)
 
-adonis2(dist_mat ~ final_id + round + site,
-        data = meta,
-        permutations = 999, 
-        by = "margin") 
-
-adonis2(dist_mat ~ final_id, 
+adonis2(dist_mat ~ round + site + final_id,
         data = meta,
         permutations = 999,
-        strata = meta$site)
-
-h = how(blocks = interaction(meta$round, meta$site),
-         nperm = 999)
-
-bd <- betadisper(dist_mat, meta$final_id)
-permutest(bd, permutations = h)
-
-
-meta_sub <- meta %>% filter(round != 9)
-dist_mat_sub <- as.dist(as.matrix(dist_mat)[meta_sub$barcode_id, meta_sub$barcode_id])
-
-adonis2(dist_mat_sub ~ final_id,
-        blocks = interaction(meta_sub$round, meta_sub$site),
-        data = meta_sub,
-        permutations = h)
+        by = "margin")
 
 
 
-meta_sub <- meta %>% filter(round != 9)
-dist_mat_sub <- as.dist(as.matrix(dist_mat)[rownames(as.matrix(dist_mat)) %in% meta_sub$barcode_id,
-                                            rownames(as.matrix(dist_mat)) %in% meta_sub$barcode_id])
 
-# rebuild h on the subset
-h <- how(blocks = interaction(meta_sub$round, meta_sub$site),
-         nperm = 999)
+# PERMDISP: test dispersion differences between bee species
+disp <- betadisper(dist_mat, group = meta$final_id)
 
-adonis2(dist_mat_sub ~ final_id,
-        data = meta_sub,
-        permutations = h)
+# Quick omnibus permutation test
+permutest(disp, permutations = 999)
+
+# Visualise
+## Option 1: PCoA ordination with hulls by species
+plot(disp, hull = TRUE, label = FALSE,
+     col = c("#E69F00", "#56B4E9"))  # colourblind-friendly
+
+## Option 2: Boxplot of distances to group centroid (more interpretable)
+disp_df <- data.frame(
+  distance_to_centroid = disp$distances,
+  bee_species          = meta$final_id,
+  site                 = meta$site,
+  round                = meta$round
+)
+
+ggplot(disp_df, aes(x = bee_species, y = distance_to_centroid, fill = bee_species)) +
+  geom_boxplot(alpha = 0.7, outlier.shape = 21) +
+  geom_jitter(width = 0.15, alpha = 0.4, size = 1.5) +
+  facet_wrap(~ site) +   # lets you see if pattern is consistent across sites
+  scale_fill_manual(values = c("#E69F00", "#56B4E9")) +
+  labs(y = "Distance to group centroid (Jaccard)",
+       x = "Bee species",
+       title = "Within-group dispersion by bee species") +
+  theme_bw() +
+  theme(legend.position = "none")
+
+
+
+
+
+
+
+
+
+
+
 
 #################
 # Try some visitation stuff
