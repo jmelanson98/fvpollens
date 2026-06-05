@@ -315,15 +315,14 @@ mixtusfit = brm(
   chains = 4, cores = 4,
   warmup = 2000, iter = 4000,
   control = list(adapt_delta = 0.99))
+drawsdf = as_draws_df(mixtusfit)
 saveRDS(mixtusfit, "5_models/brmsfits/mixtus_richness.rds")
+mixusfit = readRDS("5_models/brmsfits/mixtus_richness.rds")
 
 pp_check(mixtusfit, type = "bars")
 pp_check(mixtusfit)
 pp_check(mixtusfit, type = "stat", stat = "max")
 
-hypothesis(mixtusfit, "doy_centred + year2023:doy_centred = 0")
-hypothesis(mixtusfit, "Idoy_centredE2 + year2023:Idoy_centredE2 = 0")
-hypothesis(mixtusfit, "iji > 0")
 
 
 # Get effect of DOY
@@ -353,8 +352,8 @@ axis.doy = (labs.doy-median(specs_withlandscape$doy)) / 10
 
 # Plot
 mixtusdoyplot = ggplot() +
-  geom_line(data = doypred[doypred$year == 2022,], aes(x = doy_centred, y = estimate), colour = faded_green, linewidth = 1, linetype = "dashed") +
-  geom_ribbon(data = doypred[doypred$year == 2022,], aes(x = doy_centred, ymin = conf.low, ymax = conf.high), fill = "grey", alpha = 0.3) +
+  #geom_line(data = doypred[doypred$year == 2022,], aes(x = doy_centred, y = estimate), colour = faded_green, linewidth = 1, linetype = "dashed") +
+  #geom_ribbon(data = doypred[doypred$year == 2022,], aes(x = doy_centred, ymin = conf.low, ymax = conf.high), fill = "grey", alpha = 0.3) +
   geom_line(data = doypred[doypred$year == 2023,], aes(x = doy_centred, y = estimate), colour = faded_green, linewidth = 1) +
   geom_ribbon(data = doypred[doypred$year == 2023,], aes(x = doy_centred, ymin = conf.low, ymax = conf.high), fill = faded_green, alpha = 0.3) +
   geom_point(data = mixtusrichness, aes(x = doy_centred, y = pollrich + 1), colour = "black", height = 0.03, alpha = 0.3) +
@@ -470,7 +469,8 @@ landscapes = specs_withlandscape[c("sample_pt", "iji", "berry", "semi", "final_i
   distinct()
 accum_df <- bind_rows(accum_list)
 accum_df = left_join(accum_df, landscapes, by = "sample_pt")
-ggplot(accum_df, aes(x = bees, y = richness, colour = site, fill = site, group = sample_pt)) +
+
+rarefaction = ggplot(accum_df, aes(x = bees, y = richness, colour = site, fill = site, group = sample_pt)) +
   geom_ribbon(aes(ymin = richness - sd, ymax = richness + sd), 
               alpha = 0.2, colour = NA) +
   geom_line(linewidth = 1) +
@@ -479,7 +479,8 @@ ggplot(accum_df, aes(x = bees, y = richness, colour = site, fill = site, group =
        title = "Sample-based rarefaction by site") +
   theme_bw() 
 theme(legend.position= "none")
-
+ggsave("7_figures/appendix_figures/site_level_rarefaction.png", rarefaction,
+       height = 1000, width = 1500, units = "px")
 
 #################################################################################
 ##### How is pollen GAMMA diversity related to landscape?
@@ -596,6 +597,129 @@ fit = ordbetareg(
   warmup = 2000, iter = 4000,
   control = list(adapt_delta = 0.99))
 saveRDS(mixtusfit, "5_models/brmsfits/bterry_comparison.rds")
+
+
+###################################################################
+## How does bee specialization change through time?
+###################################################################
+
+library(bipartite)
+
+# Get bees from sites x timepoints with enough abundance
+# filter to just flower visits
+twospp = twospp %>% filter(active_flower != "flying" & 
+                             active_flower != "leaf" & 
+                             active_flower != "Jenna's elbow" &
+                             active_flower != "road (dead)" &
+                             active_flower != "nest?" &
+                             active_flower != "N/A (leaf)" &
+                             active_flower != "N/A" &
+                             active_flower != "W01 nest" &
+                             active_flower != "ground" &
+                             active_flower != "dead" &
+                             active_flower != "nest")
+twospp$active_flower[twospp$active_flower == "dipu"] = "DIPU"
+filteredspp = twospp %>%
+  group_by(final_id, site, round) %>%
+  filter(n() > 10)
+
+# Get floral vegetation surveys to match
+veg2022 = read.csv("3_data/cleandata/fielddata/2022vegetationdata.csv")
+veg2023 = read.csv("3_data/cleandata/fielddata/2023vegetationdata.csv")
+
+SRveg2022 = veg2022 %>%
+  select(-X, -sample_id, -veg_observer) %>%
+  group_by(site, round) %>%
+  summarise(across(where(is.numeric), ~ sum(10^(.x - 1), na.rm = TRUE))) %>%
+  unite("rowname", site, round, sep = "_") %>%
+  column_to_rownames("rowname")
+SRveg2023 = veg2023 %>%
+  select(-X.5, -sample_id, -veg_observer) %>%
+  group_by(site, round) %>%
+  summarise(across(where(is.numeric), ~ sum(10^(.x - 1), na.rm = TRUE))) %>%
+  unite("rowname", site, round, sep = "_") %>%
+  column_to_rownames("rowname")
+SRveg = bind_rows(SRveg2022, SRveg2023) %>%
+  mutate(across(everything(), ~ replace_na(.x, 0))) %>%
+  select(where(~ sum(.x) > 0))
+
+
+# network per round x site
+specializations = distinct(filteredspp, final_id, round, site)
+specializations$dprime = NA
+
+for (i in 1:nrow(specializations)){
+  # get plants
+  plant_sub = SRveg[rownames(SRveg) == paste(specializations$site[i], specializations$round[i], sep = "_"),] %>%
+    select(where(~ sum(.x) > 0))
+  
+  # get bees
+  beesub = filteredspp %>% 
+    filter(site == specializations$site[i]) %>%
+    filter(round == specializations$round[i]) %>%
+    filter(final_id == specializations$final_id[i])
+    
+  # get full plant lists
+  net = t(table(beesub$active_flower, beesub$final_id))
+  all_plants = union(colnames(net), colnames(plant_sub))
+  
+  #throw error if visited plant is not in plant abundance
+  if(any(!colnames(net) %in% colnames(plant_sub))){
+    print("ERROR: visited plant missing from vegetation surveys.")
+    print(i)
+  }
+  
+  # add missing plants to net table with zeros
+  missing = setdiff(all_plants, colnames(net))
+  net = cbind(net, matrix(0, nrow = nrow(net), 
+                               ncol = length(missing),
+                               dimnames = list(NULL, missing)))
+  
+  # reorder to match plant_sub column order
+  net = net[, colnames(plant_sub), drop = FALSE]
+  
+  # make right format
+  net_matrix = as.matrix(net)
+  class(net_matrix) = "numeric"
+  plant_vector = as.numeric(unlist(plant_sub))
+  
+  # now give them to bipartite for d'!
+  specializations$dprime[i] = dfun(net_matrix, abuns = plant_vector)$dprime
+
+}
+
+hprimes = specializations %>%
+  filter(!is.na(specialization_mix) & !is.na(specialization_imp)) %>%
+  pivot_longer(cols = c("specialization_mix", "specialization_imp"), 
+               names_to = "species", 
+               values_to = "hprime")
+
+sitedates = dates %>%
+  group_by(site, round) %>%
+  summarize(doy=mean(doy))
+roundyears = twospp %>% distinct(round, year)
+
+
+hprimes = hprimes %>%
+  left_join(sitedates) %>%
+  left_join(roundyears)
+hprimes$doy_centred = (hprimes$doy - median(hprimes$doy))/10
+hprimes$year = as.factor(hprimes$year)
+hprimes$hprime[near(hprimes$hprime, 1)] = 1
+
+fit = brm(
+  hprime ~ species*year + species*doy_centred + species*I(doy_centred^2) + (1|site),
+  data = hprimes,
+  family = zero_one_inflated_beta(),
+  chains = 4, cores = 4,
+  warmup = 2000, iter = 4000,
+  control = list(adapt_delta = 0.99))
+
+
+
+
+
+
 
 
 
@@ -766,9 +890,6 @@ adonis2(dist_mat ~ round + site + final_id,
         permutations = 999,
         by = "margin")
 
-
-
-
 # PERMDISP: test dispersion differences between bee species
 disp <- betadisper(dist_mat, group = meta$final_id)
 
@@ -798,164 +919,3 @@ ggplot(disp_df, aes(x = bee_species, y = distance_to_centroid, fill = bee_specie
        title = "Within-group dispersion by bee species") +
   theme_bw() +
   theme(legend.position = "none")
-
-
-
-
-
-
-
-
-
-
-
-
-#################
-# Try some visitation stuff
-
-
-twospp = left_join(twospp, dates, by = c("round", "site", "sample_pt" = "sample_point")) %>%
-  filter(str_detect(notes, "queen", negate = TRUE)) %>%
-  filter(str_detect(notes, "male", negate = TRUE))
-
-ggplot(twospp, aes(x = doy)) +
-  geom_histogram() +
-  facet_grid(final_id ~ year) + 
-  theme_bw()
-
-
-
-
-
-
-###################################################
-## How do flower visitation networks vary by round
-###################################################
-
-library(bipartite)
-
-# filter to just flower visits
-twospp = twospp %>% filter(active_flower != "flying" & 
-                             active_flower != "leaf" & 
-                             active_flower != "Jenna's elbow" &
-                             active_flower != "road (dead)" &
-                             active_flower != "nest?" &
-                             active_flower != "N/A (leaf)" &
-                             active_flower != "N/A" &
-                             active_flower != "W01 nest" &
-                             active_flower != "ground" &
-                             active_flower != "dead")
-twospp$active_flower[twospp$active_flower == "dipu"] = "DIPU"
-
-# network per round x site
-specializations = expand.grid(round = c(2:10, 17:27),
-                              site = unique(twospp$site))
-specializations$specialization_mix = NA
-specializations$specialization_imp = NA
-
-for (i in 1:nrow(specializations)){
-  sub = twospp %>% 
-    filter(site == specializations$site[i]) %>%
-    filter(round == specializations$round[i])
-  net = table(sub$active_flower, sub$final_id)
-  specializations$specialization_mix[i] = specieslevel(net, index = "d")$`higher level`$d[2]
-  specializations$specialization_imp[i] = specieslevel(net, index = "d")$`higher level`$d[1]
-}
-
-hprimes = specializations %>%
-  filter(!is.na(specialization_mix) & !is.na(specialization_imp)) %>%
-  pivot_longer(cols = c("specialization_mix", "specialization_imp"), 
-               names_to = "species", 
-               values_to = "hprime")
-
-sitedates = dates %>%
-  group_by(site, round) %>%
-  summarize(doy=mean(doy))
-roundyears = twospp %>% distinct(round, year)
-
-
-hprimes = hprimes %>%
-  left_join(sitedates) %>%
-  left_join(roundyears)
-hprimes$doy_centred = (hprimes$doy - median(hprimes$doy))/10
-hprimes$year = as.factor(hprimes$year)
-hprimes$hprime[near(hprimes$hprime, 1)] = 1
-
-fit = brm(
-  hprime ~ species*year + species*doy_centred + species*I(doy_centred^2) + (1|site),
-  data = hprimes,
-  family = zero_one_inflated_beta(),
-  chains = 4, cores = 4,
-  warmup = 2000, iter = 4000,
-  control = list(adapt_delta = 0.99))
-
-
-
-
-# is visitation composition different?
-# community matrix: rows = bee species × round × site, cols = plant species visited
-visit_mat <- twospp %>%
-  group_by(final_id, round, year, site, active_flower) %>%
-  summarise(n = n()) %>%
-  pivot_wider(names_from = active_flower, values_from = n, values_fill = 0)
-plant_cols = unique(twospp$active_flower)
-
-visit_community <- visit_mat %>% 
-  ungroup() %>%
-  select(-final_id, -year, -round, -site) %>% 
-  as.matrix()
-visit_meta <- visit_mat %>% select(final_id, year, round, site)
-
-visit_hell <- decostand(visit_community, method = "hellinger")
-dist_visit <- vegdist(visit_hell, method = "bray")
-
-
-h <- how(blocks = interaction(visit_meta$round, visit_meta$site, visit_meta$year), nperm = 999)
-
-adonis2(dist_visit ~ final_id, data = visit_meta, permutations = h)
-
-
-adonis2(dist_visit ~ final_id + round + site + year,
-        data = visit_meta,
-        permutations = 999, 
-        by = "margin")      
-
-
-
-###################################################
-## Now try some stuff with landscape metrics
-###################################################
-
-landmets = read.csv("3_data/cleandata/landscapemetrics/calculated_metrics_exponential.csv")
-iji = landmets %>%
-  filter(metric == "iji") %>%
-  filter(species == "B. mixtus" | species == "B. impatiens") %>%
-  group_by(species, sample_pt) %>%
-  summarize(iji = mean(value)/10)
-ber = landmets %>%
-  filter(metric == "idwBER") %>%
-  group_by(species, sample_pt) %>%
-  summarize(berry = sum(value)/10000)
-semi = landmets %>%
-  filter(metric == "idwSN" | metric == "idwEDG") %>%
-  group_by(species, sample_pt) %>%
-  summarize(semi = sum(value)/10000)
-
-specs_withlandscape = twospp %>%
-  left_join(iji, by = c("sample_pt", "final_id" = "species")) %>%
-  left_join(ber, by = c("sample_pt", "final_id" = "species")) %>%
-  left_join(semi, by = c("sample_pt", "final_id" = "species")) %>%
-  left_join(pollen_richness_comparison)
-forpoll = specs_withlandscape %>% filter(!is.na(pollrich))
-forpoll$doy_centred = (forpoll$doy - median(forpoll$doy))
-
-
-fit = brm(
-  pollrich ~ final_id*berry + final_id*semi + final_id*iji + final_id*doy_centred + (1|site) + (1|sample_pt),
-  data = forpoll,
-  family = negbinomial(),
-  chains = 4, cores = 4,
-  warmup = 2000, iter = 4000,
-  control = list(adapt_delta = 0.99))
-
-

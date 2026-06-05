@@ -166,3 +166,124 @@ plantlist = plantlist[!plantlist$scientific_name == "",]
 write.csv(plantlist, "3_data/cleandata/plantdata/observedplants.csv", row.names = FALSE)
 plants = read.csv("3_data/cleandata/plantdata/observedplants.csv")
 
+
+##################################################################
+### Make sure visitation records and veg surveys are consistent
+###################################################################
+
+# Get specimen metadata data
+specs2022 = read.csv("3_data/cleandata/fielddata/2022specimendata.csv")
+specs2023 = read.csv("3_data/cleandata/fielddata/2023specimendata.csv")
+sample2022 = read.csv("3_data/cleandata/fielddata/2022sampledata.csv")
+sample2023 = read.csv("3_data/cleandata/fielddata/2023sampledata.csv")
+
+
+# Join data frames
+specs2022filt = specs2022[c("barcode_id", "active_flower", "final_id", "notes", "site", "round", "sample_pt", "sample_id", "year", "pollen")]
+specs2023filt = specs2023[c("barcode_id", "active_flower", "final_id", "notes", "site", "round", "sample_pt", "sample_id", "year", "pollen")]
+specs = rbind(specs2022filt, specs2023filt)
+
+# Filter to two species
+twospp = specs %>% filter(final_id == "B. mixtus" | final_id == "B. impatiens")
+
+
+# filter to just flower visits
+twospp = twospp %>% filter(active_flower != "flying" & 
+                             active_flower != "leaf" & 
+                             active_flower != "Jenna's elbow" &
+                             active_flower != "road (dead)" &
+                             active_flower != "nest?" &
+                             active_flower != "N/A (leaf)" &
+                             active_flower != "N/A" &
+                             active_flower != "W01 nest" &
+                             active_flower != "ground" &
+                             active_flower != "dead" &
+                             active_flower != "nest")
+twospp$active_flower[twospp$active_flower == "dipu"] = "DIPU"
+
+# Get floral vegetation surveys to match
+veg2022 = read.csv("3_data/cleandata/fielddata/2022vegetationdata.csv")
+veg2023 = read.csv("3_data/cleandata/fielddata/2023vegetationdata.csv")
+
+veg2022 = veg2022 %>%
+  select(-X, -site, -round, -sample_point, -veg_observer) %>%
+  group_by(sample_id) %>%
+  summarise(across(where(is.numeric), ~ sum(10^(.x - 1), na.rm = TRUE))) %>%
+  column_to_rownames("sample_id")
+veg2023 = veg2023 %>%
+  select(-X, -site, -round, -sample_point, -veg_observer) %>%
+  group_by(sample_id) %>%
+  summarise(across(where(is.numeric), ~ sum(10^(.x - 1), na.rm = TRUE))) %>%
+  column_to_rownames("sample_id")
+
+veg = bind_rows(veg2022, veg2023) %>%
+  mutate(across(everything(), ~ replace_na(.x, 0))) %>%
+  select(where(~ sum(.x) > 0))
+
+
+# loop through sample events, check for mismatch
+mismatched=c()
+
+for (i in unique(twospp$sample_id)){
+  # get plants
+  plant_sub = veg[rownames(veg) == i,] %>%
+    select(where(~ sum(.x) > 0))
+  
+  # get bees
+  beesub = twospp %>% 
+    filter(sample_id == i)
+  
+  # get full plant lists
+  net = t(table(beesub$active_flower, beesub$final_id))
+  
+  #throw error if visited plant is not in plant abundance
+  if(any(!colnames(net) %in% colnames(plant_sub))){
+    mismatched = c(mismatched, i)
+  }
+}
+mismatched
+
+
+# Cases where the plant is just missing -- check before and after, then take average
+veg2022$RULA[veg2022$sample_id == "9_W10"] = 1
+veg2022$VICR[veg2022$sample_id == "7_SD28"] = 2
+
+
+veg2023$LYSA[veg2023$sample_id == "25_W05"] = 2
+veg2023$RUAR[veg2023$sample_id == "22_W09"] = 1
+
+# If it's not in either, add the minimum amount
+veg2023$FAES[veg2023$sample_id == "22_W17"] = 1
+veg2023$SYAL[veg2023$sample_id == "18_W33"] = 1
+
+
+# In cases for ROAC/RONU or TRRE/TRHY or PEMA/PELA
+# --> go with veg survey, because Hazel's id was typically better than mine
+specs2022$active_flower[specs2022$barcode_id == "W2_31_02"] = "RONU"
+specs2022$active_flower[specs2022$barcode_id == "SD7_26_08"] = "TRHY"
+specs2022$active_flower[specs2022$barcode_id == "NR10_15A_01"] = "PELA"
+
+# CECY and CYSE denote the same plant, they are just synonyms (centaurea cynanus vs cyanus segetum)
+# GBIF recognizes CECY
+colnames(veg2022)[colnames(veg2022) == "CYSE"] = "CECY"
+colnames(veg2023)[colnames(veg2023) == "CYSE"] = "CECY"
+specs2022$active_flower[specs2022$active_flower == "CYSE"] = "CECY"
+specs2023$active_flower[specs2023$active_flower == "CYSE"] = "CECY"
+
+
+
+# pull them up and check manually
+i = "19_W18"
+plant_sub = veg[rownames(veg) == i,] %>%
+  select(where(~ sum(.x) > 0))
+
+beesub = twospp %>% 
+  filter(sample_id == i)
+beesub
+plant_sub
+
+# write to files
+write.csv(specs2022, "3_data/cleandata/fielddata/2022specimendata.csv")
+write.csv(specs2023, "3_data/cleandata/fielddata/2023specimendata.csv")
+write.csv(veg2022, "3_data/cleandata/fielddata/2022vegetationdata.csv")
+write.csv(veg2023, "3_data/cleandata/fielddata/2023vegetationdata.csv")
