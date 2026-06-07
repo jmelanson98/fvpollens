@@ -107,21 +107,6 @@ mix2023 = mix2023[!mix2023$sample_id %in% missed2023,]
 imp2022 = imp2022[!imp2022$sample_id %in% missed2022,]
 imp2023 = imp2023[!imp2023$sample_id %in% missed2023,]
 
-###################################################
-### Write new files
-###################################################
-write.csv(mix2022, "3_data/cleandata/siblingships/mixtus_sibships_2022.csv")
-write.csv(mix2023, "3_data/cleandata/siblingships/mixtus_sibships_2023.csv")
-write.csv(imp2022, "3_data/cleandata/siblingships/impatiens_sibships_2022.csv")
-write.csv(imp2023, "3_data/cleandata/siblingships/impatiens_sibships_2023.csv")
-
-write.csv(specimenData2022, "3_data/cleandata/fielddata/2022specimendata.csv")
-write.csv(specimenData2023, "3_data/cleandata/fielddata/2023specimendata.csv")
-write.csv(sampleData2022, "3_data/cleandata/fielddata/2022sampledata.csv")
-write.csv(sampleData2023, "3_data/cleandata/fielddata/2023sampledata.csv")
-write.csv(vegData2022, "3_data/cleandata/fielddata/2022vegetationdata.csv")
-write.csv(vegData2023, "3_data/cleandata/fielddata/2023vegetationdata.csv")
-
 
 
 ###################################################
@@ -171,17 +156,169 @@ plants = read.csv("3_data/cleandata/plantdata/observedplants.csv")
 ### Make sure visitation records and veg surveys are consistent
 ###################################################################
 
-# Get specimen metadata data
-specs2022 = read.csv("3_data/cleandata/fielddata/2022specimendata.csv")
-specs2023 = read.csv("3_data/cleandata/fielddata/2023specimendata.csv")
-sample2022 = read.csv("3_data/cleandata/fielddata/2022sampledata.csv")
-sample2023 = read.csv("3_data/cleandata/fielddata/2023sampledata.csv")
+################### Put corrections here #########################
+
+# First, check if it's entered incorrectly from veg datasheet
+vegData2022$RUAR[vegData2022$sample_id == "4_SD27"] = 2
+vegData2022$`Philadelphus spp.`[vegData2022$sample_id == "4_W24"] = 3
+vegData2022$SYAL[vegData2022$sample_id == "4_W05"] = 3
+vegData2022$SYAL[vegData2022$sample_id == "7_PM70"] = 3
+vegData2022$SYAL[vegData2022$sample_id == "7_PM49"] = 2
+vegData2022$SYAL[vegData2022$sample_id == "6_PM70"] = 3
+vegData2022$SYAL[vegData2022$sample_id == "6_PM49"] = 2
+vegData2022$SYOF[vegData2022$sample_id == "6_PM70"] = NA
+vegData2022$SYOF[vegData2022$sample_id == "6_PM49"] = NA
+vegData2022$RHDAP[vegData2022$sample_id == "3_W05"] = 4
+vegData2022$SOAR[vegData2022$sample_id == "10_SD09"] = 1
+vegData2022$ROSY[vegData2022$sample_id == "10_SD09"] = 4
+vegData2022$BRRA[vegData2022$sample_id == "10_SD09"] = 2
+vegData2022$PHVU[vegData2022$sample_id == "10_SD09"] = 1
+vegData2022$ERHU[vegData2022$sample_id == "9_HR20A"] = 3
+vegData2022$PHPA[vegData2022$sample_id == "9_HR20A"] = 3
+
+vegData2023$ARDI[vegData2023$sample_id == "18_W18"] = 4
+vegData2023$DIWI[vegData2023$sample_id == "18_W18"] = 2
+vegData2023$AQAT[vegData2023$sample_id == "18_W18"] = 2
+vegData2023$SYAL[vegData2023$sample_id == "22_PM49"] = 4
+vegData2023$SYAL[vegData2023$sample_id == "22_PM48"] = NA
+vegData2023$VICR[vegData2023$sample_id == "20_PM54A"] = 2
+vegData2023$PIJA[vegData2023$sample_id == "12_HR20A"] = 3
+vegData2023$Salix.spp.[vegData2023$sample_id == "12_HR24"] = 4
+vegData2023$PIJA[vegData2023$sample_id == "12_HR18"] = 3
+vegData2023$Solanum.spp.[vegData2023$sample_id == "24_W16"] = 2
+vegData2023$LASA[vegData2023$sample_id == "24_W16"] = 1
+vegData2023$ZEMA[vegData2023$sample_id == "24_W10"] = 5
+vegData2023$RUHI[vegData2023$sample_id == "27_HR23"] = 3
+vegData2023$HYMA[vegData2023$sample_id == "27_HR23"] = 4
+vegData2023$RONU[vegData2023$sample_id == "18_W14"] = 2
+
+# Names of sites go mixed up
+specimenData2023$sample_pt[specimenData2023$sample_id == "18_W34"] = "W33"
+specimenData2023$sample_id[specimenData2023$sample_id == "18_W34"] = "18_W33"
+vegData2022$sample_point[vegData2022$sample_id == "3_W35"] = "W34"
+vegData2022$sample_id[vegData2022$sample_id == "3_W35"] = "3_W34"
+vegData2022$sample_point[vegData2022$sample_id == "W35A"] = "W35"
+vegData2022$sample_id[vegData2022$sample_id == "3_W35A"] = "3_W35"
 
 
+# Typos in plant names
+colnames(vegData2022)[colnames(vegData2022) == "Rhododendron.spp."] = "Rhododendron spp."
+colnames(vegData2023)[colnames(vegData2023) == "Rhododendron.spp."] = "Rhododendron spp."
+colnames(vegData2022)[colnames(vegData2022) == "Prunus.spp."] = "Prunus spp."
+colnames(vegData2023)[colnames(vegData2023) == "Prunus.spp."] = "Prunus spp."
+colnames(vegData2022)[colnames(vegData2022) == "Acer.spp."] = "Acer spp."
+colnames(vegData2023)[colnames(vegData2023) == "Acer.spp."] = "Acer spp."
+colnames(vegData2023)[colnames(vegData2023) == "Salix.spp."] = "Salix spp."
+colnames(vegData2023)[colnames(vegData2023) == "Solanum.spp."] = "Solanum spp."
+colnames(vegData2022)[colnames(vegData2022) == "Crepis.spp."] = "Crepis spp."
+colnames(vegData2023)[colnames(vegData2023) == "Crepis.spp."] = "Crepis spp."
+colnames(vegData2022)[colnames(vegData2022) == "Persicaria.spp."] = "Persicaria spp."
+colnames(vegData2023)[colnames(vegData2023) == "Persicaria.spp."] = "Persicaria spp."
+colnames(vegData2022)[colnames(vegData2022) == "Hosta.spp."] = "Hosta spp."
+colnames(vegData2023)[colnames(vegData2023) == "Hosta.spp."] = "Hosta spp."
+specimenData2023$active_flower[specimenData2023$barcode_id == "HR22_01_01"] = "HYRA"
+specimenData2023$active_flower[specimenData2023$barcode_id == "W18_10_01"] = "RUAR"
+vegData2023$CETH[vegData2023$sample_id == "18_SD40"] = 4
+vegData2023$Ceanothus.spp.[vegData2023$sample_id == "18_SD40"] = NA
+vegData2022$LAPU[vegData2022$sample_id == "3_SD40"] = NA
+vegData2022$LUPO[vegData2022$sample_id == "3_SD40"] = 3
+
+
+# Cases where the plant is just missing -- check before and after, then take average
+vegData2022$RULA[vegData2022$sample_id == "9_W10"] = 1
+vegData2022$VICR[vegData2022$sample_id == "7_SD28"] = 2
+vegData2022$HYPE[vegData2022$sample_id == "4_HR27"] = 1
+vegData2022$VICR[vegData2022$sample_id == "8_SD28"] = 1
+vegData2022$SYAL[vegData2022$sample_id == "8_W18"] = 1
+vegData2022$LASY[vegData2022$sample_id == "5_HR10"] = 3
+vegData2022$VICR[vegData2022$sample_id == "4_HR19A"] = 4
+vegData2022$BRRA[vegData2022$sample_id == "1_SD24"] = 2
+vegData2022$EPCI[vegData2022$sample_id == "6_ED07"] = 2
+vegData2022$CASI[vegData2022$sample_id == "7_PM46"] = 1
+
+
+vegData2023$LYSA[vegData2023$sample_id == "25_W05"] = 2
+vegData2023$RUAR[vegData2023$sample_id == "22_W09"] = 1
+vegData2023$RUAR[vegData2023$sample_id == "24_NR08"] = 2
+vegData2023$RUPA[vegData2023$sample_id == "19_NR43"] = 2
+vegData2023$ROPA[vegData2023$sample_id == "19_NR43"] = NA
+vegData2023$TRRE[vegData2023$sample_id == "26_HR12"] = 3
+vegData2023$RUAR[vegData2023$sample_id == "26_ED17"] = 1
+vegData2023$RUAR[vegData2023$sample_id == "25_ED17"] = 1
+vegData2023$LUPO[vegData2023$sample_id == "19_PM70"] = 2
+vegData2023$VICR[vegData2023$sample_id == "18_HR05A"] = 3
+vegData2023$RULA[vegData2023$sample_id == "22_NR22"] = 1
+vegData2023$SYOF[vegData2023$sample_id == "18_ED01"] = 3
+vegData2023$TRRE[vegData2023$sample_id == "27_HR12"] = 2
+vegData2023$RONU[vegData2023$sample_id == "18_W30"] = 2
+
+
+
+# If it's not in either, add the minimum value
+vegData2023$SYAL[vegData2023$sample_id == "18_W33"] = 1
+vegData2023$AQAT[vegData2023$sample_id == "18_W15"] = 1
+vegData2023$LUPO[vegData2023$sample_id == "18_SD27"] = 2
+vegData2023$VACO[vegData2023$sample_id == "13_NR05A"] = 1
+vegData2023$RUSP[vegData2023$sample_id == "13_ED17A"] = 1
+vegData2023$TAOF[vegData2023$sample_id == "26_SD41B"] = 1
+vegData2022$CASI[vegData2022$sample_id == "8_PM46"] = 1
+vegData2022$LASY[vegData2022$sample_id == "10_SD08"] = 1
+vegData2022$LYSA[vegData2022$sample_id == "10_ED17"] = 1
+vegData2022$VACO[vegData2022$sample_id == "3_PM45"] = 1
+vegData2022$RUSP[vegData2022$sample_id == "1_W29"] = 1
+
+
+
+# In cases for ROAC/RONU or TRRE/TRHY or PEMA/PELA
+# --> go with veg survey, because Hazel's id was typically better than mine
+specimenData2022$active_flower[specimenData2022$barcode_id == "W2_31_02"] = "RONU"
+specimenData2022$active_flower[specimenData2022$barcode_id == "SD7_26_08"] = "TRHY"
+specimenData2022$active_flower[specimenData2022$barcode_id == "NR10_15A_01"] = "PELA"
+specimenData2022$active_flower[specimenData2022$barcode_id == "ED7_21A_02"] = "RULA"
+specimenData2022$active_flower[specimenData2022$barcode_id == "HR1_14A_02"] = "CAHI"
+specimenData2022$active_flower[specimenData2022$barcode_id == "HR1_14A_03"] = "CAHI"
+specimenData2022$active_flower[specimenData2022$barcode_id == "ED8_28A_01"] = "TRHY"
+specimenData2022$active_flower[specimenData2022$barcode_id == "PM2_65_01"] = "RARE"
+specimenData2022$active_flower[specimenData2022$barcode_id == "ED7_24A_01"] = "TRRE"
+specimenData2022$active_flower[specimenData2022$barcode_id == "ED7_24A_02"] = "TRRE"
+specimenData2022$active_flower[specimenData2022$barcode_id == "PM1_20_01"] = "RONU"
+
+
+# ID changed on veg sheet but not tracked on sample sheet
+specimenData2023$active_flower[specimenData2023$barcode_id == "W27_16_01"] = "TRHY"
+specimenData2023$active_flower[specimenData2023$barcode_id == "W27_16_02"] = "TRHY"
+specimenData2023$active_flower[specimenData2023$barcode_id == "W27_16_03"] = "TRHY"
+specimenData2023$active_flower[specimenData2023$barcode_id == "SD13_40_01"] = "Acer spp."
+specimenData2023$active_flower[specimenData2023$barcode_id == "PM20_57_01"] = "CRTE"
+specimenData2023$active_flower[specimenData2023$barcode_id == "HR27_26_01"] = "LASE"
+specimenData2023$active_flower[specimenData2023$barcode_id == "ED26_23A_02"] = "RARA"
+specimenData2023$active_flower[specimenData2023$barcode_id == "ED21_07_01"] = "SIORE"
+specimenData2023$active_flower[specimenData2023$barcode_id == "W18_30_01"] = "ROAC"
+specimenData2023$active_flower[specimenData2023$barcode_id == "W18_30_02"] = "ROAC"
+specimenData2023$active_flower[specimenData2023$barcode_id == "W20_10_01"] = "RULA"
+specimenData2023$active_flower[specimenData2023$barcode_id == "W18_30_01"] = "RONU"
+specimenData2023$active_flower[specimenData2023$barcode_id == "W18_30_02"] = "RONU"
+vegData2022$Brassicaceae[vegData2022$sample_id == "1_HR03"] = NA
+vegData2022$`Rorippa spp.`[vegData2022$sample_id == "1_HR03"] = 4
+vegData2022$Brassicaceae[vegData2022$sample_id == "1_SD09"] = NA
+vegData2022$BRRA[vegData2022$sample_id == "1_SD09"] = 3
+vegData2022$Lathyrus.spp.[vegData2022$sample_id == "5_HR06A"] = NA
+vegData2022$LASY[vegData2022$sample_id == "5_HR06A"] = 2
+
+
+# CECY and CYSE denote the same plant, they are just synonyms (centaurea cynanus vs cyanus segetum)
+# GBIF recognizes CECY
+colnames(vegData2022)[colnames(vegData2022) == "CYSE"] = "CECY"
+colnames(vegData2023)[colnames(vegData2023) == "CYSE"] = "CECY"
+specimenData2022$active_flower[specimenData2022$active_flower == "CYSE"] = "CECY"
+specimenData2023$active_flower[specimenData2023$active_flower == "CYSE"] = "CECY"
+
+
+#################### Check for mismatches ###############################
 # Join data frames
-specs2022filt = specs2022[c("barcode_id", "active_flower", "final_id", "notes", "site", "round", "sample_pt", "sample_id", "year", "pollen")]
-specs2023filt = specs2023[c("barcode_id", "active_flower", "final_id", "notes", "site", "round", "sample_pt", "sample_id", "year", "pollen")]
-specs = rbind(specs2022filt, specs2023filt)
+specimenData2022filt = specimenData2022[c("barcode_id", "active_flower", "final_id", "notes", "site", "round", "sample_pt", "sample_id", "year", "pollen")]
+specimenData2023filt = specimenData2023[c("barcode_id", "active_flower", "final_id", "notes", "site", "round", "sample_pt", "sample_id", "year", "pollen")]
+specs = rbind(specimenData2022filt, specimenData2023filt)
 
 # Filter to two species
 twospp = specs %>% filter(final_id == "B. mixtus" | final_id == "B. impatiens")
@@ -198,29 +335,31 @@ twospp = twospp %>% filter(active_flower != "flying" &
                              active_flower != "W01 nest" &
                              active_flower != "ground" &
                              active_flower != "dead" &
-                             active_flower != "nest")
+                             active_flower != "nest" &
+                             active_flower != "nest searching" &
+                             active_flower != "grass" &
+                             active_flower != "" &
+                             active_flower != "road (alive)")
 twospp$active_flower[twospp$active_flower == "dipu"] = "DIPU"
 
-# Get floral vegetation surveys to match
-veg2022 = read.csv("3_data/cleandata/fielddata/2022vegetationdata.csv")
-veg2023 = read.csv("3_data/cleandata/fielddata/2023vegetationdata.csv")
-
-veg2022 = veg2022 %>%
-  select(-X, -site, -round, -sample_point, -veg_observer) %>%
+vegData2022_red = vegData2022 %>%
+  select(-site, -round, -sample_point, -veg_observer) %>%
   group_by(sample_id) %>%
   summarise(across(where(is.numeric), ~ sum(10^(.x - 1), na.rm = TRUE))) %>%
   column_to_rownames("sample_id")
-veg2023 = veg2023 %>%
-  select(-X, -site, -round, -sample_point, -veg_observer) %>%
+vegData2023_red = vegData2023 %>%
+  select(-site, -round, -sample_point, -veg_observer) %>%
   group_by(sample_id) %>%
   summarise(across(where(is.numeric), ~ sum(10^(.x - 1), na.rm = TRUE))) %>%
   column_to_rownames("sample_id")
 
-veg = bind_rows(veg2022, veg2023) %>%
+veg = bind_rows(vegData2022_red, vegData2023_red) %>%
   mutate(across(everything(), ~ replace_na(.x, 0))) %>%
   select(where(~ sum(.x) > 0))
 
 
+
+################### Loop to check for remaining mismatches ##################
 # loop through sample events, check for mismatch
 mismatched=c()
 
@@ -243,37 +382,8 @@ for (i in unique(twospp$sample_id)){
 }
 mismatched
 
-
-# Cases where the plant is just missing -- check before and after, then take average
-veg2022$RULA[veg2022$sample_id == "9_W10"] = 1
-veg2022$VICR[veg2022$sample_id == "7_SD28"] = 2
-
-
-veg2023$LYSA[veg2023$sample_id == "25_W05"] = 2
-veg2023$RUAR[veg2023$sample_id == "22_W09"] = 1
-
-# If it's not in either, add the minimum amount
-veg2023$FAES[veg2023$sample_id == "22_W17"] = 1
-veg2023$SYAL[veg2023$sample_id == "18_W33"] = 1
-
-
-# In cases for ROAC/RONU or TRRE/TRHY or PEMA/PELA
-# --> go with veg survey, because Hazel's id was typically better than mine
-specs2022$active_flower[specs2022$barcode_id == "W2_31_02"] = "RONU"
-specs2022$active_flower[specs2022$barcode_id == "SD7_26_08"] = "TRHY"
-specs2022$active_flower[specs2022$barcode_id == "NR10_15A_01"] = "PELA"
-
-# CECY and CYSE denote the same plant, they are just synonyms (centaurea cynanus vs cyanus segetum)
-# GBIF recognizes CECY
-colnames(veg2022)[colnames(veg2022) == "CYSE"] = "CECY"
-colnames(veg2023)[colnames(veg2023) == "CYSE"] = "CECY"
-specs2022$active_flower[specs2022$active_flower == "CYSE"] = "CECY"
-specs2023$active_flower[specs2023$active_flower == "CYSE"] = "CECY"
-
-
-
 # pull them up and check manually
-i = "19_W18"
+i = "3_PM45"
 plant_sub = veg[rownames(veg) == i,] %>%
   select(where(~ sum(.x) > 0))
 
@@ -282,8 +392,17 @@ beesub = twospp %>%
 beesub
 plant_sub
 
-# write to files
-write.csv(specs2022, "3_data/cleandata/fielddata/2022specimendata.csv")
-write.csv(specs2023, "3_data/cleandata/fielddata/2023specimendata.csv")
-write.csv(veg2022, "3_data/cleandata/fielddata/2022vegetationdata.csv")
-write.csv(veg2023, "3_data/cleandata/fielddata/2023vegetationdata.csv")
+###################################################
+### Write new files
+###################################################
+write.csv(mix2022, "3_data/cleandata/siblingships/mixtus_sibships_2022.csv")
+write.csv(mix2023, "3_data/cleandata/siblingships/mixtus_sibships_2023.csv")
+write.csv(imp2022, "3_data/cleandata/siblingships/impatiens_sibships_2022.csv")
+write.csv(imp2023, "3_data/cleandata/siblingships/impatiens_sibships_2023.csv")
+
+write.csv(specimenData2022, "3_data/cleandata/fielddata/2022specimendata.csv")
+write.csv(specimenData2023, "3_data/cleandata/fielddata/2023specimendata.csv")
+write.csv(sampleData2022, "3_data/cleandata/fielddata/2022sampledata.csv")
+write.csv(sampleData2023, "3_data/cleandata/fielddata/2023sampledata.csv")
+write.csv(vegData2022, "3_data/cleandata/fielddata/2022vegetationdata.csv")
+write.csv(vegData2023, "3_data/cleandata/fielddata/2023vegetationdata.csv")

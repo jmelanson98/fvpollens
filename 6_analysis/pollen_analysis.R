@@ -617,7 +617,11 @@ twospp = twospp %>% filter(active_flower != "flying" &
                              active_flower != "W01 nest" &
                              active_flower != "ground" &
                              active_flower != "dead" &
-                             active_flower != "nest")
+                             active_flower != "nest" &
+                             active_flower != "nest searching" &
+                             active_flower != "grass" &
+                             active_flower != "" &
+                             active_flower != "road (alive)")
 twospp$active_flower[twospp$active_flower == "dipu"] = "DIPU"
 filteredspp = twospp %>%
   group_by(final_id, site, round) %>%
