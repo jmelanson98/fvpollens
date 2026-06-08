@@ -129,27 +129,34 @@ asv_long = pivot_longer(asvtable, cols = -barcode_id,
   group_by(barcode_id, family, genus) %>%
   summarize(ReadCountTaxa = sum(ReadCount))
 
+# add sample metadata
+pollen_richness = left_join(specs_withlandscape, asv_long, by = "barcode_id", relationship = "one-to-many") %>%
+  filter(!is.na(family)) %>%
+  group_by(barcode_id, final_id, site, round, sample_pt, year, doy, doy_centred, iji, berry, semi) %>%
+  summarize(pollrich = n()) %>%
+  mutate(pollrich = pollrich -1)
+pollen_richness$final_id = as.factor(pollen_richness$final_id)
+pollen_richness$site = as.factor(pollen_richness$site)
+pollen_richness$year = as.factor(pollen_richness$year)
+
+
+comparisonrichness = pollen_richness %>% filter(round %in% c(6, 7, 8, 9))
+mixtusrichness = pollen_richness %>% filter(final_id == "B. mixtus")
+
 #################################################################################
 ##### What shapes pollen collection TURNOVER between individuals?
 #################################################################################
 
+# Get jaccard distance between pollen loads
+mixtus_pollen = left_join(asv_long, specs_withlandscape) %>%
+  filter(final_id == "B. mixtus")
 
-comparison_composition = left_join(asv_long, specs_withlandscape) %>%
-  filter(round %in% c(6, 7, 8, 9))
-
-comparison_matrix = pivot_wider(comparison_composition, id_cols = barcode_id, names_from = genus, values_from = ReadCountTaxa) %>%
+mixtus_matrix = pivot_wider(mixtus_pollen, id_cols = barcode_id, names_from = genus, values_from = ReadCountTaxa) %>%
   column_to_rownames("barcode_id") %>%
   mutate(across(everything(), ~ replace_na(.x, 0)))
 
-braydist = as.matrix(vegdist(comparison_matrix, method = "bray"))
-jaccarddist = as.matrix(vegdist(comparison_matrix, method ="jaccard"))
+jaccarddist = as.matrix(vegdist(mixtus_matrix, method ="jaccard"))
 
-
-braydf = as.matrix(braydist) %>% 
-  as.data.frame() %>% 
-  rownames_to_column(var = "bee1") %>% 
-  pivot_longer(cols = -bee1, names_to = "bee2", values_to = "braydist") %>% 
-  filter(bee1 > bee2)
 jaccarddf = as.matrix(jaccarddist) %>% 
   as.data.frame() %>% 
   rownames_to_column(var = "bee1") %>% 
@@ -157,24 +164,191 @@ jaccarddf = as.matrix(jaccarddist) %>%
   filter(bee1 > bee2)
 
 # get some metadata we want to join
-metadata1 = specs_withlandscape[c("barcode_id", "site", "sample_pt", "year", "doy", "final_id")]
-colnames(metadata1) = c("bee1", "site1", "sample_pt1", "year1", "doy1", "species1")
-metadata2 = specs_withlandscape[c("barcode_id", "site", "sample_pt", "year", "doy", "final_id")]
-colnames(metadata2) = c("bee2", "site2", "sample_pt2", "year2", "doy2", "species2")
+metadata1 = specs_withlandscape[c("barcode_id", "site", "sample_pt", "sample_id", "year", "doy", "iji", "berry", "semi")]
+colnames(metadata1) = c("bee1", "site1", "sample_pt1", "sample_id1", "year1", "doy1", "iji1", "berry1", "semi1")
+metadata2 = specs_withlandscape[c("barcode_id", "site", "sample_pt", "sample_id", "year", "doy", "iji", "berry", "semi")]
+colnames(metadata2) = c("bee2", "site2", "sample_pt2", "sample_id2", "year2", "doy2", "iji2", "berry2", "semi2")
 
-braydf_meta = braydf %>%
+jacdf_meta = jaccarddf %>%
   left_join(metadata1) %>%
   left_join(metadata2) %>%
   mutate(doydiff = abs(doy2-doy1)) %>%
-  mutate(sametransect = as.factor(ifelse(sample_pt1 == sample_pt2, "same", "different"))) %>%
-  mutate(samesite = as.factor(ifelse(site1 == site2, "same", "different"))) %>%
-  mutate(species = as.factor(paste(pmin(species1, species2), pmax(species1, species2), sep = "/")))
+  filter(sample_id1 == sample_id2)
+jacdf_meta$doy_centered = (jacdf_meta$doy1 - 180)/10
 
 
 fit = ordbetareg(
-  braydist ~  0 + sametransect + samesite + species + (1|bee1) + (1|bee2),
-  data = braydf_meta,
+  jaccarddist ~  iji1 + berry1 + semi1 + year1*doy_centered + year1*I(doy_centered^2) + (1|bee1) + (1|bee2) + (1|site1),
+  data = jacdf_meta,
   chains = 4, cores = 4,
-  warmup = 2000, iter = 4000,
-  control = list(adapt_delta = 0.99))
-saveRDS(mixtusfit, "5_models/brmsfits/bterry_comparison.rds")
+  controls(list=c(adapt_delta = 0.99)))
+saveRDS(fit, "5_models/brmsfits/ordbetareg_mixtus.rds")
+
+pp_check(fit, type = "hist")
+hypothesis(fit, "semi1 > 0")
+
+
+# Get effect of blueberry
+berry_seq = seq(min(jacdf_meta$berry1),
+                max(jacdf_meta$berry1),
+                length.out = 50)
+
+berrypred = lapply(berry_seq, function(d) {
+  
+  # Swap in this iji value, keep all other covariates real
+  tmp <- jacdf_meta |> mutate(berry1 = d)
+  
+  # Predict, then immediately summarise — never accumulate full predictions
+  predictions(fit, newdata = tmp, re_formula = NA) |>
+    as.data.frame() |>
+    group_by(berry1) |>
+    summarise(estimate  = mean(estimate),
+              conf.low  = mean(conf.low),
+              conf.high = mean(conf.high),
+              .groups   = "drop")
+}) |> bind_rows()
+
+#create axis values for standardized variables
+labs.berry = pretty(jacdf_meta$berry1*10, n = 5)
+axis.berry = labs.berry/10
+
+# Plot
+bberryplot = ggplot() +
+  geom_line(data = berrypred, aes(x = berry1, y = estimate), colour = faded_green, linewidth = 1) +
+  geom_ribbon(data = berrypred, aes(x = berry1, ymin = conf.low, ymax = conf.high), fill = faded_green, alpha = 0.3) +
+  geom_jitter(data = jacdf_meta, aes(x = berry1, y = jaccarddist), colour = "black", width = 0.5, alpha = 0.2) +
+  xlab("Distance-weighted berry cultivation") +
+  ylab("Jaccard distance") +
+  scale_x_continuous(
+    breaks = axis.berry,
+    labels = labs.berry) +
+  theme_bw() + 
+  theme(legend.position = "none",
+        strip.text.x = element_blank(),
+        strip.text.y = element_text(size = 14),
+        strip.background = element_rect(fill = "white", colour = "white"),
+        axis.title = element_text(size = 14),
+        axis.text = element_text(size = 11))
+
+
+
+# Get effects of DOY
+doy_seq = seq(min(jacdf_meta$doy_centered),
+                max(jacdf_meta$doy_centered),
+                length.out = 50)
+
+doypred = lapply(doy_seq, function(d) {
+  
+  # Swap in this iji value, keep all other covariates real
+  tmp <- jacdf_meta |> mutate(doy_centered = d)
+  
+  # Predict, then immediately summarise — never accumulate full predictions
+  predictions(fit, newdata = tmp, re_formula = NA) |>
+    as.data.frame() |>
+    group_by(year1, doy_centered) |>
+    summarise(estimate  = mean(estimate),
+              conf.low  = mean(conf.low),
+              conf.high = mean(conf.high),
+              .groups   = "drop")
+}) |> bind_rows()
+
+#create axis values for standardized variables
+labs.doy = pretty(jacdf_meta$doy_centered*10 + 180, n = 5)
+axis.doy = (labs.doy - 180)/10
+
+# Plot
+doyplot = ggplot() +
+  geom_line(data = doypred[doypred$year1 == 2023,], aes(x = doy_centered, y = estimate), colour = faded_green, linewidth = 1) +
+  geom_ribbon(data = doypred[doypred$year1 == 2023,], aes(x = doy_centered, ymin = conf.low, ymax = conf.high), fill = faded_green, alpha = 0.3) +
+  geom_jitter(data = jacdf_meta, aes(x = doy_centered, y = jaccarddist), colour = "black", width = 0.5, alpha = 0.2) +
+  xlab("Day of year") +
+  ylab("Jaccard distance") +
+  scale_x_continuous(
+    breaks = axis.doy,
+    labels = labs.doy) +
+  facet_grid(year1~1) +
+  theme_bw() + 
+  theme(legend.position = "none",
+        strip.text.x = element_blank(),
+        strip.text.y = element_text(size = 14),
+        strip.background = element_rect(fill = "white", colour = "white"),
+        axis.title = element_text(size = 14),
+        axis.text = element_text(size = 11))
+
+grid = bberryplot + doyplot +
+  plot_annotation(tag_levels = "A") &
+  theme(plot.tag = element_text(size = 16))
+
+ggsave("7_figures/manuscript_figures/mixtus_betadiv.jpg", grid,
+       height = 2000, width = 3000, units = "px")
+
+####################################################################
+####################################################################
+##### SPLIT BEES INTO EARLY -- MID -- LATE SEASON
+####################################################################
+####################################################################
+
+q33 = quantile(mixtusrichness$doy[mixtusrichness$year == 2022], 0.33)
+q67 = quantile(mixtusrichness$doy[mixtusrichness$year == 2022], 0.67)
+
+byseason2022 = mixtusrichness %>%
+  filter(year == 2022) %>%
+  mutate(season = case_when(
+    doy <= q33 ~ "early",
+    doy <= q67 ~ "mid",
+    TRUE ~ "late"))
+
+q33 = quantile(mixtusrichness$doy[mixtusrichness$year == 2023], 0.33)
+q67 = quantile(mixtusrichness$doy[mixtusrichness$year == 2023], 0.67)
+
+byseason2023 = mixtusrichness %>%
+  filter(year == 2023) %>%
+  mutate(season = case_when(
+    doy <= q33 ~ "early",
+    doy <= q67 ~ "mid",
+    TRUE ~ "late"))
+
+byseason = rbind(byseason2023, byseason2022)
+
+####################################################################
+##### How does pollen turnover vary by landscape x season?
+####################################################################
+
+# Get jaccard distance between pollen loads
+mixtus_pollen = left_join(asv_long, byseason) %>%
+  filter(final_id == "B. mixtus")
+
+mixtus_matrix = pivot_wider(mixtus_pollen, id_cols = barcode_id, names_from = genus, values_from = ReadCountTaxa) %>%
+  column_to_rownames("barcode_id") %>%
+  mutate(across(everything(), ~ replace_na(.x, 0)))
+
+jaccarddist = as.matrix(vegdist(mixtus_matrix, method ="jaccard"))
+
+jaccarddf = as.matrix(jaccarddist) %>% 
+  as.data.frame() %>% 
+  rownames_to_column(var = "bee1") %>% 
+  pivot_longer(cols = -bee1, names_to = "bee2", values_to = "jaccarddist") %>% 
+  filter(bee1 > bee2)
+
+# get some metadata we want to join
+metadata1 = byseason[c("barcode_id", "site", "sample_pt", "year", "doy", "iji", "berry", "semi", "season")]
+colnames(metadata1) = c("bee1", "site1", "sample_pt1", "year1", "doy1", "iji1", "berry1", "semi1", "season1")
+metadata2 = byseason[c("barcode_id", "site", "sample_pt", "year", "doy", "iji", "berry", "semi", "season")]
+colnames(metadata2) = c("bee2", "site2", "sample_pt2", "year2", "doy2", "iji2", "berry2", "semi2", "season2")
+
+jacdf_meta = jaccarddf %>%
+  left_join(metadata1) %>%
+  left_join(metadata2) %>%
+  mutate(doydiff = abs(doy2-doy1)) %>%
+  filter(sample_pt1 == sample_pt2) %>%
+  filter(season1 == season2)
+
+
+fit = ordbetareg(
+  jaccarddist ~  season1*iji1 + season1*berry1 + season1*semi1 + year1 + doydiff + (1|bee1) + (1|bee2) + (1|site1),
+  data = jacdf_meta,
+  chains = 4, cores = 4,
+  controls(list=c(adapt_delta = 0.99)))
+saveRDS(fit, "5_models/brmsfits/ordbetareg_seasonxlandscape.rds")
+
+summary(fit)

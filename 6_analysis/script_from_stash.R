@@ -12,7 +12,7 @@ library(ggplot2)
 library(tibble)
 library(vegan)
 library(marginaleffects)
-library(tidyr)
+library(iNEXT)
 
 
 # Set color scheme for plots
@@ -106,7 +106,7 @@ specs_withlandscape$year = as.factor(specs_withlandscape$year)
 
 fit = brm(
   pollen_indicator ~ final_id*year + final_id*doy_centred +
-    final_id*iji + final_id*berry + final_id*semi + (1|site) + (1|sample_pt),
+                    final_id*iji + final_id*berry + final_id*semi + (1|site) + (1|sample_pt),
   data = specs_withlandscape,
   family = bernoulli(),
   chains = 4, cores = 4,
@@ -183,8 +183,8 @@ mixtuscollection = ggplot() +
         axis.text = element_text(size = 11))
 
 berry_seq <- seq(min(specs_withlandscape$berry),
-                 max(specs_withlandscape$berry),
-                 length.out = 50)
+               max(specs_withlandscape$berry),
+               length.out = 50)
 
 berrypred <- lapply(berry_seq, function(d) {
   
@@ -228,8 +228,6 @@ grid = mixtuscollection_berry + mixtuscollection +
   theme(plot.tag = element_text(size = 16))
 ggsave("7_figures/manuscript_figures/pollen_collection_mixtus.png", grid,
        width = 2000, height = 1000, units = "px")
-
-
 
 
 #################################################################################
@@ -494,24 +492,25 @@ ggsave("7_figures/manuscript_figures/pollen_richness_mixtus_landscape.png", grid
 
 
 
+
 #################################################################################
 ##### Create some rarefaction curves of pollen collection
 #################################################################################
-pollen_richness = left_join(asv_long, specs_withlandscape, by = "barcode_id") %>%
+pollen_long = left_join(asv_long, specs_withlandscape, by = "barcode_id") %>%
   mutate(OccurrenceTaxa = ifelse(ReadCountTaxa>0, 1, 0)) %>%
   filter(final_id == "B. mixtus")
 
-pollen_wide = pivot_wider(pollen_richness, id_cols = barcode_id, names_from = genus, values_from = OccurrenceTaxa) %>%
+pollen_wide = pivot_wider(pollen_long, id_cols = barcode_id, names_from = genus, values_from = OccurrenceTaxa) %>%
   column_to_rownames("barcode_id")
 pollen_wide[is.na(pollen_wide)] = 0
-meta = pollen_richness %>% 
+meta = pollen_long %>% 
   group_by(barcode_id, sample_pt, site) %>%
   summarize(n=n()) %>%
   filter(!is.na(site)) %>%
   arrange(match(barcode_id, rownames(pollen_wide)))
 
 transects = unique(meta$sample_pt)
-sites <- unique(meta$site)
+sites = unique(meta$site)
 
 # Site-level accumulation curves — cleaner
 accum_list <- lapply(sites, function(s){
@@ -536,8 +535,7 @@ landscapes = specs_withlandscape[c("sample_pt", "iji", "berry", "semi", "final_i
   distinct()
 accum_df <- bind_rows(accum_list)
 accum_df = left_join(accum_df, landscapes, by = "sample_pt")
-
-rarefaction = ggplot(accum_df, aes(x = bees, y = richness, colour = site, fill = site, group = sample_pt)) +
+ggplot(accum_df, aes(x = bees, y = richness, colour = site, fill = site, group = sample_pt)) +
   geom_ribbon(aes(ymin = richness - sd, ymax = richness + sd), 
               alpha = 0.2, colour = NA) +
   geom_line(linewidth = 1) +
@@ -546,8 +544,8 @@ rarefaction = ggplot(accum_df, aes(x = bees, y = richness, colour = site, fill =
        title = "Sample-based rarefaction by site") +
   theme_bw() 
 theme(legend.position= "none")
-ggsave("7_figures/appendix_figures/site_level_rarefaction.png", rarefaction,
-       height = 1000, width = 1500, units = "px")
+
+
 
 #################################################################################
 ##### How is pollen GAMMA diversity related to landscape?
@@ -593,10 +591,10 @@ transect_list <- lapply(transect_list, unname)
 
 # Run iNEXT
 est_5 = estimateD(transect_list,
-                  datatype = "incidence_freq",
-                  base     = "size",
-                  level = 5,
-                  q = 0)
+                   datatype = "incidence_freq",
+                   base     = "size",
+                    level = 5,
+                    q = 0)
 
 # Get standard error on each estimate
 est_5 = est_5 %>%
@@ -661,9 +659,9 @@ bberryplot = ggplot() +
 
 
 year_diff = avg_predictions(fit,
-                            variables = list(year = c(2022, 2023)),
-                            newdata = est_5,
-                            re_formula = NA)
+                           variables = list(year = c(2022, 2023)),
+                           newdata = est_5,
+                           re_formula = NA)
 
 year_diff_plot = ggplot(year_diff) +
   geom_rect(aes(xmin = as.numeric(factor(year)) - 0.3, 
@@ -739,17 +737,17 @@ SR_list <- lapply(SR_list, unname)
 
 # Run iNEXT
 SR_est_5 = estimateD(SR_list,
-                     datatype = "incidence_freq",
-                     base     = "size",
-                     level = 5,
-                     q = 0)
+                  datatype = "incidence_freq",
+                  base     = "size",
+                  level = 5,
+                  q = 0)
 
 # Join to coverage dataframe
 datesframe = goodcovg %>% 
   left_join(dates) %>%
   group_by(site, round, year, num_points) %>%
   summarize(doy = mean(doy))
-
+  
 SR_est_5 = SR_est_5 %>%
   separate(Assemblage, into = c("round", "site"), sep = "_") %>%
   mutate(round = as.numeric(round),
@@ -771,8 +769,8 @@ hypothesis(fit2, "Idoy_centeredE2 > 0")
 
 # Get effect of blueberry
 doy_seq = seq(min(SR_est_5$doy_centered),
-              max(SR_est_5$doy_centered),
-              length.out = 50)
+                max(SR_est_5$doy_centered),
+                length.out = 50)
 
 doypred = lapply(doy_seq, function(d) {
   
@@ -824,551 +822,25 @@ ggsave("7_figures/manuscript_figures/rarified_pollen_mixtus.png", grid,
 
 
 
-
 #################################################################################
 ##### What shapes pollen collection TURNOVER between individuals?
 #################################################################################
+comparison_composition = left_join(asv_long, specs_withlandscape) %>%
+  filter(round %in% c(6, 7, 8, 9))
 
-# see forserver_bterry.R
-
-###################################################################
-## How does bee specialization change through time?
-###################################################################
-
-library(bipartite)
-
-# Get bees from sites x timepoints with enough abundance
-# filter to just flower visits
-twospp = twospp %>% filter(active_flower != "flying" & 
-                             active_flower != "leaf" & 
-                             active_flower != "Jenna's elbow" &
-                             active_flower != "road (dead)" &
-                             active_flower != "nest?" &
-                             active_flower != "N/A (leaf)" &
-                             active_flower != "N/A" &
-                             active_flower != "W01 nest" &
-                             active_flower != "ground" &
-                             active_flower != "dead" &
-                             active_flower != "nest" &
-                             active_flower != "nest searching" &
-                             active_flower != "grass" &
-                             active_flower != "" &
-                             active_flower != "road (alive)")
-twospp$active_flower[twospp$active_flower == "dipu"] = "DIPU"
-filteredspp = twospp %>%
-  group_by(final_id, site, round) %>%
-  filter(n() > 10)
-# fix the active plant names to match the format of column names
-filteredspp$active_flower = gsub(" spp\\.", ".spp.", filteredspp$active_flower)
-
-# Get floral vegetation surveys to match
-veg2022 = read.csv("3_data/cleandata/fielddata/2022vegetationdata.csv")
-veg2023 = read.csv("3_data/cleandata/fielddata/2023vegetationdata.csv")
-
-SRveg2022 = veg2022 %>%
-  select(-X, -sample_id, -veg_observer) %>%
-  group_by(site, round) %>%
-  summarise(across(where(is.numeric), ~ sum(10^(.x - 1), na.rm = TRUE))) %>%
-  unite("rowname", site, round, sep = "_") %>%
-  column_to_rownames("rowname")
-SRveg2023 = veg2023 %>%
-  select(-X.5, -sample_id, -veg_observer) %>%
-  group_by(site, round) %>%
-  summarise(across(where(is.numeric), ~ sum(10^(.x - 1), na.rm = TRUE))) %>%
-  unite("rowname", site, round, sep = "_") %>%
-  column_to_rownames("rowname")
-SRveg = bind_rows(SRveg2022, SRveg2023) %>%
-  mutate(across(everything(), ~ replace_na(.x, 0))) %>%
-  select(where(~ sum(.x) > 0))
-
-
-# network per round x site
-specializations = distinct(filteredspp, final_id, round, site)
-specializations$dprime = NA
-
-for (i in 1:nrow(specializations)){
-  # get plants
-  plant_sub = SRveg[rownames(SRveg) == paste(specializations$site[i], specializations$round[i], sep = "_"),] %>%
-    select(where(~ sum(.x) > 0))
-  
-  # get bees
-  beesub = filteredspp %>% 
-    filter(site == specializations$site[i]) %>%
-    filter(round == specializations$round[i]) %>%
-    filter(final_id == specializations$final_id[i])
-    
-  # get full plant lists
-  net = t(table(beesub$active_flower, beesub$final_id))
-  all_plants = union(colnames(net), colnames(plant_sub))
-  
-  #throw error if visited plant is not in plant abundance
-  if(any(!colnames(net) %in% colnames(plant_sub))){
-    print("ERROR: visited plant missing from vegetation surveys.")
-    print(i)
-  }
-  
-  # add missing plants to net table with zeros
-  missing = setdiff(all_plants, colnames(net))
-  net = cbind(net, matrix(0, nrow = nrow(net), 
-                               ncol = length(missing),
-                               dimnames = list(NULL, missing)))
-  
-  # reorder to match plant_sub column order
-  net = net[, colnames(plant_sub), drop = FALSE]
-  
-  # make right format
-  net_matrix = as.matrix(net)
-  class(net_matrix) = "numeric"
-  plant_vector = as.numeric(unlist(plant_sub))
-  
-  # now give them to bipartite for d'!
-  specializations$dprime[i] = dfun(net_matrix, abuns = plant_vector)$dprime
-
-}
-
-# quickly visualize the specialization of the two species
-ggplot(specializations, aes(x = dprime, colour = final_id, fill = final_id)) +
-  geom_histogram() +
-  scale_colour_manual(values = c(dark_gold, faded_green)) +
-  scale_fill_manual(values = c(medium_gold, faded_medium))+
-  facet_grid(final_id~1) +
-  ylab("Count") +
-  xlab("d'") +
-  theme_minimal() +
-  theme(legend.position = "none",
-        strip.text.x = element_blank(),
-        strip.text.y = element_text(size = 11, face = "italic"),
-        axis.title = element_text(size = 16),
-        axis.text = element_text(size = 11))
-
-# get dates of reach round
-sitedates = dates %>%
-  group_by(site, round) %>%
-  summarize(doy=mean(doy))
-roundyears = twospp %>% distinct(round, year)
-
-
-specializations = specializations %>%
-  left_join(sitedates) %>%
-  left_join(roundyears)
-specializations$doy_centred = (specializations$doy - median(specializations$doy))/10
-specializations$year = as.factor(specializations$year)
-
-
-fit = brm(
-  dprime ~ final_id*year*doy_centred + final_id*year*I(doy_centred^2) + (1|site),
-  data = specializations,
-  family = Beta(),
-  chains = 4, cores = 4,
-  init = 0,
-  warmup = 2000, iter = 4000,
-  control = list(adapt_delta = 0.99))
-
-# test hypotheses for mixtus
-hypothesis(fit, "doy_centred + final_idB.mixtus:doy_centred > 0") # mixtus doy 2022
-hypothesis(fit, "doy_centred + final_idB.mixtus:doy_centred + year2023:doy_centred + final_idB.mixtus:year2023:doy_centred > 0") # mixtus doy 2023
-hypothesis(fit, "Idoy_centredE2 + final_idB.mixtus:Idoy_centredE2 > 0") # mixtus doy^2 2022
-hypothesis(fit, "Idoy_centredE2 + final_idB.mixtus:Idoy_centredE2 + year2023:Idoy_centredE2 + final_idB.mixtus:year2023:Idoy_centredE2 > 0") # mixtus doy^2 2023
-
-
-# test hypotheses for impatiens
-hypothesis(fit, "doy_centred > 0") # impatiens doy 2022
-hypothesis(fit, "doy_centred + year2023:doy_centred > 0") # impatiens doy 2023
-hypothesis(fit, "Idoy_centredE2 > 0") # impatiens doy^2 2022
-hypothesis(fit, "Idoy_centredE2 + year2023:Idoy_centredE2 < 0") # impatiens doy^2 2023
-
-
-
-# make some plots!
-doy_seq <- seq(min(specializations$doy_centred),
-               max(specializations$doy_centred),
-               length.out = 50)
-
-doypred <- lapply(doy_seq, function(d) {
-  
-  # Swap in this doy value, keep all other covariates real
-  tmp <- specializations |> mutate(doy_centred = d)
-  
-  # Predict, then immediately summarise — never accumulate full predictions
-  predictions(fit, newdata = tmp) |>
-    as.data.frame() |>
-    group_by(final_id, year, doy_centred) |>
-    summarise(estimate  = mean(estimate),
-              conf.low  = mean(conf.low),
-              conf.high = mean(conf.high),
-              .groups   = "drop")
-}) |> bind_rows()
-
-mixmin = min(specializations$doy_centred[specializations$final_id == "B. mixtus"])
-mixmax = max(specializations$doy_centred[specializations$final_id == "B. mixtus" & specializations$year == 2023])
-impmin = min(specializations$doy_centred[specializations$final_id == "B. impatiens"])
-impmin22 = min(specializations$doy_centred[specializations$final_id == "B. impatiens" & specializations$year == 2022])
-impmax = max(specializations$doy_centred[specializations$final_id == "B. impatiens"])
-
-doypredfilt = doypred %>%
-  filter((final_id == "B. mixtus" & doy_centred >= mixmin -0.5 & doy_centred <= mixmax +0.5) |
-           (final_id == "B. impatiens" & doy_centred >= impmin -0.5 & doy_centred <= impmax + 0.5)) %>%
-  filter(!(final_id == "B. impatiens" & year == 2022 & doy_centred < impmin22 - 0.5))
-
-
-#create axis values for standardized variables
-labs.doy = pretty(specializations$doy, n = 6)
-axis.doy = (labs.doy-median(specializations$doy)) / 10
-
-# Plot
-visitation_dprime_plot = ggplot() +
-  # plot impatiens predictions
-  geom_line(data = doypredfilt[doypredfilt$final_id == "B. impatiens",], aes(x = doy_centred, y = estimate, colour = final_id), linewidth = 1) +
-  geom_ribbon(data = doypredfilt[doypredfilt$final_id == "B. impatiens",], aes(x = doy_centred, ymin = conf.low, ymax = conf.high, fill = final_id), alpha = 0.5) +
-  
-  #plot mixtus predictions
-  geom_line(data = doypredfilt[doypredfilt$final_id == "B. mixtus" & doypredfilt$year == 2023,], aes(x = doy_centred, y = estimate, colour = final_id), linewidth = 1) +
-  geom_ribbon(data = doypredfilt[doypredfilt$final_id == "B. mixtus" & doypredfilt$year == 2023,], aes(x = doy_centred, ymin = conf.low, ymax = conf.high, fill = final_id), alpha = 0.5) +
-  
-  # plot data
-  geom_point(data = specializations, aes(x = doy_centred, y = dprime), colour = "black", alpha = 0.6) +
-  scale_colour_manual(values=c(gold, faded_medium)) +
-  scale_fill_manual(values=c(gold, faded_medium)) +
-  scale_x_continuous(
-    breaks = axis.doy,
-    labels = labs.doy) +
-  xlab("Day of year") +
-  facet_grid(year~final_id, scales = "free_x") +
-  ylab("Specialization (d')") +
-  theme_minimal() + 
-  theme(legend.position = "none",
-        strip.text.y = element_text(size = 14),
-        strip.text.x = element_blank(),
-        axis.title = element_text(size = 14),
-        axis.text = element_text(size = 11))
-
-ggsave("7_figures/manuscript_figures/temporal_visitation_specialization.jpg", visitation_dprime_plot,
-       width = 2000, height = 2000, units = "px")
-
-
-
-####################################################################
-##### How does plant abundance shift through time?
-####################################################################
-
-# Get sample effort
-SReffort2022 = sample2022 %>% 
-  group_by(site, round) %>%
-  summarize(n = n())
-SReffort2023 = sample2023 %>% 
-  group_by(site, round) %>%
-  summarize(n = n())
-
-# Get site level richness, abundance, evenness
-beeflowers = unique(c(specs2022$active_flower, specs2023$active_flower))
-beeflowers = beeflowers[str_detect(beeflowers, "nest|N/A|flying|dipu|road|dead|grass|leaf|ground", negate = T)]
-
-columnlist = c("site", "round", beeflowers)
-floral_df_wide = veg2022[,colnames(veg2022) %in% columnlist]
-
-floral_abundance1 = floral_df_wide %>%
-  pivot_longer(!c(site, round), names_to = "flower", values_to = "floral_abundance") %>%
-  mutate(across(-c(site, round, flower),
-                ~ suppressWarnings(as.numeric(.)))) %>%
-  mutate(across(-c(site, round, flower),
-                ~ 10^(.-1))) %>%
-  group_by(site, round) %>%
-  summarize(floral_abundance = sum(floral_abundance, na.rm = TRUE) + 1) %>%
-  ungroup() %>%
-  mutate(across(-c(site, round),
-                ~ log10(.)))
-
-floral_richness1 = floral_df_wide %>%
-  pivot_longer(!c(site, round), names_to = "plant_code", values_to = "floral_abundance") %>%
-  filter(!is.na(floral_abundance)) %>%
-  group_by(site, round) %>%
-  summarize(floral_richness = n())
-
-floral_exponential1 = floral_df_wide %>%
-  mutate(across(-c(site, round), as.numeric)) %>%
-  mutate(across(-c(site, round), function(x) 10^(x-1))) %>%
-  mutate(across(-c(site, round), ~replace(., is.na(.), 0))) %>%
-  group_by(site, round) %>%
-  summarise(across(everything(), sum), .groups = "drop") %>%
-  unite("rowname", site, round, sep = "_") %>%
-  column_to_rownames("rowname")
-  
-floral_exponential1$floral_diversity = vegan::diversity(floral_exponential1)
-floral_exponential1 = floral_exponential1 %>%
-  rownames_to_column("rowname") %>%
-  separate(rowname, into = c("site", "round"), sep = "_") %>%
-  mutate(round = as.numeric(round))
-floral_evenness1 = floral_exponential1[,colnames(floral_exponential1) %in% c("site", "round", "floral_diversity")] %>%
-  left_join(floral_richness1, by = c("site", "round")) %>%
-  mutate(even = floral_diversity/log(floral_richness))
-
-
-floral_df1 = floral_abundance1 %>%
-  left_join(floral_evenness1, by = c("site", "round")) %>%
-  mutate(across(everything(), ~replace(., is.na(.), 0))) %>%
-  pivot_longer(!c(site, round), names_to = "metric", values_to = "value") %>%
-  left_join(sitedates) %>%
-  mutate(year = 2022)
-
-ggplot(floral_df1, aes(x = doy, y = value, group = metric)) +
-  geom_point() +
-  facet_grid(metric~1, scales = "free_y") +
-  xlim(c(140,240)) +
-  theme_bw()
-
-
-# now for 2023
-floral_df_wide = veg2023[,colnames(veg2023) %in% columnlist]
-
-floral_abundance2 = floral_df_wide %>%
-  pivot_longer(!c(site, round), names_to = "flower", values_to = "floral_abundance") %>%
-  mutate(across(-c(site, round, flower),
-                ~ suppressWarnings(as.numeric(.)))) %>%
-  mutate(across(-c(site, round, flower),
-                ~ 10^(.-1))) %>%
-  group_by(site, round) %>%
-  summarize(floral_abundance = sum(floral_abundance, na.rm = TRUE) + 1) %>%
-  ungroup() %>%
-  mutate(across(-c(site, round),
-                ~ log10(.)))
-
-floral_richness2 = floral_df_wide %>%
-  pivot_longer(!c(site, round), names_to = "plant_code", values_to = "floral_abundance") %>%
-  filter(!is.na(floral_abundance)) %>%
-  group_by(site, round) %>%
-  summarize(floral_richness = n())
-
-floral_exponential2 = floral_df_wide %>%
-  mutate(across(-c(site, round), as.numeric)) %>%
-  mutate(across(-c(site, round), function(x) 10^(x-1))) %>%
-  mutate(across(-c(site, round), ~replace(., is.na(.), 0))) %>%
-  group_by(site, round) %>%
-  summarise(across(everything(), sum), .groups = "drop") %>%
-  unite("rowname", site, round, sep = "_") %>%
-  column_to_rownames("rowname")
-
-floral_exponential2$floral_diversity = vegan::diversity(floral_exponential2)
-floral_exponential2 = floral_exponential2 %>%
-  rownames_to_column("rowname") %>%
-  separate(rowname, into = c("site", "round"), sep = "_") %>%
-  mutate(round = as.numeric(round))
-floral_evenness2 = floral_exponential2[,colnames(floral_exponential2) %in% c("site", "round", "floral_diversity")] %>%
-  left_join(floral_richness2, by = c("site", "round")) %>%
-  mutate(even = floral_diversity/log(floral_richness))
-
-
-floral_df2 = floral_abundance2 %>%
-  left_join(floral_evenness2, by = c("site", "round")) %>%
-  mutate(across(everything(), ~replace(., is.na(.), 0))) %>%
-  pivot_longer(!c(site, round), names_to = "metric", values_to = "value") %>%
-  left_join(sitedates) %>%
-  mutate(year = 2023)
-
-floral_df = rbind(floral_df1, floral_df2)
-
-floral_availability_plot = ggplot(floral_df, aes(x = doy, y = value, colour = site)) +
-  geom_point() +
-  facet_grid(metric~year, scales = "free_y",
-             labeller = labeller(metric = c("even" = "Evenness", 
-                                            "floral_abundance" = "Abundance", 
-                                            "floral_diversity" = "Diversity", 
-                                            "floral_richness" = "Richness"))) +
-  xlab("Day of year") +
-  ylab("Value") +
-  theme_bw() +
-  theme(legend.position = "none",
-        strip.background = element_rect(fill = "white", colour = "white"))
-
-ggsave("7_figures/appendix_figures/season_floral_availability.png", floral_availability_plot,
-       height = 3000, width = 2000, units = "px")
-
-
-
-####################################################################
-####################################################################
-##### SPLIT BEES INTO EARLY -- MID -- LATE SEASON
-####################################################################
-####################################################################
-
-q33 = quantile(mixtusrichness$doy[mixtusrichness$year == 2022], 0.33)
-q67 = quantile(mixtusrichness$doy[mixtusrichness$year == 2022], 0.67)
-
-byseason2022 = mixtusrichness %>%
-  filter(year == 2022) %>%
-  mutate(season = case_when(
-    doy <= q33 ~ "early",
-    doy <= q67 ~ "mid",
-    TRUE ~ "late"))
-
-q33 = quantile(mixtusrichness$doy[mixtusrichness$year == 2023], 0.33)
-q67 = quantile(mixtusrichness$doy[mixtusrichness$year == 2023], 0.67)
-
-byseason2023 = mixtusrichness %>%
-  filter(year == 2023) %>%
-  mutate(season = case_when(
-    doy <= q33 ~ "early",
-    doy <= q67 ~ "mid",
-    TRUE ~ "late"))
-
-byseason = rbind(byseason2023, byseason2022)
-
-splitbyseason = ggplot(byseason, aes(x = doy, y = pollrich, colour = season)) +
-  geom_point(alpha = 0.4) +
-  scale_colour_manual(values = c("lightgreen", "orange", "darkgreen")) +
-  facet_grid(year~1) +
-  xlab("Day of year") +
-  ylab("Pollen richness (no. of genera per individual)") +
-  theme_bw() +
-  theme(
-    strip.text.x = element_blank(),
-    strip.background.y = element_rect(colour = "white", fill = "white")
-  )
-
-ggsave("7_figures/appendix_figures/samples_by_season.png", splitbyseason,
-       height = 1500, width = 1500, units = "px")
-
-
-#############################################################################
-##### How does landscape impact pollen alpha diversity in different seasons?
-#############################################################################
-
-fit = brm(
-  pollrich ~ year + season*iji + season*berry + season*semi + (1|site) + (1|sample_pt),
-  data = byseason,
-  family = negbinomial(),
-  chains = 4, cores = 4,
-  init = 0,
-  warmup = 2000, iter = 4000,
-  control = list(adapt_delta = 0.99)
-)
-
-         
-# Get effect of IJI
-iji_seq = seq(min(byseason$iji),
-              max(byseason$iji),
-              length.out = 50)
-
-ijipred = lapply(iji_seq, function(d) {
-  
-  # Swap in this iji value, keep all other covariates real
-  tmp <- byseason |> mutate(iji = d)
-  
-  # Predict, then immediately summarise — never accumulate full predictions
-  predictions(fit, newdata = tmp, re_formula = NA) |>
-    as.data.frame() |>
-    group_by(season, iji) |>
-    summarise(estimate  = mean(estimate) + 1,
-              conf.low  = mean(conf.low) + 1,
-              conf.high = mean(conf.high) + 1,
-              .groups   = "drop")
-}) |> bind_rows() %>%
-  mutate(across(c(estimate, conf.low, conf.high), ~ .x + 1))
-
-#create axis values for standardized variables
-labs.iji = pretty(byseason$iji*10, n = 5)
-axis.iji = labs.iji/10
-
-# reorder factor levels for plotting
-byseason = byseason %>%
-  mutate(season = factor(season, levels = c("early", "mid", "late")))
-ijipred = ijipred %>%
-  mutate(season = factor(season, levels = c("early", "mid", "late")))
-
-# Plot
-ijiseasonplot = ggplot() +
-  geom_line(data = ijipred[ijipred$season == "mid",], aes(x = iji, y = estimate), colour = "darkgreen", linewidth = 1) +
-  geom_ribbon(data = ijipred[ijipred$season == "mid",], aes(x = iji, ymin = conf.low, ymax = conf.high), fill = "darkgreen", alpha = 0.3) +
-  geom_point(data = byseason, aes(x = iji, y = pollrich + 1, colour = season), alpha = 0.5) +
-  scale_x_continuous(
-    breaks = axis.iji,
-    labels = labs.iji) +
-  scale_colour_manual(values = c("lightgreen", "darkgreen", "orange")) +
-  scale_fill_manual(values = c("lightgreen", "darkgreen", "orange")) +
-  xlab("Landscape interspersion") +
-  ylab("") +
-  facet_grid(season~1) +
-  theme_bw() + 
-  theme(legend.position = "none",
-        strip.text.x = element_blank(),
-        strip.text.y = element_text(size = 14),
-        strip.background = element_rect(fill = "white", colour = "white"),
-        axis.title = element_text(size = 14),
-        axis.text = element_text(size = 11))
-
-
-# Get effect of IJI
-semi_seq = seq(min(byseason$semi),
-              max(byseason$semi),
-              length.out = 50)
-
-semipred = lapply(semi_seq, function(d) {
-  
-  # Swap in this iji value, keep all other covariates real
-  tmp <- byseason |> mutate(semi = d)
-  
-  # Predict, then immediately summarise — never accumulate full predictions
-  predictions(fit, newdata = tmp, re_formula = NA) |>
-    as.data.frame() |>
-    group_by(season, semi) |>
-    summarise(estimate  = mean(estimate) + 1,
-              conf.low  = mean(conf.low) + 1,
-              conf.high = mean(conf.high) + 1,
-              .groups   = "drop")
-}) |> bind_rows() %>%
-  mutate(across(c(estimate, conf.low, conf.high), ~ .x + 1))
-
-#create axis values for standardized variables
-labs.semi = pretty(byseason$semi*10, n = 5)
-axis.semi = labs.semi/10
-
-# reorder factor levels for plotting
-byseason = byseason %>%
-  mutate(season = factor(season, levels = c("early", "mid", "late")))
-semipred = semipred %>%
-  mutate(season = factor(season, levels = c("early", "mid", "late")))
-
-# Plot
-semiseasonplot = ggplot() +
-  geom_line(data = semipred[semipred$season == "early",], aes(x = semi, y = estimate), colour = "darkgreen", linewidth = 1, linetype = "dashed") +
-  geom_ribbon(data = semipred[semipred$season == "early",], aes(x = semi, ymin = conf.low, ymax = conf.high), fill = "lightgreen", alpha = 0.6) +
-  geom_point(data = byseason, aes(x = semi, y = pollrich + 1, colour = season), alpha = 0.5) +
-  scale_x_continuous(
-    breaks = axis.semi,
-    labels = labs.semi) +
-  scale_colour_manual(values = c("lightgreen", "darkgreen", "orange")) +
-  scale_fill_manual(values = c("lightgreen", "darkgreen", "orange")) +
-  xlab("Distance-weighted seminatural area") +
-  ylab("Pollen richness (no. of genera)") +
-  facet_grid(season~1) +
-  theme_bw() + 
-  theme(legend.position = "none",
-        strip.text = element_blank(),
-        strip.background = element_rect(fill = "white", colour = "white"),
-        axis.title = element_text(size = 14),
-        axis.text = element_text(size = 11))
-
-grid = semiseasonplot + ijiseasonplot +
-  plot_annotation(tag_levels = "A") &
-  theme(plot.tag = element_text(size = 16))
-
-ggsave("7_figures/manuscript_figures/landscapexseason_alpha.png", grid,
-       height = 3000, width = 2000, units = "px")
-
-
-####################################################################
-##### How does pollen turnover vary by landscape x season?
-####################################################################
-
-# Get jaccard distance between pollen loads
-mixtus_pollen = left_join(asv_long, byseason) %>%
-  filter(final_id == "B. mixtus")
-
-mixtus_matrix = pivot_wider(mixtus_pollen, id_cols = barcode_id, names_from = genus, values_from = ReadCountTaxa) %>%
+comparison_matrix = pivot_wider(comparison_composition, id_cols = barcode_id, names_from = genus, values_from = ReadCountTaxa) %>%
   column_to_rownames("barcode_id") %>%
   mutate(across(everything(), ~ replace_na(.x, 0)))
 
-jaccarddist = as.matrix(vegdist(mixtus_matrix, method ="jaccard"))
+braydist = as.matrix(vegdist(comparison_matrix, method = "bray"))
+jaccarddist = as.matrix(vegdist(comparison_matrix, method ="jaccard"))
 
+
+braydf = as.matrix(braydist) %>% 
+  as.data.frame() %>% 
+  rownames_to_column(var = "bee1") %>% 
+  pivot_longer(cols = -bee1, names_to = "bee2", values_to = "braydist") %>% 
+  filter(bee1 > bee2)
 jaccarddf = as.matrix(jaccarddist) %>% 
   as.data.frame() %>% 
   rownames_to_column(var = "bee1") %>% 
@@ -1376,121 +848,27 @@ jaccarddf = as.matrix(jaccarddist) %>%
   filter(bee1 > bee2)
 
 # get some metadata we want to join
-metadata1 = byseason[c("barcode_id", "site", "sample_pt", "year", "doy", "iji", "berry", "semi", "season")]
-colnames(metadata1) = c("bee1", "site1", "sample_pt1", "year1", "doy1", "iji1", "berry1", "semi1", "season1")
-metadata2 = byseason[c("barcode_id", "site", "sample_pt", "year", "doy", "iji", "berry", "semi", "season")]
-colnames(metadata2) = c("bee2", "site2", "sample_pt2", "year2", "doy2", "iji2", "berry2", "semi2", "season2")
+metadata1 = specs_withlandscape[c("barcode_id", "site", "sample_pt", "year", "doy", "final_id")]
+colnames(metadata1) = c("bee1", "site1", "sample_pt1", "year1", "doy1", "species1")
+metadata2 = specs_withlandscape[c("barcode_id", "site", "sample_pt", "year", "doy", "final_id")]
+colnames(metadata2) = c("bee2", "site2", "sample_pt2", "year2", "doy2", "species2")
 
-jacdf_meta = jaccarddf %>%
+braydf_meta = braydf %>%
   left_join(metadata1) %>%
   left_join(metadata2) %>%
   mutate(doydiff = abs(doy2-doy1)) %>%
-  filter(sample_pt1 == sample_pt2) %>%
-  filter(season1 == season2)
+  mutate(sametransect = as.factor(ifelse(sample_pt1 == sample_pt2, "same", "different"))) %>%
+  mutate(samesite = as.factor(ifelse(site1 == site2, "same", "different"))) %>%
+  mutate(species = as.factor(paste(pmin(species1, species2), pmax(species1, species2), sep = "/")))
 
 
 fit = ordbetareg(
-  jaccarddist ~  season1*iji1 + season1*berry1 + season1*semi1 + year1 + doydiff + (1|bee1) + (1|bee2) + (1|site1),
-  data = jacdf_meta,
+  braydist ~  0 + sametransect + samesite + species + (1|bee1) + (1|bee2),
+  data = braydf_meta,
   chains = 4, cores = 4,
-  controls(list=c(adapt_delta = 0.99)))
-
-pp_check(fit, type = "hist")
-hypothesis(fit, "semi1 > 0")
-
-
-# Get effect of blueberry
-berry_seq = seq(min(jacdf_meta$berry1),
-                max(jacdf_meta$berry1),
-                length.out = 50)
-
-berrypred = lapply(berry_seq, function(d) {
-  
-  # Swap in this iji value, keep all other covariates real
-  tmp <- jacdf_meta |> mutate(berry1 = d)
-  
-  # Predict, then immediately summarise — never accumulate full predictions
-  predictions(fit, newdata = tmp, re_formula = NA) |>
-    as.data.frame() |>
-    group_by(berry1) |>
-    summarise(estimate  = mean(estimate),
-              conf.low  = mean(conf.low),
-              conf.high = mean(conf.high),
-              .groups   = "drop")
-}) |> bind_rows()
-
-#create axis values for standardized variables
-labs.berry = pretty(jacdf_meta$berry1*10, n = 5)
-axis.berry = labs.berry/10
-
-# Plot
-bberryplot = ggplot() +
-  geom_line(data = berrypred, aes(x = berry1, y = estimate), colour = faded_green, linewidth = 1) +
-  geom_ribbon(data = berrypred, aes(x = berry1, ymin = conf.low, ymax = conf.high), fill = faded_green, alpha = 0.3) +
-  geom_point(data = jacdf_meta, aes(x = berry1, y = jaccarddist), colour = "black", alpha = 0.5) +
-  xlab("Distance-weighted berry cultivation") +
-  ylab("Jaccard distance") +
-  scale_x_continuous(
-    breaks = axis.berry,
-    labels = labs.berry) +
-  theme_bw() + 
-  theme(legend.position = "none",
-        strip.text.x = element_blank(),
-        strip.text.y = element_text(size = 14),
-        strip.background = element_rect(fill = "white", colour = "white"),
-        axis.title = element_text(size = 14),
-        axis.text = element_text(size = 11))
-
-
-
-# Get effects of DOY
-doy_seq = seq(min(jacdf_meta$doy_centered),
-              max(jacdf_meta$doy_centered),
-              length.out = 50)
-
-doypred = lapply(doy_seq, function(d) {
-  
-  # Swap in this iji value, keep all other covariates real
-  tmp <- jacdf_meta |> mutate(doy_centered = d)
-  
-  # Predict, then immediately summarise — never accumulate full predictions
-  predictions(fit, newdata = tmp, re_formula = NA) |>
-    as.data.frame() |>
-    group_by(year1, doy_centered) |>
-    summarise(estimate  = mean(estimate),
-              conf.low  = mean(conf.low),
-              conf.high = mean(conf.high),
-              .groups   = "drop")
-}) |> bind_rows()
-
-#create axis values for standardized variables
-labs.doy = pretty(jacdf_meta$doy_centered*10 + 180, n = 5)
-axis.doy = (labs.doy - 180)/10
-
-# Plot
-ggplot() +
-  geom_line(data = doypred[doypred$year1 == 2023,], aes(x = doy_centered, y = estimate), colour = faded_green, linewidth = 1) +
-  geom_ribbon(data = doypred[doypred$year1 == 2023,], aes(x = doy_centered, ymin = conf.low, ymax = conf.high), fill = faded_green, alpha = 0.3) +
-  geom_point(data = jacdf_meta, aes(x = doy_centered, y = jaccarddist), colour = "black", alpha = 0.5) +
-  xlab("Day of year") +
-  ylab("Jaccard distance") +
-  scale_x_continuous(
-    breaks = axis.doy,
-    labels = labs.doy) +
-  facet_grid(year1~1) +
-  theme_bw() + 
-  theme(legend.position = "none",
-        strip.text.x = element_blank(),
-        strip.text.y = element_text(size = 14),
-        strip.background = element_rect(fill = "white", colour = "white"),
-        axis.title = element_text(size = 14),
-        axis.text = element_text(size = 11))
-
-
-
-
-
-
+  warmup = 2000, iter = 4000,
+  control = list(adapt_delta = 0.99))
+saveRDS(mixtusfit, "5_models/brmsfits/bterry_comparison.rds")
 
 
 
@@ -1661,6 +1039,9 @@ adonis2(dist_mat ~ round + site + final_id,
         permutations = 999,
         by = "margin")
 
+
+
+
 # PERMDISP: test dispersion differences between bee species
 disp <- betadisper(dist_mat, group = meta$final_id)
 
@@ -1690,3 +1071,164 @@ ggplot(disp_df, aes(x = bee_species, y = distance_to_centroid, fill = bee_specie
        title = "Within-group dispersion by bee species") +
   theme_bw() +
   theme(legend.position = "none")
+
+
+
+
+
+
+
+
+
+
+
+
+#################
+# Try some visitation stuff
+
+
+twospp = left_join(twospp, dates, by = c("round", "site", "sample_pt" = "sample_point")) %>%
+  filter(str_detect(notes, "queen", negate = TRUE)) %>%
+  filter(str_detect(notes, "male", negate = TRUE))
+
+ggplot(twospp, aes(x = doy)) +
+  geom_histogram() +
+  facet_grid(final_id ~ year) + 
+  theme_bw()
+
+
+
+
+
+
+###################################################
+## How do flower visitation networks vary by round
+###################################################
+
+library(bipartite)
+
+# filter to just flower visits
+twospp = twospp %>% filter(active_flower != "flying" & 
+                             active_flower != "leaf" & 
+                             active_flower != "Jenna's elbow" &
+                             active_flower != "road (dead)" &
+                             active_flower != "nest?" &
+                             active_flower != "N/A (leaf)" &
+                             active_flower != "N/A" &
+                             active_flower != "W01 nest" &
+                             active_flower != "ground" &
+                             active_flower != "dead")
+twospp$active_flower[twospp$active_flower == "dipu"] = "DIPU"
+
+# network per round x site
+specializations = expand.grid(round = c(2:10, 17:27),
+                              site = unique(twospp$site))
+specializations$specialization_mix = NA
+specializations$specialization_imp = NA
+
+for (i in 1:nrow(specializations)){
+  sub = twospp %>% 
+    filter(site == specializations$site[i]) %>%
+    filter(round == specializations$round[i])
+  net = table(sub$active_flower, sub$final_id)
+  specializations$specialization_mix[i] = specieslevel(net, index = "d")$`higher level`$d[2]
+  specializations$specialization_imp[i] = specieslevel(net, index = "d")$`higher level`$d[1]
+}
+
+hprimes = specializations %>%
+  filter(!is.na(specialization_mix) & !is.na(specialization_imp)) %>%
+  pivot_longer(cols = c("specialization_mix", "specialization_imp"), 
+               names_to = "species", 
+               values_to = "hprime")
+
+sitedates = dates %>%
+  group_by(site, round) %>%
+  summarize(doy=mean(doy))
+roundyears = twospp %>% distinct(round, year)
+
+
+hprimes = hprimes %>%
+  left_join(sitedates) %>%
+  left_join(roundyears)
+hprimes$doy_centred = (hprimes$doy - median(hprimes$doy))/10
+hprimes$year = as.factor(hprimes$year)
+hprimes$hprime[near(hprimes$hprime, 1)] = 1
+
+fit = brm(
+  hprime ~ species*year + species*doy_centred + species*I(doy_centred^2) + (1|site),
+  data = hprimes,
+  family = zero_one_inflated_beta(),
+  chains = 4, cores = 4,
+  warmup = 2000, iter = 4000,
+  control = list(adapt_delta = 0.99))
+
+
+
+
+# is visitation composition different?
+# community matrix: rows = bee species × round × site, cols = plant species visited
+visit_mat <- twospp %>%
+  group_by(final_id, round, year, site, active_flower) %>%
+  summarise(n = n()) %>%
+  pivot_wider(names_from = active_flower, values_from = n, values_fill = 0)
+plant_cols = unique(twospp$active_flower)
+
+visit_community <- visit_mat %>% 
+  ungroup() %>%
+  select(-final_id, -year, -round, -site) %>% 
+  as.matrix()
+visit_meta <- visit_mat %>% select(final_id, year, round, site)
+
+visit_hell <- decostand(visit_community, method = "hellinger")
+dist_visit <- vegdist(visit_hell, method = "bray")
+
+
+h <- how(blocks = interaction(visit_meta$round, visit_meta$site, visit_meta$year), nperm = 999)
+
+adonis2(dist_visit ~ final_id, data = visit_meta, permutations = h)
+
+
+adonis2(dist_visit ~ final_id + round + site + year,
+        data = visit_meta,
+        permutations = 999, 
+        by = "margin")      
+
+
+
+###################################################
+## Now try some stuff with landscape metrics
+###################################################
+
+landmets = read.csv("3_data/cleandata/landscapemetrics/calculated_metrics_exponential.csv")
+iji = landmets %>%
+  filter(metric == "iji") %>%
+  filter(species == "B. mixtus" | species == "B. impatiens") %>%
+  group_by(species, sample_pt) %>%
+  summarize(iji = mean(value)/10)
+ber = landmets %>%
+  filter(metric == "idwBER") %>%
+  group_by(species, sample_pt) %>%
+  summarize(berry = sum(value)/10000)
+semi = landmets %>%
+  filter(metric == "idwSN" | metric == "idwEDG") %>%
+  group_by(species, sample_pt) %>%
+  summarize(semi = sum(value)/10000)
+
+specs_withlandscape = twospp %>%
+  left_join(iji, by = c("sample_pt", "final_id" = "species")) %>%
+  left_join(ber, by = c("sample_pt", "final_id" = "species")) %>%
+  left_join(semi, by = c("sample_pt", "final_id" = "species")) %>%
+  left_join(pollen_richness_comparison)
+forpoll = specs_withlandscape %>% filter(!is.na(pollrich))
+forpoll$doy_centred = (forpoll$doy - median(forpoll$doy))
+
+
+fit = brm(
+  pollrich ~ final_id*berry + final_id*semi + final_id*iji + final_id*doy_centred + (1|site) + (1|sample_pt),
+  data = forpoll,
+  family = negbinomial(),
+  chains = 4, cores = 4,
+  warmup = 2000, iter = 4000,
+  control = list(adapt_delta = 0.99))
+
+

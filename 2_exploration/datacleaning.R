@@ -71,6 +71,9 @@ for (row in 1:nrow(close_pairs)){
 vegData2023$TRRE[vegData2023$sample_id == "18_PM51"] = 2
 vegData2023$VICR[vegData2023$sample_id == "18_SD28"] = 2
 
+# somehow a character got added in the middle of the df:
+vegData2023$TAPA[vegData2023$TAPA == "18_W22"] = NA
+
 # in 2022, wild sweet peas (Lathyrus spp.) were incorrectly recorded as field peas (Pisum sativum)
 # the only sites where field peas were truly observed in that year were W24, W25, W28 (beside
 # Reynelda Farms large field where they were growing peas)

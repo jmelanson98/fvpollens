@@ -7,6 +7,7 @@
 library(biomformat)
 library(qiime2R)
 library(dplyr)
+library(tidyr)
 
 
 
@@ -111,7 +112,7 @@ otu_decon = otu_decon[rowSums(otu_decon) > 1000,colSums(otu_decon) > 0] # lose 3
 sum(otu_decon)/sum(otut) # total of 14% loss with filtering, mostly from contamination
 
 write.csv(otu_decon, "3_data/cleandata/metabarcoding/cleaned_asvtable.csv")
-write.csv(classifications[classifications$Feature.ID %in% colnames(otu_decon)], "3_data/cleandata/metabarcoding/qiime_classifications.csv")
+write.csv(classifications[classifications$Feature.ID %in% colnames(otu_decon),], "3_data/cleandata/metabarcoding/qiime_classifications.csv")
 
 
 #################################################
