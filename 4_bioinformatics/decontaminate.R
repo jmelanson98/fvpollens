@@ -114,13 +114,16 @@ sum(otu_decon)/sum(otut) # total of 14% loss with filtering, mostly from contami
 write.csv(otu_decon, "3_data/cleandata/metabarcoding/cleaned_asvtable.csv")
 write.csv(classifications[classifications$Feature.ID %in% colnames(otu_decon),], "3_data/cleandata/metabarcoding/qiime_classifications.csv")
 
-
+otu_decon = read.csv("3_data/cleandata/metabarcoding/cleaned_asvtable.csv")
+classifications = read.csv("3_data/cleandata/metabarcoding/qiime_classifications.csv")
 #################################################
 ### Visualize samples
 #################################################
 
-otu_decon$barcode_id = rownames(otu_decon)
-otu_long = pivot_longer(otu_decon, cols = -barcode_id, names_to = "Feature.ID", values_to = "ReadCount") %>%
+otu_decon$barcode_id = otu_decon$X
+otu_long = otu_decon %>%
+  select(-X) %>%
+  pivot_longer(cols = -barcode_id, names_to = "Feature.ID", values_to = "ReadCount") %>%
   filter(ReadCount > 0) %>%
   group_by(barcode_id) %>%
   mutate(ReadProp = ReadCount/sum(ReadCount))
@@ -169,13 +172,24 @@ samplesmixtus = otu_final %>%
   filter(!is.na(year)) %>%
   filter(final_id == "B. mixtus") %>%
   filter(ReadCount > 0) %>%
-  mutate(indicator = ifelse(genus == "Vaccinium", 1, 0)) %>%
+  mutate(indicator = ifelse(genus == "Rubus", 1, 0)) %>%
   mutate(barcode_id = factor(barcode_id, levels = barcode_order))
 samplesmixtus$indicator[is.na(samplesmixtus$indicator)] = 0
 
-blueberrymixtus = ggplot(samplesmixtus, aes(x = barcode_id, y = ReadProp, fill = as.factor(indicator))) +
+rounddates = dates %>% group_by(round, year) %>%
+  summarize(meandoy = mean(doy))
+grouped = samplesmixtus %>% group_by(round) %>%
+  summarize(proprubus = sum(indicator)/n()) %>%
+  left_join(rounddates)
+
+
+ggplot(grouped, aes(x = round, y = proprubus)) +
+  geom_bar(stat = "identity") +
+  theme_bw()
+
+ggplot(samplesmixtus, aes(x = barcode_id, y = ReadProp, fill = as.factor(indicator))) +
   geom_col(width = 0.9, colour = "white", linewidth = 0.1) +
-  scale_fill_manual(values = c("beige", "blue")) +
+  scale_fill_manual(values = c("beige", "darkorchid4")) +
   scale_y_continuous(labels = function(x) paste0(round(x * 100), "%")) +
   facet_grid(year ~ site, scales = "free", space = "free_x") +
   labs(x = "Sample", y = "Relative abundance", fill = NULL) +

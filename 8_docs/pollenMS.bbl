@@ -863,6 +863,199 @@
       \endverb
       \keyw{Metagenomics,Software,Statistical methods}
     \endentry
+    \entry{chittkaMindBee2023}{book}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=3c363fcddbb96e3b6a2fe2cb97ad65e0}{%
+           family={Chittka},
+           familyi={C\bibinitperiod},
+           given={Lars},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {New Jersey Princeton Oxford}%
+      }
+      \list{publisher}{1}{%
+        {Princeton University Press}%
+      }
+      \strng{namehash}{3c363fcddbb96e3b6a2fe2cb97ad65e0}
+      \strng{fullhash}{3c363fcddbb96e3b6a2fe2cb97ad65e0}
+      \strng{fullhashraw}{3c363fcddbb96e3b6a2fe2cb97ad65e0}
+      \strng{bibnamehash}{3c363fcddbb96e3b6a2fe2cb97ad65e0}
+      \strng{authorbibnamehash}{3c363fcddbb96e3b6a2fe2cb97ad65e0}
+      \strng{authornamehash}{3c363fcddbb96e3b6a2fe2cb97ad65e0}
+      \strng{authorfullhash}{3c363fcddbb96e3b6a2fe2cb97ad65e0}
+      \strng{authorfullhashraw}{3c363fcddbb96e3b6a2fe2cb97ad65e0}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{A rich and surprising exploration of the intelligence of bees Most of us are aware of the hive mind-the power of bees as an amazing collective. But do we know how uniquely intelligent bees are as individuals? In The Mind of a Bee, Lars Chittka draws from decades of research, including his own pioneering work, to argue that bees have remarkable cognitive abilities. He shows that they are profoundly smart, have distinct personalities, can recognize flowers and human faces, exhibit basic emotions, count, use simple tools, solve problems, and learn by observing others. They may even possess consciousness.Taking readers deep into the sensory world of bees, Chittka illustrates how bee brains are unparalleled in the animal kingdom in terms of how much sophisticated material is packed into their tiny nervous systems. He looks at their innate behaviors and the ways their evolution as foragers may have contributed to their keen spatial memory. Chittka also examines the psychological differences between bees and the ethical dilemmas that arise in conservation and laboratory settings because bees feel and think. Throughout, he touches on the fascinating history behind the study of bee behavior.Exploring an insect whose sensory experiences rival those of humans, The Mind of a Bee reveals the singular abilities of some of the world s most incredible creatures}
+      \field{isbn}{978-0-691-25389-3}
+      \field{langid}{english}
+      \field{pagetotal}{260}
+      \field{title}{The Mind of a Bee}
+      \field{year}{2023}
+      \field{dateera}{ce}
+    \endentry
+    \entry{goulsonBumblebeesBehaviourEcology2010}{book}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=aa48da29619ce51faea7911d5d57faba}{%
+           family={Goulson},
+           familyi={G\bibinitperiod},
+           given={Dave},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{aa48da29619ce51faea7911d5d57faba}
+      \strng{fullhash}{aa48da29619ce51faea7911d5d57faba}
+      \strng{fullhashraw}{aa48da29619ce51faea7911d5d57faba}
+      \strng{bibnamehash}{aa48da29619ce51faea7911d5d57faba}
+      \strng{authorbibnamehash}{aa48da29619ce51faea7911d5d57faba}
+      \strng{authornamehash}{aa48da29619ce51faea7911d5d57faba}
+      \strng{authorfullhash}{aa48da29619ce51faea7911d5d57faba}
+      \strng{authorfullhashraw}{aa48da29619ce51faea7911d5d57faba}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{Bumblebees are familiar and charismatic insects, occurring throughout much of the world. They are increasingly being used as a model organism for studying a wide range of ecological and behavioural concepts, such as social organization, optimal foraging theories, host-parasite interactions, and pollination. Recently they have become a focus for conservationists due to mounting evidence of range coBIOL15ANIB and catastrophic extinctions with some species disappearing from entire continents (e.g. in North America). Only by improving our understanding of their ecology can we devise sensible plans to conserve them. The role of bumblebees as invasive species (e.g. Bombus terrestris in Japan) has also become topical with the growing trade in commercial bumblebee nests for tomato pollination leading to establishment of non-native bumblebees in a number of countries. Since the publication of the first edition of the book, there have been hundreds of research papers published on bumblebees. There is clearly a continuing need for an affordable, well-illustrated, and appealing text that makes accessible all of the major advances in understanding of the behaviour and ecology of bumblebees that have been made in the last 30 years.}
+      \field{isbn}{978-0-19-955306-8}
+      \field{month}{1}
+      \field{shorttitle}{Bumblebees}
+      \field{title}{Bumblebees: {{Behaviour}}, {{Ecology}}, and {{Conservation}}}
+      \field{year}{2010}
+      \field{dateera}{ce}
+      \verb{doi}
+      \verb 10.1093/oso/9780199553068.001.0001
+      \endverb
+    \endentry
+    \entry{heinrichBumblebeeEconomics2004}{book}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=ee9137142d05980c34d05ecc76a56a7a}{%
+           family={Heinrich},
+           familyi={H\bibinitperiod},
+           given={Bernd},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Harvard University Press}%
+      }
+      \strng{namehash}{ee9137142d05980c34d05ecc76a56a7a}
+      \strng{fullhash}{ee9137142d05980c34d05ecc76a56a7a}
+      \strng{fullhashraw}{ee9137142d05980c34d05ecc76a56a7a}
+      \strng{bibnamehash}{ee9137142d05980c34d05ecc76a56a7a}
+      \strng{authorbibnamehash}{ee9137142d05980c34d05ecc76a56a7a}
+      \strng{authornamehash}{ee9137142d05980c34d05ecc76a56a7a}
+      \strng{authorfullhash}{ee9137142d05980c34d05ecc76a56a7a}
+      \strng{authorfullhashraw}{ee9137142d05980c34d05ecc76a56a7a}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Here is a brilliant introduction to insect and plant ecology focusing on one of nature's most adaptive creatures, the bumblebee. Survival for the bumblebee depends on its ability to regulate body temperature through a complex energy exchange, and it is this management of energy resources around which Bernd Heinrich enters his discussion of physiology, behavior, and ecological interaction. Along the way, he makes some amusing parallels with the theories of Adam Smith–which, Heinrich observes, work rather well for the bees, however inadequate they may be for human needs.Bumblebee Economics uniquely offers both the professional and amateur scientist a coherent biological model that goes beyond any particular species or level of biological organization. Rich in specific detail and including an extensive appendix on the rearing of bumblebees, as well as a full-color guide to field identification, this book organizes practical knowledge according to a new criterion.In a new preface, Heinrich ranges from Maine to Alaska and north to the Arctic as he summarizes findings from continuing investigations over the past twenty-five years–by himself and others–into the wondrous "energy economy" of bumblebees.}
+      \field{isbn}{978-0-674-01639-2}
+      \field{langid}{english}
+      \field{title}{Bumblebee {{Economics}}}
+      \field{year}{2004}
+      \field{dateera}{ce}
+      \keyw{Bioenergetics,Bumblebees,Ecology,Insects,Science / Life Sciences / Zoology / Entomology}
+    \endentry
+    \entry{lihoreauRadarTrackingMotionSensitive2012}{article}{}{}
+      \name{author}{8}{}{%
+        {{un=0,uniquepart=base,hash=9e61815b75f2a3d64c1c769aee5c8ac5}{%
+           family={Lihoreau},
+           familyi={L\bibinitperiod},
+           given={Mathieu},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=c67ef3fc2f0e9ac5b2c474d7c4c74864}{%
+           family={Raine},
+           familyi={R\bibinitperiod},
+           given={Nigel\bibnamedelima E.},
+           giveni={N\bibinitperiod\bibinitdelim E\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=43d51db9c34e06d12cbed8bc46406856}{%
+           family={Reynolds},
+           familyi={R\bibinitperiod},
+           given={Andrew\bibnamedelima M.},
+           giveni={A\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b6f12b5b4e7eabd9673b70c9128a0cfc}{%
+           family={Stelzer},
+           familyi={S\bibinitperiod},
+           given={Ralph\bibnamedelima J.},
+           giveni={R\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=16b6e5d419e4e54c73452114f60122e8}{%
+           family={Lim},
+           familyi={L\bibinitperiod},
+           given={Ka\bibnamedelima S.},
+           giveni={K\bibinitperiod\bibinitdelim S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=db3cbf96d69040e8ec6bb4cccad3594f}{%
+           family={Smith},
+           familyi={S\bibinitperiod},
+           given={Alan\bibnamedelima D.},
+           giveni={A\bibinitperiod\bibinitdelim D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=c72877ade08ea326f6bf32dfe5f97dd5}{%
+           family={Osborne},
+           familyi={O\bibinitperiod},
+           given={Juliet\bibnamedelima L.},
+           giveni={J\bibinitperiod\bibinitdelim L\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=3c363fcddbb96e3b6a2fe2cb97ad65e0}{%
+           family={Chittka},
+           familyi={C\bibinitperiod},
+           given={Lars},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Public Library of Science}%
+      }
+      \strng{namehash}{b8296556437cef3bbdb2cb6d1cfcbecb}
+      \strng{fullhash}{70445f0fdf425c5ba3febbca30e676d1}
+      \strng{fullhashraw}{70445f0fdf425c5ba3febbca30e676d1}
+      \strng{bibnamehash}{70445f0fdf425c5ba3febbca30e676d1}
+      \strng{authorbibnamehash}{70445f0fdf425c5ba3febbca30e676d1}
+      \strng{authornamehash}{b8296556437cef3bbdb2cb6d1cfcbecb}
+      \strng{authorfullhash}{70445f0fdf425c5ba3febbca30e676d1}
+      \strng{authorfullhashraw}{70445f0fdf425c5ba3febbca30e676d1}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Automated tracking of bumblebees and computer simulations reveal how bees locate a series of flowers and optimize their routes to visit them all.}
+      \field{issn}{1545-7885}
+      \field{journaltitle}{PLOS Biology}
+      \field{month}{9}
+      \field{number}{9}
+      \field{title}{Radar {{Tracking}} and {{Motion-Sensitive Cameras}} on {{Flowers Reveal}} the {{Development}} of {{Pollinator Multi-Destination Routes}} over {{Large Spatial Scales}}}
+      \field{volume}{10}
+      \field{year}{2012}
+      \field{dateera}{ce}
+      \field{pages}{e1001392}
+      \range{pages}{-1}
+      \verb{doi}
+      \verb 10.1371/journal.pbio.1001392
+      \endverb
+      \keyw{Animal flight,Bees,Bumblebees,Flowers,Foraging,Insect flight,Optimization,Radar}
+    \endentry
     \entry{martinCutadaptRemovesAdapter2011}{article}{}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=0449a5e93850e9dad7d069f67084aeb4}{%
@@ -917,6 +1110,137 @@
       \verb https://journal.embnet.org/index.php/embnetjournal/article/view/200
       \endverb
       \keyw{adapter removal,microRNA,next generation sequencing,small RNA}
+    \endentry
+    \entry{melansonAgriculturalIntensificationFavours2026}{online}{}{}
+      \name{author}{5}{}{%
+        {{un=0,uniquepart=base,hash=99f44f272d73b5809dad2595970988a6}{%
+           family={Melanson},
+           familyi={M\bibinitperiod},
+           given={Jenna\bibnamedelima B.},
+           giveni={J\bibinitperiod\bibinitdelim B\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=6325c6e7e9b9c71d78944e91163a2c95}{%
+           family={Kelly},
+           familyi={K\bibinitperiod},
+           given={Tyler\bibnamedelima T.},
+           giveni={T\bibinitperiod\bibinitdelim T\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=4632ffae6c12ec05717df3ed631febd4}{%
+           family={Clermont},
+           familyi={C\bibinitperiod},
+           given={Natalia},
+           giveni={N\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=717125a548ed44884603e141c2d1ad67}{%
+           family={Koch},
+           familyi={K\bibinitperiod},
+           given={Jonathan\bibnamedelimb B.\bibnamedelimi Uhuad},
+           giveni={J\bibinitperiod\bibinitdelim B\bibinitperiod\bibinitdelim U\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=e64b7e31c52a065d95de7ad95073f872}{%
+           family={Kremen},
+           familyi={K\bibinitperiod},
+           given={Claire},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{931b7d9bce65c79927d2b0eb9595e69c}
+      \strng{fullhash}{cab4a8235d15faef522408f0bb65bd8c}
+      \strng{fullhashraw}{cab4a8235d15faef522408f0bb65bd8c}
+      \strng{bibnamehash}{cab4a8235d15faef522408f0bb65bd8c}
+      \strng{authorbibnamehash}{cab4a8235d15faef522408f0bb65bd8c}
+      \strng{authornamehash}{931b7d9bce65c79927d2b0eb9595e69c}
+      \strng{authorfullhash}{cab4a8235d15faef522408f0bb65bd8c}
+      \strng{authorfullhashraw}{cab4a8235d15faef522408f0bb65bd8c}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{{$<$}p{$>$}1. Agricultural intensification can support the expansion of introduced species which are highly adapted to human-modified landscapes, but the mechanisms by which this occurs are often unclear. 2. Here we investigate the spatial ecology of a rapidly expanding introduced bumble bee (\mkbibemph{Bombus impatiens}) and a native congener (\mkbibemph{B. mixtus}) in agricultural landscapes of southwestern British Columbia, Canada. We used microsatellite genotyping and spatially explicit capture-recapture models to compare the foraging distance of the two species, and fitted hierarchical models to compare their abundance, behaviour (nest searching vs foraging), and lineage survival as a function of landscape composition and configuration. 3. We found that \mkbibemph{B. impatiens} had a broader foraging range than \mkbibemph{B. mixtus}, and that its colony/worker abundance were positively associated with the surrounding area of residential gardens, but decreased relative to \mkbibemph{B. mixtus} abundance in response to increasing seminatural area. In contrast, \mkbibemph{B. mixtus} colony abundance decreased in landscapes with a greater area of intensively managed berry crops. 4. We observed fewer \mkbibemph{B. impatiens} queens per survey in landscapes with more low-disturbance landcover, and hypothesize space use of this species could be shaped by concentration on potential nesting habitat. Consistent with this observation, nest searching behaviour was more common for \mkbibemph{B. impatiens} queens, while \mkbibemph{B. mixtus} queens were primarily observed foraging, suggesting these two species derive different value from agricultural landscapes during colony establishment. 5. Finally, we found that the rate of lineage re-capture between 2022 colonies and 2023 spring queens was nearly 10-fold higher for \mkbibemph{B. impatiens} than for \mkbibemph{B. mixtus}, indicating a greater capacity of the introduced species to complete its life cycle in agro-natural landscape mosaics. 6. Our results suggest that differences in spatial ecology may contribute to the differential success of these two species in human-modified landscapes, and provide insight into the mechanisms by which land-use change shapes community composition.{$<$}/p{$>$}}
+      \field{day}{12}
+      \field{eprintclass}{New Results}
+      \field{eprinttype}{bioRxiv}
+      \field{issn}{2692-8205}
+      \field{langid}{english}
+      \field{month}{5}
+      \field{title}{Agricultural Intensification Favours an Introduced Bumble Bee over Its Native Congener through Differences in Foraging Range, Habitat Association, and Lineage Continuity}
+      \field{urlday}{14}
+      \field{urlmonth}{5}
+      \field{urlyear}{2026}
+      \field{year}{2026}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{2026.05.07.723627}
+      \range{pages}{-1}
+      \verb{doi}
+      \verb 10.64898/2026.05.07.723627
+      \endverb
+      \verb{file}
+      \verb /Users/jenna1/Zotero/storage/X8T2LXI9/Melanson et al. - 2026 - Agricultural intensification favours an introduced bumble bee over its native congener through diffe.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://www.biorxiv.org/content/10.64898/2026.05.07.723627v1
+      \endverb
+      \verb{url}
+      \verb https://www.biorxiv.org/content/10.64898/2026.05.07.723627v1
+      \endverb
+    \endentry
+    \entry{molaBumbleBeeMovement2025}{article}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=f4c1a7b952baf1a6b6eabe7991029a20}{%
+           family={Mola},
+           familyi={M\bibinitperiod},
+           given={John\bibnamedelima M},
+           giveni={J\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=9f4aa3c2d2773a114a6a3df710d09a19}{%
+           family={Williams},
+           familyi={W\bibinitperiod},
+           given={Neal\bibnamedelima M},
+           giveni={N\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{0505fd946b04f1069ea0b8a8c7eb65fb}
+      \strng{fullhash}{0505fd946b04f1069ea0b8a8c7eb65fb}
+      \strng{fullhashraw}{0505fd946b04f1069ea0b8a8c7eb65fb}
+      \strng{bibnamehash}{0505fd946b04f1069ea0b8a8c7eb65fb}
+      \strng{authorbibnamehash}{0505fd946b04f1069ea0b8a8c7eb65fb}
+      \strng{authornamehash}{0505fd946b04f1069ea0b8a8c7eb65fb}
+      \strng{authorfullhash}{0505fd946b04f1069ea0b8a8c7eb65fb}
+      \strng{authorfullhashraw}{0505fd946b04f1069ea0b8a8c7eb65fb}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{Movement is a dynamic process that changes with ontogeny, physiological state, and ecological context. The results of organismal movement impact multiple dimensions of fitness, population dynamics, and functional interactions. As such, the study of movement is critical for understanding and conserving species. Bumble bees (Apidae: Bombus spp.) offer a powerful system to study multiple complexities of movement within a functionally important clade. Their life history includes distinct social and solitary phases, substantial intraspecific variation in body size, and multiple modes of movement behavior. These traits allow investigations of diverse concepts at multiple scales and during contrasting behavioral and motivational states—from individuals, to colonies, to populations, and among species. Despite extensive study as model organisms of fine-scale movements and optimal foraging theory, understanding of landscape-scale movements is more limited. This knowledge gap is especially troubling given global pollinator declines because such dispersive movements fundamentally affect how populations respond to landscape transformation, climate change, and restoration efforts. To build toward a refined understanding of the bumble bee movement, inform research, and assist conservation programs, we review foraging and dispersal movement across life stages and castes. Using an ontogenetic approach, we compare the movement motivation and capacity of individuals throughout colony development. Despite the growth in recent literature, much remains to be learned about the bumble bee movement, especially dispersive life stages. Focused effort on how movement varies with individual state such as nutrition and age, and comparative studies of species would all fill knowledge gaps with high potential to improve bee conservation and research.}
+      \field{issn}{0013-8746}
+      \field{journaltitle}{Annals of the Entomological Society of America}
+      \field{month}{3}
+      \field{shorttitle}{Bumble Bee Movement Ecology}
+      \field{title}{Bumble Bee Movement Ecology: Foraging and Dispersal across Castes and Life Stages}
+      \field{urlday}{14}
+      \field{urlmonth}{5}
+      \field{urlyear}{2025}
+      \field{year}{2025}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{saaf010}
+      \range{pages}{-1}
+      \verb{doi}
+      \verb 10.1093/aesa/saaf010
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1093/aesa/saaf010
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1093/aesa/saaf010
+      \endverb
     \endentry
     \entry{morganShortReadBioconductorPackage2009}{article}{}{}
       \name{author}{6}{}{%
@@ -998,6 +1322,98 @@
       \verb 19654119
       \endverb
       \keyw{Computational Biology,Databases Genetic,Gene Expression Profiling,Sequence Analysis DNA,Software}
+    \endentry
+    \entry{osborneBumblebeeFlightDistances2008}{article}{}{}
+      \name{author}{8}{}{%
+        {{un=0,uniquepart=base,hash=c72877ade08ea326f6bf32dfe5f97dd5}{%
+           family={Osborne},
+           familyi={O\bibinitperiod},
+           given={Juliet\bibnamedelima L.},
+           giveni={J\bibinitperiod\bibinitdelim L\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=2d95a291f02572cc45ca485d789c3a0f}{%
+           family={Martin},
+           familyi={M\bibinitperiod},
+           given={Andrew\bibnamedelima P.},
+           giveni={A\bibinitperiod\bibinitdelim P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=74f4b284c3b5778b5bb108d5fcbc3acb}{%
+           family={Carreck},
+           familyi={C\bibinitperiod},
+           given={Norman\bibnamedelima L.},
+           giveni={N\bibinitperiod\bibinitdelim L\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=d741aa8b87871323ff6c67594ea50611}{%
+           family={Swain},
+           familyi={S\bibinitperiod},
+           given={Jennifer\bibnamedelima L.},
+           giveni={J\bibinitperiod\bibinitdelim L\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=21a7d77f104d5ca8ea2ce2b718aa7170}{%
+           family={Knight},
+           familyi={K\bibinitperiod},
+           given={Mairi\bibnamedelima E.},
+           giveni={M\bibinitperiod\bibinitdelim E\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=aa48da29619ce51faea7911d5d57faba}{%
+           family={Goulson},
+           familyi={G\bibinitperiod},
+           given={Dave},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=766825b4161691cea08d9c6a364a6e92}{%
+           family={Hale},
+           familyi={H\bibinitperiod},
+           given={Roddy\bibnamedelima J.},
+           giveni={R\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=4a47ae60dbc6881a75bde8080c175107}{%
+           family={Sanderson},
+           familyi={S\bibinitperiod},
+           given={Roy\bibnamedelima A.},
+           giveni={R\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{b95bb5a29a12ea2b9c1a55541829ffb4}
+      \strng{fullhash}{e06b9ffb1f240b2e59bbc717bda26a13}
+      \strng{fullhashraw}{e06b9ffb1f240b2e59bbc717bda26a13}
+      \strng{bibnamehash}{e06b9ffb1f240b2e59bbc717bda26a13}
+      \strng{authorbibnamehash}{e06b9ffb1f240b2e59bbc717bda26a13}
+      \strng{authornamehash}{b95bb5a29a12ea2b9c1a55541829ffb4}
+      \strng{authorfullhash}{e06b9ffb1f240b2e59bbc717bda26a13}
+      \strng{authorfullhashraw}{e06b9ffb1f240b2e59bbc717bda26a13}
+      \field{sortinit}{O}
+      \field{sortinithash}{2cd7140a07aea5341f9e2771efe90aae}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Summary 1 Foraging range is a key aspect of the ecology of ?central place foragers?. Estimating how far bees fly under different circumstances is essential for predicting colony success, and for estimating bee-mediated gene flow between plant populations. It is likely to be strongly influenced by forage distribution, something that is hard to quantify in all but the simplest landscapes; and theories of foraging distance tend to assume a homogeneous forage distribution. 2 We quantified the distribution of bumblebee Bombus terrestris L. foragers away from experimentally positioned colonies, in an agricultural landscape, using two methods. We mass-marked foragers as they left the colony, and analysed pollen from foragers returning to the colonies. The data were set within the context of the ?forage landscape?: a map of the spatial distribution of forage as determined from remote-sensed data. To our knowledge, this is the first time that empirical data on foraging distances and forage availability, at this resolution and scale, have been collected and combined for bumblebees. 3 The bees foraged at least 1·5 km from their colonies, and the proportion of foragers flying to one field declined, approximately linearly, with radial distance. In this landscape there was great variation in forage availability within 500 m of colonies but little variation beyond 1 km, regardless of colony location. 4 The scale of B. terrestris foraging was large enough to buffer against effects of forage patch and flowering crop heterogeneity, but bee species with shorter foraging ranges may experience highly variable colony success according to location.}
+      \field{issn}{0021-8790}
+      \field{journaltitle}{Journal of Animal Ecology}
+      \field{month}{3}
+      \field{number}{2}
+      \field{title}{Bumblebee Flight Distances in Relation to the Forage Landscape}
+      \field{urlday}{28}
+      \field{urlmonth}{5}
+      \field{urlyear}{2021}
+      \field{volume}{77}
+      \field{year}{2008}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{406\bibrangedash 415}
+      \range{pages}{10}
+      \verb{doi}
+      \verb 10.1111/j.1365-2656.2007.01333.x
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1111/j.1365-2656.2007.01333.x
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1111/j.1365-2656.2007.01333.x
+      \endverb
+      \keyw{borage,foraging range,mass marking experiment,pollen analysis}
     \endentry
     \entry{pagesBiostringsEfficientString2026}{manual}{}{}
       \name{author}{4}{}{%
@@ -1083,6 +1499,214 @@
       \field{type}{Manual}
       \field{year}{2021}
       \field{dateera}{ce}
+    \endentry
+    \entry{rundlofFlowerPlantingsSupport2022a}{article}{}{}
+      \name{author}{8}{}{%
+        {{un=0,uniquepart=base,hash=6275a9a8a813494c40a8ebfc16a9c11b}{%
+           family={Rundlöf},
+           familyi={R\bibinitperiod},
+           given={Maj},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=15c0642bfb06f832322649b86f2e1b71}{%
+           family={Stuligross},
+           familyi={S\bibinitperiod},
+           given={Clara},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=c89b9c0ca39fa024bf44360db529640d}{%
+           family={Lindh},
+           familyi={L\bibinitperiod},
+           given={Arvid},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=6ce5357e0a5d6e4655e1b176768f0372}{%
+           family={Malfi},
+           familyi={M\bibinitperiod},
+           given={Rosemary\bibnamedelima L.},
+           giveni={R\bibinitperiod\bibinitdelim L\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=7176d31c03fa2e726601ab8639c9144e}{%
+           family={Burns},
+           familyi={B\bibinitperiod},
+           given={Katherine},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f4c1a7b952baf1a6b6eabe7991029a20}{%
+           family={Mola},
+           familyi={M\bibinitperiod},
+           given={John\bibnamedelima M.},
+           giveni={J\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=adf67cd0ea7c65d202cf458fb0d3b365}{%
+           family={Cibotti},
+           familyi={C\bibinitperiod},
+           given={Staci},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=9f4aa3c2d2773a114a6a3df710d09a19}{%
+           family={Williams},
+           familyi={W\bibinitperiod},
+           given={Neal\bibnamedelima M.},
+           giveni={N\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{6448c517230b18cb8d0c1b134238f793}
+      \strng{fullhash}{fc8a939a277e95e40ca8be4b7d1794b1}
+      \strng{fullhashraw}{fc8a939a277e95e40ca8be4b7d1794b1}
+      \strng{bibnamehash}{fc8a939a277e95e40ca8be4b7d1794b1}
+      \strng{authorbibnamehash}{fc8a939a277e95e40ca8be4b7d1794b1}
+      \strng{authornamehash}{6448c517230b18cb8d0c1b134238f793}
+      \strng{authorfullhash}{fc8a939a277e95e40ca8be4b7d1794b1}
+      \strng{authorfullhashraw}{fc8a939a277e95e40ca8be4b7d1794b1}
+      \field{sortinit}{R}
+      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Sustainable agriculture relies on pollinators, and wild bees benefit yield of multiple crops. However, the combined exposure to pesticides and loss of flower resources, driven by agricultural intensification, contribute to declining diversity and abundance of many bee taxa. Flower plantings along the margins of agricultural fields offer diverse food resources not directly treated with pesticides. To investigate the potential of flower plantings to mitigate bee pesticide exposure effects and support bee reproduction, we selected replicated sites in intensively farmed landscapes where half contained flower plantings. We assessed solitary bee Osmia lignaria and bumble bee Bombus vosnesenskii nesting and reproduction throughout the season in these landscapes. We also quantified local and landscape flower resources and used bee-collected pollen to determine forage resource use and pesticide exposure and risk. Flower plantings, and their local flower resources, increased O. lignaria nesting probability. Bombus vosnesenskii reproduction was more strongly related to landscape than local flower resources. Bees at sites with and without flower plantings experienced similar pesticide risk, and the local flowers, alongside flowers in the landscape, were sources of pesticide exposure particularly for O. lignaria. However, local flower resources mitigated negative pesticide effects on B. vosnesenskii reproduction. Synthesis and applications. Bees in agricultural landscapes are threatened by pesticide exposure and loss of flower resources through agricultural intensification. Therefore, finding solutions to mitigate negative effects of pesticide use and flower deficiency is urgent. Our findings point towards flower plantings as a potential solution to support bee populations by mitigating pesticide exposure effects and providing key forage. Further investigation of the balance between forage benefits and added pesticide risk is needed to reveal contexts where net benefits occur.}
+      \field{issn}{1365-2664}
+      \field{journaltitle}{Journal of Applied Ecology}
+      \field{number}{8}
+      \field{title}{Flower {{Plantings Support Wild Bee Reproduction}} and {{May Also Mitigate Pesticide Exposure Effects}}}
+      \field{volume}{59}
+      \field{year}{2022}
+      \field{dateera}{ce}
+      \field{pages}{2117\bibrangedash 2127}
+      \range{pages}{11}
+      \verb{doi}
+      \verb 10.1111/1365-2664.14223
+      \endverb
+      \keyw{agricultural intensification,Bombus,bumble bee,flower plantings,flower resources,Osmia,pesticide,pesticide risk,pollinator conservation,wild bee}
+    \endentry
+    \entry{williamsLandscapeScaleResourcesPromote2012c}{article}{}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=9f4aa3c2d2773a114a6a3df710d09a19}{%
+           family={Williams},
+           familyi={W\bibinitperiod},
+           given={Neal\bibnamedelima M.},
+           giveni={N\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=bf84e87333e55fcda6883a6eab200f85}{%
+           family={Regetz},
+           familyi={R\bibinitperiod},
+           given={James},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=e64b7e31c52a065d95de7ad95073f872}{%
+           family={Kremen},
+           familyi={K\bibinitperiod},
+           given={Claire},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{da7429ab0c8e1b3ed897f868359293c3}
+      \strng{fullhash}{4877f099a6a5a6726c17a6e509b79a15}
+      \strng{fullhashraw}{4877f099a6a5a6726c17a6e509b79a15}
+      \strng{bibnamehash}{4877f099a6a5a6726c17a6e509b79a15}
+      \strng{authorbibnamehash}{4877f099a6a5a6726c17a6e509b79a15}
+      \strng{authornamehash}{da7429ab0c8e1b3ed897f868359293c3}
+      \strng{authorfullhash}{4877f099a6a5a6726c17a6e509b79a15}
+      \strng{authorfullhashraw}{4877f099a6a5a6726c17a6e509b79a15}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Variation in the availability of food resources over space and time is a likely driver of how landscape structure and composition affect animal populations. Few studies, however, have directly assessed the spatiotemporal variation in resource availability that arises from landscape pattern, or its effect on populations and population dynamic parameters. We tested the effect of floral resource availability at the landscape scale on the numbers of worker, male, and queen offspring produced by bumble bee, Bombus vosnesenskii, colonies experimentally placed within complex agricultural-natural landscapes. We quantified flower densities in all land use types at different times of the season and then used these data to calculate spatially explicit estimates of floral resources surrounding each colony. Floral availability strongly correlated with landscape structure, and different regions of the landscape showed distinct seasonal patterns of floral availability. The floral resources available in the landscape surrounding a colony positively affected the number of workers and males it produced. Production was more sensitive to early- than to later-season resources. Floral resources did not significantly affect queen production despite a strong correlation between worker number and queen number among colonies. No landscape produced high floral resources during both the early and late season, and seasonal consistency is likely required for greater queen production. Floral resources are important determinants of colony growth and likely affect the pollination services provided by bumble bees at a landscape scale. Spatiotemporal variation in floral resources across the landscape precludes a simple relationship between resources and reproductive success as measured by queens, but nonetheless likely influences the total abundance of bumble bees in our study region.}
+      \field{issn}{1939-9170}
+      \field{journaltitle}{Ecology}
+      \field{number}{5}
+      \field{title}{Landscape-{{Scale Resources Promote Colony Growth}} but {{Not Reproductive Performance}} of {{Bumble Bees}}}
+      \field{volume}{93}
+      \field{year}{2012}
+      \field{dateera}{ce}
+      \field{pages}{1049\bibrangedash 1058}
+      \range{pages}{10}
+      \verb{doi}
+      \verb 10.1890/11-1006.1
+      \endverb
+      \keyw{Apoidea,Bombus,bumble bee,floral resources,landscape structure,pollinator,reproductive success}
+    \endentry
+    \entry{woodgateContinuousRadarTracking2017}{article}{}{}
+      \name{author}{5}{}{%
+        {{un=0,uniquepart=base,hash=2c6dc77c92385e27259fc37747fe7174}{%
+           family={Woodgate},
+           familyi={W\bibinitperiod},
+           given={Joseph\bibnamedelima L.},
+           giveni={J\bibinitperiod\bibinitdelim L\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ef19f2504bd37b9e609dba0a31e42d2b}{%
+           family={Makinson},
+           familyi={M\bibinitperiod},
+           given={James\bibnamedelima C.},
+           giveni={J\bibinitperiod\bibinitdelim C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=16b6e5d419e4e54c73452114f60122e8}{%
+           family={Lim},
+           familyi={L\bibinitperiod},
+           given={Ka\bibnamedelima S.},
+           giveni={K\bibinitperiod\bibinitdelim S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=43d51db9c34e06d12cbed8bc46406856}{%
+           family={Reynolds},
+           familyi={R\bibinitperiod},
+           given={Andrew\bibnamedelima M.},
+           giveni={A\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=3c363fcddbb96e3b6a2fe2cb97ad65e0}{%
+           family={Chittka},
+           familyi={C\bibinitperiod},
+           given={Lars},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{63c451fa653a3f3285ff690b11324393}
+      \strng{fullhash}{85f6590f9c52eb7a7986ff7ea9a63418}
+      \strng{fullhashraw}{85f6590f9c52eb7a7986ff7ea9a63418}
+      \strng{bibnamehash}{85f6590f9c52eb7a7986ff7ea9a63418}
+      \strng{authorbibnamehash}{85f6590f9c52eb7a7986ff7ea9a63418}
+      \strng{authornamehash}{63c451fa653a3f3285ff690b11324393}
+      \strng{authorfullhash}{85f6590f9c52eb7a7986ff7ea9a63418}
+      \strng{authorfullhashraw}{85f6590f9c52eb7a7986ff7ea9a63418}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Abstract Animals that visit multiple foraging sites face a problem, analogous to the Travelling Salesman Problem, of finding an efficient route. We explored bumblebees’ route development on an array of five artificial flowers in which minimising travel distances between individual feeders conflicted with minimising overall distance. No previous study of bee spatial navigation has been able to follow animals’ movement during learning; we tracked bumblebee foragers continuously, using harmonic radar, and examined the process of route formation in detail for a small number of selected individuals. On our array, bees did not settle on visit sequences that gave the shortest overall path, but prioritised movements to nearby feeders. Nonetheless, flight distance and duration reduced with experience. This increased efficiency was attributable mainly to experienced bees reducing exploration beyond the feeder array and flights becoming straighter with experience, rather than improvements in the sequence of feeder visits. Flight paths of all legs of a flight stabilised at similar rates, whereas the first few feeder visits became fixed early while bees continued to experiment with the order of later visits. Stabilising early sections of a route and prioritising travel between nearby destinations may reduce the search space, allowing rapid adoption of efficient routes.}
+      \field{day}{11}
+      \field{issn}{2045-2322}
+      \field{journaltitle}{Scientific Reports}
+      \field{langid}{english}
+      \field{month}{12}
+      \field{number}{1}
+      \field{shortjournal}{Sci Rep}
+      \field{title}{Continuous {{Radar Tracking Illustrates}} the {{Development}} of {{Multi-destination Routes}} of {{Bumblebees}}}
+      \field{urlday}{13}
+      \field{urlmonth}{3}
+      \field{urlyear}{2026}
+      \field{volume}{7}
+      \field{year}{2017}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{17323}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1038/s41598-017-17553-1
+      \endverb
+      \verb{urlraw}
+      \verb https://www.nature.com/articles/s41598-017-17553-1
+      \endverb
+      \verb{url}
+      \verb https://www.nature.com/articles/s41598-017-17553-1
+      \endverb
     \endentry
     \entry{yeFloralResourcePartitioning2024a}{article}{}{}
       \name{author}{9}{}{%
@@ -2018,6 +2642,199 @@
       \endverb
       \keyw{Metagenomics,Software,Statistical methods}
     \endentry
+    \entry{chittkaMindBee2023}{book}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=3c363fcddbb96e3b6a2fe2cb97ad65e0}{%
+           family={Chittka},
+           familyi={C\bibinitperiod},
+           given={Lars},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {New Jersey Princeton Oxford}%
+      }
+      \list{publisher}{1}{%
+        {Princeton University Press}%
+      }
+      \strng{namehash}{3c363fcddbb96e3b6a2fe2cb97ad65e0}
+      \strng{fullhash}{3c363fcddbb96e3b6a2fe2cb97ad65e0}
+      \strng{fullhashraw}{3c363fcddbb96e3b6a2fe2cb97ad65e0}
+      \strng{bibnamehash}{3c363fcddbb96e3b6a2fe2cb97ad65e0}
+      \strng{authorbibnamehash}{3c363fcddbb96e3b6a2fe2cb97ad65e0}
+      \strng{authornamehash}{3c363fcddbb96e3b6a2fe2cb97ad65e0}
+      \strng{authorfullhash}{3c363fcddbb96e3b6a2fe2cb97ad65e0}
+      \strng{authorfullhashraw}{3c363fcddbb96e3b6a2fe2cb97ad65e0}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{A rich and surprising exploration of the intelligence of bees Most of us are aware of the hive mind-the power of bees as an amazing collective. But do we know how uniquely intelligent bees are as individuals? In The Mind of a Bee, Lars Chittka draws from decades of research, including his own pioneering work, to argue that bees have remarkable cognitive abilities. He shows that they are profoundly smart, have distinct personalities, can recognize flowers and human faces, exhibit basic emotions, count, use simple tools, solve problems, and learn by observing others. They may even possess consciousness.Taking readers deep into the sensory world of bees, Chittka illustrates how bee brains are unparalleled in the animal kingdom in terms of how much sophisticated material is packed into their tiny nervous systems. He looks at their innate behaviors and the ways their evolution as foragers may have contributed to their keen spatial memory. Chittka also examines the psychological differences between bees and the ethical dilemmas that arise in conservation and laboratory settings because bees feel and think. Throughout, he touches on the fascinating history behind the study of bee behavior.Exploring an insect whose sensory experiences rival those of humans, The Mind of a Bee reveals the singular abilities of some of the world s most incredible creatures}
+      \field{isbn}{978-0-691-25389-3}
+      \field{langid}{english}
+      \field{pagetotal}{260}
+      \field{title}{The Mind of a Bee}
+      \field{year}{2023}
+      \field{dateera}{ce}
+    \endentry
+    \entry{goulsonBumblebeesBehaviourEcology2010}{book}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=aa48da29619ce51faea7911d5d57faba}{%
+           family={Goulson},
+           familyi={G\bibinitperiod},
+           given={Dave},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{aa48da29619ce51faea7911d5d57faba}
+      \strng{fullhash}{aa48da29619ce51faea7911d5d57faba}
+      \strng{fullhashraw}{aa48da29619ce51faea7911d5d57faba}
+      \strng{bibnamehash}{aa48da29619ce51faea7911d5d57faba}
+      \strng{authorbibnamehash}{aa48da29619ce51faea7911d5d57faba}
+      \strng{authornamehash}{aa48da29619ce51faea7911d5d57faba}
+      \strng{authorfullhash}{aa48da29619ce51faea7911d5d57faba}
+      \strng{authorfullhashraw}{aa48da29619ce51faea7911d5d57faba}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{Bumblebees are familiar and charismatic insects, occurring throughout much of the world. They are increasingly being used as a model organism for studying a wide range of ecological and behavioural concepts, such as social organization, optimal foraging theories, host-parasite interactions, and pollination. Recently they have become a focus for conservationists due to mounting evidence of range coBIOL15ANIB and catastrophic extinctions with some species disappearing from entire continents (e.g. in North America). Only by improving our understanding of their ecology can we devise sensible plans to conserve them. The role of bumblebees as invasive species (e.g. Bombus terrestris in Japan) has also become topical with the growing trade in commercial bumblebee nests for tomato pollination leading to establishment of non-native bumblebees in a number of countries. Since the publication of the first edition of the book, there have been hundreds of research papers published on bumblebees. There is clearly a continuing need for an affordable, well-illustrated, and appealing text that makes accessible all of the major advances in understanding of the behaviour and ecology of bumblebees that have been made in the last 30 years.}
+      \field{isbn}{978-0-19-955306-8}
+      \field{month}{1}
+      \field{shorttitle}{Bumblebees}
+      \field{title}{Bumblebees: {{Behaviour}}, {{Ecology}}, and {{Conservation}}}
+      \field{year}{2010}
+      \field{dateera}{ce}
+      \verb{doi}
+      \verb 10.1093/oso/9780199553068.001.0001
+      \endverb
+    \endentry
+    \entry{heinrichBumblebeeEconomics2004}{book}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=ee9137142d05980c34d05ecc76a56a7a}{%
+           family={Heinrich},
+           familyi={H\bibinitperiod},
+           given={Bernd},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Harvard University Press}%
+      }
+      \strng{namehash}{ee9137142d05980c34d05ecc76a56a7a}
+      \strng{fullhash}{ee9137142d05980c34d05ecc76a56a7a}
+      \strng{fullhashraw}{ee9137142d05980c34d05ecc76a56a7a}
+      \strng{bibnamehash}{ee9137142d05980c34d05ecc76a56a7a}
+      \strng{authorbibnamehash}{ee9137142d05980c34d05ecc76a56a7a}
+      \strng{authornamehash}{ee9137142d05980c34d05ecc76a56a7a}
+      \strng{authorfullhash}{ee9137142d05980c34d05ecc76a56a7a}
+      \strng{authorfullhashraw}{ee9137142d05980c34d05ecc76a56a7a}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Here is a brilliant introduction to insect and plant ecology focusing on one of nature's most adaptive creatures, the bumblebee. Survival for the bumblebee depends on its ability to regulate body temperature through a complex energy exchange, and it is this management of energy resources around which Bernd Heinrich enters his discussion of physiology, behavior, and ecological interaction. Along the way, he makes some amusing parallels with the theories of Adam Smith–which, Heinrich observes, work rather well for the bees, however inadequate they may be for human needs.Bumblebee Economics uniquely offers both the professional and amateur scientist a coherent biological model that goes beyond any particular species or level of biological organization. Rich in specific detail and including an extensive appendix on the rearing of bumblebees, as well as a full-color guide to field identification, this book organizes practical knowledge according to a new criterion.In a new preface, Heinrich ranges from Maine to Alaska and north to the Arctic as he summarizes findings from continuing investigations over the past twenty-five years–by himself and others–into the wondrous "energy economy" of bumblebees.}
+      \field{isbn}{978-0-674-01639-2}
+      \field{langid}{english}
+      \field{title}{Bumblebee {{Economics}}}
+      \field{year}{2004}
+      \field{dateera}{ce}
+      \keyw{Bioenergetics,Bumblebees,Ecology,Insects,Science / Life Sciences / Zoology / Entomology}
+    \endentry
+    \entry{lihoreauRadarTrackingMotionSensitive2012}{article}{}{}
+      \name{author}{8}{}{%
+        {{un=0,uniquepart=base,hash=9e61815b75f2a3d64c1c769aee5c8ac5}{%
+           family={Lihoreau},
+           familyi={L\bibinitperiod},
+           given={Mathieu},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=c67ef3fc2f0e9ac5b2c474d7c4c74864}{%
+           family={Raine},
+           familyi={R\bibinitperiod},
+           given={Nigel\bibnamedelima E.},
+           giveni={N\bibinitperiod\bibinitdelim E\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=43d51db9c34e06d12cbed8bc46406856}{%
+           family={Reynolds},
+           familyi={R\bibinitperiod},
+           given={Andrew\bibnamedelima M.},
+           giveni={A\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b6f12b5b4e7eabd9673b70c9128a0cfc}{%
+           family={Stelzer},
+           familyi={S\bibinitperiod},
+           given={Ralph\bibnamedelima J.},
+           giveni={R\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=16b6e5d419e4e54c73452114f60122e8}{%
+           family={Lim},
+           familyi={L\bibinitperiod},
+           given={Ka\bibnamedelima S.},
+           giveni={K\bibinitperiod\bibinitdelim S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=db3cbf96d69040e8ec6bb4cccad3594f}{%
+           family={Smith},
+           familyi={S\bibinitperiod},
+           given={Alan\bibnamedelima D.},
+           giveni={A\bibinitperiod\bibinitdelim D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=c72877ade08ea326f6bf32dfe5f97dd5}{%
+           family={Osborne},
+           familyi={O\bibinitperiod},
+           given={Juliet\bibnamedelima L.},
+           giveni={J\bibinitperiod\bibinitdelim L\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=3c363fcddbb96e3b6a2fe2cb97ad65e0}{%
+           family={Chittka},
+           familyi={C\bibinitperiod},
+           given={Lars},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Public Library of Science}%
+      }
+      \strng{namehash}{b8296556437cef3bbdb2cb6d1cfcbecb}
+      \strng{fullhash}{70445f0fdf425c5ba3febbca30e676d1}
+      \strng{fullhashraw}{70445f0fdf425c5ba3febbca30e676d1}
+      \strng{bibnamehash}{70445f0fdf425c5ba3febbca30e676d1}
+      \strng{authorbibnamehash}{70445f0fdf425c5ba3febbca30e676d1}
+      \strng{authornamehash}{b8296556437cef3bbdb2cb6d1cfcbecb}
+      \strng{authorfullhash}{70445f0fdf425c5ba3febbca30e676d1}
+      \strng{authorfullhashraw}{70445f0fdf425c5ba3febbca30e676d1}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Automated tracking of bumblebees and computer simulations reveal how bees locate a series of flowers and optimize their routes to visit them all.}
+      \field{issn}{1545-7885}
+      \field{journaltitle}{PLOS Biology}
+      \field{month}{9}
+      \field{number}{9}
+      \field{title}{Radar {{Tracking}} and {{Motion-Sensitive Cameras}} on {{Flowers Reveal}} the {{Development}} of {{Pollinator Multi-Destination Routes}} over {{Large Spatial Scales}}}
+      \field{volume}{10}
+      \field{year}{2012}
+      \field{dateera}{ce}
+      \field{pages}{e1001392}
+      \range{pages}{-1}
+      \verb{doi}
+      \verb 10.1371/journal.pbio.1001392
+      \endverb
+      \keyw{Animal flight,Bees,Bumblebees,Flowers,Foraging,Insect flight,Optimization,Radar}
+    \endentry
     \entry{martinCutadaptRemovesAdapter2011}{article}{}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=0449a5e93850e9dad7d069f67084aeb4}{%
@@ -2072,6 +2889,137 @@
       \verb https://journal.embnet.org/index.php/embnetjournal/article/view/200
       \endverb
       \keyw{adapter removal,microRNA,next generation sequencing,small RNA}
+    \endentry
+    \entry{melansonAgriculturalIntensificationFavours2026}{online}{}{}
+      \name{author}{5}{}{%
+        {{un=0,uniquepart=base,hash=99f44f272d73b5809dad2595970988a6}{%
+           family={Melanson},
+           familyi={M\bibinitperiod},
+           given={Jenna\bibnamedelima B.},
+           giveni={J\bibinitperiod\bibinitdelim B\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=6325c6e7e9b9c71d78944e91163a2c95}{%
+           family={Kelly},
+           familyi={K\bibinitperiod},
+           given={Tyler\bibnamedelima T.},
+           giveni={T\bibinitperiod\bibinitdelim T\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=4632ffae6c12ec05717df3ed631febd4}{%
+           family={Clermont},
+           familyi={C\bibinitperiod},
+           given={Natalia},
+           giveni={N\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=717125a548ed44884603e141c2d1ad67}{%
+           family={Koch},
+           familyi={K\bibinitperiod},
+           given={Jonathan\bibnamedelimb B.\bibnamedelimi Uhuad},
+           giveni={J\bibinitperiod\bibinitdelim B\bibinitperiod\bibinitdelim U\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=e64b7e31c52a065d95de7ad95073f872}{%
+           family={Kremen},
+           familyi={K\bibinitperiod},
+           given={Claire},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{931b7d9bce65c79927d2b0eb9595e69c}
+      \strng{fullhash}{cab4a8235d15faef522408f0bb65bd8c}
+      \strng{fullhashraw}{cab4a8235d15faef522408f0bb65bd8c}
+      \strng{bibnamehash}{cab4a8235d15faef522408f0bb65bd8c}
+      \strng{authorbibnamehash}{cab4a8235d15faef522408f0bb65bd8c}
+      \strng{authornamehash}{931b7d9bce65c79927d2b0eb9595e69c}
+      \strng{authorfullhash}{cab4a8235d15faef522408f0bb65bd8c}
+      \strng{authorfullhashraw}{cab4a8235d15faef522408f0bb65bd8c}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{{$<$}p{$>$}1. Agricultural intensification can support the expansion of introduced species which are highly adapted to human-modified landscapes, but the mechanisms by which this occurs are often unclear. 2. Here we investigate the spatial ecology of a rapidly expanding introduced bumble bee (\mkbibemph{Bombus impatiens}) and a native congener (\mkbibemph{B. mixtus}) in agricultural landscapes of southwestern British Columbia, Canada. We used microsatellite genotyping and spatially explicit capture-recapture models to compare the foraging distance of the two species, and fitted hierarchical models to compare their abundance, behaviour (nest searching vs foraging), and lineage survival as a function of landscape composition and configuration. 3. We found that \mkbibemph{B. impatiens} had a broader foraging range than \mkbibemph{B. mixtus}, and that its colony/worker abundance were positively associated with the surrounding area of residential gardens, but decreased relative to \mkbibemph{B. mixtus} abundance in response to increasing seminatural area. In contrast, \mkbibemph{B. mixtus} colony abundance decreased in landscapes with a greater area of intensively managed berry crops. 4. We observed fewer \mkbibemph{B. impatiens} queens per survey in landscapes with more low-disturbance landcover, and hypothesize space use of this species could be shaped by concentration on potential nesting habitat. Consistent with this observation, nest searching behaviour was more common for \mkbibemph{B. impatiens} queens, while \mkbibemph{B. mixtus} queens were primarily observed foraging, suggesting these two species derive different value from agricultural landscapes during colony establishment. 5. Finally, we found that the rate of lineage re-capture between 2022 colonies and 2023 spring queens was nearly 10-fold higher for \mkbibemph{B. impatiens} than for \mkbibemph{B. mixtus}, indicating a greater capacity of the introduced species to complete its life cycle in agro-natural landscape mosaics. 6. Our results suggest that differences in spatial ecology may contribute to the differential success of these two species in human-modified landscapes, and provide insight into the mechanisms by which land-use change shapes community composition.{$<$}/p{$>$}}
+      \field{day}{12}
+      \field{eprintclass}{New Results}
+      \field{eprinttype}{bioRxiv}
+      \field{issn}{2692-8205}
+      \field{langid}{english}
+      \field{month}{5}
+      \field{title}{Agricultural Intensification Favours an Introduced Bumble Bee over Its Native Congener through Differences in Foraging Range, Habitat Association, and Lineage Continuity}
+      \field{urlday}{14}
+      \field{urlmonth}{5}
+      \field{urlyear}{2026}
+      \field{year}{2026}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{2026.05.07.723627}
+      \range{pages}{-1}
+      \verb{doi}
+      \verb 10.64898/2026.05.07.723627
+      \endverb
+      \verb{file}
+      \verb /Users/jenna1/Zotero/storage/X8T2LXI9/Melanson et al. - 2026 - Agricultural intensification favours an introduced bumble bee over its native congener through diffe.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://www.biorxiv.org/content/10.64898/2026.05.07.723627v1
+      \endverb
+      \verb{url}
+      \verb https://www.biorxiv.org/content/10.64898/2026.05.07.723627v1
+      \endverb
+    \endentry
+    \entry{molaBumbleBeeMovement2025}{article}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=f4c1a7b952baf1a6b6eabe7991029a20}{%
+           family={Mola},
+           familyi={M\bibinitperiod},
+           given={John\bibnamedelima M},
+           giveni={J\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=9f4aa3c2d2773a114a6a3df710d09a19}{%
+           family={Williams},
+           familyi={W\bibinitperiod},
+           given={Neal\bibnamedelima M},
+           giveni={N\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{0505fd946b04f1069ea0b8a8c7eb65fb}
+      \strng{fullhash}{0505fd946b04f1069ea0b8a8c7eb65fb}
+      \strng{fullhashraw}{0505fd946b04f1069ea0b8a8c7eb65fb}
+      \strng{bibnamehash}{0505fd946b04f1069ea0b8a8c7eb65fb}
+      \strng{authorbibnamehash}{0505fd946b04f1069ea0b8a8c7eb65fb}
+      \strng{authornamehash}{0505fd946b04f1069ea0b8a8c7eb65fb}
+      \strng{authorfullhash}{0505fd946b04f1069ea0b8a8c7eb65fb}
+      \strng{authorfullhashraw}{0505fd946b04f1069ea0b8a8c7eb65fb}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{Movement is a dynamic process that changes with ontogeny, physiological state, and ecological context. The results of organismal movement impact multiple dimensions of fitness, population dynamics, and functional interactions. As such, the study of movement is critical for understanding and conserving species. Bumble bees (Apidae: Bombus spp.) offer a powerful system to study multiple complexities of movement within a functionally important clade. Their life history includes distinct social and solitary phases, substantial intraspecific variation in body size, and multiple modes of movement behavior. These traits allow investigations of diverse concepts at multiple scales and during contrasting behavioral and motivational states—from individuals, to colonies, to populations, and among species. Despite extensive study as model organisms of fine-scale movements and optimal foraging theory, understanding of landscape-scale movements is more limited. This knowledge gap is especially troubling given global pollinator declines because such dispersive movements fundamentally affect how populations respond to landscape transformation, climate change, and restoration efforts. To build toward a refined understanding of the bumble bee movement, inform research, and assist conservation programs, we review foraging and dispersal movement across life stages and castes. Using an ontogenetic approach, we compare the movement motivation and capacity of individuals throughout colony development. Despite the growth in recent literature, much remains to be learned about the bumble bee movement, especially dispersive life stages. Focused effort on how movement varies with individual state such as nutrition and age, and comparative studies of species would all fill knowledge gaps with high potential to improve bee conservation and research.}
+      \field{issn}{0013-8746}
+      \field{journaltitle}{Annals of the Entomological Society of America}
+      \field{month}{3}
+      \field{shorttitle}{Bumble Bee Movement Ecology}
+      \field{title}{Bumble Bee Movement Ecology: Foraging and Dispersal across Castes and Life Stages}
+      \field{urlday}{14}
+      \field{urlmonth}{5}
+      \field{urlyear}{2025}
+      \field{year}{2025}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{saaf010}
+      \range{pages}{-1}
+      \verb{doi}
+      \verb 10.1093/aesa/saaf010
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1093/aesa/saaf010
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1093/aesa/saaf010
+      \endverb
     \endentry
     \entry{morganShortReadBioconductorPackage2009}{article}{}{}
       \name{author}{6}{}{%
@@ -2153,6 +3101,98 @@
       \verb 19654119
       \endverb
       \keyw{Computational Biology,Databases Genetic,Gene Expression Profiling,Sequence Analysis DNA,Software}
+    \endentry
+    \entry{osborneBumblebeeFlightDistances2008}{article}{}{}
+      \name{author}{8}{}{%
+        {{un=0,uniquepart=base,hash=c72877ade08ea326f6bf32dfe5f97dd5}{%
+           family={Osborne},
+           familyi={O\bibinitperiod},
+           given={Juliet\bibnamedelima L.},
+           giveni={J\bibinitperiod\bibinitdelim L\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=2d95a291f02572cc45ca485d789c3a0f}{%
+           family={Martin},
+           familyi={M\bibinitperiod},
+           given={Andrew\bibnamedelima P.},
+           giveni={A\bibinitperiod\bibinitdelim P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=74f4b284c3b5778b5bb108d5fcbc3acb}{%
+           family={Carreck},
+           familyi={C\bibinitperiod},
+           given={Norman\bibnamedelima L.},
+           giveni={N\bibinitperiod\bibinitdelim L\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=d741aa8b87871323ff6c67594ea50611}{%
+           family={Swain},
+           familyi={S\bibinitperiod},
+           given={Jennifer\bibnamedelima L.},
+           giveni={J\bibinitperiod\bibinitdelim L\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=21a7d77f104d5ca8ea2ce2b718aa7170}{%
+           family={Knight},
+           familyi={K\bibinitperiod},
+           given={Mairi\bibnamedelima E.},
+           giveni={M\bibinitperiod\bibinitdelim E\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=aa48da29619ce51faea7911d5d57faba}{%
+           family={Goulson},
+           familyi={G\bibinitperiod},
+           given={Dave},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=766825b4161691cea08d9c6a364a6e92}{%
+           family={Hale},
+           familyi={H\bibinitperiod},
+           given={Roddy\bibnamedelima J.},
+           giveni={R\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=4a47ae60dbc6881a75bde8080c175107}{%
+           family={Sanderson},
+           familyi={S\bibinitperiod},
+           given={Roy\bibnamedelima A.},
+           giveni={R\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{b95bb5a29a12ea2b9c1a55541829ffb4}
+      \strng{fullhash}{e06b9ffb1f240b2e59bbc717bda26a13}
+      \strng{fullhashraw}{e06b9ffb1f240b2e59bbc717bda26a13}
+      \strng{bibnamehash}{e06b9ffb1f240b2e59bbc717bda26a13}
+      \strng{authorbibnamehash}{e06b9ffb1f240b2e59bbc717bda26a13}
+      \strng{authornamehash}{b95bb5a29a12ea2b9c1a55541829ffb4}
+      \strng{authorfullhash}{e06b9ffb1f240b2e59bbc717bda26a13}
+      \strng{authorfullhashraw}{e06b9ffb1f240b2e59bbc717bda26a13}
+      \field{sortinit}{O}
+      \field{sortinithash}{2cd7140a07aea5341f9e2771efe90aae}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Summary 1 Foraging range is a key aspect of the ecology of ?central place foragers?. Estimating how far bees fly under different circumstances is essential for predicting colony success, and for estimating bee-mediated gene flow between plant populations. It is likely to be strongly influenced by forage distribution, something that is hard to quantify in all but the simplest landscapes; and theories of foraging distance tend to assume a homogeneous forage distribution. 2 We quantified the distribution of bumblebee Bombus terrestris L. foragers away from experimentally positioned colonies, in an agricultural landscape, using two methods. We mass-marked foragers as they left the colony, and analysed pollen from foragers returning to the colonies. The data were set within the context of the ?forage landscape?: a map of the spatial distribution of forage as determined from remote-sensed data. To our knowledge, this is the first time that empirical data on foraging distances and forage availability, at this resolution and scale, have been collected and combined for bumblebees. 3 The bees foraged at least 1·5 km from their colonies, and the proportion of foragers flying to one field declined, approximately linearly, with radial distance. In this landscape there was great variation in forage availability within 500 m of colonies but little variation beyond 1 km, regardless of colony location. 4 The scale of B. terrestris foraging was large enough to buffer against effects of forage patch and flowering crop heterogeneity, but bee species with shorter foraging ranges may experience highly variable colony success according to location.}
+      \field{issn}{0021-8790}
+      \field{journaltitle}{Journal of Animal Ecology}
+      \field{month}{3}
+      \field{number}{2}
+      \field{title}{Bumblebee Flight Distances in Relation to the Forage Landscape}
+      \field{urlday}{28}
+      \field{urlmonth}{5}
+      \field{urlyear}{2021}
+      \field{volume}{77}
+      \field{year}{2008}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{406\bibrangedash 415}
+      \range{pages}{10}
+      \verb{doi}
+      \verb 10.1111/j.1365-2656.2007.01333.x
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1111/j.1365-2656.2007.01333.x
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1111/j.1365-2656.2007.01333.x
+      \endverb
+      \keyw{borage,foraging range,mass marking experiment,pollen analysis}
     \endentry
     \entry{pagesBiostringsEfficientString2026}{manual}{}{}
       \name{author}{4}{}{%
@@ -2238,6 +3278,214 @@
       \field{type}{Manual}
       \field{year}{2021}
       \field{dateera}{ce}
+    \endentry
+    \entry{rundlofFlowerPlantingsSupport2022a}{article}{}{}
+      \name{author}{8}{}{%
+        {{un=0,uniquepart=base,hash=6275a9a8a813494c40a8ebfc16a9c11b}{%
+           family={Rundlöf},
+           familyi={R\bibinitperiod},
+           given={Maj},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=15c0642bfb06f832322649b86f2e1b71}{%
+           family={Stuligross},
+           familyi={S\bibinitperiod},
+           given={Clara},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=c89b9c0ca39fa024bf44360db529640d}{%
+           family={Lindh},
+           familyi={L\bibinitperiod},
+           given={Arvid},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=6ce5357e0a5d6e4655e1b176768f0372}{%
+           family={Malfi},
+           familyi={M\bibinitperiod},
+           given={Rosemary\bibnamedelima L.},
+           giveni={R\bibinitperiod\bibinitdelim L\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=7176d31c03fa2e726601ab8639c9144e}{%
+           family={Burns},
+           familyi={B\bibinitperiod},
+           given={Katherine},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f4c1a7b952baf1a6b6eabe7991029a20}{%
+           family={Mola},
+           familyi={M\bibinitperiod},
+           given={John\bibnamedelima M.},
+           giveni={J\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=adf67cd0ea7c65d202cf458fb0d3b365}{%
+           family={Cibotti},
+           familyi={C\bibinitperiod},
+           given={Staci},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=9f4aa3c2d2773a114a6a3df710d09a19}{%
+           family={Williams},
+           familyi={W\bibinitperiod},
+           given={Neal\bibnamedelima M.},
+           giveni={N\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{6448c517230b18cb8d0c1b134238f793}
+      \strng{fullhash}{fc8a939a277e95e40ca8be4b7d1794b1}
+      \strng{fullhashraw}{fc8a939a277e95e40ca8be4b7d1794b1}
+      \strng{bibnamehash}{fc8a939a277e95e40ca8be4b7d1794b1}
+      \strng{authorbibnamehash}{fc8a939a277e95e40ca8be4b7d1794b1}
+      \strng{authornamehash}{6448c517230b18cb8d0c1b134238f793}
+      \strng{authorfullhash}{fc8a939a277e95e40ca8be4b7d1794b1}
+      \strng{authorfullhashraw}{fc8a939a277e95e40ca8be4b7d1794b1}
+      \field{sortinit}{R}
+      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Sustainable agriculture relies on pollinators, and wild bees benefit yield of multiple crops. However, the combined exposure to pesticides and loss of flower resources, driven by agricultural intensification, contribute to declining diversity and abundance of many bee taxa. Flower plantings along the margins of agricultural fields offer diverse food resources not directly treated with pesticides. To investigate the potential of flower plantings to mitigate bee pesticide exposure effects and support bee reproduction, we selected replicated sites in intensively farmed landscapes where half contained flower plantings. We assessed solitary bee Osmia lignaria and bumble bee Bombus vosnesenskii nesting and reproduction throughout the season in these landscapes. We also quantified local and landscape flower resources and used bee-collected pollen to determine forage resource use and pesticide exposure and risk. Flower plantings, and their local flower resources, increased O. lignaria nesting probability. Bombus vosnesenskii reproduction was more strongly related to landscape than local flower resources. Bees at sites with and without flower plantings experienced similar pesticide risk, and the local flowers, alongside flowers in the landscape, were sources of pesticide exposure particularly for O. lignaria. However, local flower resources mitigated negative pesticide effects on B. vosnesenskii reproduction. Synthesis and applications. Bees in agricultural landscapes are threatened by pesticide exposure and loss of flower resources through agricultural intensification. Therefore, finding solutions to mitigate negative effects of pesticide use and flower deficiency is urgent. Our findings point towards flower plantings as a potential solution to support bee populations by mitigating pesticide exposure effects and providing key forage. Further investigation of the balance between forage benefits and added pesticide risk is needed to reveal contexts where net benefits occur.}
+      \field{issn}{1365-2664}
+      \field{journaltitle}{Journal of Applied Ecology}
+      \field{number}{8}
+      \field{title}{Flower {{Plantings Support Wild Bee Reproduction}} and {{May Also Mitigate Pesticide Exposure Effects}}}
+      \field{volume}{59}
+      \field{year}{2022}
+      \field{dateera}{ce}
+      \field{pages}{2117\bibrangedash 2127}
+      \range{pages}{11}
+      \verb{doi}
+      \verb 10.1111/1365-2664.14223
+      \endverb
+      \keyw{agricultural intensification,Bombus,bumble bee,flower plantings,flower resources,Osmia,pesticide,pesticide risk,pollinator conservation,wild bee}
+    \endentry
+    \entry{williamsLandscapeScaleResourcesPromote2012c}{article}{}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=9f4aa3c2d2773a114a6a3df710d09a19}{%
+           family={Williams},
+           familyi={W\bibinitperiod},
+           given={Neal\bibnamedelima M.},
+           giveni={N\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=bf84e87333e55fcda6883a6eab200f85}{%
+           family={Regetz},
+           familyi={R\bibinitperiod},
+           given={James},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=e64b7e31c52a065d95de7ad95073f872}{%
+           family={Kremen},
+           familyi={K\bibinitperiod},
+           given={Claire},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{da7429ab0c8e1b3ed897f868359293c3}
+      \strng{fullhash}{4877f099a6a5a6726c17a6e509b79a15}
+      \strng{fullhashraw}{4877f099a6a5a6726c17a6e509b79a15}
+      \strng{bibnamehash}{4877f099a6a5a6726c17a6e509b79a15}
+      \strng{authorbibnamehash}{4877f099a6a5a6726c17a6e509b79a15}
+      \strng{authornamehash}{da7429ab0c8e1b3ed897f868359293c3}
+      \strng{authorfullhash}{4877f099a6a5a6726c17a6e509b79a15}
+      \strng{authorfullhashraw}{4877f099a6a5a6726c17a6e509b79a15}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Variation in the availability of food resources over space and time is a likely driver of how landscape structure and composition affect animal populations. Few studies, however, have directly assessed the spatiotemporal variation in resource availability that arises from landscape pattern, or its effect on populations and population dynamic parameters. We tested the effect of floral resource availability at the landscape scale on the numbers of worker, male, and queen offspring produced by bumble bee, Bombus vosnesenskii, colonies experimentally placed within complex agricultural-natural landscapes. We quantified flower densities in all land use types at different times of the season and then used these data to calculate spatially explicit estimates of floral resources surrounding each colony. Floral availability strongly correlated with landscape structure, and different regions of the landscape showed distinct seasonal patterns of floral availability. The floral resources available in the landscape surrounding a colony positively affected the number of workers and males it produced. Production was more sensitive to early- than to later-season resources. Floral resources did not significantly affect queen production despite a strong correlation between worker number and queen number among colonies. No landscape produced high floral resources during both the early and late season, and seasonal consistency is likely required for greater queen production. Floral resources are important determinants of colony growth and likely affect the pollination services provided by bumble bees at a landscape scale. Spatiotemporal variation in floral resources across the landscape precludes a simple relationship between resources and reproductive success as measured by queens, but nonetheless likely influences the total abundance of bumble bees in our study region.}
+      \field{issn}{1939-9170}
+      \field{journaltitle}{Ecology}
+      \field{number}{5}
+      \field{title}{Landscape-{{Scale Resources Promote Colony Growth}} but {{Not Reproductive Performance}} of {{Bumble Bees}}}
+      \field{volume}{93}
+      \field{year}{2012}
+      \field{dateera}{ce}
+      \field{pages}{1049\bibrangedash 1058}
+      \range{pages}{10}
+      \verb{doi}
+      \verb 10.1890/11-1006.1
+      \endverb
+      \keyw{Apoidea,Bombus,bumble bee,floral resources,landscape structure,pollinator,reproductive success}
+    \endentry
+    \entry{woodgateContinuousRadarTracking2017}{article}{}{}
+      \name{author}{5}{}{%
+        {{un=0,uniquepart=base,hash=2c6dc77c92385e27259fc37747fe7174}{%
+           family={Woodgate},
+           familyi={W\bibinitperiod},
+           given={Joseph\bibnamedelima L.},
+           giveni={J\bibinitperiod\bibinitdelim L\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ef19f2504bd37b9e609dba0a31e42d2b}{%
+           family={Makinson},
+           familyi={M\bibinitperiod},
+           given={James\bibnamedelima C.},
+           giveni={J\bibinitperiod\bibinitdelim C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=16b6e5d419e4e54c73452114f60122e8}{%
+           family={Lim},
+           familyi={L\bibinitperiod},
+           given={Ka\bibnamedelima S.},
+           giveni={K\bibinitperiod\bibinitdelim S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=43d51db9c34e06d12cbed8bc46406856}{%
+           family={Reynolds},
+           familyi={R\bibinitperiod},
+           given={Andrew\bibnamedelima M.},
+           giveni={A\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=3c363fcddbb96e3b6a2fe2cb97ad65e0}{%
+           family={Chittka},
+           familyi={C\bibinitperiod},
+           given={Lars},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{63c451fa653a3f3285ff690b11324393}
+      \strng{fullhash}{85f6590f9c52eb7a7986ff7ea9a63418}
+      \strng{fullhashraw}{85f6590f9c52eb7a7986ff7ea9a63418}
+      \strng{bibnamehash}{85f6590f9c52eb7a7986ff7ea9a63418}
+      \strng{authorbibnamehash}{85f6590f9c52eb7a7986ff7ea9a63418}
+      \strng{authornamehash}{63c451fa653a3f3285ff690b11324393}
+      \strng{authorfullhash}{85f6590f9c52eb7a7986ff7ea9a63418}
+      \strng{authorfullhashraw}{85f6590f9c52eb7a7986ff7ea9a63418}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Abstract Animals that visit multiple foraging sites face a problem, analogous to the Travelling Salesman Problem, of finding an efficient route. We explored bumblebees’ route development on an array of five artificial flowers in which minimising travel distances between individual feeders conflicted with minimising overall distance. No previous study of bee spatial navigation has been able to follow animals’ movement during learning; we tracked bumblebee foragers continuously, using harmonic radar, and examined the process of route formation in detail for a small number of selected individuals. On our array, bees did not settle on visit sequences that gave the shortest overall path, but prioritised movements to nearby feeders. Nonetheless, flight distance and duration reduced with experience. This increased efficiency was attributable mainly to experienced bees reducing exploration beyond the feeder array and flights becoming straighter with experience, rather than improvements in the sequence of feeder visits. Flight paths of all legs of a flight stabilised at similar rates, whereas the first few feeder visits became fixed early while bees continued to experiment with the order of later visits. Stabilising early sections of a route and prioritising travel between nearby destinations may reduce the search space, allowing rapid adoption of efficient routes.}
+      \field{day}{11}
+      \field{issn}{2045-2322}
+      \field{journaltitle}{Scientific Reports}
+      \field{langid}{english}
+      \field{month}{12}
+      \field{number}{1}
+      \field{shortjournal}{Sci Rep}
+      \field{title}{Continuous {{Radar Tracking Illustrates}} the {{Development}} of {{Multi-destination Routes}} of {{Bumblebees}}}
+      \field{urlday}{13}
+      \field{urlmonth}{3}
+      \field{urlyear}{2026}
+      \field{volume}{7}
+      \field{year}{2017}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{17323}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1038/s41598-017-17553-1
+      \endverb
+      \verb{urlraw}
+      \verb https://www.nature.com/articles/s41598-017-17553-1
+      \endverb
+      \verb{url}
+      \verb https://www.nature.com/articles/s41598-017-17553-1
+      \endverb
     \endentry
     \entry{yeFloralResourcePartitioning2024a}{article}{}{}
       \name{author}{9}{}{%

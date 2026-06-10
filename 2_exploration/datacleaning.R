@@ -141,7 +141,7 @@ plantlist$scientific_name[plantlist$scientific_name == "Salomus valerandi"] = "S
 plantlist$scientific_name[plantlist$scientific_name == "Brassica napus va pabularia"] = "Brassica napus"
 plantlist$scientific_name[plantlist$scientific_name == "Convolvulus vulgaris"] = "Convolvulus arvensis" # synonym
 plantlist$scientific_name[plantlist$scientific_name == "China Rose"] = "Rosa chinensis"
-plantlist$scientific_name[plantlist$scientific_name == "Rosa chinensis"] = "China Rose"
+plantlist$common_name[plantlist$scientific_name == "Rosa chinensis"] = "China Rose"
 plantlist$scientific_name[plantlist$scientific_name == "Curcurbita spp."] = "Cucurbita spp."
 plantlist$scientific_name[plantlist$scientific_name == "Tripleospermum spp."] = "Tripleurospermum spp."
 plantlist$scientific_name[plantlist$scientific_name == "Allioideae spp."] = "Alliaceae" # GBIF chokes on Allioideae, but finds the old name (Alliaceae)
